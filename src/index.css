@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #040A15;
+  --color-navy-900: #060D1F;
+  --color-navy-800: #0A1628;
+  --color-navy-700: #0E2841;
+  --color-navy-600: #153660;
+  --color-navy-500: #1C4A80;
+  --color-orange-500: #FF7300;
+  --color-orange-400: #FF8C33;
+  --color-orange-600: #E66700;
+  --color-purple-700: #57306B;
+  --color-purple-600: #6B3D82;
+  --color-ice-100: #CADCFC;
+  --color-ice-200: #A8C4F0;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #060D1F;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FF7300 0%, #FF8C33 50%, #CADCFC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-orange {
+  background: linear-gradient(135deg, #FF7300, #FF8C33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-orange {
+  box-shadow: 0 0 40px rgba(255, 115, 0, 0.2), 0 0 80px rgba(255, 115, 0, 0.05);
+}
+
+.glow-line {
+  background: linear-gradient(90deg, transparent, rgba(255, 115, 0, 0.6), rgba(87, 48, 107, 0.4), transparent);
+  height: 1px;
+}
+
+.card-glass {
+  background: rgba(14, 40, 65, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(202, 220, 252, 0.08);
+}
+
+.wave-bottom {
+  position: relative;
+}
+
+.wave-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(180deg, transparent 0%, rgba(255, 115, 0, 0.03) 50%, rgba(255, 115, 0, 0.08) 100%);
+  pointer-events: none;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
