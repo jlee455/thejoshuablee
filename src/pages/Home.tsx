@@ -99,7 +99,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-12 p-8 rounded-2xl border border-white/10 bg-white/[0.03]">
             <img
               src="/images/favikon-badge.webp"
-              alt="Favikon — #1 LinkedIn Growth Expert in the United States, Ranked #5 Worldwide"
+              alt="Favikon badge issued March 2026: #1 LinkedIn Growth Expert in the United States, ranked #6 worldwide at the time of issue"
               className="w-36 sm:w-40 rounded-xl border border-white/10 shrink-0"
             />
             <div className="text-center sm:text-left">
@@ -107,7 +107,7 @@ export default function Home() {
                 #1 LinkedIn Growth Expert in the United States
               </p>
               <p className="text-white/40 text-sm leading-relaxed">
-                Ranked #5 worldwide by{' '}
+                Ranked #5 worldwide as of May 2026 by{' '}
                 <a
                   href="https://www.favikon.com/blog/top-linkedin-experts-worldwide"
                   target="_blank"

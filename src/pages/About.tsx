@@ -330,7 +330,7 @@ export default function About() {
           <div className="flex items-center gap-5 mb-12 p-5 rounded-xl border border-white/5 bg-white/[0.02] max-w-md">
             <img
               src="/images/favikon-badge.webp"
-              alt="Favikon — #1 LinkedIn Growth Expert in the United States"
+              alt="Favikon badge issued March 2026: #1 LinkedIn Growth Expert in the United States"
               className="w-20 rounded-lg border border-white/10 shrink-0"
             />
             <div>

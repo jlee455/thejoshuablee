@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { ArrowRight, ChevronRight, Play, Mic, Star, Users, PenTool, ExternalLink, Quote } from 'lucide-react'
 import { publications } from '../data/publications'
 import { appearances } from '../data/appearances'
@@ -52,6 +53,26 @@ const recommendations = [
 ]
 
 export default function Speaking() {
+  const reelRef = useRef<HTMLVideoElement>(null)
+
+  // React sets `muted` as a DOM property but not as an attribute, and browsers
+  // check the attribute when deciding whether autoplay is allowed. The
+  // prerendered HTML carries muted="", but hydration drops it, so the loop
+  // silently stops once React takes over. Re-assert it on mount.
+  useEffect(() => {
+    const el = reelRef.current
+    if (!el) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      el.pause()
+      return
+    }
+    el.muted = true
+    el.setAttribute('muted', '')
+    void el.play().catch(() => {
+      /* Autoplay refused (low power mode, data saver). The poster stays up. */
+    })
+  }, [])
+
   return (
     <>
       {/* ============================================
@@ -59,10 +80,27 @@ export default function Speaking() {
           ============================================ */}
       <section className="relative min-h-[70vh] flex items-end pb-20 pt-32">
         <div className="absolute inset-0">
+          {/* Sizzle reel runs as the hero background. Its captions are burned
+              into the footage, so muted playback loses nothing - the message
+              lands with the sound off. The poster shows before the video is
+              ready, and is also what a reduced-motion visitor gets instead. */}
+          <video
+            ref={reelRef}
+            className="w-full h-full object-cover object-top motion-reduce:hidden"
+            poster="/video/sizzle-poster.webp"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label="Joshua B. Lee speaking on stage — sizzle reel"
+          >
+            <source src="/video/sizzle-reel.mp4" type="video/mp4" />
+          </video>
           <img
-            src="/images/joshua-stage-blue-lights.webp"
-            alt="Joshua B. Lee on stage"
-            className="w-full h-full object-cover object-top"
+            src="/video/sizzle-poster.webp"
+            alt="Joshua B. Lee speaking on stage"
+            className="hidden motion-reduce:block w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/80 to-navy-900/30" />
         </div>
@@ -110,10 +148,12 @@ export default function Speaking() {
               <div className="text-center">
                 <img
                   src="/images/favikon-badge.webp"
-                  alt="Favikon — #1 LinkedIn Growth Expert in the United States"
+                  alt="Favikon badge issued March 2026: #1 LinkedIn Growth Expert in the United States"
                   className="w-28 md:w-32 rounded-lg border border-white/10 mx-auto"
                 />
-                <p className="text-white/20 text-[10px] uppercase tracking-wider mt-2">#1 in the US</p>
+                <p className="text-white/20 text-[10px] uppercase tracking-wider mt-2">
+                  #1 in the US &middot; badge issued Mar 2026
+                </p>
               </div>
             </div>
           </div>
@@ -375,6 +415,27 @@ export default function Speaking() {
               name: a.title,
               publisher: { '@type': 'Organization', name: 'Entrepreneur Media' },
             })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'VideoObject',
+            '@id': 'https://joshuablee.com/speaking#reel',
+            name: 'Joshua B. Lee — Keynote Speaker Sizzle Reel',
+            description:
+              'Joshua B. Lee speaking on stage. The reel opens on "AI is already answering", moves through 25+ years in digital marketing, lands on "Humanity earns trust", and closes on "Be the answer." Joshua is the founder of StandOut Authority and co-creator of YOUmanize.',
+            thumbnailUrl: 'https://joshuablee.com/video/sizzle-poster.webp',
+            contentUrl: 'https://joshuablee.com/video/sizzle-reel.mp4',
+            uploadDate: '2026-08-02',
+            duration: 'PT17S',
+            inLanguage: 'en-US',
+            isFamilyFriendly: true,
+            creator: { '@type': 'Person', '@id': 'https://joshuablee.com/#person' },
+            about: { '@id': 'https://joshuablee.com/#person' },
           }),
         }}
       />
