@@ -7,6 +7,7 @@ import WorkWithMe from './pages/WorkWithMe'
 import Speaking from './pages/Speaking'
 import Insights from './pages/Insights'
 import Article from './pages/Article'
+import Recommendations from './pages/Recommendations'
 import Evidence from './pages/Evidence'
 import NotFound from './pages/NotFound'
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/insights" element={<Insights />} />
         <Route path="/insights/:slug" element={<Article />} />
         <Route path="/evidence" element={<Evidence />} />
+        <Route path="/recommendations" element={<Recommendations />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

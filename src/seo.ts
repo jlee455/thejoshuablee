@@ -47,6 +47,12 @@ export const seoByPath: Record<string, PageSeo> = {
     description:
       'A complete, linked record of Joshua B. Lee’s third-party recognition: Favikon rankings, podcast appearances, published articles, LinkedIn newsletters, and independent coverage — each linked to its original source.',
   },
+  '/recommendations': {
+    title:
+      'Recommendations for Joshua B. Lee — 73 Named Endorsements from Clients and Founders',
+    description:
+      'Joshua B. Lee has received 73 public LinkedIn recommendations from clients, colleagues, and founders since 2007. Each is attributed to a named person with their job title and company, and reproduced verbatim.',
+  },
 }
 
 export const FALLBACK_SEO: PageSeo = seoByPath['/']

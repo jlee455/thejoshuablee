@@ -11,6 +11,7 @@ export const routes = [
   '/speaking',
   '/insights',
   '/evidence',
+  '/recommendations',
 ]
 
 // Generated from src/content/articles.json - 235 republished articles.

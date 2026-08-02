@@ -1,4 +1,6 @@
 import { ArrowUpRight, ChevronRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { recommendations } from '../data/recommendations'
 import { appearances } from '../data/appearances'
 
 const rankings = [
@@ -355,6 +357,31 @@ export default function Evidence() {
                 </div>
               ))}
           </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          RECOMMENDATIONS - pointer to the full page
+          ============================================ */}
+      <section className="py-20 bg-navy-800/40">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <p className="text-orange-500/60 text-sm uppercase tracking-widest font-semibold mb-6">
+            In their words
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 leading-snug">
+            {recommendations.length} named recommendations.
+          </h2>
+          <p className="text-white/30 text-sm mb-6">
+            Written on LinkedIn by clients, colleagues, and founders since 2007. Every
+            one carries a name, a title, and a company &mdash; nothing anonymous.
+          </p>
+          <Link
+            to="/recommendations"
+            className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-medium no-underline text-sm"
+          >
+            Read all {recommendations.length}
+            <ChevronRight size={14} />
+          </Link>
         </div>
       </section>
 
