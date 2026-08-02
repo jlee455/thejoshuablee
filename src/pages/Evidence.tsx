@@ -89,6 +89,139 @@ const appearances = [
   },
 ]
 
+const hostedEpisodes = [
+  {
+    title: 'If AI Had to Recommend One Person in Your Space, Would It Choose You?',
+    date: '2026-06-26',
+    url: 'https://www.youtube.com/watch?v=metJRI-2Mmo',
+  },
+  {
+    title: 'YOUmanize Your Marketing: Your People Are Your Brand',
+    date: '2026-04-16',
+    url: 'https://www.youtube.com/watch?v=BRG4WzzkUjw',
+  },
+  {
+    title: 'How to Build a Founder Personal Brand That Actually Converts | Live Workshop',
+    date: '2026-03-18',
+    url: 'https://www.youtube.com/watch?v=HVpJrTYcryc',
+  },
+  {
+    title: 'Who Owns Your Voice in the Age of AI? From Matthew McConaughey to LinkedIn Creators',
+    date: '2026-02-16',
+    url: 'https://www.youtube.com/watch?v=UTgOr3sSiIg',
+  },
+  {
+    title: 'Is Working With Your Partner a Power Move or a Risk? What Actually Works and What Breaks',
+    date: '2026-02-09',
+    url: 'https://www.youtube.com/watch?v=-kA4frKl1yQ',
+  },
+  {
+    title: 'Why Isn’t Your Audience Listening? Attention spans are 2.9 seconds, storytelling beats AI',
+    date: '2026-02-02',
+    url: 'https://www.youtube.com/watch?v=97QYngLoE3U',
+  },
+  {
+    title: 'Why Does Trust Drive More LinkedIn Growth Than Impressions or Leads?',
+    date: '2026-01-26',
+    url: 'https://www.youtube.com/watch?v=GyLVcU0-Qag',
+  },
+  {
+    title: 'Is Your LinkedIn Profile Ranking in Google, Even If You Haven’t Updated It in Years?',
+    date: '2026-01-19',
+    url: 'https://www.youtube.com/watch?v=1qvUDmpzwGU',
+  },
+  {
+    title: 'DO YOU TRUST YOUR BRAND? Trust, AI, and Alignment in 2026',
+    date: '2026-01-12',
+    url: 'https://www.youtube.com/watch?v=bhfxDd44_rQ',
+  },
+  {
+    title: 'Renowned Neuroscience Doctor Reveals How Parents Can Regulate the Nervous System and Raise Calm Kids',
+    date: '2026-01-05',
+    url: 'https://www.youtube.com/watch?v=WI6QL61t48M',
+  },
+  {
+    title: 'Will AI Replace Humans? Personal Branding, AEO, and the Future of Work in 2026',
+    date: '2025-12-29',
+    url: 'https://www.youtube.com/watch?v=gkQE22kNpqs',
+  },
+  {
+    title: 'AI and Marketing Jobs in 2026 | SEO to AEO Explained',
+    date: '2025-12-22',
+    url: 'https://www.youtube.com/watch?v=oLfSho7VGN8',
+  },
+  {
+    title: 'Celebrating the 2025 holidays as business owners & a blended family of 5 - Christmakah',
+    date: '2025-12-15',
+    url: 'https://www.youtube.com/watch?v=pH4weWuKmCs',
+  },
+  {
+    title: 'YouTube CEO & AI Founder Reveals How To Grow on YouTube in 2026',
+    date: '2025-12-09',
+    url: 'https://www.youtube.com/watch?v=qNWg_n4ai7g',
+  },
+  {
+    title: 'Personal Branding for Introverts (Full Breakdown) With Author + Cancer Survivor Goldie Chan',
+    date: '2025-12-01',
+    url: 'https://www.youtube.com/watch?v=6xvFDNYSubQ',
+  },
+  {
+    title: 'The Human Algorithm vs AI - change how you market | Episode #011',
+    date: '2025-11-24',
+    url: 'https://www.youtube.com/watch?v=Vp7QrCHOz6Y',
+  },
+  {
+    title: 'Emotional Labor and the Invisible Load of "Women\'s Work" | Episode #010',
+    date: '2025-11-17',
+    url: 'https://www.youtube.com/watch?v=fE1BWq_FvxE',
+  },
+  {
+    title: 'Oversharing Online? When Authentic Becomes TMI | Episode #009',
+    date: '2025-11-10',
+    url: 'https://www.youtube.com/watch?v=WiWpj6pR4aw',
+  },
+  {
+    title: 'Can AI Fake Trust? Neuroscience Tips for Small Biz | John Assaraf',
+    date: '2025-11-03',
+    url: 'https://www.youtube.com/watch?v=8pfK-EO07Hw',
+  },
+  {
+    title: 'How to Use AI for YOUR LinkedIn Content Strategy | Joshua B. Lee & Rachel B. Lee | Episode #007',
+    date: '2025-10-27',
+    url: 'https://www.youtube.com/watch?v=_IPu0G6Zuoc',
+  },
+  {
+    title: 'Alex Cattoni: What Does it REALLY Take to Grow a Brand Authentically? | Episode #006',
+    date: '2025-10-20',
+    url: 'https://www.youtube.com/watch?v=FOYUi_1oSzM',
+  },
+  {
+    title: 'Balancing Business, Growth and Family | Episode #005',
+    date: '2025-10-13',
+    url: 'https://www.youtube.com/watch?v=AeXlg8H71yM',
+  },
+  {
+    title: 'The Power of AI in Capturing Brand Voice on LinkedIn | Episode #004',
+    date: '2025-10-06',
+    url: 'https://www.youtube.com/watch?v=FDJBcb7vOkQ',
+  },
+  {
+    title: 'Working with Your Spouse: Business Couple Dynamics & Boundaries in Business | Episode #003',
+    date: '2025-09-29',
+    url: 'https://www.youtube.com/watch?v=skcwPyEZrLw',
+  },
+  {
+    title: 'The LinkedIn Algorithm Just Changed. Here\'s What Works Now (September 2025) | Episode #002',
+    date: '2025-09-22',
+    url: 'https://www.youtube.com/watch?v=DTu49YEeWxs',
+  },
+  {
+    title: 'Brutally Honest Personal Branding Advice to Fix Your Sh*t Content | Episode #001',
+    date: '2025-09-17',
+    url: 'https://www.youtube.com/watch?v=-ZgBqF2rZJk',
+  },
+]
+
 const coverage = [
   {
     source: 'SocialAppsHQ',
@@ -280,6 +413,51 @@ export default function Evidence() {
       </section>
 
       {/* ============================================
+          HOSTED PODCAST
+          ============================================ */}
+      <section className="py-24">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <p className="text-orange-500/60 text-sm uppercase tracking-widest font-semibold mb-6">
+            Hosted by Josh and Rachel
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 leading-snug">
+            YOUmanize&trade; Your Brand.
+          </h2>
+          <p className="text-white/30 text-sm mb-8">
+            The show Joshua and Rachel B. Lee host together. Every episode links to
+            YouTube.{' '}
+            <a
+              href="https://www.youtube.com/@YOUmanizeYourBrand"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange-500/70 hover:text-orange-400 transition-colors"
+            >
+              Full channel &rarr;
+            </a>
+          </p>
+          <ul className="grid sm:grid-cols-2 gap-3 list-none p-0 m-0">
+            {hostedEpisodes.map((e) => (
+              <li key={e.url}>
+                <a
+                  href={e.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 rounded-xl p-4 border border-white/5 hover:border-orange-500/20 transition-all group no-underline h-full"
+                >
+                  <span className="text-[10px] text-white/20 font-mono pt-0.5 shrink-0">
+                    {e.date}
+                  </span>
+                  <span className="text-white/70 text-xs leading-relaxed group-hover:text-orange-400 transition-colors flex-1">
+                    {e.title}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* ============================================
           THIRD-PARTY COVERAGE
           ============================================ */}
       <section className="py-20 bg-navy-800/40">
@@ -434,9 +612,24 @@ export default function Evidence() {
                           : {}),
                       },
                     })),
-                    ...coverage.map((c, i) => ({
+                    ...hostedEpisodes.map((e, i) => ({
                       '@type': 'ListItem',
                       position: appearances.length + i + 1,
+                      item: {
+                        '@type': 'PodcastEpisode',
+                        name: e.title,
+                        url: e.url,
+                        datePublished: e.date,
+                        partOfSeries: {
+                          '@type': 'PodcastSeries',
+                          name: 'YOUmanize\u2122 Your Brand',
+                          url: 'https://www.youtube.com/@YOUmanizeYourBrand',
+                        },
+                      },
+                    })),
+                    ...coverage.map((c, i) => ({
+                      '@type': 'ListItem',
+                      position: appearances.length + hostedEpisodes.length + i + 1,
                       item: {
                         '@type': 'CreativeWork',
                         name: c.source,
