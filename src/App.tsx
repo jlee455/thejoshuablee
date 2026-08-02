@@ -6,6 +6,7 @@ import AuthorityArchitecture from './pages/AuthorityArchitecture'
 import WorkWithMe from './pages/WorkWithMe'
 import Speaking from './pages/Speaking'
 import Insights from './pages/Insights'
+import Article from './pages/Article'
 import Evidence from './pages/Evidence'
 import NotFound from './pages/NotFound'
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/work-with-me" element={<WorkWithMe />} />
         <Route path="/speaking" element={<Speaking />} />
         <Route path="/insights" element={<Insights />} />
+        <Route path="/insights/:slug" element={<Article />} />
         <Route path="/evidence" element={<Evidence />} />
         <Route path="*" element={<NotFound />} />
       </Route>

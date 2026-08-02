@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# LinkedIn export working files (contain private data - never commit)
+/linkedin-export/

@@ -1,4 +1,6 @@
 import { ArrowRight, ChevronRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { articleIndex } from '../data/articleIndex'
 
 const newsletters = [
   { title: 'Why Isn\'t Your LinkedIn Content Turning into Business Opportunities?', excerpt: 'Your LinkedIn content is not turning into business opportunities because it is not creating clear, consistent authority signals.', readTime: '6 min', url: 'https://www.linkedin.com/pulse/why-isnt-your-linkedin-content-turning-business-joshua-b-lee-gfvac', category: 'authority' },
@@ -177,6 +179,62 @@ export default function Insights() {
             Subscribe to go deeper
             <ChevronRight size={14} />
           </a>
+        </div>
+      </section>
+
+      {/* ============================================
+          ARCHIVE - republished LinkedIn articles
+          ============================================ */}
+      <section className="py-24">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <p className="text-orange-500/60 text-sm uppercase tracking-widest font-semibold mb-6">
+            The archive
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 leading-snug">
+            {articleIndex.length} pieces, written since 2014.
+          </h2>
+          <p className="text-white/30 text-sm mb-10">
+            Everything published under my name, republished here so it lives somewhere
+            I control &mdash; and somewhere a machine can actually read it.
+          </p>
+
+          <div className="space-y-10">
+            {Object.entries(
+              articleIndex.reduce<Record<string, typeof articleIndex>>((acc, a) => {
+                const y = a.date.slice(0, 4)
+                ;(acc[y] ||= []).push(a)
+                return acc
+              }, {}),
+            )
+              .sort(([a], [b]) => b.localeCompare(a))
+              .map(([year, items]) => (
+                <div key={year}>
+                  <h3 className="text-white/25 text-xs font-mono tracking-widest mb-3">
+                    {year} &middot; {items.length}
+                  </h3>
+                  <ul className="space-y-2 list-none p-0 m-0">
+                    {items.map((a) => (
+                      <li key={a.slug}>
+                        <Link
+                          to={`/insights/${a.slug}`}
+                          className="flex items-baseline gap-4 rounded-lg px-4 py-3 border border-white/5 hover:border-orange-500/20 transition-all group no-underline"
+                        >
+                          <span className="text-[10px] text-white/20 font-mono shrink-0 w-16">
+                            {a.date.slice(5)}
+                          </span>
+                          <span className="text-white/70 text-sm leading-snug group-hover:text-orange-400 transition-colors flex-1">
+                            {a.title}
+                          </span>
+                          <span className="text-[10px] text-white/15 shrink-0 hidden sm:inline">
+                            {Math.max(1, Math.round(a.words / 220))} min
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+          </div>
         </div>
       </section>
 
