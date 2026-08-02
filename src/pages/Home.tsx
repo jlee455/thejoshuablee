@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { appearances } from '../data/appearances'
 import { ArrowRight, ChevronRight, Mic, Play } from 'lucide-react'
 
 const faqs = [
@@ -377,7 +378,9 @@ export default function Home() {
             </div>
             <div className="border-l-2 border-white/10 pl-6">
               <p className="text-white/50 leading-relaxed">
-                <span className="text-white font-semibold">500+ podcasts. 50+ stages. 500+ founders.</span>{' '}
+                <span className="text-white font-semibold">
+                    {appearances.length} podcasts, every one linked. 50+ stages. 500+ founders.
+                  </span>{' '}
                 Keynoting the new trust economy — because the shift from attention to trust isn't coming. It's here. And the rooms that get it early win.
               </p>
             </div>

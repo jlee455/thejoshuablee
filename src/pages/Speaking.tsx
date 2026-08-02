@@ -1,4 +1,7 @@
 import { ArrowRight, ChevronRight, Play, Mic, Star, Users, PenTool, ExternalLink, Quote } from 'lucide-react'
+import { appearances } from '../data/appearances'
+import { recommendations as linkedinRecommendations } from '../data/recommendations'
+import { articleIndex } from '../data/articleIndex'
 import { Link } from 'react-router-dom'
 
 const podcastAppearances = [
@@ -88,11 +91,14 @@ export default function Speaking() {
       <section className="py-16 border-b border-white/5">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 items-center">
+            {/* Derived from the data files behind /evidence, /insights and
+                /recommendations, so a number here can never drift away from the
+                list that backs it. */}
             {[
               { number: '50+', label: 'Stages' },
-              { number: '500+', label: 'Podcasts' },
-              { number: '200+', label: 'Publications' },
-              { number: '72+', label: 'LinkedIn Recommendations' },
+              { number: String(appearances.length), label: 'Podcast Appearances' },
+              { number: String(articleIndex.length), label: 'Articles Published' },
+              { number: String(linkedinRecommendations.length), label: 'LinkedIn Recommendations' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <p className="text-4xl md:text-5xl font-bold text-white mb-1">{stat.number}</p>
@@ -250,7 +256,7 @@ export default function Speaking() {
             Media & Press
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-16 max-w-2xl">
-            Featured across 200+ publications, podcasts, and interviews.
+            Featured across {appearances.length} documented podcast appearances and published bylines — every one linked on the evidence page.
           </h2>
 
           {/* Podcasts */}
