@@ -1,4 +1,5 @@
 import { ArrowUpRight, ChevronRight } from 'lucide-react'
+import { publications } from '../data/publications'
 import { Link } from 'react-router-dom'
 import { recommendations } from '../data/recommendations'
 import { appearances } from '../data/appearances'
@@ -361,6 +362,43 @@ export default function Evidence() {
       </section>
 
       {/* ============================================
+          PUBLISHED BYLINES
+          ============================================ */}
+      <section className="py-24">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <p className="text-orange-500/60 text-sm uppercase tracking-widest font-semibold mb-6">
+            Published elsewhere
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 leading-snug">
+            Bylines someone else published.
+          </h2>
+          <p className="text-white/30 text-sm mb-8">
+            Articles carrying my name on outlets I don&rsquo;t own. Older links rot, so
+            these are only the ones still resolving to the original piece.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {publications.map((p) => (
+              <a
+                key={p.url}
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl p-5 border border-white/5 hover:border-orange-500/20 transition-all group no-underline flex flex-col"
+              >
+                <span className="text-orange-500/50 text-[10px] uppercase tracking-widest font-semibold mb-2">
+                  {p.publisher}
+                </span>
+                <span className="text-white/75 text-sm leading-snug mb-3 flex-1 group-hover:text-orange-400 transition-colors">
+                  {p.name}
+                </span>
+                <span className="text-[10px] text-white/20">{p.date ? p.date.slice(0, 7) : ''}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
           RECOMMENDATIONS - pointer to the full page
           ============================================ */}
       <section className="py-20 bg-navy-800/40">
@@ -598,9 +636,22 @@ export default function Evidence() {
                         },
                       },
                     })),
-                    ...coverage.map((c, i) => ({
+                    ...publications.map((p, i) => ({
                       '@type': 'ListItem',
                       position: appearances.length + hostedEpisodes.length + i + 1,
+                      item: {
+                        '@type': 'Article',
+                        headline: p.name.slice(0, 110),
+                        url: p.url,
+                        ...(p.date ? { datePublished: p.date } : {}),
+                        author: { '@type': 'Person', '@id': 'https://joshuablee.com/#person' },
+                        publisher: { '@type': 'Organization', name: p.publisher },
+                      },
+                    })),
+                    ...coverage.map((c, i) => ({
+                      '@type': 'ListItem',
+                      position:
+                        appearances.length + hostedEpisodes.length + publications.length + i + 1,
                       item: {
                         '@type': 'CreativeWork',
                         name: c.source,

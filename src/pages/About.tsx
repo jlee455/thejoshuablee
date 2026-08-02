@@ -1,4 +1,5 @@
 import { ArrowRight, ChevronRight } from 'lucide-react'
+import { career } from '../data/career'
 
 export default function About() {
   return (
@@ -357,6 +358,42 @@ export default function About() {
               <ChevronRight size={16} />
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          CAREER TIMELINE
+          ============================================ */}
+      <section className="py-24">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <p className="text-orange-500/60 text-sm uppercase tracking-widest font-semibold mb-6">
+            The long version
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 leading-snug">
+            Thirty years, in order.
+          </h2>
+          <p className="text-white/30 text-sm mb-10">
+            Waiting tables to running paid media at scale to building authority
+            infrastructure. The middle part is where the billion in ad spend happened.
+          </p>
+          <ol className="list-none p-0 m-0 space-y-0">
+            {career.map((r) => (
+              <li
+                key={`${r.company}-${r.start}`}
+                className="flex items-baseline gap-5 py-4 border-b border-white/5 last:border-0"
+              >
+                <span className="text-[11px] text-white/25 font-mono shrink-0 w-[5.5rem] tabular-nums">
+                  {r.start}&ndash;{r.end ?? 'now'}
+                </span>
+                <span className="flex-1">
+                  <span className="block text-white/80 text-sm font-semibold">
+                    {r.company}
+                  </span>
+                  <span className="block text-white/35 text-xs mt-0.5">{r.title}</span>
+                </span>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
