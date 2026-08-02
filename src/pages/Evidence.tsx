@@ -239,8 +239,8 @@ const coverage = [
 const properties = [
   { label: 'LinkedIn profile', url: 'https://www.linkedin.com/in/joshuablee' },
   {
-    label: 'Your Dopamine Dose — LinkedIn newsletter',
-    url: 'https://www.linkedin.com/newsletters/your-dopamine-dose-6770825325585727488',
+    label: 'The Authority Gap — LinkedIn newsletter',
+    url: 'https://www.linkedin.com/newsletters/the-authority-gap-6770825325585727488',
   },
   {
     label: 'YOUmanize™ Your Brand — LinkedIn newsletter',

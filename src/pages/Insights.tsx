@@ -103,7 +103,7 @@ export default function Insights() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 items-start">
             <a
-              href="https://www.linkedin.com/newsletters/your-dopamine-dose-6770825325585727488"
+              href="https://www.linkedin.com/newsletters/the-authority-gap-6770825325585727488"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all glow-orange no-underline text-sm"
@@ -169,7 +169,7 @@ export default function Insights() {
             If you're seeing the same patterns… you're already paying attention to the right things.
           </p>
           <a
-            href="https://www.linkedin.com/newsletters/your-dopamine-dose-6770825325585727488"
+            href="https://www.linkedin.com/newsletters/the-authority-gap-6770825325585727488"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-medium no-underline text-sm"
