@@ -1,4 +1,5 @@
 import { ArrowUpRight, ChevronRight } from 'lucide-react'
+import { appearances } from '../data/appearances'
 
 const rankings = [
   {
@@ -19,75 +20,6 @@ const rankings = [
   },
 ]
 
-const appearances = [
-  {
-    show: 'The Customer Wins',
-    episode: 'Humanizing Your Brand for Real Impact',
-    host: 'Rich Walker',
-    url: 'https://www.quickforms.com/post/humanizing-your-brand-for-real-impact-with-joshua-b-lee',
-  },
-  {
-    show: 'The Greatness Machine',
-    episode: 'Episode 27 — The Dopamine Dealer of LinkedIn',
-    host: 'Darius Mirshahzadeh',
-    url: 'https://music.amazon.com/podcasts/e94f520b-da55-4833-8666-98043e37635f/episodes/fbeea1d1-9573-4fcb-ac98-04670c153612/the-greatness-machine-27-joshua-lee-the-dopamine-dealer-of-linkedin',
-  },
-  {
-    show: 'The Business of You',
-    episode: 'Episode 133 — How to Build Your Authority on LinkedIn',
-    host: 'Rachel Gogos',
-    url: 'https://thebrandid.com/podcast/133-how-to-build-your-authority-on-linkedin-with-rachel-and-joshua-lee/',
-  },
-  {
-    show: 'Beyond Your WHY',
-    episode: '7 Principles of Authentic Success',
-    host: 'Dr. Gary Sanchez',
-    url: 'https://shows.acast.com/beyond-your-why/episodes/7-principles-of-authentic-success-joshua-lees-journey-from-d',
-  },
-  {
-    show: "Today's Business Leaders",
-    episode: 'Episode 141 — Putting the Human Back Into Marketing',
-    host: 'Gabe Arnold',
-    url: 'https://www.buzzsprout.com/1108997/episodes/15086286-putting-the-human-back-into-marketing-with-joshua-lee-episode-141',
-  },
-  {
-    show: 'The Lifestyle Investor',
-    episode: 'Episode 115 — Authentic Connection Over Optimization',
-    host: 'Justin Donald',
-    url: 'https://lifestyleinvestor.com/joshua-b-lee/',
-  },
-  {
-    show: 'Never Been Promoted',
-    episode: 'Walking Away From Financially Successful but Unfulfilling Work',
-    host: 'Thomas Helfrich',
-    url: 'https://neverbeenpromoted.com/articles/joshua-b-lee-money/',
-  },
-  {
-    show: 'Screw the Commute',
-    episode: "Episode 197 — He's Da Bomb on LinkedIn",
-    host: 'Tom Antion',
-    url: 'https://screwthecommute.com/episodes/197-hes-da-bomb-on-linkedin-tom-interviews-joshua-lee/',
-  },
-  {
-    show: 'Samantha Riley',
-    episode: 'Episode 587 — LinkedIn Authority and Relationships',
-    host: 'Samantha Riley',
-    url: 'https://samanthariley.global/podcast/587/',
-  },
-  {
-    show: 'Perfect Practice',
-    episode: 'The Human Algorithm',
-    host: null,
-    url: 'https://perfectpractice.libsyn.com/the-human-algorithm-with-joshua-b-lee',
-  },
-  {
-    show: 'V.E.S.T.',
-    episode: 'Episode 50 — LinkedIn Events Made Easy',
-    host: null,
-    date: 'August 2023',
-    url: 'https://virtualeventsalesteam.com/2023/08/episode-50-linkedin-events-made-easy-with-standout-authoritys-joshua-b-lee/',
-  },
-]
 
 const hostedEpisodes = [
   {
@@ -381,33 +313,47 @@ export default function Evidence() {
           <p className="text-white/30 text-sm mb-8">
             Each one links to the episode on the host&rsquo;s own site.
           </p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {appearances.map((a) => (
-              <a
-                key={a.url}
-                href={a.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xl p-5 border border-white/5 hover:border-orange-500/20 transition-all group no-underline flex flex-col"
-              >
-                <h3 className="text-white/80 font-semibold text-sm leading-snug mb-2 group-hover:text-orange-400 transition-colors">
-                  {a.show}
-                </h3>
-                <p className="text-white/35 text-xs leading-relaxed mb-4 flex-1">
-                  {a.episode}
-                </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-[10px] text-white/20">
-                    {a.host ? `Host: ${a.host}` : 'Episode'}
-                    {a.date ? ` · ${a.date}` : ''}
-                  </span>
-                  <ChevronRight
-                    size={12}
-                    className="text-white/20 group-hover:text-orange-400 transition-colors"
-                  />
+          <div className="space-y-10">
+            {Object.entries(
+              appearances.reduce<Record<string, typeof appearances>>((acc, a) => {
+                const y = a.date.slice(0, 4)
+                ;(acc[y] ||= []).push(a)
+                return acc
+              }, {}),
+            )
+              .sort(([a], [b]) => b.localeCompare(a))
+              .map(([year, items]) => (
+                <div key={year}>
+                  <h3 className="text-white/25 text-xs font-mono tracking-widest mb-3">
+                    {year} &middot; {items.length}
+                  </h3>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {items.map((a) => (
+                      <a
+                        key={a.url}
+                        href={a.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rounded-xl p-5 border border-white/5 hover:border-orange-500/20 transition-all group no-underline flex flex-col"
+                      >
+                        <h4 className="text-white/80 font-semibold text-sm leading-snug mb-2 group-hover:text-orange-400 transition-colors">
+                          {a.show}
+                        </h4>
+                        <p className="text-white/35 text-xs leading-relaxed mb-4 flex-1">
+                          {a.episode}
+                        </p>
+                        <div className="flex items-center justify-between">
+                          <span className="text-[10px] text-white/20">{a.date}</span>
+                          <ChevronRight
+                            size={12}
+                            className="text-white/20 group-hover:text-orange-400 transition-colors"
+                          />
+                        </div>
+                      </a>
+                    ))}
+                  </div>
                 </div>
-              </a>
-            ))}
+              ))}
           </div>
         </div>
       </section>
@@ -606,10 +552,8 @@ export default function Evidence() {
                         '@type': 'PodcastEpisode',
                         name: a.episode,
                         url: a.url,
+                        datePublished: a.date,
                         partOfSeries: { '@type': 'PodcastSeries', name: a.show },
-                        ...(a.host
-                          ? { author: { '@type': 'Person', name: a.host } }
-                          : {}),
                       },
                     })),
                     ...hostedEpisodes.map((e, i) => ({
