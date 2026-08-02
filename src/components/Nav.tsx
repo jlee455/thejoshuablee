@@ -61,7 +61,7 @@ export default function Nav() {
               </a>
             ))}
             <a
-              href="https://standoutauthority.com/brand-launchpad/"
+              href="https://standoutauthority.com/services/"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-3 px-5 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold rounded-lg transition-all no-underline"

@@ -1,17 +1,19 @@
 import { useEffect, useState } from 'react'
 import { X } from 'lucide-react'
 
+// Desktop only, by design. Google penalizes intrusive interstitials on mobile,
+// and a mouseleave trigger has no touch equivalent worth faking.
 export default function ExitIntentPopup() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    const alreadyShown = sessionStorage.getItem('exitIntentShown')
+    const alreadyShown = sessionStorage.getItem('youmanizeScoreExitShown')
     if (alreadyShown) return
 
     const handleMouseLeave = (e: MouseEvent) => {
       if (e.clientY <= 0) {
         setVisible(true)
-        sessionStorage.setItem('exitIntentShown', '1')
+        sessionStorage.setItem('youmanizeScoreExitShown', '1')
         document.removeEventListener('mouseleave', handleMouseLeave)
       }
     }
@@ -46,28 +48,32 @@ export default function ExitIntentPopup() {
           Before You Go
         </div>
         <h2 className="text-2xl font-bold text-white leading-snug mb-4">
-          Discover the 3 hidden signals keeping you{' '}
-          <span className="text-orange-500">invisible to AI</span>.
+          AI is already answering questions about you.{' '}
+          <span className="text-orange-500">Do you know what it&rsquo;s saying?</span>
         </h2>
-        <p className="text-white/50 text-sm leading-relaxed mb-8">
-          Most founders don't have a visibility problem. They have an authority
-          structure problem. Find out which signals are missing.
+        <p className="text-white/50 text-sm leading-relaxed mb-6">
+          Your YOUmanize&trade; Score measures your digital credibility across 7 brand
+          trust signals &mdash; the same public evidence AI systems use to decide whether
+          you&rsquo;re the answer.
+        </p>
+        <p className="text-white/70 text-sm font-medium mb-8">
+          Most people have never seen their own.
         </p>
 
         <a
-          href="https://standoutauthority.com/3hiddensignals#hero"
+          href="https://youmanize.ai"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all no-underline text-sm glow-orange"
         >
-          Show Me the 3 Signals
+          Get My YOUmanize&trade; Score
         </a>
 
         <button
           onClick={() => setVisible(false)}
           className="block mx-auto mt-4 text-xs text-white/30 hover:text-white/50 transition-colors bg-transparent border-none cursor-pointer"
         >
-          No thanks, I'm good
+          Not right now
         </button>
       </div>
     </div>
