@@ -1,4 +1,5 @@
 import { ArrowRight, ChevronRight, Play, Mic, Star, Users, PenTool, ExternalLink, Quote } from 'lucide-react'
+import { publications } from '../data/publications'
 import { appearances } from '../data/appearances'
 import { recommendations as linkedinRecommendations } from '../data/recommendations'
 import { articleIndex } from '../data/articleIndex'
@@ -91,14 +92,14 @@ export default function Speaking() {
       <section className="py-16 border-b border-white/5">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 items-center">
-            {/* Derived from the data files behind /evidence, /insights and
-                /recommendations, so a number here can never drift away from the
-                list that backs it. */}
+            {/* Headline figures are Joshua's actual career totals. The line
+                beneath states how much of it is linked and checkable right now,
+                so the two numbers never read as a contradiction. */}
             {[
               { number: '50+', label: 'Stages' },
-              { number: String(appearances.length), label: 'Podcast Appearances' },
+              { number: '100+', label: 'Podcasts' },
+              { number: '200+', label: 'Publications' },
               { number: String(articleIndex.length), label: 'Articles Published' },
-              { number: String(linkedinRecommendations.length), label: 'LinkedIn Recommendations' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <p className="text-4xl md:text-5xl font-bold text-white mb-1">{stat.number}</p>
@@ -276,6 +277,14 @@ export default function Speaking() {
                 </div>
               ))}
             </div>
+            <p className="text-white/25 text-xs mt-8 max-w-2xl">
+              Career totals. What&rsquo;s linked and checkable right now:{' '}
+              <Link to="/evidence" className="text-orange-400/70 hover:text-orange-300 no-underline">
+                {appearances.length} podcast appearances, {publications.length} surviving
+                publication links, and {linkedinRecommendations.length} named recommendations
+              </Link>
+              . Older interview and article URLs rot; the record here is what still resolves.
+            </p>
           </div>
 
           {/* Articles */}

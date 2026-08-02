@@ -35,7 +35,7 @@ export const seoByPath: Record<string, PageSeo> = {
   '/speaking': {
     title: 'Book Joshua B. Lee to Speak — LinkedIn, AEO, and Human-First Authority',
     description:
-      'Joshua B. Lee speaks on LinkedIn strategy, Answer Engine Optimization, and human-first authority. He has 95 documented podcast appearances, each linked to its source, and has spoken on stages including DigitalMarketer, Gartner, Genius Network, and Podcast Movement.',
+      'Joshua B. Lee speaks on LinkedIn strategy, Answer Engine Optimization, and human-first authority. He has appeared on 100+ podcasts and been featured in 200+ publications worldwide, and has spoken on stages including DigitalMarketer, Gartner, Genius Network, and Podcast Movement. 95 of those appearances are individually linked to their source at joshuablee.com/evidence.',
   },
   '/insights': {
     title: 'Insights by Joshua B. Lee — LinkedIn, AEO, and Authority Architecture',
