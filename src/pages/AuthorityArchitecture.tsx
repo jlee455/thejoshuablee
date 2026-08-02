@@ -1,50 +1,4 @@
-import { Link } from 'react-router-dom'
-import { ArrowRight, Search, Brain, MessageSquare, Shield, Compass, Radio, Settings } from 'lucide-react'
-
-const layers = [
-  {
-    num: '01',
-    icon: Search,
-    title: 'Identity Excavation',
-    desc: 'Surface your lived experience, pattern recognition, contrarian beliefs, and proprietary thinking. Identify what you actually know that the market has not yet fully recognized.',
-  },
-  {
-    num: '02',
-    icon: Compass,
-    title: 'Market Alignment',
-    desc: 'Anchor your expertise in a problem space the market actually understands and values. Expertise only becomes authority when attached to a recognizable need or category.',
-  },
-  {
-    num: '03',
-    icon: MessageSquare,
-    title: 'Messaging Architecture',
-    desc: 'Design language that makes your expertise legible. Messaging is not decoration — it is translation. Ensure your thinking can be remembered, repeated, and associated with a specific idea.',
-  },
-  {
-    num: '04',
-    icon: Shield,
-    title: 'Trust Signal Mapping',
-    desc: 'Align proof, frameworks, narrative, and experience signals so they reinforce one another. Trust is not built by one strong asset — it is built through signal coherence.',
-  },
-  {
-    num: '05',
-    icon: Brain,
-    title: 'Content Direction',
-    desc: 'Determine how your ideas should be distributed through stories, frameworks, insights, and conversations. Content is not the strategy — it is the delivery mechanism.',
-  },
-  {
-    num: '06',
-    icon: Radio,
-    title: 'Authority Installation',
-    desc: 'Place structured signals across LinkedIn, websites, podcasts, articles, and other authority-bearing surfaces. This is where expertise moves from internal clarity to public recognition.',
-  },
-  {
-    num: '07',
-    icon: Settings,
-    title: 'Strategic Advisory',
-    desc: 'Ongoing refinement that ensures your authority system keeps compounding. Authority is not static — it strengthens through disciplined reinforcement.',
-  },
-]
+import { ArrowRight, ChevronRight, FileText, Search, UserCircle } from 'lucide-react'
 
 const faqs = [
   {
@@ -72,144 +26,280 @@ const faqs = [
 export default function AuthorityArchitecture() {
   return (
     <>
-      {/* Hero */}
-      <section className="pt-32 pb-24 relative">
+      {/* ============================================
+          HERO — Break their current understanding
+          ============================================ */}
+      <section className="pt-32 pb-20 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-navy-800/50 to-transparent" />
-        <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <p className="text-orange-500 font-semibold text-sm uppercase tracking-widest mb-4">
-            The Category
-          </p>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] mb-6">
+        <div className="relative max-w-3xl mx-auto px-6 lg:px-8">
+          <p className="text-white/20 text-sm uppercase tracking-widest font-semibold mb-8">
             Authority Architecture
-          </h1>
-          <p className="text-xl text-white/60 leading-relaxed max-w-2xl mx-auto mb-8">
-            The discipline of designing the signals that allow founders to become the
-            trusted answer in their category.
           </p>
-          <div className="glow-line" />
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.15] mb-8">
+            Most people aren't losing attention.{' '}
+            <span className="text-white/40">They're losing trust.</span>
+          </h1>
         </div>
       </section>
 
-      {/* The Shift */}
+      {/* ============================================
+          THE OLD GAME — What used to work
+          ============================================ */}
       <section className="py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-8">The Authority Shift</h2>
-          <div className="space-y-6 text-white/60 leading-relaxed">
-            <p>
-              For years, the advice was simple: post more, grow your audience, optimize engagement.
-              LinkedIn was a content game. The loudest voice won.
+          <div className="space-y-8 text-lg leading-relaxed">
+            <p className="text-white/50">
+              For years, the game was simple.
             </p>
-            <p>
-              That world is gone. Today your expertise is evaluated simultaneously by
-              human perception, search engines, AI systems, and digital trust signals — often before anyone
-              clicks, calls, or connects.
+            <p className="text-white/50">
+              Get seen. More content. More reach. More visibility. If people knew your name, opportunities followed.
             </p>
-            <p className="text-xl text-orange-400 font-semibold py-4 border-l-2 border-orange-500 pl-6">
-              In this environment, attention alone is no longer enough. Authority emerges when the
-              market repeatedly encounters recognizable signals connected to a specific idea.
+            <p className="text-white/50">
+              That worked. Until it didn't.
             </p>
-            <p>
-              AI can generate infinite content. Posting more won't save you.
-              The advantage now belongs to those whose thinking
-              is <span className="text-white font-semibold">recognizable</span> — not just on LinkedIn, but everywhere trust gets evaluated.
+            <p className="text-white/70 text-xl font-medium border-l-2 border-orange-500/40 pl-6">
+              We're stepping into a different kind of internet now. One where AI can generate content instantly. Where everyone can look polished. Where noise is no longer the barrier.
+            </p>
+            <p className="text-white/50">
+              Which means visibility is no longer scarce.
+            </p>
+            <p className="text-white/80 text-xl font-semibold">
+              Trust is.
             </p>
           </div>
         </div>
       </section>
 
-      {/* The 7 Layers */}
-      <section className="py-24 bg-navy-800/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              The Seven Layers
-            </h2>
-            <p className="text-lg text-white/50 max-w-2xl mx-auto">
-              Authority Architecture is built in seven strategic layers, each one
-              strengthening the foundation for the next.
+      {/* ============================================
+          THE GAP — Where most people fall behind
+          ============================================ */}
+      <section className="py-24 bg-navy-800/40">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <div className="space-y-8 text-lg leading-relaxed">
+            <p className="text-white/50">
+              And that's where most people are about to fall behind.
+            </p>
+            <p className="text-white/50">
+              Because they're still playing a game that rewards attention… in a world that's starting to filter for belief.
+            </p>
+            <p className="text-white/70 text-xl font-medium border-l-2 border-white/10 pl-6">
+              It's not about how often you show up anymore. It's about how you're experienced when you do.
+            </p>
+            <p className="text-white/50">
+              You can have thousands of views. Consistent content. A growing audience. And still not be the person people choose.
+            </p>
+            <p className="text-white/70">
+              Because being seen and being trusted are not the same thing.
+            </p>
+            <p className="text-white/40">
+              And most people never make that shift.
             </p>
           </div>
+        </div>
+      </section>
 
+      {/* ============================================
+          THE PROBLEM — What most authority is built on
+          ============================================ */}
+      <section className="py-24">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <div className="space-y-8 text-lg leading-relaxed">
+            <p className="text-white/50">
+              Right now, most authority is being built on:
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="flex items-center gap-3 p-4 rounded-xl border border-white/5 bg-white/[0.02]">
+                <FileText size={20} className="text-orange-500/40 shrink-0" />
+                <span className="text-white/40 text-lg">Performance</span>
+              </div>
+              <div className="flex items-center gap-3 p-4 rounded-xl border border-white/5 bg-white/[0.02]">
+                <Search size={20} className="text-orange-500/40 shrink-0" />
+                <span className="text-white/40 text-lg">Polish</span>
+              </div>
+              <div className="flex items-center gap-3 p-4 rounded-xl border border-white/5 bg-white/[0.02]">
+                <UserCircle size={20} className="text-orange-500/40 shrink-0" />
+                <span className="text-white/40 text-lg">Consistency</span>
+              </div>
+              <div className="flex items-center gap-3 p-4 rounded-xl border border-white/5 bg-white/[0.02]">
+                <ArrowRight size={20} className="text-orange-500/40 shrink-0" />
+                <span className="text-white/40 text-lg">Visibility</span>
+              </div>
+            </div>
+            <p className="text-white/50">
+              Which looks good… but doesn't hold up when people are actually deciding who they trust.
+            </p>
+            <p className="text-white/70 text-xl font-medium border-l-2 border-orange-500/40 pl-6">
+              Because trust isn't built through volume. It's built through clarity. Alignment. Presence. Consistency of truth.
+            </p>
+            <p className="text-white/50">
+              And that requires a completely different way of building.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          AUTHORITY ARCHITECTURE — The response
+          ============================================ */}
+      <section className="py-24 bg-navy-800/40">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <div className="space-y-8 text-lg leading-relaxed">
+            <p className="text-orange-500/60 text-sm uppercase tracking-widest font-semibold">
+              Authority Architecture
+            </p>
+            <p className="text-white/70 text-xl">
+              That's what Authority Architecture is. Not a framework. A foundation.
+            </p>
+            <p className="text-white/50">
+              It's how you build an identity people understand immediately. A presence people actually feel. A message that cuts through noise without needing more of it.
+            </p>
+            <p className="text-white/70 text-xl font-medium border-l-2 border-orange-500/40 pl-6">
+              It's the difference between being another voice in the feed… and being the person people think of when it actually matters.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          THE FRAMEWORK — Visual Architecture
+          ============================================ */}
+      <section className="py-24">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <p className="text-white/20 text-sm uppercase tracking-widest font-semibold mb-4 text-center">
+            The Framework
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-16 text-center">
+            Three pillars. One architecture.
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center p-8 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-orange-500/20 transition-all duration-300 card-hover">
+              <div className="w-16 h-16 rounded-2xl bg-orange-500/10 flex items-center justify-center mx-auto mb-6">
+                <span className="text-orange-500 text-2xl font-bold">01</span>
+              </div>
+              <h3 className="text-white font-bold text-lg mb-3">Identity Alignment</h3>
+              <p className="text-white/40 text-sm leading-relaxed">
+                Who you are and how you show up become the same thing. No performance. No persona. Just you — clear, consistent, and unmistakable.
+              </p>
+            </div>
+            <div className="text-center p-8 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-orange-500/20 transition-all duration-300 card-hover">
+              <div className="w-16 h-16 rounded-2xl bg-orange-500/10 flex items-center justify-center mx-auto mb-6">
+                <span className="text-orange-500 text-2xl font-bold">02</span>
+              </div>
+              <h3 className="text-white font-bold text-lg mb-3">Trust Signals</h3>
+              <p className="text-white/40 text-sm leading-relaxed">
+                The proof points that make people believe you before they meet you. Built across LinkedIn, search, AI discovery, and referral — not manufactured, earned.
+              </p>
+            </div>
+            <div className="text-center p-8 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-orange-500/20 transition-all duration-300 card-hover">
+              <div className="w-16 h-16 rounded-2xl bg-orange-500/10 flex items-center justify-center mx-auto mb-6">
+                <span className="text-orange-500 text-2xl font-bold">03</span>
+              </div>
+              <h3 className="text-white font-bold text-lg mb-3">Authority Compounding</h3>
+              <p className="text-white/40 text-sm leading-relaxed">
+                Every piece of content, every conversation, every interaction reinforces who you are. It compounds. It scales. It becomes inevitable.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-24 max-w-3xl mx-auto">
+            <img
+              src="/images/joshua-walking-forward.webp"
+              alt="Joshua B. Lee — moving forward"
+              className="w-full h-64 rounded-2xl object-cover object-top border border-white/5"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          WHY NOW — The zero-click reality
+          ============================================ */}
+      <section className="py-24">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <div className="space-y-8 text-lg leading-relaxed">
+            <p className="text-white/25 text-sm uppercase tracking-widest font-semibold">
+              Why this matters now
+            </p>
+            <p className="text-white/50">
+              In a zero-click world, people aren't searching the way they used to.
+            </p>
+            <p className="text-white/50">
+              They're being given answers. Curated. Filtered. Summarized.
+            </p>
+            <p className="text-white/50">
+              Which means the question is no longer:
+            </p>
+            <p className="text-white/40 text-xl italic pl-6">
+              "How do I get seen?"
+            </p>
+            <p className="text-white/50">
+              It's:
+            </p>
+            <p className="text-white font-bold text-2xl sm:text-3xl pl-6">
+              "How do I become the answer?"
+            </p>
+            <p className="text-white/50">
+              And that doesn't happen through more content. It happens through how clearly your authority is built.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          THE REALITY — Most people won't adjust
+          ============================================ */}
+      <section className="py-24 bg-navy-800/40">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <div className="space-y-8 text-lg leading-relaxed">
+            <p className="text-white/50">
+              Most people won't adjust.
+            </p>
+            <p className="text-white/50">
+              They'll keep posting. Keep optimizing. Keep trying to stay visible. And slowly become interchangeable.
+            </p>
+            <p className="text-white/70 text-xl font-medium border-l-2 border-orange-500/40 pl-6">
+              The ones who do adjust become the ones people trust. The ones people refer. The ones that show up in conversations even when they're not in the room.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          WHERE THIS SHOWS UP
+          ============================================ */}
+      <section className="py-24">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <div className="space-y-8 text-lg leading-relaxed">
+            <p className="text-white/25 text-sm uppercase tracking-widest font-semibold">
+              Where this shows up
+            </p>
+            <p className="text-white/50">
+              This isn't theory.
+            </p>
+            <p className="text-white/50">
+              This shows up in how you position yourself. How you communicate. How you show up on platforms like LinkedIn. How you get referenced in AI-driven environments. How people talk about you when you're not there.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================
+          FAQ — AEO structured data (kept for discoverability)
+          ============================================ */}
+      <section className="py-24 bg-navy-800/40">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <p className="text-white/25 text-sm uppercase tracking-widest font-semibold mb-10">
+            Questions people ask
+          </p>
           <div className="space-y-4">
-            {layers.map((layer) => (
-              <div
-                key={layer.num}
-                className="card-glass rounded-xl p-6 lg:p-8 hover:border-orange-500/20 transition-all group"
-              >
-                <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-8">
-                  <div className="flex items-center gap-4 lg:w-72 shrink-0">
-                    <span className="text-orange-500/30 font-mono text-sm font-bold">{layer.num}</span>
-                    <div className="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center group-hover:bg-orange-500/20 transition-colors">
-                      <layer.icon size={20} className="text-orange-500" />
-                    </div>
-                    <h3 className="text-white font-semibold">{layer.title}</h3>
-                  </div>
-                  <p className="text-white/50 text-sm leading-relaxed">{layer.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Core Insight */}
-      <section className="py-24">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
-            The Core Insight
-          </h2>
-          <div className="grid sm:grid-cols-3 gap-6">
-            <div className="card-glass rounded-xl p-6">
-              <p className="text-orange-500 text-sm font-semibold uppercase tracking-wider mb-2">Step 1</p>
-              <p className="text-white font-semibold">Recognizable ideas become repeatable.</p>
-            </div>
-            <div className="card-glass rounded-xl p-6">
-              <p className="text-orange-500 text-sm font-semibold uppercase tracking-wider mb-2">Step 2</p>
-              <p className="text-white font-semibold">Repeatable ideas become associated with a person.</p>
-            </div>
-            <div className="card-glass rounded-xl p-6">
-              <p className="text-orange-500 text-sm font-semibold uppercase tracking-wider mb-2">Step 3</p>
-              <p className="text-white font-semibold">That association creates category authority.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* AEO Ranking Signals */}
-      <section className="py-24 bg-navy-800/30">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4">AEO Ranking Signals</h2>
-            <p className="text-white/50">How AI decides who becomes the answer.</p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { title: 'Entity Clarity', desc: 'AI must clearly understand who you are, what you do, and what category you own.' },
-              { title: 'Authority', desc: 'Consistent signals across trusted platforms — LinkedIn, websites, podcasts, articles — that reinforce expertise.' },
-              { title: 'Recency', desc: 'Active, current signals that demonstrate ongoing relevance in your category.' },
-              { title: 'Accessibility', desc: 'Structured, crawlable content AI systems can extract, cite, and surface.' },
-            ].map((item) => (
-              <div key={item.title} className="card-glass rounded-xl p-6 text-center">
-                <h3 className="text-orange-400 font-bold mb-3">{item.title}</h3>
-                <p className="text-white/50 text-sm leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">
-            Common Questions About Authority Architecture
-          </h2>
-          <div className="space-y-6">
             {faqs.map((faq) => (
-              <div key={faq.q} className="card-glass rounded-xl p-6">
-                <h3 className="text-white font-semibold mb-3">{faq.q}</h3>
-                <p className="text-white/50 text-sm leading-relaxed">{faq.a}</p>
-              </div>
+              <details key={faq.q} className="group border border-white/5 rounded-xl bg-white/[0.02] hover:border-orange-500/10 transition-colors">
+                <summary className="flex items-center justify-between cursor-pointer p-6 text-white font-semibold list-none">
+                  {faq.q}
+                  <ChevronRight size={16} className="text-orange-500/40 group-open:rotate-90 transition-transform shrink-0 ml-4" />
+                </summary>
+                <p className="text-white/45 text-sm leading-relaxed px-6 pb-6">{faq.a}</p>
+              </details>
             ))}
           </div>
         </div>
@@ -230,61 +320,57 @@ export default function AuthorityArchitecture() {
         />
       </section>
 
-      {/* YOUmanize™ Score */}
-      <section className="py-24">
-        <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Measure Your Authority Signals
-          </h2>
-          <p className="text-white/50 leading-relaxed mb-8 max-w-2xl mx-auto">
-            The YOUmanize™ Score evaluates your presence across 7 trust signals: Authenticity, Consistency, Reciprocity, Relevance, Social Proof, Transparency, and Emotional Resonance. Get your free score to see where you stand.
-          </p>
-          <a
-            href="https://app.youmanize.ai/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-xl transition-all no-underline"
-          >
-            Get Your Free YOUmanize™ Score
-            <ArrowRight size={18} />
-          </a>
+      {/* ============================================
+          CLOSE — Resonance, not pitch
+          ============================================ */}
+      <section className="py-28">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <div className="space-y-6 text-lg leading-relaxed mb-12">
+            <p className="text-white/50">
+              If you're still playing the visibility game… this probably won't land.
+            </p>
+            <p className="text-white/70 text-xl font-medium">
+              If you can feel the shift happening… you're already paying attention to the right thing.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="https://standoutauthority.com/brand-launchpad/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all glow-orange no-underline text-sm"
+            >
+              Start at the Launchpad
+              <ArrowRight size={18} />
+            </a>
+            <a
+              href="https://app.youmanize.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 text-white/50 hover:text-white/70 no-underline text-sm transition-colors"
+            >
+              Get Your YOUmanize™ Score
+              <ChevronRight size={16} />
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-24 border-t border-white/5">
-        <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Ready to install your Authority Architecture?
-          </h2>
-          <p className="text-white/50 mb-8">
-            The 90-day system that turns founder expertise into category authority.
-          </p>
-          <Link
-            to="/work-with-me"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all glow-orange no-underline"
-          >
-            Explore the Offer
-            <ArrowRight size={18} />
-          </Link>
-        </div>
-      </section>
-
-      {/* HowTo Schema for AEO */}
+      {/* Schema for AEO — kept for AI discoverability */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'HowTo',
-            name: 'How to Build Authority Architecture',
-            description: 'A seven-layer system for designing the signals that allow founders to become the trusted answer in their category.',
-            step: layers.map((layer, i) => ({
-              '@type': 'HowToStep',
-              position: i + 1,
-              name: layer.title,
-              text: layer.desc,
-            })),
+            '@type': 'Service',
+            name: 'Authority Architecture',
+            provider: {
+              '@type': 'Person',
+              name: 'Joshua B. Lee',
+              url: 'https://joshuablee.com',
+            },
+            description: 'Authority Architecture is the discipline of designing the signals that allow founders to become the trusted answer in their category — across LinkedIn, search engines, AI systems, and digital trust signals.',
+            serviceType: 'Authority Building & Personal Brand Architecture',
           }),
         }}
       />

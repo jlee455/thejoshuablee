@@ -1,0 +1,52 @@
+# Build + hosting config for joshuablee.com, versioned with the code.
+# Netlify runs `npm run build`, which includes the prerender step — that is what
+# guarantees AI crawlers receive real HTML instead of an empty <div id="root">.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Vite 8 requires a modern Node. Pin it so builds are reproducible.
+  NODE_VERSION = "22"
+
+# Vite fingerprints these filenames, so a change always produces a new URL.
+# Safe to cache forever.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Image filenames are NOT fingerprinted — replacing an image reuses its name.
+# One week keeps them fast without stranding an update behind a year-long cache.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# HTML must revalidate so copy and schema changes go live immediately.
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+
+# NOTE: deliberately no SPA catch-all redirect. Every route is prerendered to a
+# real file, and a `/* -> /index.html 200` rule would return HTTP 200 for typo
+# URLs — soft-404s that dilute crawl quality. Unmatched paths get 404.html.

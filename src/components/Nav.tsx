@@ -4,10 +4,10 @@ import { Menu, X } from 'lucide-react'
 
 const links = [
   { to: '/', label: 'Home' },
-  { to: '/about', label: 'About' },
-  { to: '/authority-architecture', label: 'Authority Architecture' },
+  { to: '/about', label: 'My Story' },
+  { to: '/authority-architecture', label: 'Authority' },
   { to: '/work-with-me', label: 'Work With Me' },
-  { to: '/speaking', label: 'Speaking & Media' },
+  { to: '/speaking', label: 'Speaking' },
   { to: '/insights', label: 'Insights' },
 ]
 
@@ -60,6 +60,14 @@ export default function Nav() {
                 {link.label} ↗
               </a>
             ))}
+            <a
+              href="https://standoutauthority.com/brand-launchpad/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-3 px-5 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold rounded-lg transition-all no-underline"
+            >
+              Start Here
+            </a>
           </div>
 
           {/* Mobile toggle */}
@@ -74,7 +82,7 @@ export default function Nav() {
 
         {/* Mobile Nav */}
         {open && (
-          <div className="lg:hidden pb-6 space-y-1">
+          <div className="lg:hidden pb-6 space-y-1 mobile-menu-enter">
             {links.map((link) => (
               <Link
                 key={link.to}

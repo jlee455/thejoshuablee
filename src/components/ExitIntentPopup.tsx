@@ -26,12 +26,12 @@ export default function ExitIntentPopup() {
     <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4">
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+        className="absolute inset-0 bg-black/60 backdrop-blur-sm popup-overlay-enter"
         onClick={() => setVisible(false)}
       />
 
       {/* Card */}
-      <div className="relative w-full max-w-md rounded-2xl border border-white/10 bg-navy-900/95 backdrop-blur-xl p-8 shadow-2xl text-center">
+      <div className="relative w-full max-w-md rounded-2xl border border-white/10 bg-navy-900/95 backdrop-blur-xl p-8 shadow-2xl text-center popup-enter">
         {/* Close button */}
         <button
           onClick={() => setVisible(false)}
