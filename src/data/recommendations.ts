@@ -8,29 +8,41 @@ export type Recommendation = {
   company: string
   text: string
   date: string
+  profileUrl: string
 }
 
 export const recommendations: Recommendation[] = [
   {
-    name: 'Stuart Weintraub',
-    title: 'Founder, Waves of Love Wellness',
-    company: 'Transformational Travel/ Retreats / Virtual Workshops',
+    name: "Jane Lehman",
+    title: "Independent Associate",
+    company: "legalshield",
+    text: "I recently learned from Joshua B. Lee at the LinkedIn Summit. He opened the summit with a perspective that completely changed how I think about LinkedIn.   Josh explained why the conversation is shifting to Answer Engine Optimization (AEO). The goal is no longer to get clicks, but to become the answer when AI tools surface expertise. He gave clear steps we could implement immediately! In particular, his three action moves were simple, practical, and powerful.   I highly recommend learning from Josh, if you want to understand where LinkedIn visibility is heading and how AI tools decide whose voice gets amplified. His work helps professionals move from simply posting content to building real authority in an AI-shaped world.",
+    date: "2026-03-07",
+    profileUrl: "https://www.linkedin.com/in/janelehman1-legalissues-legal-law-lawyer",
+  },
+  {
+    name: "Stu Weintraub",
+    title: "Founder, WAVES OF  LOVE WELLNESS",
+    company: "Transformational Retreats l Workshops | Private Coaching",
     text: 'Joshua is clearly the go to expert for business owners who are entrepreneurs. In one :75 appearance group coaching session today, he shared the key aspects to follow in order to build relationships and stop “getting leads.” Solid.',
     date: '2025-08-21',
+    profileUrl: "https://www.linkedin.com/in/stuweintraub",
   },
   {
     name: 'WENDY SHORE',
-    title: 'Co-Founder',
-    company: 'Content Circle',
+    title: "Business Growth | LinkedIn™ Strategy + Brand Authority + AI Visibility",
+    company: "Wendy Shore & Co | Shore Advice",
     text: 'Joshua B. Lee is one of the reasons I truly leaned in on LinkedIn. If you want to grow on LinkedIn in a way that actually feels good and drives results—Joshua is the person you want in your corner. His insights and ability to cut through the noise have shaped the way I show up here. He’s not just a LinkedIn and AI expert. He’s a people-first leader who knows that real growth isn’t about gaming the algorithm...it’s about building real relationships. He walks his talk.',
     date: '2025-08-06',
+    profileUrl: "https://www.linkedin.com/in/wendyshore",
   },
   {
     name: 'Robb Bush',
-    title: 'Founder, CEO',
+    title: "Founder",
     company: 'INDUSTRY 5',
     text: 'I’ve had the good fortune to know Joshua here in Austin, and what he brings to the table is rare: Clarity, conviction, and a deep human connection in a space that’s often anything but. Joshua doesn’t just optimize LinkedIn, he strives to humanize it. He helps leaders show up with presence and purpose. If you’re tired of gimmicks and ready for meaningful, trust-driven visibility, he’s your guy.',
     date: '2025-07-31',
+    profileUrl: "https://www.linkedin.com/in/rbush",
   },
   {
     name: 'Margo Spilde',
@@ -38,6 +50,7 @@ export const recommendations: Recommendation[] = [
     company: 'EmpowerHer Wealth',
     text: 'I have taken two classes with Joshua to help me learn and understand LinkedIn for marketing myself and my business. He has helped me immensely because I could never figure it out. Joshua is kind and entertaining, and patient with questions. It is wonderful to do business with people who show genuine concern to help you succeed and see your business grow. You will be blessed to have Joshua and StandOut Authority help you with marketing and growth in business.',
     date: '2025-07-29',
+    profileUrl: "https://www.linkedin.com/in/margo-spilde-empowerher-wealth",
   },
   {
     name: '🎤 Dr. Jeremy Weisz',
@@ -45,6 +58,7 @@ export const recommendations: Recommendation[] = [
     company: 'Rise25, LLC',
     text: 'If you want to understand what real human connection looks like in the digital age, look no further than Joshua B Lee. I have deep respect for Joshua not just for his unmatched expertise in marketing, LinkedIn, and personal branding but also for the way he leads with heart. He has built something truly special with Standout Authority. In a world obsessed with lead generation and metrics, Joshua reminds us that people buy from people and that genuine connection is the most powerful strategy. Joshua’s philosophy is both refreshing and results-driven. He helps entrepreneurs and executives stop focusing on traditional marketing and start engaging in a way that is intentional, authentic, and impactful. His depth of knowledge on LinkedIn is exceptional, and the systems he has created to elevate personal brands are transformative. I have seen how his work creates real opportunities and meaningful influence without relying on hard selling. Joshua is the kind of leader who brings humanity back to digital interactions and makes the business world more thoughtful and effective. Jeremy',
     date: '2025-06-19',
+    profileUrl: "https://www.linkedin.com/in/drweisz",
   },
   {
     name: 'Vinnie Fisher',
@@ -52,13 +66,15 @@ export const recommendations: Recommendation[] = [
     company: 'SiteTrust',
     text: 'I\'ve learned that personal branding and strategic positioning can be the difference between struggling for visibility and becoming a recognized leader in your industry. Joshua Lee and his exceptional team have mastered LinkedIn profile management and brand strategy in ways that consistently produce remarkable results. Joshua isn\'t just another LinkedIn consultant—he\'s a true brand strategist who understands that professional success requires more than a polished profile. He grasps that your LinkedIn presence is often the first impression you make on potential clients and partners. Strategic Brand Development: What sets Joshua apart is his comprehensive approach. Rather than focusing solely on LinkedIn tactics, he begins with deep understanding of each client\'s unique value proposition, target audience, and business objectives. This creates LinkedIn strategies aligned with broader business goals. Done-With-You Excellence: Joshua\'s "done-with-you" model represents the best of both worlds. Rather than doing everything for clients or leaving them alone, he creates collaborative partnerships that educate while they execute. This ensures clients get outstanding results and develop skills to maintain their brand presence over time. Team Excellence: Joshua has assembled a team that shares his commitment to excellence and client success. The consistency of quality and attention to detail across all team members is remarkable. Results-Driven: Joshua and his team don\'t just create beautiful LinkedIn profiles—they create profiles that perform. They understand LinkedIn\'s algorithm, professional networking psychology, and elements that drive engagement. Most importantly, they translate LinkedIn activity into real business results. I\'ve witnessed professionals who worked with Joshua experience significant increases in inbound opportunities, speaking engagements, partnership proposals, and client inquiries. These aren\'t vanity metrics—they\'re business-changing outcomes that justify the investment many times over. Personal Investment: What distinguishes Joshua is his personal investment in each client\'s success. He approaches LinkedIn profile management as a strategic partnership where his success is tied to his clients\' achievements. Professionalism and Integrity: Joshua stands out for his integrity and professionalism. He sets realistic expectations, communicates clearly, and delivers consistently on commitments. For any professional who recognizes their LinkedIn presence as a critical business asset, I wholeheartedly recommend Joshua Lee and his outstanding team. If you\'re ready to win more opportunities and position yourself as a leader in your field, Joshua should be your first call.',
     date: '2025-05-30',
+    profileUrl: "https://www.linkedin.com/in/vinniefisher",
   },
   {
     name: 'Mark Weisenburger',
-    title: 'Fractional VP of Sales / Sales Manager',
-    company: 'Revenue Resilience Partners',
+    title: "Farm Legacy Advisor | Speaker | Author",
+    company: "WeisenburgerThe Grounded Farmer",
     text: 'I would highly recommend Joshua to anyone that is looking to capitalize on LinkedIn to build your brand and authority. He definitely know his stuff. I\'m already gaining traction even before having the opportunity to implement everything he has shared with me. Joshua is truly the "Dopamine Dealer of LinkedIn." Thank you Joshua for pouring your heart and soul out and sharing everything you know.',
     date: '2024-12-02',
+    profileUrl: "https://www.linkedin.com/in/weisenburger",
   },
   {
     name: 'Matthew Hagberg',
@@ -66,6 +82,7 @@ export const recommendations: Recommendation[] = [
     company: 'M&M Global Marketing',
     text: 'I’ve had the privilege of collaborating with Josh on numerous client projects and co-branded ventures, and I can confidently say that he is a true visionary in the digital world. Josh brings a rare blend of expertise and authenticity to every project he touches. His deep understanding of the balance between human connection and digital strategy is unmatched, and his passion for helping others stand out shines through in every interaction. Josh\'s ability to craft compelling stories and build personal brands is nothing short of inspiring. He doesn’t just focus on the metrics but genuinely invests in creating real, lasting connections for his clients. Whether you\'re an executive or a business owner, Josh knows how to elevate your presence on LinkedIn, helping you achieve visibility and drive meaningful opportunities without ever feeling transactional. I’ve personally witnessed his dedication to weaving human connections into the fabric of digital marketing. Working alongside him has been an enriching experience, as he consistently delivers results while maintaining a grounded approach to business success. His leadership at Standout Authority exemplifies how to integrate business growth with authenticity and purpose. For anyone seeking to amplify their personal brand or business, Josh is your go-to partner. His expertise, combined with his heartfelt approach to connecting with others, makes him a standout authority in every sense.',
     date: '2024-10-03',
+    profileUrl: "https://www.linkedin.com/in/matthagberg",
   },
   {
     name: 'Anna Choi',
@@ -73,6 +90,7 @@ export const recommendations: Recommendation[] = [
     company: 'SolJoy',
     text: 'I HIGHLY recommend Joshua B Lee as the LI master!! Working with him inspired me to level up my LI game and own who I am. Prior to that, I had no structure or way of connecting with people in a way that felt authentic to me than just feed an algorithm. It went beyond LI to really being unapologetic for who I am and what I offer in the world. I took actions I would never have thought or knew to take that transitioned me from FB to trusting LI as my go to platform for business. He\'s warm, kind hearted, and authentic in caring about you and your business. Definitely work with him!',
     date: '2024-01-24',
+    profileUrl: "https://www.linkedin.com/in/annasunchoi",
   },
   {
     name: 'Eric Saunders',
@@ -80,13 +98,15 @@ export const recommendations: Recommendation[] = [
     company: 'Utah Army National Guard',
     text: 'Josh is one of a kind. Not only is he a master at his craft, but his ability to simplify and create RESULTS is out of this world.',
     date: '2024-01-14',
+    profileUrl: "https://www.linkedin.com/in/ej-saunders",
   },
   {
     name: 'Mark de Grasse',
-    title: 'Chief Marketing Officer',
-    company: 'Man-UP! Life Coaching',
+    title: "Chief AI Officer",
+    company: "Pasos al Éxito",
     text: 'I know Josh talks about being the "Dopamine Dealer of Linkedin," but he deals out Dopamine EVERYWHERE. His positivity and practical approach to making "human to human" (H2H) connections extends beyond Linkedin into everything he does, including meetings, presentations, and each conversation I\'ve had with him. He helped me re-optimize my Linkedin page and changed my practices when it comes to engaging people on the platform, allowing me to massively extend awareness of my personal brand and DigitalMarketer.com. I highly recommend talking to him if you want to extend your reach in a genuine and effective manner.',
     date: '2023-03-10',
+    profileUrl: "https://www.linkedin.com/in/markdegrasse",
   },
   {
     name: 'Sandra Rennard, MBCP, MBCI',
@@ -94,13 +114,15 @@ export const recommendations: Recommendation[] = [
     company: 'The Kavi Group',
     text: 'Rachel and Josh led a session with my team where they encouraged us to share more of our authentic selves on linked in. I have to admit my initial reaction was one of resistance- my work persona has always been more private and it seemed like a big chasm to jump. However, they encouraged me to share more of what makes me distinctly me on linked in and I have recently shared more about my history, what motivates me and my own personal voice (literally a link to audio of me telling a personal story). I never would have imagined doing this before their session and it has been one more way of extending my comfort zone and growing. I highly recommend both Rachel and Josh from Standout Authority!',
     date: '2023-02-02',
+    profileUrl: "https://www.linkedin.com/in/sandra-rennard-mbcp-mbci",
   },
   {
-    name: 'James R S Williams CHPC',
-    title: 'Leadership Performance | Change Management Coach',
+    name: "James R S Williams CHPC / CIC",
+    title: "Leader of People & Culture Development",
     company: 'Joe Knows Energy',
     text: 'Without a doubt, yes, Josh is a highly skilled individual who understands people and how to build a valuable network, how to deliver value, how to standout in the ever over populated online world. All great traits, but for me, the thing that stands Josh apart is the fact that he is person of high integrity, a generous and passionate advocate for business being done the human way and somebody that will always deliver for you.',
     date: '2022-10-11',
+    profileUrl: "https://www.linkedin.com/in/james-r-s-williams",
   },
   {
     name: 'Said Baaghil',
@@ -108,13 +130,15 @@ export const recommendations: Recommendation[] = [
     company: 'The Baaghil',
     text: 'If there is one person I would pick as an expert who knows the value of Linkedin and how it works, it\'s Joshua. If there is one person on Linkedin that makes a lot of sense on business growth and creator economy, it\'s Joshua. You can never go wrong with Joshua. Baaghil A Global Brand Consultant, Author, and Speaker.',
     date: '2022-06-16',
+    profileUrl: "https://www.linkedin.com/in/baaghil",
   },
   {
-    name: 'Brian Johnson',
-    title: 'President',
-    company: 'www.brianjohnsoncoaching.com',
+    name: "Beth Jasmine",
+    title: "Energy Analyst",
+    company: "Shell",
     text: 'Josh & Rachel have transformed my ability to serve my clients and all those who consume my content! They have helped me understand how to get way more traction organically which has helped me serve more amazing humans committed to upgrading themselves! They are genuinely amazing humans and they care about me & my ability to serve & reach more people . Check them out!',
     date: '2022-05-15',
+    profileUrl: "https://www.linkedin.com/in/thebrianjohnson",
   },
   {
     name: 'Kris Ward',
@@ -122,13 +146,15 @@ export const recommendations: Recommendation[] = [
     company: 'Win the Hour Win the Day',
     text: 'Josh is a great resource for any entrepreneur! He is succinct as he deliver high value content! It\'s simple powerful and to the point!!',
     date: '2022-04-14',
+    profileUrl: "https://www.linkedin.com/in/kriswardscalewithvirtualassistants",
   },
   {
-    name: 'Carol Kagunyi  Learning Facilitator',
+    name: "Carol Kagunyi",
     title: 'Founder and CEO',
     company: 'Brain Power Café',
     text: 'I met Joshua partly through Club House and more personally through a entrepreneurship digital coaching program I’m undertaking called the Lyons Den. He presented a powerful and quite informative MasterClass on how we can optimize LinkedIn more effectively to grow our businesses. Thank you Joshua! I am doing my best to implement what I found useful to enhancing my LinkedIn growth. -Carol Kagunyi-',
     date: '2022-03-01',
+    profileUrl: "https://www.linkedin.com/in/carolkagunyi",
   },
   {
     name: 'Diliyan Manolov',
@@ -136,6 +162,7 @@ export const recommendations: Recommendation[] = [
     company: 'HR Mavericks',
     text: 'Joshua really makes you enjoy the privilege of having the most powerful social media in your pocket. I started using his tips and am getting unexpected success in being seen by more meaningful to my coaching and consulting persons.',
     date: '2022-02-24',
+    profileUrl: "https://www.linkedin.com/in/diliyan-manolov-11a6787b",
   },
   {
     name: 'John Jones',
@@ -143,6 +170,7 @@ export const recommendations: Recommendation[] = [
     company: 'World Financial Group (WFG)',
     text: 'Joshua demistified a mysterious process for me with the Accelerator program. It is hard for professuionals like myself to humanize how we aproach the business world and his program does just that. I would add that this is even more important now when more business is being done virtually. With the pandemic reducing the opportunities for face to face networking, LinkedIn is becoming more important. I was impressed by the way that Josh seems to be aware of the latest developments in the ever evolving LinkedIn ecosystem.',
     date: '2021-11-19',
+    profileUrl: "https://www.linkedin.com/in/johnjonescpa",
   },
   {
     name: 'Fahad Kiani',
@@ -150,13 +178,15 @@ export const recommendations: Recommendation[] = [
     company: 'CrisPRO',
     text: 'Joshua is a good person who puts in a lot of effort to help the community on LinkedIn. It is good to have his presence on this platform and having him as a mentor.',
     date: '2021-05-05',
+    profileUrl: "https://www.linkedin.com/in/fjkiani",
   },
   {
-    name: 'Jeff Lapides',
+    name: "Jeffrey Lapides",
     title: 'Founder/Owner',
     company: 'Freesites.com LLC',
     text: 'Joshua is all about people. Once we met, it seemed like I was instantly introduced to a literal who\'s who of all the best people we needed to know. Sometimes, they were low profile people that carried a lot of weight and hard to find without Joshua. Almost every introduction was enriching to our PPC initiatives. Joshua\'s giving nature has always been consistent with our high standards, values, and ethics. You can trust Joshua! Jeff Lapides Freesites.com LLC.',
     date: '2021-04-15',
+    profileUrl: "https://www.linkedin.com/in/freesites",
   },
   {
     name: 'Boaz Fischer',
@@ -164,6 +194,7 @@ export const recommendations: Recommendation[] = [
     company: 'Australian Institute of Insider Threats',
     text: 'In today’s global social media, there is minimal human-to-human relationship. People are fixated by “Likes” and about the number of Friends and Connections that they have. But such measures rarely bring forward results. Josh B. Lee has brought in a wonderful and REAL new perspective of how human-to-human communication and connection can occur on a social media platform like LinkedIn. I was fortunate enough to partake in Josh B. Lee LinkedIn Authority Accelerator course. It was great. It was educational. It was “human”. It was revealing, and importantly Josh spent a considerable amount of time providing us with a proven methodology of how one can use LinkedIn to develop relationships and, importantly, leads. If you want to grow your business and use LinkedIn as a Social Media platform than Josh is your guy!',
     date: '2021-03-09',
+    profileUrl: "https://www.linkedin.com/in/boaz-fischer",
   },
   {
     name: 'Kristin Shea, RICP®',
@@ -171,13 +202,15 @@ export const recommendations: Recommendation[] = [
     company: 'Do Business. Do Life. Podcast',
     text: 'Joshua B Lee is an incredible human being - in addition to being an incredible business person and LinkedIn (and clubhouse!!) expert. Working with JBL has been an absolute game changer for me and my LinkedIn. He has saved me a significant amount of time, streamlined my days, took my engagement/audience to a level that I would not have been able to achieve on my own, and therefore taken my business to new heights. He’s an absolute rockstar and operates with the definition of a servants heart. Proud to call you a friend.',
     date: '2021-03-09',
+    profileUrl: "https://www.linkedin.com/in/workwithkristin",
   },
   {
     name: 'Evan Weber',
     title: 'Founder',
-    company: 'Affiliate Finders',
+    company: "Experience Advertising",
     text: 'Joshua is a great person to be connected with and do business with. I really like Joshua\'s approach to creating Linkedin content, which delivers a lot of value to his readers. He\'s the kind of person you want to work with and I highly recommend working with Joshua if you get the chance.',
     date: '2021-02-18',
+    profileUrl: "https://www.linkedin.com/in/worldsgreatestmarketer",
   },
   {
     name: 'Chris Botvidson',
@@ -185,13 +218,15 @@ export const recommendations: Recommendation[] = [
     company: 'Fuel & Spark Media',
     text: 'Joshua is a real connector, and totally understands the value of "giving" before you "get." His approach of genuine human interaction, and building actual meaningful relationships on LinkedIn is a breath of fresh air. There are way too many people who do mass automated outreach on LinkedIn. Joshua is channeling the value of real human connection, and his approach works.',
     date: '2021-02-18',
+    profileUrl: "https://www.linkedin.com/in/chrisbotvidson",
   },
   {
     name: 'Khrystian Veals',
-    title: 'Biblical Illustrator',
+    title: "Illustrator",
     company: 'Joycode',
     text: 'Had the distinct pleasure of hearing Josh speak at a Mastermind group on the Human to Human Movement on social media. It was beyond valuable and ultimately a life changing paradigm shift for me. Josh knows LinkedIn and knows people, if you see him on a speaker lineup it\'s not a lecture you want to miss, and don\'t forget your notebook! Thanks Josh for that beyond impactful LinkedIn Lecture.',
     date: '2021-01-27',
+    profileUrl: "https://www.linkedin.com/in/khrystian-veals",
   },
   {
     name: 'Hayley Akins',
@@ -199,6 +234,7 @@ export const recommendations: Recommendation[] = [
     company: 'Motion Hatch',
     text: 'Josh taught a fantastic workshop on how to start utilising LinkedIn. I loved that he advocated for more human connections. It really opened my mind to how we can use LinkedIn for my own business but also to help others grow. If you have a chance to work with Josh I would say go for it, he really knows his stuff.',
     date: '2021-01-22',
+    profileUrl: "https://www.linkedin.com/in/hayleyakins",
   },
   {
     name: 'Ronnie Crowley',
@@ -206,6 +242,7 @@ export const recommendations: Recommendation[] = [
     company: 'Entrepreneurs\' Organization',
     text: 'Experienced Joshua recently in a group coaching session with Jamie Masters. 10 pages of notes later, I\'m ready to take my Linkedin process to the next level. Thanks for sharing your time! Ronnie',
     date: '2021-01-16',
+    profileUrl: "https://www.linkedin.com/in/ronniecrowley",
   },
   {
     name: 'Philip Ideson',
@@ -213,13 +250,15 @@ export const recommendations: Recommendation[] = [
     company: 'Art of Procurement',
     text: 'Josh helped us transform the way that we approach LinkedIn, from mindset to tactics. He advocates a very different approach that is centered upon building a human connection and engagement. Josh understands how LinkedIn is changing before it happens, and how the people we want to connect with are changing the way they want to be engaged with.',
     date: '2021-01-14',
+    profileUrl: "https://www.linkedin.com/in/philipideson",
   },
   {
     name: 'Ryan Snow',
-    title: 'Author, Speaker/Trainer, Coach',
+    title: "Founder, ScaleSmart Method™ | Scaling Service Businesses from $1M–$3M+",
     company: 'Explosive Sales Growth',
     text: 'Working with Joshua B Lee has been an amazing experience. We have brought him into our mastermind group to share his thoughts on how to grow a pipeline through LinkedIn outreach and engagement. He is a wealth of knowledge and brings so much gold and value to every conversation!',
     date: '2021-01-05',
+    profileUrl: "https://www.linkedin.com/in/ryansnowteam",
   },
   {
     name: 'Shawn Cartwright',
@@ -227,6 +266,7 @@ export const recommendations: Recommendation[] = [
     company: 'TCCII',
     text: 'Recently experienced Joshua present at Brian Kurtz\'s Titans group. His H2H (Human to Human) approach to networking strongly resonated. Joshua is one of the most knowledgeable experts on social marketing who is willing to share and genuinely seems to have his client\'s best interest at heart.',
     date: '2020-11-06',
+    profileUrl: "https://www.linkedin.com/in/shawn-cartwright",
   },
   {
     name: 'Blake Menefee',
@@ -234,6 +274,7 @@ export const recommendations: Recommendation[] = [
     company: 'SHI International Corp.',
     text: 'If you\'re looking for a Linkedin expert look no further. I can\'t say enough about how much Josh\'s coaching helped me and my team stand out from all the noise on Linkedin. I was an on and off user with a SSI score of low 60s. I followed his advice and it was so impactful that I received 400k views on one post and another article I wrote was chosen as a Linkedin editors choice! I am now in the 1% of my network and 1% of my industry with a SSI score 85. I went from feeling like this was a chore to truly loving having a voice. Thank you Josh for all your wisdom!',
     date: '2020-10-13',
+    profileUrl: "https://www.linkedin.com/in/blakemenefee",
   },
   {
     name: 'GORDON BUFTON',
@@ -241,6 +282,7 @@ export const recommendations: Recommendation[] = [
     company: 'GENIUS CREATORS',
     text: 'Joshua is the man. He was super helpful in tweaking and improving my LI profile. It\'s the little things that he shared with me that are making the biggest impact. If you\'re thinking about working with him ... do it. You\'ll be able to impact more clients and change more lives. Thanks, Joshua.',
     date: '2020-10-06',
+    profileUrl: "https://www.linkedin.com/in/gordonbufton",
   },
   {
     name: 'Brian Kurtz',
@@ -248,6 +290,7 @@ export const recommendations: Recommendation[] = [
     company: 'Titans Marketing LLC',
     text: 'Joshua Lee is a LinkedIn expert...and so much more. But don’t just ask me...ask the world class direct response marketers in my Titans Mastermind group where Josh wowed them with both techniques and strategies to create the most powerful profile imaginable on LinkedIn...and beyond. Brian Kurtz, Titans Marketing and author of “Overdeliver” (www.OverdeliverBook.com) and “The Advertising Solution” (www.TheLegendsBook.com)',
     date: '2020-09-30',
+    profileUrl: "https://www.linkedin.com/in/brian-kurtz-a1934",
   },
   {
     name: 'Mark Wade',
@@ -255,6 +298,7 @@ export const recommendations: Recommendation[] = [
     company: 'American Posture Institute',
     text: 'Josh is a ROCKSTAR. He spoke at my mastermind, as well as helped me facilitate an event in Austin and not only was it a phenomenal event he really over delivered. Appreciate him very much!',
     date: '2020-09-24',
+    profileUrl: "https://www.linkedin.com/in/drmarkwade",
   },
   {
     name: 'Brandon Brunson',
@@ -262,6 +306,7 @@ export const recommendations: Recommendation[] = [
     company: 'Procore Technologies',
     text: 'Joshua B. Lee delivered a virtual LinkedIn training session, which was attended by approximately 150 team members at Gartner ranging from junior associates to VPs. During the session, he provided actionable advice on several important topics including the most effective ways to engage others on LinkedIn, best practices for growing your network and recommendations for building compelling content, among other topics. The session was incredibly valuable and senior leaders within the organization have already requested that Joshua deliver the same training to other teams across the business. Joshua’s depth of expertise and experience in this area are evident and I strongly recommend this training for any business looking to expand their network and boost engagement via LinkedIn.',
     date: '2020-09-18',
+    profileUrl: "https://www.linkedin.com/in/brandon-brunson-1668922",
   },
   {
     name: 'Jeffrey Schneider',
@@ -269,6 +314,7 @@ export const recommendations: Recommendation[] = [
     company: 'The Tax Relief Company',
     text: 'Joshua always shares valuable tips about growing your company using LinkedIn. We try to mostly follow his recommendations and keep up to date on LI practices. Thank you, Joshua, for your time all you do for us.',
     date: '2020-09-18',
+    profileUrl: "https://www.linkedin.com/in/jeffreyschneiderea",
   },
   {
     name: 'Marc Freedman',
@@ -276,27 +322,23 @@ export const recommendations: Recommendation[] = [
     company: 'Expense To Profit',
     text: 'We decided to partner with Joshua B. Lee for our training program for our new Channel Partners to help them navigate the B2B selling that would be necessary to be successful. We recently had a new partner review and completed the training program yesterday. I asked if they felt there was any session that they felt was most helpful? He responded that the three different sessions with JBL\'s LinkedIn training were extremely valuable! Additionally, all of the 15 partners that went thru the live training all gave him ⭐️⭐️⭐️⭐️⭐️!',
     date: '2020-09-16',
-  },
-  {
-    name: 'Tiffany Toombs',
-    title: 'Founder',
-    company: 'Elite Performance Consulting',
-    text: 'Joshua\'s Human 2 Human marketing strategy is powerful, and really resonated with me and my values. He provides such an incredible amount of value and shows that he truly cares about making the world a better place, and his clients, through everything that he does! Thank you Joshua for being you and for the incredible knowledge you continue to share!',
-    date: '2020-03-24',
+    profileUrl: "https://www.linkedin.com/in/freedmanmarc",
   },
   {
     name: 'Ashley Glenn',
-    title: 'Founder & Operator',
+    title: "Founder & Chief Creative Officer",
     company: 'NextGen Creative Agency',
     text: 'Josh and I both spoke on an interview at the Digital Marketer Headquarters in Austin, TX. He was incredibly knowledgeable about LinkedIn Influencer Marketing and dropped tons of value bombs. As entrepreneurs we can sometimes have the loneliest job in the world, I\'m honored to share this journey with amazing people like Josh who make it fun and exciting!',
     date: '2019-08-20',
+    profileUrl: "https://www.linkedin.com/in/ashbglenn",
   },
   {
     name: 'Amy Matthews',
-    title: 'Founder',
-    company: 'Woman UnRuled',
+    title: "Founder + Executive Advisor",
+    company: "Amy Matthews Consulting",
     text: 'Josh is amazing to work with. He guided me in developing my signature program and continues to help me with my LI strategy. He\'s super knowledgable, highly intuitive, authentic and gets it. If you\'re thinking of working with Josh, do not hesitate!',
     date: '2019-04-19',
+    profileUrl: "https://www.linkedin.com/in/amy-matthews-41798a",
   },
   {
     name: 'Gregory Montesano',
@@ -304,20 +346,23 @@ export const recommendations: Recommendation[] = [
     company: 'Re-Bath Fairfield County',
     text: 'Josh has been an incredible resource for my startup on LinkedIn and during the overall planning stages of our business strategy. His approach is authentic, he holds his clients accountable (which speeds up progress) and there is a fountain of idea generation when you collaborate with him. He’s helped me to put out quality content and engage with the LinkedIn community. I feel as though his approach separates people that are adding true value as opposed to others who are just out there trying to sell their product or service. I’m grateful to have been introduced to him and highly recommend him to anyone that is looking to enhance their messaging and presence on LinkedIn.',
     date: '2019-03-25',
+    profileUrl: "https://www.linkedin.com/in/gregory-montesano-70a12a8",
   },
   {
-    name: 'James R S Williams CHPC',
-    title: 'Leadership Performance | Change Management Coach',
+    name: "James R S Williams CHPC / CIC",
+    title: "Leader of People & Culture Development",
     company: 'Joe Knows Energy',
     text: 'There is no doubt in Joshua\'s skills, experience and know how when it comes to social media strategy on Linkedin. The gold standard quality that Josh really displayed to us which kept us coming back to him for support is his values. That our strategy is all about human connection and relationships in this world online that some have forgotten. An authentic leader in his field showing us how to be successful in business and human connection.',
     date: '2019-03-25',
+    profileUrl: "https://www.linkedin.com/in/james-r-s-williams",
   },
   {
     name: 'Paul Higgins',
-    title: 'Business Mentor & Strategic Partner',
+    title: "Mentor to SaaS Partners",
     company: 'Paul Higgins Mentoring',
     text: 'There is no denying LinkedIn is a great platform for B2B sales. What many don’t realise is how to best leverage it. I thought I was doing a decent effort until I had a session with Joshua. He gave me an entire different way of looking at adding value to people on LinkedIn which completely changed the dynamic. Instead of cold outreach, Joshua has an ingenious way of connecting with potential clients which converts well and makes you feel comfortable. The results were immediate. He is highly knowledgeable, caring and helpful. I highly recommend having a cup of coffee session with Joshua. You will not be disappointed.',
     date: '2019-03-21',
+    profileUrl: "https://www.linkedin.com/in/paulhigginsmentoring",
   },
   {
     name: 'Jody Milward',
@@ -325,6 +370,7 @@ export const recommendations: Recommendation[] = [
     company: 'Social Charlie',
     text: 'Joshua is one of the sharpest guys around when it comes to using social media to make genuine connections with potential clients. He\'s been around the block enough times to know what works with regards to strategy, but also the psychology behind it all. He communicates with such clarity that you have complete understanding of the how and the why when it comes to using Social Media to build your business relationships.',
     date: '2019-03-02',
+    profileUrl: "https://www.linkedin.com/in/jodymilward",
   },
   {
     name: 'Victor Pierantoni',
@@ -332,6 +378,7 @@ export const recommendations: Recommendation[] = [
     company: 'Zen Stoic',
     text: 'Josh reminded me of one of the most valuable lessons in business... we are all human beings. Prior to working with Josh, admittedly I had some cynicism regarding social media due to the massive saturation of people selling unethically online, spamming others and having no sense of sincerity. Josh opened my eyes again and showed me the power of just being a sincere human online and build my business ethically through social media. This mentality paired with Josh\'s strategies for building a business has been an absolute game-changer for me! If you\'re looking for to build your business online in a way you can feel great about, reach out to Josh today! He\'s the man!',
     date: '2019-01-10',
+    profileUrl: "https://www.linkedin.com/in/victor-pierantoni",
   },
   {
     name: 'Charles Meyer',
@@ -339,6 +386,7 @@ export const recommendations: Recommendation[] = [
     company: 'Digital Authority Partners',
     text: 'I have had the pleasure of working with Josh since his Business Development days at Adfirmative, which is over 11 years ago. Josh is the founder of Adfirmative which was an important Demand Partner to 7Search.com. Josh was an integral part of the growth of this Partnership and his Technical knowledge and creative approach to our Partnership facilitated an above average rate of revenue growth to the 7Search Business. His Technical knowledge of PPC, Display and Interactive Advertising is unchallenged! Josh is awesome to work with and is always looking for new ways to expand current Partnerships as well as Revenue Driving Technologies!',
     date: '2018-01-10',
+    profileUrl: "https://www.linkedin.com/in/charlesmeyer1biz",
   },
   {
     name: 'Billy Widner',
@@ -346,27 +394,23 @@ export const recommendations: Recommendation[] = [
     company: 'Brett/Robinson Vacation Rentals',
     text: 'Josh is a very innovative leader who is always finding new ways to accomplish goals for himself and others. His imagination and strategic implementation of ideas make him a great business partner. I look forward to the opportunity to work with Josh again in the future.',
     date: '2013-02-06',
+    profileUrl: "https://www.linkedin.com/in/billywidner",
   },
   {
     name: 'Ohad Ben Ari',
-    title: 'Client Relations Manager Digital Payments',
+    title: "Senior Client Relationship Manager Digital Payments",
     company: 'Nuvei',
     text: 'Joshua is extremely knowledgeable about all types of Media and comes across as very ethical and credible, I am definitely looking forward making more and more business Cooperation with Joshua in the future!',
     date: '2013-01-30',
+    profileUrl: "https://www.linkedin.com/in/ohad-ben-ari",
   },
   {
     name: 'Shaun Stark',
-    title: 'Head of Corporate Development North America',
-    company: 'Simply.TV',
+    title: "Owner/Founder",
+    company: "Stark Structures LLC",
     text: 'Joshua is a very smart business man and his ideas and research are top notch in his industry',
     date: '2013-01-28',
-  },
-  {
-    name: 'Curtis Lee',
-    title: 'VP',
-    company: 'National Processing Company',
-    text: 'Joshua is bright, energetic and honest. He works very hard to make his company the best that it can be. You can always trust Joshua to do the most professional work/job whenever you hire him and/or his company. He is quite profficient and takes great pain to please his clients.',
-    date: '2013-01-26',
+    profileUrl: "https://www.linkedin.com/in/shaun-stark-2b53262",
   },
   {
     name: 'Dan Lopez',
@@ -374,13 +418,15 @@ export const recommendations: Recommendation[] = [
     company: 'ZuZuSearch',
     text: 'Joshua watches the day-to-day activities closely and is in constant communication whenever there is an issue to deal with. He is very detail oriented and work collaboratively to solve problems.',
     date: '2013-01-25',
+    profileUrl: "https://www.linkedin.com/in/danlopez2",
   },
   {
     name: 'ROBERT PATTERI',
-    title: 'Partner/Head of Human Capital Practice',
+    title: "SVP/Partner, Partner Success and Member Onboarding",
     company: 'Connex Partners',
     text: 'In the ever changing world of online advertising, it\'s good to know there are some constants: Josh is one of them. He is a team player whose consistent drive for success never compromises his integrity or desire to build lasting relationships. Josh is a great influence on our industry!',
     date: '2013-01-25',
+    profileUrl: "https://www.linkedin.com/in/robertpatteri",
   },
   {
     name: 'Paul Tuvelman',
@@ -388,6 +434,7 @@ export const recommendations: Recommendation[] = [
     company: 'Clixconversions, LLC',
     text: 'I\'ve been dealing with Joshua and his company several years already, and he has always been straight forward and trustworthy person. He\'s been always great to work with, and responsive to any questions that arise. I highly recommend him and his company to anyone who is looking for the trusted partners.',
     date: '2013-01-25',
+    profileUrl: "https://www.linkedin.com/in/paul-t-a0960631",
   },
   {
     name: 'Todd Krauss',
@@ -395,6 +442,7 @@ export const recommendations: Recommendation[] = [
     company: 'Horsing Around Stables',
     text: 'Josh is great to work with. Always responsive and ready to help out in any way. Knows his stuff and will do what it takes to make things work. Happy to be working with him and we are building a great business together.',
     date: '2013-01-25',
+    profileUrl: "https://www.linkedin.com/in/toddkrauss",
   },
   {
     name: 'Steve Burris',
@@ -402,6 +450,7 @@ export const recommendations: Recommendation[] = [
     company: 'Northwest Street LLC',
     text: 'Joshua is one of longest-running, best connected guys in the industry. Thanks Josh, for working with us over the years!',
     date: '2013-01-24',
+    profileUrl: "https://www.linkedin.com/in/stburris",
   },
   {
     name: 'Joel Greene',
@@ -409,6 +458,7 @@ export const recommendations: Recommendation[] = [
     company: 'The Immunity Code',
     text: 'Josh is a proven leader and a highly capable entrepreneur. He has an amazing ability to network effectively and bring people together to work toward a common goal. He has very high integrity and is someone you can trust to do what he says. I can\'t recommend him enough.',
     date: '2013-01-24',
+    profileUrl: "https://www.linkedin.com/in/joel-greene-a68b764",
   },
   {
     name: 'Aaron Hogan, PMP, NCSO',
@@ -416,6 +466,7 @@ export const recommendations: Recommendation[] = [
     company: 'Canadian Nuclear Laboratories',
     text: 'I\'ve worked with Josh for several years across a number of companies, I believe we first met in 2007 and since then our relationship couldn\'t be better, he\'s easy to reach, talk to, and work with. Josh\'s level of professionalism and expertise has been a great asset when discussing various strategies in regards to different methods of supplying traffic to my various advertisers and ad feed partners for both of the companies I have been employed by in the last 5 years. I would recommend Josh to any of my colleagues or other partners as a reliable partner and business associate.',
     date: '2013-01-24',
+    profileUrl: "https://www.linkedin.com/in/aaronhogan",
   },
   {
     name: 'Michael Veni',
@@ -423,6 +474,7 @@ export const recommendations: Recommendation[] = [
     company: 'Awareness Technologies',
     text: 'I have come to know Joshua over the years in bsuiness, and found him to have the highest standards of intergrity along with superior product knowledge.',
     date: '2009-03-18',
+    profileUrl: "https://www.linkedin.com/in/michael-veni-1b026a3",
   },
   {
     name: 'Levi John Jr.',
@@ -430,6 +482,7 @@ export const recommendations: Recommendation[] = [
     company: 'Syzemik Sourcing & Contracting LLC',
     text: 'Josh has a gift for understanding the inner-workings of a very complex virtual world. Some of the biggest issues I faced with respect to distribution I came to Josh. I rarely left without a comprehensive approach to solving the problem - let alone a simple answer. - A genuine good guy.',
     date: '2008-11-05',
+    profileUrl: "https://www.linkedin.com/in/lj144k",
   },
   {
     name: 'B. Peter Amiri',
@@ -437,6 +490,7 @@ export const recommendations: Recommendation[] = [
     company: 'PAI Industries, Inc.',
     text: 'I have known Joshua for several years now and have always been impressed with his high integrity and dedication.',
     date: '2008-06-10',
+    profileUrl: "https://www.linkedin.com/in/peteramiri",
   },
   {
     name: 'Tullio Siragusa',
@@ -444,6 +498,7 @@ export const recommendations: Recommendation[] = [
     company: 'Inventrica Advisory',
     text: 'Joshua is an internet media expert and highly effective executive who possesses a rare combination of vision and execution. It was a pleasure working with him.',
     date: '2008-05-13',
+    profileUrl: "https://www.linkedin.com/in/tulliosiragusa",
   },
   {
     name: 'Pete Neumann',
@@ -451,6 +506,7 @@ export const recommendations: Recommendation[] = [
     company: 'Tough House Productions',
     text: 'Josh Lee is an all-around good guy. He has a great sense of his business and where it is going. Josh is brutally honest, and that is a good thing in an industry dominated by spin and exaggeration. I also consider Josh a personal friend based on our friendly and collaborative interactions throughout the years.',
     date: '2008-05-04',
+    profileUrl: "https://www.linkedin.com/in/peteneumann",
   },
   {
     name: 'Mark Capuano',
@@ -458,6 +514,7 @@ export const recommendations: Recommendation[] = [
     company: 'Waitlist Workshops',
     text: 'Josh has provided many lucrative solutions for me to help monetize my websites. He has developed quality long-standing relationships with many reputable companies and has maintained these relationships by satisfying both his partners and his clients. I am one of them.',
     date: '2008-04-23',
+    profileUrl: "https://www.linkedin.com/in/mcapuano",
   },
   {
     name: 'Sarah Chafer',
@@ -465,6 +522,7 @@ export const recommendations: Recommendation[] = [
     company: 'Rhythm66',
     text: 'Josh has been a great person to know throughout the tradeshow circut. We\'ve ended up networking a lot mutual contacts throughout the industry. Overall he is a standup guy.',
     date: '2008-04-15',
+    profileUrl: "https://www.linkedin.com/in/sarahprescottchafer",
   },
   {
     name: 'Joseph Kuzma',
@@ -472,6 +530,15 @@ export const recommendations: Recommendation[] = [
     company: 'AdworldMedia',
     text: 'Example: Joshua is a detail-oriented manager who watches the balance sheet like a hawk without ever losing sight of the strategic objective.',
     date: '2008-04-11',
+    profileUrl: "https://www.linkedin.com/in/jkuzma",
+  },
+  {
+    name: "Jeffrey Lapides",
+    title: "Founder/Owner",
+    company: "Freesites.com LLC",
+    text: "Joshua always follow through.",
+    date: "2008-04-10",
+    profileUrl: "https://www.linkedin.com/in/freesites",
   },
   {
     name: 'Yaron Galant',
@@ -479,6 +546,7 @@ export const recommendations: Recommendation[] = [
     company: 'Kiteworks',
     text: 'Josh\'s knowledge and entrepreneurial spirit make him a considerable player in the space. He is creative, has great vision, and is a pleasure to interact with.',
     date: '2008-04-01',
+    profileUrl: "https://www.linkedin.com/in/yarongalant",
   },
   {
     name: 'Rich Kahn',
@@ -486,13 +554,15 @@ export const recommendations: Recommendation[] = [
     company: 'Anura.io',
     text: 'Josh is a great individual to work with. He works hard to make sure both parties maximize the earning potential from each relationship. I have known Josh for the past few years and can tell you he is a straight shooter and a trust worthy person. I have enjoyed our relationship from both a personal and business level.',
     date: '2008-03-25',
+    profileUrl: "https://www.linkedin.com/in/richkahn",
   },
   {
     name: 'Trevor Lakier',
     title: 'CEO & Co-Founder',
-    company: 'FastHomeQuote',
+    company: "HomeCalls",
     text: 'I have worked with Josh for several years now, and he has been an excellent business partner. Our two companies have generated healthy business together, and his keen understanding of the Industry has allowed for consistent growth in our relationship.',
     date: '2008-03-25',
+    profileUrl: "https://www.linkedin.com/in/trevorlakier",
   },
   {
     name: 'Kia Stora',
@@ -500,6 +570,7 @@ export const recommendations: Recommendation[] = [
     company: 'SPACEMOB',
     text: 'Joshua is one of the few trusted Entrepreneurs currently in the Search Space. His experience, coupled with his drive to get the best results makes him a key player in search. I recommend him highly.',
     date: '2008-03-25',
+    profileUrl: "https://www.linkedin.com/in/kiastora",
   },
   {
     name: 'Jeff Leishman',
@@ -507,6 +578,7 @@ export const recommendations: Recommendation[] = [
     company: 'Avenue 5 Media, LLC',
     text: 'We have worked with Joshua Lee for the past 2 years and can highly recommend him and the services Leads & Feeds provides. Joshua operates a competent and highly effective company and the staff he employs are second to none. We look forward to many years of a continued business relationship with Leads & Feeds.',
     date: '2008-03-25',
+    profileUrl: "https://www.linkedin.com/in/jeffleishman",
   },
   {
     name: 'Dominic Lipari',
@@ -514,6 +586,7 @@ export const recommendations: Recommendation[] = [
     company: 'LF Media',
     text: 'I have known and worked with Josh for several years. Josh always demonstrates top-notch business acumen and an excellent level of knowledge in the search/advertising arena. You couldn’t ask for a better business contact on as many levels.',
     date: '2007-10-22',
+    profileUrl: "https://www.linkedin.com/in/dominic-lipari-0878aa5",
   },
   {
     name: 'Tiffany Green',
@@ -521,5 +594,6 @@ export const recommendations: Recommendation[] = [
     company: 'The Port of Virginia',
     text: 'Josh is wonderful to work with. His knowledge of the industry and truth in business make him a real commodity and a pleasure to do business with..',
     date: '2007-10-22',
+    profileUrl: "https://www.linkedin.com/in/tiffanymitchell",
   },
 ]
