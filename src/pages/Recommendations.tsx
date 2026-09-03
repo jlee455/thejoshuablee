@@ -3,6 +3,15 @@ import { ChevronRight } from 'lucide-react'
 import { recommendations } from '../data/recommendations'
 
 const ORIGIN = 'https://joshuablee.com'
+const JOSHUA_LINKEDIN = 'https://www.linkedin.com/in/joshuablee'
+
+const formatLinkedInDate = (date: string) =>
+  new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(`${date}T00:00:00Z`))
 
 export default function Recommendations() {
   const byYear = recommendations.reduce<Record<string, typeof recommendations>>(
@@ -26,8 +35,12 @@ export default function Recommendations() {
           </h1>
           <p className="text-white/40 leading-relaxed mb-4">
             These are LinkedIn recommendations written for Joshua B. Lee by clients,
-            colleagues, and founders he has worked with, going back to 2007. Each one is
-            public on his LinkedIn profile and reproduced here word for word.
+            colleagues, and founders he has worked with, going back to 2007. Every
+            recommendation here is reproduced word for word from LinkedIn and checked
+            against Josh&apos;s own LinkedIn data export on 3 September 2026. Each one
+            links to the person who wrote it, except two where we could not confirm the
+            profile and left the name unlinked rather than point you at the wrong person. LinkedIn shows recommendations only to
+            signed-in members, which is why they live here too.
           </p>
           <p className="text-white/70 font-medium">
             Nothing here is anonymous. Every quote carries a name, a title, and a company.
@@ -50,15 +63,50 @@ export default function Recommendations() {
                       key={`${r.name}-${i}`}
                       className="rounded-xl p-6 border border-white/5 bg-white/[0.02]"
                     >
-                      <blockquote className="text-white/60 text-sm leading-relaxed m-0">
+                      <blockquote
+                        cite={r.profileUrl}
+                        className="text-white/60 text-sm leading-relaxed m-0"
+                      >
                         &ldquo;{r.text}&rdquo;
                       </blockquote>
                       <div className="mt-4 pt-4 border-t border-white/5">
-                        <p className="text-white/80 text-sm font-semibold m-0">{r.name}</p>
+                        <p className="text-white/80 text-sm font-semibold m-0">
+                          {r.profileUrl ? (
+                            <a
+                              href={r.profileUrl}
+                              target="_blank"
+                              rel="noopener"
+                              className="text-white/80 hover:text-orange-400 transition-colors no-underline"
+                            >
+                              {r.name}
+                            </a>
+                          ) : (
+                            <span>{r.name}</span>
+                          )}
+                        </p>
                         <p className="text-white/30 text-xs m-0">
                           {r.title}
                           {r.title && r.company ? ' · ' : ''}
                           {r.company}
+                        </p>
+                        <p className="text-white/30 text-xs mt-2 mb-0">
+                          Written on LinkedIn{' '}
+                          <time dateTime={r.date}>{formatLinkedInDate(r.date)}</time>
+                          {r.profileUrl ? (
+                            <>
+                              {' · '}
+                              <a
+                                href={r.profileUrl}
+                                target="_blank"
+                                rel="noopener"
+                                className="text-white/40 hover:text-orange-400 transition-colors no-underline"
+                              >
+                                View profile on LinkedIn
+                              </a>
+                            </>
+                          ) : (
+                            <span> · Profile not confirmed, so this name is not linked</span>
+                          )}
                         </p>
                       </div>
                     </li>
@@ -66,6 +114,16 @@ export default function Recommendations() {
                 </ul>
               </div>
             ))}
+          <p className="text-white/35 text-xs pt-2">
+            Wrote one of these and want it changed or removed? Email{' '}
+            <a
+              href="mailto:josh@standoutauthority.com"
+              className="text-white/50 hover:text-orange-400 transition-colors no-underline"
+            >
+              josh@standoutauthority.com
+            </a>
+            .
+          </p>
         </div>
       </section>
 
@@ -90,37 +148,48 @@ export default function Recommendations() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'CollectionPage',
-            '@id': `${ORIGIN}/recommendations#collection`,
-            name: 'Recommendations for Joshua B. Lee',
-            description: `${recommendations.length} LinkedIn recommendations written for Joshua B. Lee by clients, colleagues, and founders since 2007. Each is attributed to a named person with their title and company.`,
-            about: { '@id': `${ORIGIN}/#person` },
-            mainEntity: {
-              '@type': 'ItemList',
-              numberOfItems: recommendations.length,
-              itemListElement: recommendations.map((r, i) => ({
-                '@type': 'ListItem',
-                position: i + 1,
-                item: {
-                  '@type': 'Review',
-                  reviewBody: r.text,
-                  ...(r.date ? { datePublished: r.date } : {}),
-                  author: {
-                    '@type': 'Person',
-                    name: r.name,
-                    ...(r.title ? { jobTitle: r.title } : {}),
-                    ...(r.company
-                      ? { worksFor: { '@type': 'Organization', name: r.company } }
-                      : {}),
-                  },
-                  itemReviewed: {
-                    '@type': 'Person',
-                    '@id': `${ORIGIN}/#person`,
-                    name: 'Joshua B. Lee',
-                  },
+            '@graph': [
+              {
+                '@type': 'Person',
+                '@id': `${ORIGIN}/#person`,
+                name: 'Joshua B. Lee',
+                sameAs: [JOSHUA_LINKEDIN],
+              },
+              {
+                '@type': 'CollectionPage',
+                '@id': `${ORIGIN}/recommendations#collection`,
+                name: 'Recommendations for Joshua B. Lee',
+                description: `${recommendations.length} LinkedIn recommendations written for Joshua B. Lee by clients, colleagues, and founders since 2007. Each is attributed to a named person with their title, company, and LinkedIn profile.`,
+                about: { '@id': `${ORIGIN}/#person` },
+                mainEntity: {
+                  '@type': 'ItemList',
+                  numberOfItems: recommendations.length,
+                  itemListElement: recommendations.map((r, i) => ({
+                    '@type': 'ListItem',
+                    position: i + 1,
+                    item: {
+                      '@type': 'Review',
+                      reviewBody: r.text,
+                      datePublished: r.date,
+                      author: {
+                        '@type': 'Person',
+                        name: r.name,
+                        ...(r.profileUrl ? { sameAs: r.profileUrl } : {}),
+                        ...(r.title ? { jobTitle: r.title } : {}),
+                        ...(r.company
+                          ? { worksFor: { '@type': 'Organization', name: r.company } }
+                          : {}),
+                      },
+                      itemReviewed: {
+                        '@type': 'Person',
+                        '@id': `${ORIGIN}/#person`,
+                        name: 'Joshua B. Lee',
+                      },
+                    },
+                  })),
                 },
-              })),
-            },
+              },
+            ],
           }),
         }}
       />

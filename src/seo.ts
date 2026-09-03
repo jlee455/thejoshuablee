@@ -51,7 +51,7 @@ export const seoByPath: Record<string, PageSeo> = {
     title:
       'Recommendations for Joshua B. Lee — 73 Named Endorsements from Clients and Founders',
     description:
-      'Joshua B. Lee has received 73 public LinkedIn recommendations from clients, colleagues, and founders since 2007. Each is attributed to a named person with their job title and company, and reproduced verbatim.',
+      'Joshua B. Lee has received 73 LinkedIn recommendations from clients, colleagues, and founders since 2007. Each is verified against his LinkedIn data export and linked to the person who wrote it.',
   },
 }
 
