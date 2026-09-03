@@ -37,11 +37,20 @@ function validate(html) {
   const blockquoteCites = [...html.matchAll(/<blockquote\s+cite="([^"]+)"/g)].map(
     (match) => match[1],
   )
-  if (blockquoteCites.length !== 73) {
-    errors.push(`Rendered page contains ${blockquoteCites.length} cited blockquotes instead of 73`)
+  // Two authors could not be confirmed against the Connections export. Their names render
+  // unlinked, on purpose, rather than send a reader to the wrong person's profile. The two
+  // are named here so this contract fails if the set silently grows or is quietly relinked.
+  const UNCONFIRMED_PROFILE_AUTHORS = new Set(['Beth Jasmine', 'Tiffany Green'])
+  const LINKED = 73 - UNCONFIRMED_PROFILE_AUTHORS.size
+  if (blockquoteCites.length !== LINKED) {
+    errors.push(`Rendered page contains ${blockquoteCites.length} cited blockquotes instead of ${LINKED}`)
   }
-  if ((html.match(/View profile on LinkedIn/g) ?? []).length !== 73) {
-    errors.push('Rendered page does not contain 73 profile proof labels')
+  if ((html.match(/View profile on LinkedIn/g) ?? []).length !== LINKED) {
+    errors.push(`Rendered page does not contain ${LINKED} profile proof labels`)
+  }
+  const unlinkedNotes = (html.match(/Profile not confirmed, so this name is not linked/g) ?? []).length
+  if (unlinkedNotes !== UNCONFIRMED_PROFILE_AUTHORS.size) {
+    errors.push(`Rendered page shows ${unlinkedNotes} unconfirmed-profile notes instead of ${UNCONFIRMED_PROFILE_AUTHORS.size}`)
   }
   if ((html.match(/Written on LinkedIn/g) ?? []).length !== 73) {
     errors.push('Rendered page does not contain 73 LinkedIn date labels')
@@ -50,8 +59,15 @@ function validate(html) {
   const expectedByProfile = new Map()
   for (const review of reviews) {
     const profileUrl = review?.author?.sameAs
+    const authorName = review?.author?.name ?? '(unnamed)'
+    if (profileUrl === undefined && UNCONFIRMED_PROFILE_AUTHORS.has(authorName)) {
+      if (!review.reviewBody || !/^\d{4}-\d{2}-\d{2}$/.test(review.datePublished ?? '')) {
+        errors.push(`Review by ${authorName} lacks verbatim body or ISO publication date`)
+      }
+      continue
+    }
     if (!/^https:\/\/(?:www\.)?linkedin\.com\/in\/[^\s?#]+\/?$/i.test(profileUrl ?? '')) {
-      errors.push(`Review author ${review?.author?.name ?? '(unnamed)'} has no valid LinkedIn sameAs URL`)
+      errors.push(`Review author ${authorName} has no valid LinkedIn sameAs URL`)
       continue
     }
     if (!review.reviewBody || !/^\d{4}-\d{2}-\d{2}$/.test(review.datePublished ?? '')) {
@@ -78,6 +94,7 @@ function validate(html) {
   const requiredCopy = [
     'Every recommendation here is reproduced word for word from LinkedIn and checked',
     'against Josh',
+    'except two where we could not confirm the',
     'own LinkedIn data export on 3 September 2026.',
     'LinkedIn shows recommendations only to',
     'signed-in members, which is why they live here too.',

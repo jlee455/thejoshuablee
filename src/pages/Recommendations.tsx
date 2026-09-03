@@ -38,7 +38,8 @@ export default function Recommendations() {
             colleagues, and founders he has worked with, going back to 2007. Every
             recommendation here is reproduced word for word from LinkedIn and checked
             against Josh&apos;s own LinkedIn data export on 3 September 2026. Each one
-            links to the person who wrote it. LinkedIn shows recommendations only to
+            links to the person who wrote it, except two where we could not confirm the
+            profile and left the name unlinked rather than point you at the wrong person. LinkedIn shows recommendations only to
             signed-in members, which is why they live here too.
           </p>
           <p className="text-white/70 font-medium">
@@ -70,14 +71,18 @@ export default function Recommendations() {
                       </blockquote>
                       <div className="mt-4 pt-4 border-t border-white/5">
                         <p className="text-white/80 text-sm font-semibold m-0">
-                          <a
-                            href={r.profileUrl}
-                            target="_blank"
-                            rel="noopener"
-                            className="text-white/80 hover:text-orange-400 transition-colors no-underline"
-                          >
-                            {r.name}
-                          </a>
+                          {r.profileUrl ? (
+                            <a
+                              href={r.profileUrl}
+                              target="_blank"
+                              rel="noopener"
+                              className="text-white/80 hover:text-orange-400 transition-colors no-underline"
+                            >
+                              {r.name}
+                            </a>
+                          ) : (
+                            <span>{r.name}</span>
+                          )}
                         </p>
                         <p className="text-white/30 text-xs m-0">
                           {r.title}
@@ -87,15 +92,21 @@ export default function Recommendations() {
                         <p className="text-white/30 text-xs mt-2 mb-0">
                           Written on LinkedIn{' '}
                           <time dateTime={r.date}>{formatLinkedInDate(r.date)}</time>
-                          {' · '}
-                          <a
-                            href={r.profileUrl}
-                            target="_blank"
-                            rel="noopener"
-                            className="text-white/40 hover:text-orange-400 transition-colors no-underline"
-                          >
-                            View profile on LinkedIn
-                          </a>
+                          {r.profileUrl ? (
+                            <>
+                              {' · '}
+                              <a
+                                href={r.profileUrl}
+                                target="_blank"
+                                rel="noopener"
+                                className="text-white/40 hover:text-orange-400 transition-colors no-underline"
+                              >
+                                View profile on LinkedIn
+                              </a>
+                            </>
+                          ) : (
+                            <span> · Profile not confirmed, so this name is not linked</span>
+                          )}
                         </p>
                       </div>
                     </li>
@@ -163,7 +174,7 @@ export default function Recommendations() {
                       author: {
                         '@type': 'Person',
                         name: r.name,
-                        sameAs: r.profileUrl,
+                        ...(r.profileUrl ? { sameAs: r.profileUrl } : {}),
                         ...(r.title ? { jobTitle: r.title } : {}),
                         ...(r.company
                           ? { worksFor: { '@type': 'Organization', name: r.company } }

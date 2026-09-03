@@ -8,7 +8,9 @@ export type Recommendation = {
   company: string
   text: string
   date: string
-  profileUrl: string
+  // Optional: two authors could not be confirmed against the export, so their names
+  // render unlinked rather than point a reader at the wrong person's profile.
+  profileUrl?: string
 }
 
 export const recommendations: Recommendation[] = [
@@ -138,7 +140,6 @@ export const recommendations: Recommendation[] = [
     company: "Shell",
     text: 'Josh & Rachel have transformed my ability to serve my clients and all those who consume my content! They have helped me understand how to get way more traction organically which has helped me serve more amazing humans committed to upgrading themselves! They are genuinely amazing humans and they care about me & my ability to serve & reach more people . Check them out!',
     date: '2022-05-15',
-    profileUrl: "https://www.linkedin.com/in/thebrianjohnson",
   },
   {
     name: 'Kris Ward',
@@ -594,6 +595,5 @@ export const recommendations: Recommendation[] = [
     company: 'The Port of Virginia',
     text: 'Josh is wonderful to work with. His knowledge of the industry and truth in business make him a real commodity and a pleasure to do business with..',
     date: '2007-10-22',
-    profileUrl: "https://www.linkedin.com/in/tiffanymitchell",
   },
 ]
