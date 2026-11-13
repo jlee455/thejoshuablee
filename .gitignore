@@ -25,3 +25,6 @@ dist-ssr
 
 # LinkedIn export working files (contain private data - never commit)
 /linkedin-export/
+
+# Local Netlify connection metadata
+.netlify/
