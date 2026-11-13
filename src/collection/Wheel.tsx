@@ -32,8 +32,8 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
       if (el.dataset.pairId !== shoe.id) {
         el.dataset.pairId = shoe.id
         el.setAttribute('aria-label', `View ${shoe.name}`)
-        const images = el.querySelectorAll('img')
-        images.forEach((img, i) => { img.src = floatPhoto(shoe) ?? ''; img.alt = i ? '' : shoe.name })
+        const images = el.querySelectorAll('svg')
+        images.forEach(svg => { const s = shoe.showcase; svg.setAttribute('viewBox', s?.viewBox.join(' ') ?? '0 0 1024 800'); svg.setAttribute('aria-label', shoe.name); const img = svg.querySelector('image')!; img.setAttribute('href', s?.src ?? floatPhoto(shoe) ?? ''); img.setAttribute('width', String(s?.width ?? 1024)); img.setAttribute('height', String(s?.height ?? 800)); })
       }
       el.dataset.wheelPosition = String(index)
       el.classList.toggle('center', index === anchor)
@@ -123,7 +123,7 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
       <div className="wheel-architecture" aria-hidden="true"><div className="spotlight left" /><div className="spotlight right" /><div className="orbit orbit-back" /><div className="orbit orbit-front" /><div className="wheel-plinth" /><span className="vault-watermark">THE VAULT</span></div>
       <div className="wheel-track">
         {slots.map(slot => <button key={slot} ref={el => { pool.current[slot] = el }} type="button" className="wheel-item" tabIndex={-1}>
-          <span className="shoe-aura" /><span className="wheel-photo"><img alt="" draggable={false} /></span><span className="shoe-shadow" /><span className="shoe-reflection" aria-hidden="true"><img alt="" draggable={false} /></span>
+          <span className="shoe-aura" /><span className="wheel-photo"><svg preserveAspectRatio="xMidYMax meet" role="img"><image/></svg></span><span className="shoe-shadow" /><span className="shoe-reflection" aria-hidden="true"><svg preserveAspectRatio="xMidYMax meet" role="img"><image/></svg></span>
         </button>)}
       </div>
       <span className="drag-affordance"><MoveHorizontal size={19} /> Drag to spin</span>

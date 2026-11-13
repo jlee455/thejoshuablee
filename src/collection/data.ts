@@ -1,4 +1,5 @@
 export interface Pair {
+  showcase?: { src: string; viewBox: number[]; width: number; height: number; ai: boolean; direction: string }
   wall_order?: number
   float_photos?: string[]
   photos?: { src: string; thumbnail: string; full: string; sourceName: string; sourceUrl?: string }[]

@@ -41,3 +41,31 @@
 .pair-card{overflow:visible;transform-style:preserve-3d;transition:transform .10s ease-out,box-shadow .2s ease}
 .pair-card:after{background:radial-gradient(430px 300px at var(--mx,50%) var(--my,50%),rgba(255,255,255,.13),transparent 65%)}
 @media(prefers-reduced-motion:reduce){.pair-card{transform:none}.wheel-photo{animation:none}}
+
+/* Sole-anchored display: intrinsic silhouette bounds, not inconsistent photo padding. */
+.wheel-photo{position:absolute;inset:9% 4% 0;transform:none!important;filter:brightness(var(--brightness,1)) saturate(var(--saturation,1));}
+.wheel-photo svg,.shoe-reflection svg{display:block;width:100%;height:100%;overflow:visible;pointer-events:none}
+.wheel-photo svg{filter:drop-shadow(0 -1px 1px #e0f2ff88) drop-shadow(-6px -3px 12px #ff8a3030) drop-shadow(9px 16px 10px #0009)}
+.wheel-item.center .wheel-photo svg{filter:drop-shadow(0 -1px 1px #e0f2ffbb) drop-shadow(-8px -4px 14px #ff8a3040) drop-shadow(12px 19px 12px #000b)}
+.shoe-reflection{inset:104% 4% -95%;opacity:calc(var(--reflection,.2)*.6);mask-image:linear-gradient(transparent 65%,#000 100%)}
+.shoe-shadow{bottom:-4%;height:7%;left:9%;right:9%}
+.pair-card{display:block;align-self:start;contain:layout;isolation:isolate}
+.pair-card .card-image{display:block;position:relative;width:100%;height:clamp(190px,19vw,300px);aspect-ratio:auto;transform:none;overflow:visible}
+.pair-card .card-image .showcase-shoe{position:absolute;left:4%;bottom:11px;width:92%;height:92%;display:block;overflow:visible;filter:drop-shadow(0 -1px 1px #fff4) drop-shadow(0 4px 3px #0009);transform:none}
+.pair-card .card-image:after{bottom:-3px;height:10px;left:12%;right:12%;z-index:-1}
+.pair-card>.shelf{margin:0 -7px;transform:none;position:relative;z-index:1}
+.pair-card>.card-info{position:relative;transform:none;padding-top:25px;display:block}
+.pair-card:hover .showcase-shoe{filter:drop-shadow(0 -1px 2px #fff6) drop-shadow(0 5px 4px #000a)}
+.featured-pairs .showcase-shoe{position:static;flex-shrink:0;height:150px;width:100%;margin:12px 0;filter:drop-shadow(0 12px 9px #000a)}
+@media(max-width:690px){
+ .pair-card{transform:none!important;transform-style:flat;contain:layout;overflow:visible}
+ .pair-card .card-image{height:clamp(135px,43vw,240px);transform:none!important}
+ .pair-card .card-image .showcase-shoe{transform:none!important;backface-visibility:visible}
+ .pair-card>.shelf{margin:0 -4px;transform:none!important}
+ .pair-card>.card-info{transform:none!important;padding-top:23px}
+ .pair-card:after{display:none}
+ .featured-pairs .showcase-shoe{height:90px}
+ .wheel-photo{inset:6% 4% 0}
+}
+
+.pair-card .card-open{top:10px;bottom:auto;right:0;opacity:.55}

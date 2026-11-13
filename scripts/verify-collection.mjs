@@ -8,6 +8,12 @@ for(const id of ['P12','B12','V36'])assert.ok(!j.pairs.some(p=>p.id===id),`${id}
 for(const number of [29,47,62,108])assert.ok(j.pairs.some(p=>p.wall_order===number))
 for(const p of j.pairs){
  assert.ok(p.float_photos.length>0,p.id)
+ const s=p.showcase
+ assert.ok(s && fs.existsSync('public'+s.src),`${p.id}: missing showcase artwork`)
+ assert.ok(s.viewBox.length===4 && s.viewBox.every(Number.isFinite),`${p.id}: invalid silhouette bounds`)
+ const [x,y,w,h]=s.viewBox
+ assert.ok(x>=0 && y>=0 && w>0 && h>0 && x+w<=s.width && y+h<=s.height,`${p.id}: silhouette exceeds image`)
+ assert.equal(s.direction,'right',`${p.id}: showcase direction not reviewed`)
  assert.equal(p.float_photos.length,p.photos?.length??p.angles,p.id)
  for(const f of p.float_photos)assert.ok(fs.existsSync('public'+f),`${p.id}: ${f}`)
  for(const f of p.photos??[])assert.ok(fs.existsSync('public'+f.full),f.full)

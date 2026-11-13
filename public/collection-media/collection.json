@@ -36,7 +36,20 @@
         "/collection-media/float/V03-06.webp",
         "/collection-media/float/V03-07.webp",
         "/collection-media/float/V03-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V03-01.webp",
+        "viewBox": [
+          138,
+          381,
+          724,
+          378
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "U06",
@@ -153,7 +166,20 @@
         "/collection-media/float/U06-09.webp",
         "/collection-media/float/U06-10.webp",
         "/collection-media/float/U06-11.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/U06-02.webp",
+        "viewBox": [
+          201,
+          395,
+          598,
+          365
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V50",
@@ -190,7 +216,20 @@
         "/collection-media/float/V50-06.webp",
         "/collection-media/float/V50-07.webp",
         "/collection-media/float/V50-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V50-01.webp",
+        "viewBox": [
+          140,
+          307,
+          720,
+          452
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V02",
@@ -228,7 +267,20 @@
         "/collection-media/float/V02-06.webp",
         "/collection-media/float/V02-07.webp",
         "/collection-media/float/V02-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V02-01.webp",
+        "viewBox": [
+          144,
+          422,
+          712,
+          337
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V31",
@@ -269,7 +321,20 @@
         "/collection-media/float/V31-06.webp",
         "/collection-media/float/V31-07.webp",
         "/collection-media/float/V31-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V31-01.webp",
+        "viewBox": [
+          147,
+          374,
+          706,
+          385
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V01",
@@ -310,7 +375,20 @@
         "/collection-media/float/V01-06.webp",
         "/collection-media/float/V01-07.webp",
         "/collection-media/float/V01-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V01-01.webp",
+        "viewBox": [
+          131,
+          405,
+          738,
+          354
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B06",
@@ -351,7 +429,20 @@
         "/collection-media/float/B06-06.webp",
         "/collection-media/float/B06-07.webp",
         "/collection-media/float/B06-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B06-01.webp",
+        "viewBox": [
+          146,
+          431,
+          708,
+          328
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B18",
@@ -393,7 +484,20 @@
         "/collection-media/float/B18-06.webp",
         "/collection-media/float/B18-07.webp",
         "/collection-media/float/B18-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/showcase/B18-ai.webp",
+        "viewBox": [
+          87,
+          41,
+          1603,
+          791
+        ],
+        "width": 1774,
+        "height": 887,
+        "ai": true,
+        "direction": "right"
+      }
     },
     {
       "id": "B19",
@@ -434,7 +538,20 @@
         "/collection-media/float/B19-06.webp",
         "/collection-media/float/B19-07.webp",
         "/collection-media/float/B19-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B19-01.webp",
+        "viewBox": [
+          133,
+          329,
+          734,
+          430
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B22",
@@ -474,7 +591,20 @@
         "/collection-media/float/B22-06.webp",
         "/collection-media/float/B22-07.webp",
         "/collection-media/float/B22-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B22-01.webp",
+        "viewBox": [
+          135,
+          415,
+          729,
+          344
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B27",
@@ -514,7 +644,20 @@
         "/collection-media/float/B27-06.webp",
         "/collection-media/float/B27-07.webp",
         "/collection-media/float/B27-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B27-01.webp",
+        "viewBox": [
+          136,
+          407,
+          727,
+          352
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "U04",
@@ -551,7 +694,20 @@
         "/collection-media/float/U04-05.webp",
         "/collection-media/float/U04-06.webp",
         "/collection-media/float/U04-07.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/showcase/U04-ai.webp",
+        "viewBox": [
+          136,
+          10,
+          1143,
+          1095
+        ],
+        "width": 1402,
+        "height": 1122,
+        "ai": true,
+        "direction": "right"
+      }
     },
     {
       "id": "P06",
@@ -588,7 +744,20 @@
         "/collection-media/float/P06-06.webp",
         "/collection-media/float/P06-07.webp",
         "/collection-media/float/P06-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/P06-01.webp",
+        "viewBox": [
+          170,
+          254,
+          660,
+          505
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B23",
@@ -629,7 +798,20 @@
         "/collection-media/float/B23-06.webp",
         "/collection-media/float/B23-07.webp",
         "/collection-media/float/B23-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B23-01.webp",
+        "viewBox": [
+          132,
+          413,
+          735,
+          346
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B24",
@@ -669,7 +851,20 @@
         "/collection-media/float/B24-02.webp",
         "/collection-media/float/B24-03.webp",
         "/collection-media/float/B24-04.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B24-01.webp",
+        "viewBox": [
+          106,
+          309,
+          787,
+          450
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V54",
@@ -704,7 +899,20 @@
         "/collection-media/float/V54-04.webp",
         "/collection-media/float/V54-05.webp",
         "/collection-media/float/V54-06.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V54-01.webp",
+        "viewBox": [
+          190,
+          372,
+          619,
+          387
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V53",
@@ -742,7 +950,20 @@
         "/collection-media/float/V53-06.webp",
         "/collection-media/float/V53-07.webp",
         "/collection-media/float/V53-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V53-01.webp",
+        "viewBox": [
+          155,
+          363,
+          689,
+          396
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B01",
@@ -779,7 +1000,20 @@
         "/collection-media/float/B01-06.webp",
         "/collection-media/float/B01-07.webp",
         "/collection-media/float/B01-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B01-01.webp",
+        "viewBox": [
+          149,
+          366,
+          701,
+          393
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B02",
@@ -817,7 +1051,20 @@
         "/collection-media/float/B02-06.webp",
         "/collection-media/float/B02-07.webp",
         "/collection-media/float/B02-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B02-01.webp",
+        "viewBox": [
+          145,
+          412,
+          710,
+          347
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "P07",
@@ -854,7 +1101,20 @@
         "/collection-media/float/P07-06.webp",
         "/collection-media/float/P07-07.webp",
         "/collection-media/float/P07-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/P07-01.webp",
+        "viewBox": [
+          137,
+          422,
+          726,
+          337
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V38",
@@ -893,7 +1153,20 @@
         "/collection-media/float/V38-06.webp",
         "/collection-media/float/V38-07.webp",
         "/collection-media/float/V38-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V38-01.webp",
+        "viewBox": [
+          140,
+          427,
+          720,
+          332
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V19",
@@ -931,7 +1204,20 @@
         "/collection-media/float/V19-06.webp",
         "/collection-media/float/V19-07.webp",
         "/collection-media/float/V19-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V19-01.webp",
+        "viewBox": [
+          143,
+          426,
+          714,
+          333
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V28",
@@ -969,14 +1255,27 @@
         "/collection-media/float/V28-06.webp",
         "/collection-media/float/V28-07.webp",
         "/collection-media/float/V28-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V28-01.webp",
+        "viewBox": [
+          165,
+          419,
+          669,
+          340
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V35",
       "status": "on_page",
       "wall_order": 24,
-      "name": "Nike SB Dunk Low 'Loden' (olive suede, gum sole)",
-      "style_code": "BQ6817-301",
+      "name": "Nike SB Dunk Low — Olive / Blue",
+      "style_code": "",
       "brand": "Nike",
       "family": "Dunks & SB",
       "moods": [
@@ -987,7 +1286,7 @@
         "#3a3d2a",
         "#5a6142"
       ],
-      "note": "",
+      "note": "Olive and blue model photography; exact edition needs confirmation.",
       "viewer": "spin",
       "angles": 8,
       "photo_dir": "assets/turntable/V35/",
@@ -1009,7 +1308,20 @@
         "/collection-media/float/V35-06.webp",
         "/collection-media/float/V35-07.webp",
         "/collection-media/float/V35-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V35-01.webp",
+        "viewBox": [
+          133,
+          424,
+          734,
+          335
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V37",
@@ -1047,7 +1359,20 @@
         "/collection-media/float/V37-06.webp",
         "/collection-media/float/V37-07.webp",
         "/collection-media/float/V37-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V37-01.webp",
+        "viewBox": [
+          135,
+          420,
+          730,
+          339
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V20",
@@ -1084,7 +1409,20 @@
         "/collection-media/float/V20-06.webp",
         "/collection-media/float/V20-07.webp",
         "/collection-media/float/V20-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V20-01.webp",
+        "viewBox": [
+          132,
+          427,
+          736,
+          332
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V22",
@@ -1123,7 +1461,20 @@
         "/collection-media/float/V22-06.webp",
         "/collection-media/float/V22-07.webp",
         "/collection-media/float/V22-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V22-01.webp",
+        "viewBox": [
+          137,
+          420,
+          725,
+          339
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V32",
@@ -1160,7 +1511,20 @@
         "/collection-media/float/V32-06.webp",
         "/collection-media/float/V32-07.webp",
         "/collection-media/float/V32-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V32-01.webp",
+        "viewBox": [
+          139,
+          406,
+          722,
+          353
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "P11",
@@ -1197,7 +1561,20 @@
         "/collection-media/float/P11-06.webp",
         "/collection-media/float/P11-07.webp",
         "/collection-media/float/P11-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/P11-01.webp",
+        "viewBox": [
+          147,
+          431,
+          705,
+          328
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B03",
@@ -1235,7 +1612,20 @@
         "/collection-media/float/B03-06.webp",
         "/collection-media/float/B03-07.webp",
         "/collection-media/float/B03-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B03-01.webp",
+        "viewBox": [
+          141,
+          358,
+          717,
+          401
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B09",
@@ -1274,7 +1664,20 @@
         "/collection-media/float/B09-06.webp",
         "/collection-media/float/B09-07.webp",
         "/collection-media/float/B09-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B09-01.webp",
+        "viewBox": [
+          147,
+          445,
+          706,
+          314
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B10",
@@ -1311,7 +1714,20 @@
         "/collection-media/float/B10-06.webp",
         "/collection-media/float/B10-07.webp",
         "/collection-media/float/B10-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B10-01.webp",
+        "viewBox": [
+          130,
+          402,
+          740,
+          357
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B11",
@@ -1348,7 +1764,20 @@
         "/collection-media/float/B11-06.webp",
         "/collection-media/float/B11-07.webp",
         "/collection-media/float/B11-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B11-01.webp",
+        "viewBox": [
+          132,
+          421,
+          735,
+          338
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "P08",
@@ -1387,7 +1816,20 @@
         "/collection-media/float/P08-06.webp",
         "/collection-media/float/P08-07.webp",
         "/collection-media/float/P08-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/P08-01.webp",
+        "viewBox": [
+          136,
+          413,
+          727,
+          346
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B17",
@@ -1424,7 +1866,20 @@
         "/collection-media/float/B17-06.webp",
         "/collection-media/float/B17-07.webp",
         "/collection-media/float/B17-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B17-01.webp",
+        "viewBox": [
+          130,
+          420,
+          740,
+          339
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "U10",
@@ -1462,7 +1917,20 @@
         "/collection-media/float/U10-06.webp",
         "/collection-media/float/U10-07.webp",
         "/collection-media/float/U10-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/U10-01.webp",
+        "viewBox": [
+          127,
+          401,
+          746,
+          358
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "U28",
@@ -1501,7 +1969,20 @@
         "/collection-media/float/U28-06.webp",
         "/collection-media/float/U28-07.webp",
         "/collection-media/float/U28-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/U28-01.webp",
+        "viewBox": [
+          144,
+          421,
+          712,
+          338
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "U29",
@@ -1595,7 +2076,20 @@
         "/collection-media/float/U29-06.webp",
         "/collection-media/float/U29-07.webp",
         "/collection-media/float/U29-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/showcase/U29-ai.webp",
+        "viewBox": [
+          48,
+          15,
+          1685,
+          856
+        ],
+        "width": 1774,
+        "height": 887,
+        "ai": true,
+        "direction": "right"
+      }
     },
     {
       "id": "V46",
@@ -1632,7 +2126,20 @@
         "/collection-media/float/V46-06.webp",
         "/collection-media/float/V46-07.webp",
         "/collection-media/float/V46-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V46-01.webp",
+        "viewBox": [
+          132,
+          311,
+          736,
+          448
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V47",
@@ -1669,7 +2176,20 @@
         "/collection-media/float/V47-06.webp",
         "/collection-media/float/V47-07.webp",
         "/collection-media/float/V47-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V47-01.webp",
+        "viewBox": [
+          145,
+          332,
+          709,
+          427
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V44",
@@ -1708,7 +2228,20 @@
         "/collection-media/float/V44-06.webp",
         "/collection-media/float/V44-07.webp",
         "/collection-media/float/V44-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V44-01.webp",
+        "viewBox": [
+          153,
+          348,
+          694,
+          411
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V16",
@@ -1745,7 +2278,20 @@
         "/collection-media/float/V16-06.webp",
         "/collection-media/float/V16-07.webp",
         "/collection-media/float/V16-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V16-01.webp",
+        "viewBox": [
+          135,
+          340,
+          729,
+          419
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V07",
@@ -1783,7 +2329,20 @@
         "/collection-media/float/V07-06.webp",
         "/collection-media/float/V07-07.webp",
         "/collection-media/float/V07-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V07-01.webp",
+        "viewBox": [
+          148,
+          336,
+          704,
+          423
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V48",
@@ -1822,7 +2381,20 @@
         "/collection-media/float/V48-06.webp",
         "/collection-media/float/V48-07.webp",
         "/collection-media/float/V48-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V48-01.webp",
+        "viewBox": [
+          144,
+          350,
+          711,
+          409
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V49",
@@ -1859,7 +2431,20 @@
         "/collection-media/float/V49-06.webp",
         "/collection-media/float/V49-07.webp",
         "/collection-media/float/V49-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V49-01.webp",
+        "viewBox": [
+          125,
+          312,
+          750,
+          447
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V43",
@@ -1897,7 +2482,20 @@
         "/collection-media/float/V43-06.webp",
         "/collection-media/float/V43-07.webp",
         "/collection-media/float/V43-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V43-01.webp",
+        "viewBox": [
+          132,
+          320,
+          736,
+          439
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V55",
@@ -1935,7 +2533,20 @@
         "/collection-media/float/V55-06.webp",
         "/collection-media/float/V55-07.webp",
         "/collection-media/float/V55-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V55-01.webp",
+        "viewBox": [
+          142,
+          338,
+          716,
+          421
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V45",
@@ -1973,7 +2584,20 @@
         "/collection-media/float/V45-06.webp",
         "/collection-media/float/V45-07.webp",
         "/collection-media/float/V45-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V45-01.webp",
+        "viewBox": [
+          145,
+          326,
+          710,
+          433
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "P15",
@@ -2010,7 +2634,20 @@
         "/collection-media/float/P15-06.webp",
         "/collection-media/float/P15-07.webp",
         "/collection-media/float/P15-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/P15-01.webp",
+        "viewBox": [
+          132,
+          326,
+          736,
+          433
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V26",
@@ -2049,7 +2686,20 @@
         "/collection-media/float/V26-06.webp",
         "/collection-media/float/V26-07.webp",
         "/collection-media/float/V26-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V26-01.webp",
+        "viewBox": [
+          150,
+          356,
+          699,
+          403
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V23",
@@ -2087,7 +2737,20 @@
         "/collection-media/float/V23-06.webp",
         "/collection-media/float/V23-07.webp",
         "/collection-media/float/V23-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V23-01.webp",
+        "viewBox": [
+          148,
+          312,
+          704,
+          447
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V24",
@@ -2125,7 +2788,20 @@
         "/collection-media/float/V24-06.webp",
         "/collection-media/float/V24-07.webp",
         "/collection-media/float/V24-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V24-01.webp",
+        "viewBox": [
+          184,
+          342,
+          632,
+          417
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V30",
@@ -2161,7 +2837,20 @@
         "/collection-media/float/V30-05.webp",
         "/collection-media/float/V30-06.webp",
         "/collection-media/float/V30-07.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V30-01.webp",
+        "viewBox": [
+          101,
+          323,
+          798,
+          436
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V17",
@@ -2199,7 +2888,20 @@
         "/collection-media/float/V17-06.webp",
         "/collection-media/float/V17-07.webp",
         "/collection-media/float/V17-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V17-01.webp",
+        "viewBox": [
+          138,
+          435,
+          723,
+          324
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B04",
@@ -2238,7 +2940,20 @@
         "/collection-media/float/B04-06.webp",
         "/collection-media/float/B04-07.webp",
         "/collection-media/float/B04-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B04-01.webp",
+        "viewBox": [
+          134,
+          439,
+          732,
+          320
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B31",
@@ -2279,7 +2994,20 @@
         "/collection-media/float/B31-06.webp",
         "/collection-media/float/B31-07.webp",
         "/collection-media/float/B31-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B31-01.webp",
+        "viewBox": [
+          149,
+          350,
+          701,
+          409
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V15",
@@ -2317,7 +3045,20 @@
         "/collection-media/float/V15-06.webp",
         "/collection-media/float/V15-07.webp",
         "/collection-media/float/V15-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V15-01.webp",
+        "viewBox": [
+          132,
+          351,
+          736,
+          408
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V52",
@@ -2356,7 +3097,20 @@
         "/collection-media/float/V52-06.webp",
         "/collection-media/float/V52-07.webp",
         "/collection-media/float/V52-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V52-01.webp",
+        "viewBox": [
+          143,
+          345,
+          713,
+          414
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V40",
@@ -2398,7 +3152,20 @@
         "/collection-media/float/V40-06.webp",
         "/collection-media/float/V40-07.webp",
         "/collection-media/float/V40-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V40-01.webp",
+        "viewBox": [
+          153,
+          370,
+          694,
+          389
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V08",
@@ -2437,7 +3204,20 @@
         "/collection-media/float/V08-06.webp",
         "/collection-media/float/V08-07.webp",
         "/collection-media/float/V08-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V08-01.webp",
+        "viewBox": [
+          129,
+          341,
+          741,
+          418
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V39",
@@ -2475,7 +3255,20 @@
         "/collection-media/float/V39-06.webp",
         "/collection-media/float/V39-07.webp",
         "/collection-media/float/V39-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V39-01.webp",
+        "viewBox": [
+          148,
+          357,
+          704,
+          402
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "P16",
@@ -2511,7 +3304,20 @@
         "/collection-media/float/P16-05.webp",
         "/collection-media/float/P16-06.webp",
         "/collection-media/float/P16-07.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/P16-01.webp",
+        "viewBox": [
+          183,
+          407,
+          633,
+          352
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "U03",
@@ -2552,7 +3358,20 @@
         "/collection-media/float/U03-07.webp",
         "/collection-media/float/U03-08.webp",
         "/collection-media/float/U03-09.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/showcase/U03-ai.webp",
+        "viewBox": [
+          128,
+          29,
+          1527,
+          820
+        ],
+        "width": 1774,
+        "height": 887,
+        "ai": true,
+        "direction": "right"
+      }
     },
     {
       "id": "B08",
@@ -2590,7 +3409,20 @@
         "/collection-media/float/B08-06.webp",
         "/collection-media/float/B08-07.webp",
         "/collection-media/float/B08-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B08-01.webp",
+        "viewBox": [
+          132,
+          328,
+          736,
+          431
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B14",
@@ -2629,7 +3461,20 @@
         "/collection-media/float/B14-06.webp",
         "/collection-media/float/B14-07.webp",
         "/collection-media/float/B14-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B14-01.webp",
+        "viewBox": [
+          130,
+          343,
+          740,
+          416
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B15",
@@ -2669,7 +3514,20 @@
         "/collection-media/float/B15-06.webp",
         "/collection-media/float/B15-07.webp",
         "/collection-media/float/B15-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B15-01.webp",
+        "viewBox": [
+          153,
+          370,
+          694,
+          389
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B25",
@@ -2709,7 +3567,20 @@
         "/collection-media/float/B25-03.webp",
         "/collection-media/float/B25-04.webp",
         "/collection-media/float/B25-05.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B25-01.webp",
+        "viewBox": [
+          100,
+          310,
+          800,
+          449
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B29",
@@ -2752,7 +3623,20 @@
         "/collection-media/float/B29-06.webp",
         "/collection-media/float/B29-07.webp",
         "/collection-media/float/B29-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B29-01.webp",
+        "viewBox": [
+          132,
+          334,
+          736,
+          425
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V14",
@@ -2789,7 +3673,20 @@
         "/collection-media/float/V14-06.webp",
         "/collection-media/float/V14-07.webp",
         "/collection-media/float/V14-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V14-01.webp",
+        "viewBox": [
+          137,
+          309,
+          725,
+          450
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V18",
@@ -2826,7 +3723,20 @@
         "/collection-media/float/V18-06.webp",
         "/collection-media/float/V18-07.webp",
         "/collection-media/float/V18-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V18-01.webp",
+        "viewBox": [
+          136,
+          340,
+          728,
+          419
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V29",
@@ -2864,7 +3774,20 @@
         "/collection-media/float/V29-06.webp",
         "/collection-media/float/V29-07.webp",
         "/collection-media/float/V29-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V29-01.webp",
+        "viewBox": [
+          132,
+          318,
+          735,
+          441
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V10",
@@ -2902,7 +3825,20 @@
         "/collection-media/float/V10-06.webp",
         "/collection-media/float/V10-07.webp",
         "/collection-media/float/V10-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V10-01.webp",
+        "viewBox": [
+          148,
+          336,
+          704,
+          423
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V13",
@@ -2939,7 +3875,20 @@
         "/collection-media/float/V13-06.webp",
         "/collection-media/float/V13-07.webp",
         "/collection-media/float/V13-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V13-01.webp",
+        "viewBox": [
+          135,
+          320,
+          730,
+          439
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V12",
@@ -2979,7 +3928,20 @@
         "/collection-media/float/V12-06.webp",
         "/collection-media/float/V12-07.webp",
         "/collection-media/float/V12-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V12-01.webp",
+        "viewBox": [
+          163,
+          346,
+          673,
+          413
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V09",
@@ -3018,7 +3980,20 @@
         "/collection-media/float/V09-06.webp",
         "/collection-media/float/V09-07.webp",
         "/collection-media/float/V09-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V09-01.webp",
+        "viewBox": [
+          167,
+          366,
+          666,
+          393
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V11",
@@ -3055,7 +4030,20 @@
         "/collection-media/float/V11-06.webp",
         "/collection-media/float/V11-07.webp",
         "/collection-media/float/V11-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V11-01.webp",
+        "viewBox": [
+          152,
+          357,
+          696,
+          402
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V42",
@@ -3094,7 +4082,20 @@
         "/collection-media/float/V42-06.webp",
         "/collection-media/float/V42-07.webp",
         "/collection-media/float/V42-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V42-01.webp",
+        "viewBox": [
+          124,
+          348,
+          751,
+          411
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V41",
@@ -3133,7 +4134,20 @@
         "/collection-media/float/V41-06.webp",
         "/collection-media/float/V41-07.webp",
         "/collection-media/float/V41-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V41-01.webp",
+        "viewBox": [
+          122,
+          366,
+          755,
+          393
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B05",
@@ -3170,7 +4184,20 @@
         "/collection-media/float/B05-06.webp",
         "/collection-media/float/B05-07.webp",
         "/collection-media/float/B05-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B05-01.webp",
+        "viewBox": [
+          147,
+          331,
+          706,
+          428
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B16",
@@ -3210,7 +4237,20 @@
         "/collection-media/float/B16-06.webp",
         "/collection-media/float/B16-07.webp",
         "/collection-media/float/B16-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B16-01.webp",
+        "viewBox": [
+          133,
+          326,
+          733,
+          433
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B20",
@@ -3247,7 +4287,20 @@
         "/collection-media/float/B20-06.webp",
         "/collection-media/float/B20-07.webp",
         "/collection-media/float/B20-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B20-01.webp",
+        "viewBox": [
+          136,
+          317,
+          728,
+          442
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B21",
@@ -3284,7 +4337,20 @@
         "/collection-media/float/B21-06.webp",
         "/collection-media/float/B21-07.webp",
         "/collection-media/float/B21-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B21-01.webp",
+        "viewBox": [
+          140,
+          322,
+          719,
+          437
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B26",
@@ -3326,7 +4392,20 @@
         "/collection-media/float/B26-06.webp",
         "/collection-media/float/B26-07.webp",
         "/collection-media/float/B26-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B26-01.webp",
+        "viewBox": [
+          158,
+          354,
+          684,
+          405
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V04",
@@ -3363,7 +4442,20 @@
         "/collection-media/float/V04-06.webp",
         "/collection-media/float/V04-07.webp",
         "/collection-media/float/V04-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V04-01.webp",
+        "viewBox": [
+          161,
+          313,
+          678,
+          446
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V27",
@@ -3403,7 +4495,20 @@
         "/collection-media/float/V27-06.webp",
         "/collection-media/float/V27-07.webp",
         "/collection-media/float/V27-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V27-01.webp",
+        "viewBox": [
+          163,
+          352,
+          673,
+          407
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "P14",
@@ -3441,7 +4546,20 @@
         "/collection-media/float/P14-06.webp",
         "/collection-media/float/P14-07.webp",
         "/collection-media/float/P14-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/P14-01.webp",
+        "viewBox": [
+          138,
+          322,
+          724,
+          437
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V21",
@@ -3475,7 +4593,20 @@
         "/collection-media/float/V21-03.webp",
         "/collection-media/float/V21-04.webp",
         "/collection-media/float/V21-05.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V21-01.webp",
+        "viewBox": [
+          41,
+          163,
+          918,
+          596
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "P19",
@@ -3515,7 +4646,20 @@
         "/collection-media/float/P19-06.webp",
         "/collection-media/float/P19-07.webp",
         "/collection-media/float/P19-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/P19-01.webp",
+        "viewBox": [
+          156,
+          440,
+          687,
+          319
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V56",
@@ -3553,7 +4697,20 @@
         "/collection-media/float/V56-06.webp",
         "/collection-media/float/V56-07.webp",
         "/collection-media/float/V56-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V56-01.webp",
+        "viewBox": [
+          139,
+          406,
+          721,
+          353
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "P02",
@@ -3592,7 +4749,20 @@
         "/collection-media/float/P02-06.webp",
         "/collection-media/float/P02-07.webp",
         "/collection-media/float/P02-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/P02-01.webp",
+        "viewBox": [
+          160,
+          416,
+          680,
+          343
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "P18",
@@ -3632,7 +4802,20 @@
         "/collection-media/float/P18-06.webp",
         "/collection-media/float/P18-07.webp",
         "/collection-media/float/P18-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/P18-01.webp",
+        "viewBox": [
+          131,
+          425,
+          737,
+          334
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V25",
@@ -3671,7 +4854,20 @@
         "/collection-media/float/V25-06.webp",
         "/collection-media/float/V25-07.webp",
         "/collection-media/float/V25-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V25-01.webp",
+        "viewBox": [
+          141,
+          311,
+          717,
+          448
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "P01",
@@ -3710,7 +4906,20 @@
         "/collection-media/float/P01-06.webp",
         "/collection-media/float/P01-07.webp",
         "/collection-media/float/P01-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/P01-01.webp",
+        "viewBox": [
+          141,
+          389,
+          718,
+          370
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "P13",
@@ -3842,7 +5051,20 @@
         "/collection-media/float/P13-10.webp",
         "/collection-media/float/P13-11.webp",
         "/collection-media/float/P13-12.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/P13-01.webp",
+        "viewBox": [
+          133,
+          287,
+          733,
+          473
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "U01",
@@ -3884,7 +5106,20 @@
         "/collection-media/float/U01-06.webp",
         "/collection-media/float/U01-07.webp",
         "/collection-media/float/U01-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/U01-01.webp",
+        "viewBox": [
+          132,
+          395,
+          736,
+          364
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B07",
@@ -3923,7 +5158,20 @@
         "/collection-media/float/B07-06.webp",
         "/collection-media/float/B07-07.webp",
         "/collection-media/float/B07-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B07-01.webp",
+        "viewBox": [
+          135,
+          329,
+          730,
+          430
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B13",
@@ -3961,7 +5209,20 @@
         "/collection-media/float/B13-06.webp",
         "/collection-media/float/B13-07.webp",
         "/collection-media/float/B13-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B13-01.webp",
+        "viewBox": [
+          205,
+          258,
+          590,
+          501
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B28",
@@ -4003,7 +5264,20 @@
         "/collection-media/float/B28-06.webp",
         "/collection-media/float/B28-07.webp",
         "/collection-media/float/B28-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B28-01.webp",
+        "viewBox": [
+          136,
+          326,
+          727,
+          433
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B30",
@@ -4045,7 +5319,20 @@
         "/collection-media/float/B30-06.webp",
         "/collection-media/float/B30-07.webp",
         "/collection-media/float/B30-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B30-01.webp",
+        "viewBox": [
+          134,
+          299,
+          732,
+          460
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "P04",
@@ -4083,7 +5370,20 @@
         "/collection-media/float/P04-06.webp",
         "/collection-media/float/P04-07.webp",
         "/collection-media/float/P04-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/P04-01.webp",
+        "viewBox": [
+          41,
+          465,
+          918,
+          294
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "P03",
@@ -4122,7 +5422,20 @@
         "/collection-media/float/P03-06.webp",
         "/collection-media/float/P03-07.webp",
         "/collection-media/float/P03-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/showcase/P03-ai.webp",
+        "viewBox": [
+          44,
+          35,
+          1796,
+          761
+        ],
+        "width": 1880,
+        "height": 836,
+        "ai": true,
+        "direction": "right"
+      }
     },
     {
       "id": "N02",
@@ -4162,7 +5475,20 @@
         "/collection-media/float/N02-06.webp",
         "/collection-media/float/N02-07.webp",
         "/collection-media/float/N02-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/N02-01.webp",
+        "viewBox": [
+          130,
+          416,
+          739,
+          343
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "N04",
@@ -4201,7 +5527,20 @@
         "/collection-media/float/N04-06.webp",
         "/collection-media/float/N04-07.webp",
         "/collection-media/float/N04-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/N04-01.webp",
+        "viewBox": [
+          132,
+          432,
+          736,
+          327
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V06",
@@ -4239,7 +5578,20 @@
         "/collection-media/float/V06-06.webp",
         "/collection-media/float/V06-07.webp",
         "/collection-media/float/V06-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V06-01.webp",
+        "viewBox": [
+          124,
+          409,
+          752,
+          350
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V51",
@@ -4277,7 +5629,20 @@
         "/collection-media/float/V51-06.webp",
         "/collection-media/float/V51-07.webp",
         "/collection-media/float/V51-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V51-01.webp",
+        "viewBox": [
+          137,
+          316,
+          726,
+          443
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "V34",
@@ -4315,7 +5680,20 @@
         "/collection-media/float/V34-06.webp",
         "/collection-media/float/V34-07.webp",
         "/collection-media/float/V34-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/V34-01.webp",
+        "viewBox": [
+          138,
+          330,
+          723,
+          429
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "N01",
@@ -4352,7 +5730,20 @@
         "/collection-media/float/N01-03.webp",
         "/collection-media/float/N01-04.webp",
         "/collection-media/float/N01-05.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/N01-02.webp",
+        "viewBox": [
+          41,
+          362,
+          918,
+          397
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B32",
@@ -4383,7 +5774,20 @@
         "/collection-media/float/B32-06.webp",
         "/collection-media/float/B32-07.webp",
         "/collection-media/float/B32-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B32-01.webp",
+        "viewBox": [
+          133,
+          309,
+          734,
+          450
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B33",
@@ -4414,7 +5818,20 @@
         "/collection-media/float/B33-06.webp",
         "/collection-media/float/B33-07.webp",
         "/collection-media/float/B33-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B33-01.webp",
+        "viewBox": [
+          127,
+          432,
+          746,
+          327
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B34",
@@ -4445,7 +5862,20 @@
         "/collection-media/float/B34-06.webp",
         "/collection-media/float/B34-07.webp",
         "/collection-media/float/B34-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B34-01.webp",
+        "viewBox": [
+          140,
+          417,
+          720,
+          342
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B35",
@@ -4476,7 +5906,20 @@
         "/collection-media/float/B35-06.webp",
         "/collection-media/float/B35-07.webp",
         "/collection-media/float/B35-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B35-01.webp",
+        "viewBox": [
+          129,
+          401,
+          742,
+          358
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B37",
@@ -4507,7 +5950,20 @@
         "/collection-media/float/B37-06.webp",
         "/collection-media/float/B37-07.webp",
         "/collection-media/float/B37-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B37-01.webp",
+        "viewBox": [
+          102,
+          466,
+          796,
+          293
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B38",
@@ -4538,7 +5994,20 @@
         "/collection-media/float/B38-06.webp",
         "/collection-media/float/B38-07.webp",
         "/collection-media/float/B38-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B38-01.webp",
+        "viewBox": [
+          132,
+          378,
+          736,
+          381
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B39",
@@ -4569,7 +6038,20 @@
         "/collection-media/float/B39-06.webp",
         "/collection-media/float/B39-07.webp",
         "/collection-media/float/B39-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B39-01.webp",
+        "viewBox": [
+          129,
+          396,
+          742,
+          363
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B40",
@@ -4600,7 +6082,20 @@
         "/collection-media/float/B40-06.webp",
         "/collection-media/float/B40-07.webp",
         "/collection-media/float/B40-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B40-01.webp",
+        "viewBox": [
+          160,
+          419,
+          680,
+          340
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B41",
@@ -4631,7 +6126,20 @@
         "/collection-media/float/B41-06.webp",
         "/collection-media/float/B41-07.webp",
         "/collection-media/float/B41-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B41-01.webp",
+        "viewBox": [
+          157,
+          443,
+          685,
+          316
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B42",
@@ -4662,7 +6170,20 @@
         "/collection-media/float/B42-06.webp",
         "/collection-media/float/B42-07.webp",
         "/collection-media/float/B42-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B42-01.webp",
+        "viewBox": [
+          147,
+          336,
+          706,
+          423
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B43",
@@ -4693,7 +6214,20 @@
         "/collection-media/float/B43-06.webp",
         "/collection-media/float/B43-07.webp",
         "/collection-media/float/B43-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B43-01.webp",
+        "viewBox": [
+          133,
+          420,
+          734,
+          339
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B44",
@@ -4724,7 +6258,20 @@
         "/collection-media/float/B44-06.webp",
         "/collection-media/float/B44-07.webp",
         "/collection-media/float/B44-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B44-01.webp",
+        "viewBox": [
+          133,
+          403,
+          733,
+          356
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B45",
@@ -4755,7 +6302,20 @@
         "/collection-media/float/B45-06.webp",
         "/collection-media/float/B45-07.webp",
         "/collection-media/float/B45-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B45-01.webp",
+        "viewBox": [
+          147,
+          400,
+          705,
+          359
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B46",
@@ -4786,7 +6346,20 @@
         "/collection-media/float/B46-06.webp",
         "/collection-media/float/B46-07.webp",
         "/collection-media/float/B46-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B46-01.webp",
+        "viewBox": [
+          146,
+          323,
+          708,
+          436
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B47",
@@ -4817,7 +6390,20 @@
         "/collection-media/float/B47-06.webp",
         "/collection-media/float/B47-07.webp",
         "/collection-media/float/B47-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B47-01.webp",
+        "viewBox": [
+          132,
+          320,
+          736,
+          439
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B48",
@@ -4848,7 +6434,20 @@
         "/collection-media/float/B48-06.webp",
         "/collection-media/float/B48-07.webp",
         "/collection-media/float/B48-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B48-01.webp",
+        "viewBox": [
+          165,
+          486,
+          669,
+          273
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "B49",
@@ -4937,7 +6536,20 @@
           "full": "/collection-media/B49/a08.jpg",
           "sourceName": "JustFreshKicks supplied gallery"
         }
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/B49-display.webp",
+        "viewBox": [
+          76,
+          380,
+          848,
+          370
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "U30",
@@ -4968,7 +6580,20 @@
         "/collection-media/float/U30-06.webp",
         "/collection-media/float/U30-07.webp",
         "/collection-media/float/U30-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/U30-05.webp",
+        "viewBox": [
+          158,
+          434,
+          684,
+          325
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     },
     {
       "id": "U31",
@@ -4999,7 +6624,20 @@
         "/collection-media/float/U31-06.webp",
         "/collection-media/float/U31-07.webp",
         "/collection-media/float/U31-08.webp"
-      ]
+      ],
+      "showcase": {
+        "src": "/collection-media/float/U31-01.webp",
+        "viewBox": [
+          131,
+          424,
+          738,
+          335
+        ],
+        "width": 1000,
+        "height": 800,
+        "ai": false,
+        "direction": "right"
+      }
     }
   ],
   "rights": {

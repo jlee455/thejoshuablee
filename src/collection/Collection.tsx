@@ -3,6 +3,7 @@ import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight, ChevronLeft, ChevronRig
 import { pairPhoto, fullPhoto, floatPhoto, photoCount } from './data'
 import type { Pair } from './data'
 import Wheel from './Wheel'
+import Showcase from './Showcase'
 import { RotateStage } from './Motion'
 import { tilt, resetTilt } from './tilt'
 
@@ -140,7 +141,7 @@ export default function Collection() {
         </div>
       </section>}
       <section className="personal-section" aria-labelledby="personal-title"><div className="personal-heading"><p className="eyebrow">200+ pairs. One very personal obsession.</p><h2 id="personal-title">“I’ve got over 200 pairs, and I still forget what’s in my own closet.”</h2><p>— Joshua B. Lee</p><div className="personal-actions"><a href="#collection" className="text-link">Explore the Vault <ArrowDown size={16}/></a><button type="button" className="outline-button" disabled={!found.length} onClick={event => pick(event.currentTarget)}>Pick a pair for me <ArrowUpRight size={16}/></button></div></div><div className="closet-photos"><img src="/collection-media/closet-1.webp" alt="Joshua’s personal sneaker collection" loading="lazy"/><img src="/collection-media/closet-2.webp" alt="A closer look inside Joshua’s sneaker closet" loading="lazy"/></div></section>
-      <div className="featured-pairs">{['B13','B22','B29'].map((id,i) => { const pair=pairs.find(p=>p.id===id);return pair && <button key={id} type="button" onClick={event=>open(id,event.currentTarget)}><span className="eyebrow">0{i+1} / {i===0?'The favorite':i===1?'The inner circle':'The collector’s edition'}</span><img src={floatPhoto(pair)} alt="" loading="lazy"/><span>{pair.name}</span><ArrowUpRight size={20}/></button> })}</div>
+      <div className="featured-pairs">{['B13','B22','B29'].map((id,i) => { const pair=pairs.find(p=>p.id===id);return pair && <button key={id} type="button" onClick={event=>open(id,event.currentTarget)}><span className="eyebrow">0{i+1} / {i===0?'The favorite':i===1?'The inner circle':'The collector’s edition'}</span><Showcase pair={pair}/><span>{pair.name}</span><ArrowUpRight size={20}/></button> })}</div>
       <div className="archive-ribbon"><span>Not a store. A personal obsession.</span><span>Real pairs. Every available angle. <ArrowDown size={16} /></span></div>
       <section id="collection" className="collection" aria-labelledby="archive-title">
         <div className="collection-heading"><div><p className="eyebrow">The wall / Pick a pair. Get closer.</p><h2 id="archive-title">NOT YOUR<br />AVERAGE <span>CLOSET.</span></h2></div><p className="pair-count" aria-live="polite">{pairs.length ? `${found.length} of ${pairs.length} pairs` : ''}</p></div>
@@ -156,7 +157,7 @@ export default function Collection() {
           <div className="light-rail" aria-hidden="true"><i/><i/><i/><i/></div>
           <div className="collection-grid wall" onPointerMove={tilt} onPointerOut={resetTilt}>
             {found.map(pair => <button type="button" className="pair-card" key={pair.id} data-pair-id={pair.id} onClick={event => open(pair.id, event.currentTarget)}>
-              <span className="card-image"><span className="card-number">{String(pair.wall_order || pairs.indexOf(pair) + 1).padStart(3,'0')}</span>{pairPhoto(pair) ? <img src={floatPhoto(pair)} alt="" loading="lazy" decoding="async" /> : <span className="missing-photo">Photograph unavailable</span>}<span className="card-open"><ArrowUpRight size={19} /></span></span>
+              <span className="card-image"><span className="card-number">{String(pair.wall_order || pairs.indexOf(pair) + 1).padStart(3,'0')}</span>{pairPhoto(pair) ? <Showcase pair={pair}/> : <span className="missing-photo">Photograph unavailable</span>}<span className="card-open"><ArrowUpRight size={19} /></span></span>
               <span className="shelf" aria-hidden="true"/><span className="card-info"><span className="eyebrow">{pair.brand}</span><span className="card-name">{pair.name}</span><span className="card-bottom"><span>{pair.family}</span><span>{photoCount(pair) > 1 ? `${photoCount(pair)} views` : 'View details'}</span></span></span>
             </button>)}
           </div>
@@ -165,7 +166,7 @@ export default function Collection() {
         <div className="discovery"><div><p className="eyebrow">Leave it to chance</p><h2>YOUR MOOD.<br /><span>MY CLOSET.</span></h2></div><div className="mood-picker">{moods.map(([id,label]) => <button key={id} type="button" aria-pressed={id === mood} onClick={() => setMood(id)}>{label}</button>)}<button className="pick-button" type="button" disabled={!found.filter(pair => mood === 'any' || pair.moods.includes(mood)).length} onClick={event => pick(event.currentTarget)}>Pick a pair <ArrowUpRight size={17} /></button></div></div>
       </section>
     </main>
-    <footer className="collection-footer"><a href="https://joshuablee.com/">Joshua B. Lee</a><p>Product photography shows the model. Personal photographs show Joshua’s own pairs.</p><a href="#collection-title">Back to top ↑</a></footer>
+    <footer className="collection-footer"><a href="https://joshuablee.com/">Joshua B. Lee</a><p>Product photography and illustrated renderings showcase the models. Original photographs remain in each viewer.</p><a href="#collection-title">Back to top ↑</a></footer>
     {selected && <PairGallery key={selected.id} pair={selected} initialPhoto={selectedPhoto} close={close} navigate={navigate} />}
   </>
 }
