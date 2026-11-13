@@ -48,6 +48,7 @@ export default function Nav() {
                 {link.label}
               </Link>
             ))}
+            <a href="/collection/" className="px-3 py-2 text-sm font-medium rounded-lg text-white/70 hover:text-white hover:bg-white/5 no-underline">The Collection</a>
             <div className="w-px h-6 bg-white/10 mx-2" />
             {externalLinks.map((link) => (
               <a
@@ -97,6 +98,7 @@ export default function Nav() {
                 {link.label}
               </Link>
             ))}
+            <a href="/collection/" onClick={() => setOpen(false)} className="block px-4 py-3 text-sm font-medium rounded-lg text-white/70 hover:text-white hover:bg-white/5 no-underline">The Collection</a>
             <div className="glow-line my-3" />
             {externalLinks.map((link) => (
               <a

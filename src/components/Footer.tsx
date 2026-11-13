@@ -58,6 +58,7 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li><a href="/collection/" className="text-sm text-white/40 hover:text-orange-400 transition-colors no-underline">The Collection</a></li>
             </ul>
           </div>
 

@@ -151,7 +151,7 @@ fs.writeFileSync(
   path.join(distDir, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...routes, ...articleRoutes]
+${[...routes, '/collection/', ...articleRoutes]
   .map((route) => {
     const slug = route.startsWith('/insights/') ? route.replace('/insights/', '') : null
     const mod = slug && articles[slug] ? articles[slug].date : lastmod
