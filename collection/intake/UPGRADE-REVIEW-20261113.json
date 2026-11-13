@@ -1,0 +1,150 @@
+{
+  "status": "PREVIEW_ONLY_PENDING_RAFE_AND_PHYSICAL_PHONE_ACCEPTANCE",
+  "interaction_checks": {
+    "results": [
+      {
+        "name": "104 reviewed entries",
+        "pass": true
+      },
+      {
+        "name": "Air Mag leads",
+        "pass": true
+      },
+      {
+        "name": "Wheel next",
+        "pass": true
+      },
+      {
+        "name": "Wheel Home",
+        "pass": true
+      },
+      {
+        "name": "Wheel End",
+        "pass": true
+      },
+      {
+        "name": "Cyclic wrap",
+        "pass": true
+      },
+      {
+        "name": "Side tap centers exact pair",
+        "pass": true
+      },
+      {
+        "name": "Centered tap opens exact pair",
+        "pass": true
+      },
+      {
+        "name": "Viewer drag advances",
+        "pass": true
+      },
+      {
+        "name": "Viewer key keeps valid frame",
+        "pass": true
+      },
+      {
+        "name": "Escape closes and returns focus",
+        "pass": true
+      },
+      {
+        "name": "Search narrows",
+        "pass": true
+      },
+      {
+        "name": "Picker respects search",
+        "pass": true
+      },
+      {
+        "name": "Card number stable",
+        "pass": true
+      },
+      {
+        "name": "Brand filter",
+        "pass": true
+      },
+      {
+        "name": "Family intersects",
+        "pass": true
+      },
+      {
+        "name": "Empty disables picker",
+        "pass": true
+      },
+      {
+        "name": "Fine pointer tilt",
+        "pass": true
+      },
+      {
+        "name": "Reduced motion removes tilt",
+        "pass": true
+      },
+      {
+        "name": "Reduced wheel instant",
+        "pass": true
+      },
+      {
+        "name": "No runtime errors",
+        "pass": true
+      },
+      {
+        "name": "Mobile no overflow",
+        "pass": true
+      },
+      {
+        "name": "Vertical pan reserved",
+        "pass": true
+      },
+      {
+        "name": "Touch tap viewer",
+        "pass": true
+      },
+      {
+        "name": "Mobile viewer vertical pan",
+        "pass": true
+      }
+    ],
+    "errors": [],
+    "physicalPhoneCellular": "NOT_VERIFIED"
+  },
+  "hosted_preview": {
+    "rows": [
+      {
+        "mode": "desktop",
+        "readyMs": 1022,
+        "center": "Nike Air Mag 'Back to the Future' (2011)",
+        "errors": [],
+        "bad": [],
+        "homepageCollectionLinks": 2
+      },
+      {
+        "mode": "mobile emulation, simulated 4Mbps 100ms",
+        "readyMs": 2013,
+        "center": "Nike Air Mag 'Back to the Future' (2011)",
+        "errors": [],
+        "bad": [],
+        "homepageCollectionLinks": 2
+      }
+    ],
+    "physicalCellular": "NOT_VERIFIED",
+    "rafeSignoff": "PENDING"
+  },
+  "catalog": {
+    "active": 104,
+    "real_photo_derivatives": 825,
+    "duplicates_confirmed_by_Joshua": [
+      "P08 duplicates B12",
+      "P12 duplicates B04"
+    ],
+    "identity_holds": [
+      "V06",
+      "V51",
+      "V34",
+      "N01"
+    ]
+  },
+  "intake_folder": "https://drive.google.com/drive/folders/1SxPcABM-AES4tHy9UUzHtpEdINW6nnsL",
+  "guide": "https://docs.google.com/document/d/1a_EaMfs-0TgQewNkSmAra7Xz9OGpHU_-m7eGstkG8cw/edit",
+  "originals_preserved": true,
+  "AI_generated_shoe_photos": false,
+  "production_cutover": false
+}

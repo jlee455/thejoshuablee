@@ -1,4 +1,6 @@
 export interface Pair {
+  wall_order?: number
+  float_photos?: string[]
   photos?: { src: string; thumbnail: string; full: string; sourceName: string; sourceUrl?: string }[]
   id: string
   name: string
@@ -35,4 +37,8 @@ export function displayPhoto(pair: Pair, frame = 0) {
 
 export function photoCount(pair: Pair) {
   return pair.photos?.length ?? Math.max(pair.angles, pair.static_photo ? 1 : 0)
+}
+
+export function floatPhoto(pair: Pair, frame = 0) {
+  return pair.float_photos?.[frame] ?? pairPhoto(pair, frame)
 }
