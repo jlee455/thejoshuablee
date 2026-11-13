@@ -378,7 +378,7 @@
       "confidence": "high",
       "launch_gate": null,
       "open_conflicts": [
-        "B18: no StockX 360 \u2014 fallback is pair shots, mixed aspect ratios, 1200px"
+        "B18: no StockX 360 — fallback is pair shots, mixed aspect ratios, 1200px"
       ],
       "differs_from_inventory": {
         "name_in_inventory": "Victor Victor x Nike Air Force 1 Low '01 'Court Purple'"
@@ -559,7 +559,7 @@
       "wall_order": 13,
       "name": "Louis Vuitton x Timberland 6\" Boot - Wheat Monogram",
       "style_code": "",
-      "brand": "Louis Vuitton \u00d7 Timberland",
+      "brand": "Louis Vuitton × Timberland",
       "family": "Boots & Designer",
       "moods": [
         "grail"
@@ -658,7 +658,7 @@
       "confidence": "high",
       "launch_gate": null,
       "open_conflicts": [
-        "B24: no verified style code; GOAT lists two Beige SKUs (FM SKRK11 LIAG H2105 leather, FM SKRK11 DRAG H200509 suede) \u2014 match unresolved, code left blank"
+        "B24: no verified style code; GOAT lists two Beige SKUs (FM SKRK11 LIAG H2105 leather, FM SKRK11 DRAG H200509 suede) — match unresolved, code left blank"
       ],
       "differs_from_inventory": {
         "name_in_inventory": "Lanvin Curb Sneaker \"Beige\""
@@ -1012,45 +1012,6 @@
       ]
     },
     {
-      "id": "V36",
-      "status": "on_page",
-      "wall_order": 25,
-      "name": "Nike SB Dunk Low 'Powerpuff Girls Buttercup' (black/green)",
-      "style_code": "",
-      "brand": "Nike",
-      "family": "Dunks & SB",
-      "moods": [
-        "grail",
-        "loud"
-      ],
-      "colors": [
-        "#3f7d4e",
-        "#17181c",
-        "#3c4048"
-      ],
-      "note": "",
-      "viewer": "spin",
-      "angles": 8,
-      "photo_dir": "assets/turntable/V36/",
-      "static_photo": null,
-      "photo_source": "StockX 360",
-      "photo_rights": "accepted_by_owner",
-      "confidence": "medium-high",
-      "launch_gate": null,
-      "open_conflicts": [],
-      "height_class": "low",
-      "float_photos": [
-        "/collection-media/float/V36-01.webp",
-        "/collection-media/float/V36-02.webp",
-        "/collection-media/float/V36-03.webp",
-        "/collection-media/float/V36-04.webp",
-        "/collection-media/float/V36-05.webp",
-        "/collection-media/float/V36-06.webp",
-        "/collection-media/float/V36-07.webp",
-        "/collection-media/float/V36-08.webp"
-      ]
-    },
-    {
       "id": "V37",
       "status": "on_page",
       "wall_order": 26,
@@ -1093,7 +1054,7 @@
       "status": "on_page",
       "wall_order": 27,
       "name": "Nike SB Dunk Low 'What The Paul'",
-      "style_code": "CZ0333-100",
+      "style_code": "CZ2239-600",
       "brand": "Nike",
       "family": "Dunks & SB",
       "moods": [
@@ -1390,7 +1351,7 @@
       ]
     },
     {
-      "id": "B12",
+      "id": "P08",
       "status": "on_page",
       "wall_order": 37,
       "name": "Nike SB Dunk Low x Powerpuff Girls 'Bubbles'",
@@ -1418,14 +1379,14 @@
       "possible_duplicate_of": "P08",
       "height_class": "low",
       "float_photos": [
-        "/collection-media/float/B12-01.webp",
-        "/collection-media/float/B12-02.webp",
-        "/collection-media/float/B12-03.webp",
-        "/collection-media/float/B12-04.webp",
-        "/collection-media/float/B12-05.webp",
-        "/collection-media/float/B12-06.webp",
-        "/collection-media/float/B12-07.webp",
-        "/collection-media/float/B12-08.webp"
+        "/collection-media/float/P08-01.webp",
+        "/collection-media/float/P08-02.webp",
+        "/collection-media/float/P08-03.webp",
+        "/collection-media/float/P08-04.webp",
+        "/collection-media/float/P08-05.webp",
+        "/collection-media/float/P08-06.webp",
+        "/collection-media/float/P08-07.webp",
+        "/collection-media/float/P08-08.webp"
       ]
     },
     {
@@ -1622,7 +1583,7 @@
           "src": "/collection-media/U29/still.jpg",
           "thumbnail": "/collection-media/U29/still.webp",
           "full": "/collection-media/U29/still.jpg",
-          "sourceName": "Joshua\u2019s personal collection"
+          "sourceName": "Joshua’s personal collection"
         }
       ],
       "float_photos": [
@@ -2422,7 +2383,7 @@
       "confidence": "medium",
       "launch_gate": null,
       "open_conflicts": [
-        "B15/V40: IB1482-100 is the Seoul 2.0 (May 2025); V40 'Seoul' (2018 original) carrying the same code is a mislabel \u2014 V40's code needs re-verification against the box label"
+        "B15/V40: IB1482-100 is the Seoul 2.0 (May 2025); V40 'Seoul' (2018 original) carrying the same code is a mislabel — V40's code needs re-verification against the box label"
       ],
       "differs_from_inventory": {
         "style_code_in_inventory": "IB1482-100"
@@ -2656,7 +2617,7 @@
       "confidence": "high",
       "launch_gate": null,
       "open_conflicts": [
-        "B14: StockX calls CK5692-600 'Jordan 3 Retro SE Unite' \u2014 same shoe as 'Red Cement' (2020 Unite pack); distinct from 'SE Unite (Chicago Exclusive)' CU2277-600"
+        "B14: StockX calls CK5692-600 'Jordan 3 Retro SE Unite' — same shoe as 'Red Cement' (2020 Unite pack); distinct from 'SE Unite (Chicago Exclusive)' CU2277-600"
       ],
       "height_class": "low",
       "float_photos": [
@@ -2696,7 +2657,7 @@
       "confidence": "high",
       "launch_gate": null,
       "open_conflicts": [
-        "B15/V40: IB1482-100 is the Seoul 2.0 (May 2025); V40 'Seoul' (2018 original) carrying the same code is a mislabel \u2014 V40's code needs re-verification against the box label"
+        "B15/V40: IB1482-100 is the Seoul 2.0 (May 2025); V40 'Seoul' (2018 original) carrying the same code is a mislabel — V40's code needs re-verification against the box label"
       ],
       "height_class": "low",
       "float_photos": [
@@ -2797,7 +2758,7 @@
       "id": "V14",
       "status": "on_page",
       "wall_order": 75,
-      "name": "Air Jordan 4 'A Ma Mani\u00e9re' (Violet Ore)",
+      "name": "Air Jordan 4 'A Ma Maniére' (Violet Ore)",
       "style_code": "DV6773-220",
       "brand": "Jordan",
       "family": "Jordan 4",
@@ -3716,8 +3677,8 @@
       "id": "P01",
       "status": "on_page",
       "wall_order": 99,
-      "name": "Pharrell x adidas Adistar Jellyfish - Cream/White",
-      "style_code": "",
+      "name": "Pharrell x adidas Adistar Jellyfish 'Triple White'",
+      "style_code": "KH6730",
       "brand": "adidas",
       "family": "Runners & More",
       "moods": [
@@ -3755,7 +3716,7 @@
       "id": "P13",
       "status": "on_page",
       "wall_order": 100,
-      "name": "MSCHF \u00d7 Reebok Pump Omni Zone IX \u2018Sunbleached\u2019",
+      "name": "MSCHF × Reebok Pump Omni Zone IX ‘Sunbleached’",
       "style_code": "MSCHF013-SB",
       "brand": "Reebok",
       "family": "Runners & More",
@@ -3887,8 +3848,8 @@
       "id": "U01",
       "status": "on_page",
       "wall_order": 101,
-      "name": "Travis Scott x Nike Zoom Field Jaxx \"Limelight\"",
-      "style_code": "HQ3072-300",
+      "name": "Travis Scott x Jordan Jumpman Jack TR 'Green Spark' (2026)",
+      "style_code": "IM9113-300",
       "brand": "Nike",
       "family": "Runners & More",
       "moods": [
@@ -3900,12 +3861,12 @@
         "#b7d94a",
         "#7a5230"
       ],
-      "note": "Lime green suede, adjustable midfoot strap - confirmed by Joshua",
+      "note": "",
       "viewer": "spin",
       "angles": 8,
       "photo_dir": "assets/turntable/U01/",
       "static_photo": null,
-      "photo_source": "JustFreshKicks gallery (no 360 exists; shoe never released at retail)",
+      "photo_source": "StockX 360 Green Spark",
       "photo_rights": "accepted_by_owner",
       "confidence": "high",
       "launch_gate": null,
@@ -3980,7 +3941,7 @@
         "#7fd4e8",
         "#3c4048"
       ],
-      "note": "The 2011 original. 1,500 pairs with light-up soles. Joshua\u2019s pair is #050. The photo shows the model.",
+      "note": "The 2011 original. 1,500 pairs with light-up soles. Joshua’s pair is #050. The photo shows the model.",
       "viewer": "spin",
       "angles": 8,
       "photo_dir": "assets/turntable/B13/",
@@ -4240,6 +4201,804 @@
         "/collection-media/float/N04-06.webp",
         "/collection-media/float/N04-07.webp",
         "/collection-media/float/N04-08.webp"
+      ]
+    },
+    {
+      "id": "V06",
+      "status": "on_page",
+      "wall_order": 29,
+      "name": "Nike Dunk Low — Black Croc",
+      "style_code": "",
+      "brand": "Nike",
+      "family": "Dunks & SB",
+      "moods": [
+        "everyday"
+      ],
+      "colors": [
+        "#17181c",
+        "#3c4048"
+      ],
+      "note": "Exact edition is being confirmed.",
+      "viewer": "spin",
+      "angles": 8,
+      "photo_dir": "assets/turntable/V06/",
+      "static_photo": null,
+      "photo_source": "StockX 360 (matched to Nike Dunk Low 'Shibuya Halloween' IX5169-300)",
+      "photo_rights": "accepted_by_owner",
+      "confidence": "medium",
+      "launch_gate": "Photos matched to Dunk Low Premium Shibuya Halloween, page still names an SB Dunk. Confirm the shoe.",
+      "open_conflicts": [
+        "V06: matched to 'Shibuya Halloween' IX5169-300 (Dunk Low Premium, not SB)"
+      ],
+      "float_photos": [
+        "/collection-media/float/V06-01.webp",
+        "/collection-media/float/V06-02.webp",
+        "/collection-media/float/V06-03.webp",
+        "/collection-media/float/V06-04.webp",
+        "/collection-media/float/V06-05.webp",
+        "/collection-media/float/V06-06.webp",
+        "/collection-media/float/V06-07.webp",
+        "/collection-media/float/V06-08.webp"
+      ]
+    },
+    {
+      "id": "V51",
+      "status": "on_page",
+      "wall_order": 47,
+      "name": "Air Jordan 1 High — Black / White",
+      "style_code": "",
+      "brand": "Jordan",
+      "family": "Jordan 1",
+      "moods": [
+        "clean"
+      ],
+      "colors": [
+        "#17181c",
+        "#e8e6df"
+      ],
+      "note": "Exact edition is being confirmed.",
+      "viewer": "spin",
+      "angles": 8,
+      "photo_dir": "assets/turntable/V51/",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "photo_rights": "accepted_by_owner",
+      "confidence": "medium-high",
+      "launch_gate": "Confirm which Panda release: 2025 or 2023.",
+      "open_conflicts": [
+        "V51: DZ5485-110 is 2025 'Patent Black White'; 2023 85 Panda is BQ4422-001 — check with Joshua"
+      ],
+      "float_photos": [
+        "/collection-media/float/V51-01.webp",
+        "/collection-media/float/V51-02.webp",
+        "/collection-media/float/V51-03.webp",
+        "/collection-media/float/V51-04.webp",
+        "/collection-media/float/V51-05.webp",
+        "/collection-media/float/V51-06.webp",
+        "/collection-media/float/V51-07.webp",
+        "/collection-media/float/V51-08.webp"
+      ]
+    },
+    {
+      "id": "V34",
+      "status": "on_page",
+      "wall_order": 62,
+      "name": "A Ma Maniére × Air Jordan 3 — Black",
+      "style_code": "",
+      "brand": "Jordan",
+      "family": "Jordan 3",
+      "moods": [
+        "grail"
+      ],
+      "colors": [
+        "#17181c",
+        "#3c4048"
+      ],
+      "note": "",
+      "viewer": "spin",
+      "angles": 8,
+      "photo_dir": "assets/turntable/V34/",
+      "static_photo": null,
+      "photo_source": "StockX 360: FZ4811-001 black colorway; corrected from white supplied set",
+      "photo_rights": "accepted_by_owner",
+      "confidence": "medium-high",
+      "launch_gate": "Code on file is the white A Ma Maniere AJ3; confirm black or white.",
+      "open_conflicts": [
+        "V34: DH3434-110 is the WHITE AMM AJ3; black is FZ4811-001 — if Joshua's pair is black, re-collect"
+      ],
+      "float_photos": [
+        "/collection-media/float/V34-01.webp",
+        "/collection-media/float/V34-02.webp",
+        "/collection-media/float/V34-03.webp",
+        "/collection-media/float/V34-04.webp",
+        "/collection-media/float/V34-05.webp",
+        "/collection-media/float/V34-06.webp",
+        "/collection-media/float/V34-07.webp",
+        "/collection-media/float/V34-08.webp"
+      ]
+    },
+    {
+      "id": "N01",
+      "status": "on_page",
+      "wall_order": 108,
+      "name": "New Balance 1400 — Red / Blue",
+      "style_code": "",
+      "brand": "New Balance",
+      "family": "Runners & More",
+      "moods": [
+        "comfort",
+        "loud"
+      ],
+      "colors": [
+        "#4a7fb5",
+        "#2a9d8f",
+        "#e04a2e"
+      ],
+      "note": "Exact colorway identification is being confirmed.",
+      "viewer": "view_angles",
+      "angles": 5,
+      "photo_dir": "assets/turntable/N01/",
+      "static_photo": null,
+      "photo_source": "Novelship gallery (M1400APC confirmed)",
+      "photo_rights": "accepted_by_owner",
+      "confidence": "medium",
+      "launch_gate": "Photos are red-dominant, pair described as blue. Confirm in the closet.",
+      "open_conflicts": [
+        "N01: M1400APC photos are red-dominant, contradicting the brief's blue description — confirm before going live"
+      ],
+      "float_photos": [
+        "/collection-media/float/N01-01.webp",
+        "/collection-media/float/N01-02.webp",
+        "/collection-media/float/N01-03.webp",
+        "/collection-media/float/N01-04.webp",
+        "/collection-media/float/N01-05.webp"
+      ]
+    },
+    {
+      "id": "B32",
+      "wall_order": 111,
+      "brand": "Jordan",
+      "family": "Jordan 1",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "high",
+      "name": "Fragment x Union LA x Air Jordan 1 High OG \"Black/Navy-Sport Royal-Sail\" (2026)",
+      "style_code": "IO7847-001",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B32-01.webp",
+        "/collection-media/float/B32-02.webp",
+        "/collection-media/float/B32-03.webp",
+        "/collection-media/float/B32-04.webp",
+        "/collection-media/float/B32-05.webp",
+        "/collection-media/float/B32-06.webp",
+        "/collection-media/float/B32-07.webp",
+        "/collection-media/float/B32-08.webp"
+      ]
+    },
+    {
+      "id": "B33",
+      "wall_order": 112,
+      "brand": "Jordan",
+      "family": "Jordan 1",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Travis Scott x Air Jordan 1 Low OG SP \"Velvet Brown\" (2024)",
+      "style_code": "DM7866-202",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B33-01.webp",
+        "/collection-media/float/B33-02.webp",
+        "/collection-media/float/B33-03.webp",
+        "/collection-media/float/B33-04.webp",
+        "/collection-media/float/B33-05.webp",
+        "/collection-media/float/B33-06.webp",
+        "/collection-media/float/B33-07.webp",
+        "/collection-media/float/B33-08.webp"
+      ]
+    },
+    {
+      "id": "B34",
+      "wall_order": 113,
+      "brand": "Jordan",
+      "family": "Runners & More",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Travis Scott x Jordan Jumpman Jack TR \"Sail\" (2024)",
+      "style_code": "FZ8117-100",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B34-01.webp",
+        "/collection-media/float/B34-02.webp",
+        "/collection-media/float/B34-03.webp",
+        "/collection-media/float/B34-04.webp",
+        "/collection-media/float/B34-05.webp",
+        "/collection-media/float/B34-06.webp",
+        "/collection-media/float/B34-07.webp",
+        "/collection-media/float/B34-08.webp"
+      ]
+    },
+    {
+      "id": "B35",
+      "wall_order": 114,
+      "brand": "adidas",
+      "family": "Runners & More",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Bad Bunny x adidas Adizero SL72 \"The Archive\" (2025)",
+      "style_code": "JP5997",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B35-01.webp",
+        "/collection-media/float/B35-02.webp",
+        "/collection-media/float/B35-03.webp",
+        "/collection-media/float/B35-04.webp",
+        "/collection-media/float/B35-05.webp",
+        "/collection-media/float/B35-06.webp",
+        "/collection-media/float/B35-07.webp",
+        "/collection-media/float/B35-08.webp"
+      ]
+    },
+    {
+      "id": "B37",
+      "wall_order": 115,
+      "brand": "adidas",
+      "family": "Runners & More",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Brain Dead x adidas Samba Bowling \"Snakeskin\" (2026)",
+      "style_code": "KJ0662",
+      "note": "",
+      "angles": 8,
+      "viewer": "view_angles",
+      "static_photo": null,
+      "photo_source": "Mixed sources (no StockX 360 exists)",
+      "float_photos": [
+        "/collection-media/float/B37-01.webp",
+        "/collection-media/float/B37-02.webp",
+        "/collection-media/float/B37-03.webp",
+        "/collection-media/float/B37-04.webp",
+        "/collection-media/float/B37-05.webp",
+        "/collection-media/float/B37-06.webp",
+        "/collection-media/float/B37-07.webp",
+        "/collection-media/float/B37-08.webp"
+      ]
+    },
+    {
+      "id": "B38",
+      "wall_order": 116,
+      "brand": "Jordan",
+      "family": "Jordan 1",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Air Jordan 1 Low SE \"Magic Ball\" (2026)",
+      "style_code": "IX6375-001",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B38-01.webp",
+        "/collection-media/float/B38-02.webp",
+        "/collection-media/float/B38-03.webp",
+        "/collection-media/float/B38-04.webp",
+        "/collection-media/float/B38-05.webp",
+        "/collection-media/float/B38-06.webp",
+        "/collection-media/float/B38-07.webp",
+        "/collection-media/float/B38-08.webp"
+      ]
+    },
+    {
+      "id": "B39",
+      "wall_order": 117,
+      "brand": "Nike",
+      "family": "Dunks & SB",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Supreme x Martine Rose x Nike Dunk Low \"Mike Tyson\" (2026)",
+      "style_code": "JA1868-001",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B39-01.webp",
+        "/collection-media/float/B39-02.webp",
+        "/collection-media/float/B39-03.webp",
+        "/collection-media/float/B39-04.webp",
+        "/collection-media/float/B39-05.webp",
+        "/collection-media/float/B39-06.webp",
+        "/collection-media/float/B39-07.webp",
+        "/collection-media/float/B39-08.webp"
+      ]
+    },
+    {
+      "id": "B40",
+      "wall_order": 118,
+      "brand": "Nike",
+      "family": "Air Force 1",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Nike Air Force 1 Low \"What The LA\" (2019; 2026 retro)",
+      "style_code": "CT1117-100",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B40-01.webp",
+        "/collection-media/float/B40-02.webp",
+        "/collection-media/float/B40-03.webp",
+        "/collection-media/float/B40-04.webp",
+        "/collection-media/float/B40-05.webp",
+        "/collection-media/float/B40-06.webp",
+        "/collection-media/float/B40-07.webp",
+        "/collection-media/float/B40-08.webp"
+      ]
+    },
+    {
+      "id": "B41",
+      "wall_order": 119,
+      "brand": "Nike",
+      "family": "Dunks & SB",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Division Street / Ducks of a Feather × Nike Dunk Low 'What The Duck' — Away (2024)",
+      "style_code": "HV1454-100",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B41-01.webp",
+        "/collection-media/float/B41-02.webp",
+        "/collection-media/float/B41-03.webp",
+        "/collection-media/float/B41-04.webp",
+        "/collection-media/float/B41-05.webp",
+        "/collection-media/float/B41-06.webp",
+        "/collection-media/float/B41-07.webp",
+        "/collection-media/float/B41-08.webp"
+      ]
+    },
+    {
+      "id": "B42",
+      "wall_order": 120,
+      "brand": "Jordan",
+      "family": "Jordan 2",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "high",
+      "name": "J Balvin x Air Jordan 2 \"Celestine Blue\" (2022)",
+      "style_code": "DQ7691-419",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B42-01.webp",
+        "/collection-media/float/B42-02.webp",
+        "/collection-media/float/B42-03.webp",
+        "/collection-media/float/B42-04.webp",
+        "/collection-media/float/B42-05.webp",
+        "/collection-media/float/B42-06.webp",
+        "/collection-media/float/B42-07.webp",
+        "/collection-media/float/B42-08.webp"
+      ]
+    },
+    {
+      "id": "B43",
+      "wall_order": 121,
+      "brand": "Nike",
+      "family": "Runners & More",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Grateful Dead x University of Oregon x Nike Air Max 90 \"Grateful Ducks\" (2025)",
+      "style_code": "IM2511-100",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B43-01.webp",
+        "/collection-media/float/B43-02.webp",
+        "/collection-media/float/B43-03.webp",
+        "/collection-media/float/B43-04.webp",
+        "/collection-media/float/B43-05.webp",
+        "/collection-media/float/B43-06.webp",
+        "/collection-media/float/B43-07.webp",
+        "/collection-media/float/B43-08.webp"
+      ]
+    },
+    {
+      "id": "B44",
+      "wall_order": 122,
+      "brand": "adidas",
+      "family": "Runners & More",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Pharrell x adidas Adistar Jellyfish \"Crystal Sand\" (2026)",
+      "style_code": "KH6729",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B44-01.webp",
+        "/collection-media/float/B44-02.webp",
+        "/collection-media/float/B44-03.webp",
+        "/collection-media/float/B44-04.webp",
+        "/collection-media/float/B44-05.webp",
+        "/collection-media/float/B44-06.webp",
+        "/collection-media/float/B44-07.webp",
+        "/collection-media/float/B44-08.webp"
+      ]
+    },
+    {
+      "id": "B45",
+      "wall_order": 123,
+      "brand": "adidas",
+      "family": "Runners & More",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Pharrell x adidas Adistar Jellyfish \"Focus Olive Orange\" (2025)",
+      "style_code": "JP9261",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B45-01.webp",
+        "/collection-media/float/B45-02.webp",
+        "/collection-media/float/B45-03.webp",
+        "/collection-media/float/B45-04.webp",
+        "/collection-media/float/B45-05.webp",
+        "/collection-media/float/B45-06.webp",
+        "/collection-media/float/B45-07.webp",
+        "/collection-media/float/B45-08.webp"
+      ]
+    },
+    {
+      "id": "B46",
+      "wall_order": 124,
+      "brand": "Nike",
+      "family": "Dunks & SB",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "high",
+      "name": "Supreme x Nike SB Dunk High \"Rammellzee\" (2023)",
+      "style_code": "FD8779-100",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B46-01.webp",
+        "/collection-media/float/B46-02.webp",
+        "/collection-media/float/B46-03.webp",
+        "/collection-media/float/B46-04.webp",
+        "/collection-media/float/B46-05.webp",
+        "/collection-media/float/B46-06.webp",
+        "/collection-media/float/B46-07.webp",
+        "/collection-media/float/B46-08.webp"
+      ]
+    },
+    {
+      "id": "B47",
+      "wall_order": 125,
+      "brand": "Jordan",
+      "family": "Jordan 4",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "high",
+      "name": "J Balvin x Air Jordan 4 \"Amazonas\" (2026)",
+      "style_code": "IW2872-700",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B47-01.webp",
+        "/collection-media/float/B47-02.webp",
+        "/collection-media/float/B47-03.webp",
+        "/collection-media/float/B47-04.webp",
+        "/collection-media/float/B47-05.webp",
+        "/collection-media/float/B47-06.webp",
+        "/collection-media/float/B47-07.webp",
+        "/collection-media/float/B47-08.webp"
+      ]
+    },
+    {
+      "id": "B48",
+      "wall_order": 126,
+      "brand": "Crocs",
+      "family": "Slides & Crocs",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Futura Laboratories x Crocs All-Terrain Clog \"Flanyard\" (2025)",
+      "style_code": "209632-0DA",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/B48-01.webp",
+        "/collection-media/float/B48-02.webp",
+        "/collection-media/float/B48-03.webp",
+        "/collection-media/float/B48-04.webp",
+        "/collection-media/float/B48-05.webp",
+        "/collection-media/float/B48-06.webp",
+        "/collection-media/float/B48-07.webp",
+        "/collection-media/float/B48-08.webp"
+      ]
+    },
+    {
+      "id": "B49",
+      "wall_order": 127,
+      "brand": "Nike",
+      "family": "Runners & More",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Travis Scott x Nike Zoom Field Jaxx 'Limelight' (2025)",
+      "style_code": "HQ3072-300",
+      "note": "",
+      "angles": 9,
+      "viewer": "view_angles",
+      "static_photo": null,
+      "photo_source": "JustFreshKicks gallery (no 360 exists; shoe never released at retail)",
+      "float_photos": [
+        "/collection-media/float/B49-display.webp",
+        "/collection-media/float/B49-01.webp",
+        "/collection-media/float/B49-02.webp",
+        "/collection-media/float/B49-03.webp",
+        "/collection-media/float/B49-04.webp",
+        "/collection-media/float/B49-05.webp",
+        "/collection-media/float/B49-06.webp",
+        "/collection-media/float/B49-07.webp",
+        "/collection-media/float/B49-08.webp"
+      ],
+      "photos": [
+        {
+          "src": "/collection-media/B49/display.png",
+          "thumbnail": "/collection-media/float/B49-display.webp",
+          "full": "/collection-media/B49/display.png",
+          "sourceName": "GOAT",
+          "sourceUrl": "https://www.goat.com/sneakers/zoom-field-jaxx-limelight-hq3072-300"
+        },
+        {
+          "src": "/collection-media/B49/a01.jpg",
+          "thumbnail": "/collection-media/B49/a01.webp",
+          "full": "/collection-media/B49/a01.jpg",
+          "sourceName": "JustFreshKicks supplied gallery"
+        },
+        {
+          "src": "/collection-media/B49/a02.jpg",
+          "thumbnail": "/collection-media/B49/a02.webp",
+          "full": "/collection-media/B49/a02.jpg",
+          "sourceName": "JustFreshKicks supplied gallery"
+        },
+        {
+          "src": "/collection-media/B49/a03.jpg",
+          "thumbnail": "/collection-media/B49/a03.webp",
+          "full": "/collection-media/B49/a03.jpg",
+          "sourceName": "JustFreshKicks supplied gallery"
+        },
+        {
+          "src": "/collection-media/B49/a04.jpg",
+          "thumbnail": "/collection-media/B49/a04.webp",
+          "full": "/collection-media/B49/a04.jpg",
+          "sourceName": "JustFreshKicks supplied gallery"
+        },
+        {
+          "src": "/collection-media/B49/a05.jpg",
+          "thumbnail": "/collection-media/B49/a05.webp",
+          "full": "/collection-media/B49/a05.jpg",
+          "sourceName": "JustFreshKicks supplied gallery"
+        },
+        {
+          "src": "/collection-media/B49/a06.jpg",
+          "thumbnail": "/collection-media/B49/a06.webp",
+          "full": "/collection-media/B49/a06.jpg",
+          "sourceName": "JustFreshKicks supplied gallery"
+        },
+        {
+          "src": "/collection-media/B49/a07.jpg",
+          "thumbnail": "/collection-media/B49/a07.webp",
+          "full": "/collection-media/B49/a07.jpg",
+          "sourceName": "JustFreshKicks supplied gallery"
+        },
+        {
+          "src": "/collection-media/B49/a08.jpg",
+          "thumbnail": "/collection-media/B49/a08.webp",
+          "full": "/collection-media/B49/a08.jpg",
+          "sourceName": "JustFreshKicks supplied gallery"
+        }
+      ]
+    },
+    {
+      "id": "U30",
+      "wall_order": 128,
+      "brand": "Nike",
+      "family": "Dunks & SB",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "Jeff Staple x Nike SB Dunk Low Pro 'Panda Pigeon'",
+      "style_code": "BV1310-013",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/U30-01.webp",
+        "/collection-media/float/U30-02.webp",
+        "/collection-media/float/U30-03.webp",
+        "/collection-media/float/U30-04.webp",
+        "/collection-media/float/U30-05.webp",
+        "/collection-media/float/U30-06.webp",
+        "/collection-media/float/U30-07.webp",
+        "/collection-media/float/U30-08.webp"
+      ]
+    },
+    {
+      "id": "U31",
+      "wall_order": 129,
+      "brand": "Nike",
+      "family": "Dunks & SB",
+      "moods": [
+        "loud"
+      ],
+      "colors": [
+        "#64748b",
+        "#ff7300"
+      ],
+      "height_class": "low",
+      "name": "The Wizard of Oz x Nike SB Dunk Low Pro QS \"Poppy Field\" (2024)",
+      "style_code": "FZ1291-600",
+      "note": "",
+      "angles": 8,
+      "viewer": "spin",
+      "static_photo": null,
+      "photo_source": "StockX 360",
+      "float_photos": [
+        "/collection-media/float/U31-01.webp",
+        "/collection-media/float/U31-02.webp",
+        "/collection-media/float/U31-03.webp",
+        "/collection-media/float/U31-04.webp",
+        "/collection-media/float/U31-05.webp",
+        "/collection-media/float/U31-06.webp",
+        "/collection-media/float/U31-07.webp",
+        "/collection-media/float/U31-08.webp"
       ]
     }
   ],

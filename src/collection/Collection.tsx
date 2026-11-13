@@ -154,8 +154,8 @@ export default function Collection() {
           </div>
           <div className="active-filters">{(query || brand || family) && <button type="button" onClick={() => { setQuery(''); setBrand(''); setFamily('') }}>Clear all</button>}{query && <button onClick={() => setQuery('')}>“{query}” ×</button>}{brand && <button onClick={() => setBrand('')}>{brand} ×</button>}{family && <button onClick={() => setFamily('')}>{family} ×</button>}</div>
           <div className="light-rail" aria-hidden="true"><i/><i/><i/><i/></div>
-          <div className="collection-grid wall">
-            {found.map(pair => <button type="button" className="pair-card" key={pair.id} data-pair-id={pair.id} onPointerMove={tilt} onPointerLeave={resetTilt} onClick={event => open(pair.id, event.currentTarget)}>
+          <div className="collection-grid wall" onPointerMove={tilt} onPointerOut={resetTilt}>
+            {found.map(pair => <button type="button" className="pair-card" key={pair.id} data-pair-id={pair.id} onClick={event => open(pair.id, event.currentTarget)}>
               <span className="card-image"><span className="card-number">{String(pair.wall_order || pairs.indexOf(pair) + 1).padStart(3,'0')}</span>{pairPhoto(pair) ? <img src={floatPhoto(pair)} alt="" loading="lazy" decoding="async" /> : <span className="missing-photo">Photograph unavailable</span>}<span className="card-open"><ArrowUpRight size={19} /></span></span>
               <span className="shelf" aria-hidden="true"/><span className="card-info"><span className="eyebrow">{pair.brand}</span><span className="card-name">{pair.name}</span><span className="card-bottom"><span>{pair.family}</span><span>{photoCount(pair) > 1 ? `${photoCount(pair)} views` : 'View details'}</span></span></span>
             </button>)}
