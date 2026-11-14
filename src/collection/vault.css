@@ -105,3 +105,63 @@
 .pair-card .card-image .showcase-shoe{z-index:1}
 .pair-card:nth-child(4n+2) .shelf:after{background:linear-gradient(90deg,#ff6a1a40,#ff6a1a 22%,#ffb272 50%,#ff6a1a 78%,#ff6a1a40);box-shadow:0 0 14px 3px #ff6a1a8c,0 20px 36px 8px #ff6a1a26}
 @media(prefers-reduced-motion:reduce){.wheel-item.center .wheel-photo{transform:none}.shoe-glare{display:none}}
+
+/* Measured seating: all geometry comes from alpha > 10, including every angle.
+   The shoe and contact plane move together; parallax never pulls the sole off it. */
+.shoe-seat{display:block;position:relative;width:100%;aspect-ratio:var(--seat-ratio);isolation:isolate;transform-style:preserve-3d;overflow:visible}
+.seat-art{display:block;position:absolute;inset:0;width:100%;height:100%;overflow:hidden;z-index:3;pointer-events:none;filter:drop-shadow(0 -1px 1px #cce5f526)}
+.seat-rim{mix-blend-mode:screen}
+.seat-glow{position:absolute;inset:20% 8% 3%;background:radial-gradient(ellipse at 50% 75%,#ef9a431c,transparent 70%);filter:blur(16px);pointer-events:none;transform:translateZ(-60px)}
+.seat-shelf{position:absolute;top:var(--sole);left:-3%;width:106%;height:12px;background:linear-gradient(#765336,#46311e 45%,#291c13);box-shadow:inset 0 1px #e9bf8155,0 16px 22px #0006;z-index:1;border-radius:1px}
+.seat-shelf:before{content:'';position:absolute;bottom:100%;height:6px;left:0;right:0;clip-path:polygon(0 100%,3% 0,97% 0,100% 100%);background:linear-gradient(#694e35,#986e43)}
+.seat-shelf:after{content:'';position:absolute;top:100%;left:2%;right:2%;height:2px;background:linear-gradient(90deg,transparent,#df771c 22%,#f5a24c 50%,#df771c 78%,transparent);box-shadow:0 3px 12px #ef7a2366,0 22px 32px #ff7a181c}
+.seat-contact{position:absolute;top:calc(var(--sole) - 1px);left:var(--contact-left);width:var(--contact-width);height:16px;background:radial-gradient(ellipse at 50% 0,rgba(0,0,0,.55),transparent 70%);filter:blur(6px);z-index:2;pointer-events:none}
+.shoe-seat[data-ready=false] .seat-contact{opacity:0}
+.seat-loading{position:absolute;inset:15% 5% 15%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;font-size:9px;color:var(--muted)}
+.pair-card .card-image{height:auto;aspect-ratio:auto;overflow:visible;transform:none!important}
+.pair-card .card-image:before,.pair-card .card-image:after{content:none}
+.pair-card .card-image .shoe-seat{height:auto}
+.pair-card .card-info{padding-top:20px}
+.pair-card .card-number,.pair-card .card-open{z-index:4}
+.pair-card .card-open{top:0}
+.pair-card{contain:none;isolation:auto;transform-origin:50% 65%;transition:none;transform-style:preserve-3d}
+.pair-card:after{transform:translateZ(30px)}
+.pair-card .card-info{transform:translateZ(20px)}
+.grail-display{transform:perspective(1100px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transform-origin:50% 65%;transition:none}
+.tiffany-stage{height:auto;transform:none}
+.spotlight-controls{display:grid;position:relative;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;margin-top:16px;min-height:48px}
+.spotlight-controls .viewer-drag{position:static;transform:none;grid-column:2;grid-row:1;display:flex;align-items:center;justify-content:center;white-space:nowrap;border-radius:24px;min-height:32px;padding:8px 12px;background:#101b2df2;font-size:9px}
+.spotlight-controls .grail-count{position:static;grid-column:1;grid-row:1;font-size:10px}
+.spotlight-controls .grail-step{position:static;grid-column:3;grid-row:1;justify-self:end;width:44px;height:44px}
+.main-photo .seat-floor{position:absolute;width:92%;left:4%;bottom:108px;max-height:calc(100% - 140px)}
+.main-photo .seat-floor .seat-art{position:absolute}
+.light-rail[data-filtered=true] i{display:none}
+.wheel-intro{text-decoration:none!important;border:0!important;outline:none!important;box-shadow:none!important}
+.wheel-stage.keyboard-focus:focus .drag-affordance{outline:none}
+.wheel-stage.keyboard-focus:focus .drag-affordance svg{outline:2px solid #ff9c50;outline-offset:4px;border-radius:3px}
+.drag-affordance svg{flex-shrink:0}
+.wheel-item.center .wheel-photo{transform:perspective(1100px) rotateX(var(--hero-rx,0deg)) rotateY(calc(var(--hero-ry,0deg) + var(--travel-tilt,0deg)))}
+.shoe-reflection{inset:100% 4% -91%;filter:blur(2px);opacity:calc(var(--reflection,.2)*.6);mask-image:linear-gradient(transparent 40%,#000 100%);-webkit-mask-image:linear-gradient(transparent 40%,#000 100%);transform:scaleY(-1);overflow:hidden}
+.shoe-shadow{top:100%;bottom:auto;height:16px;left:10%;right:10%;filter:blur(6px);transform:none;background:radial-gradient(ellipse at 50% 0,#0009,transparent 70%)}
+@media(max-width:690px){
+ .pair-card .card-image{height:auto}
+ .pair-card{transform:perspective(1100px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))!important;transform-style:preserve-3d}
+ .grail-reveal{gap:8px;padding-top:40px;padding-bottom:40px}
+ .grail-display{margin-top:0}
+ .tiffany-stage{height:auto}
+ .pair-card .card-info{padding-top:18px}
+ .main-photo{height:430px;min-height:430px}
+}
+@media(prefers-reduced-motion:reduce){.pair-card,.grail-display{transform:none!important}.wheel-item.center .wheel-photo{transform:none}.seat-glow{transform:none}}
+/* Keyboard browsing should land immediately, not coast past several card rows. */
+html:has(.pair-card:focus){scroll-behavior:auto}
+/* Each bay owns its camera. A perspective origin at the center of a 126-card
+   wall projects the upper rows almost edge-on when they tilt. */
+.collection-grid.wall{perspective:none}
+.pair-card{--rx:0deg;--ry:0deg}
+.collection-grid.wall{user-select:none;-webkit-user-select:none}
+.tiffany-stage{transform:perspective(1100px) rotateY(var(--ry,0deg));transform-origin:50% 70%}
+.tiffany-stage{--ry:0deg}
+@media(prefers-reduced-motion:reduce){.tiffany-stage{transform:none}}
+.main-photo .seat-floor{max-height:none}
+.shoe-seat[data-ready=false] .seat-art{opacity:0}

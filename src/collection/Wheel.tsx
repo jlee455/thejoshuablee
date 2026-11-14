@@ -10,6 +10,7 @@ import { readySilhouette, readyImage, silhouetteContains } from './image-ready'
 export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pair, origin: HTMLElement) => void }) {
   const stage = useRef<HTMLDivElement>(null)
   const position = useRef(0)
+  const travel = useRef({time: 0, pos: 0})
   const navigationTarget = useRef<number | null>(null)
   const [pos, setPos] = useState(0)
   const [imageRevision, setImageRevision] = useState(0)
@@ -28,6 +29,10 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
   const pair = pairs[center]
   function spacing() { return Math.min(300, Math.max(170, (stage.current?.clientWidth ?? 1000) * .4)) }
   function setPosition(value: number) {
+    const now = performance.now(), dt = now-travel.current.time
+    const velocity = dt > 0 && dt < 100 ? (value-travel.current.pos)*spacing()/dt : 0
+    stage.current?.style.setProperty('--travel-tilt', `${reduced.current ? 0 : Math.max(-8,Math.min(8,-velocity*3))}deg`)
+    travel.current={time:now,pos:value}
     position.current = value
     if (!length) return
     const anchor = Math.round(value), sp = spacing()
@@ -71,7 +76,7 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
   useLayoutEffect(() => {
     const media = matchMedia('(prefers-reduced-motion: reduce)')
     reduced.current = media.matches
-    const controller = createFling({ getPos: () => position.current, setPos: setPosition, spacing, reduceMotion: () => reduced.current, onSettle: value => { navigationTarget.current = null; setPos(value) } })
+    const controller = createFling({ getPos: () => position.current, setPos: setPosition, spacing, reduceMotion: () => reduced.current, onSettle: value => { stage.current?.style.setProperty('--travel-tilt','0deg'); navigationTarget.current = null; setPos(value) } })
     motion.current = controller
     setPosition(position.current)
     const update = () => { reduced.current = media.matches; if (media.matches) controller.tweenTo(position.current) }
@@ -99,7 +104,7 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
     if (!shoe) return
     const r = shoe.getBoundingClientRect()
     const x = Math.max(0, Math.min(1,(event.clientX-r.left)/r.width)), y = Math.max(0,Math.min(1,(event.clientY-r.top)/r.height))
-    stage.current?.style.setProperty('--hero-ry', `${(x-.5)*24}deg`)
+    stage.current?.style.setProperty('--hero-ry', `${(x-.5)*16}deg`)
     stage.current?.style.setProperty('--hero-rx', `${(.5-y)*16}deg`)
     stage.current?.style.setProperty('--hero-glare', '.3')
     const light = shoe.querySelector('radialGradient')

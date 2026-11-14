@@ -1,5 +1,7 @@
 import fs from 'node:fs'
 import assert from 'node:assert/strict'
+import { createHash } from 'node:crypto'
+const checked = new Set()
 const j=JSON.parse(fs.readFileSync('public/collection-media/collection.json'))
 assert.equal(j.pairs.length,126)
 assert.equal(new Set(j.pairs.map(p=>p.id)).size,126)
@@ -8,6 +10,13 @@ for(const id of ['P12','B12','V36'])assert.ok(!j.pairs.some(p=>p.id===id),`${id}
 for(const number of [29,47,62,108])assert.ok(j.pairs.some(p=>p.wall_order===number))
 for(const p of j.pairs){
  assert.ok(p.float_photos.length>0,p.id)
+ for (const asset of [p.seating, ...p.angle_seating]) {
+  assert.ok(asset && asset.bounds.length===4 && asset.alphaThreshold===10,`${p.id}: measured seating missing`)
+  assert.equal(asset.soleY,asset.bounds[1]+asset.bounds[3])
+  assert.ok(asset.normalizedScale>0 && asset.normalizedScale*asset.bounds[2]<=820.001 && asset.normalizedScale*asset.bounds[3]<=850.001)
+  if(!checked.has(asset.src)){assert.equal(createHash('sha256').update(fs.readFileSync('public'+asset.src)).digest('hex'),asset.sha256,`${p.id}: seating must be remeasured after image replacement`);checked.add(asset.src)}
+ }
+ assert.equal(p.angle_seating.length,p.float_photos.length)
  const s=p.showcase
  assert.ok(s && fs.existsSync('public'+s.src),`${p.id}: missing showcase artwork`)
  assert.ok(s.viewBox.length===4 && s.viewBox.every(Number.isFinite),`${p.id}: invalid silhouette bounds`)

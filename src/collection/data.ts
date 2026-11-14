@@ -1,4 +1,7 @@
+export interface SeatingAsset { src: string; width: number; height: number; bounds: number[]; soleY: number; alphaThreshold: number; normalizedScale: number; sha256: string }
 export interface Pair {
+  seating: SeatingAsset
+  angle_seating: SeatingAsset[]
   showcase?: { src: string; viewBox: number[]; width: number; height: number; ai: boolean; direction: string }
   wall_order?: number
   float_photos?: string[]

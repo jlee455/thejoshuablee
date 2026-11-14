@@ -4,6 +4,7 @@ import { pairPhoto, fullPhoto, floatPhoto, photoCount } from './data'
 import type { Pair } from './data'
 import Wheel from './Wheel'
 import Showcase from './Showcase'
+import SeatedShoe from './SeatedShoe'
 import { RotateStage } from './Motion'
 import { tilt, resetTilt } from './tilt'
 import { readyImage } from './image-ready'
@@ -50,9 +51,9 @@ function PairGallery({ pair, initialPhoto, close, navigate }: { pair: Pair; init
         <RotateStage className="main-photo" count={count} step={changePhoto} label={`${pair.name}. Drag to rotate. Arrow keys change view.`}>
           <span className="gallery-photo-label">THE DETAILS / {String(shown + 1).padStart(2,'0')}</span>
           <div className="viewer-light" aria-hidden="true" />
-          {resolved !== null && <img className="viewer-shoe" src={floatPhoto(pair,resolved)} alt={pair.name + (count > 1 ? `, view ${resolved + 1}` : '')} draggable={false} />}
+          {resolved !== null && <SeatedShoe pair={pair} angle={resolved} variant="floor"/>}
           {resolved !== photo && <div className={`viewer-loading${resolved !== null ? ' changing' : ''}`} role="status">{resolved === null && <span className="shoe-skeleton" />}{imageError ? 'Photograph unavailable. Choose another view.' : 'Loading the details…'}</div>}
-          <span className="viewer-platform" aria-hidden="true" />
+
           <span className="viewer-drag">{count > 1 ? (pair.viewer === 'view_angles' || count <= 5 ? 'View angles · Drag to explore' : 'Drag to rotate') : 'Single photograph'}</span>
           {count > 1 && <div className="photo-navigation">
             <button type="button" className="icon-button" aria-label="Previous photograph" onClick={() => changePhoto(-1)}><ChevronLeft size={20} /></button>
@@ -142,12 +143,13 @@ export default function Collection() {
         <div className="grail-copy"><p className="eyebrow">The inner circle / Friends & family</p><h2 id="tiffany-title">SOME GRAILS<br />DON’T GO<br /><em>ON SALE.</em></h2><p>Tiffany & Co. × Nike Air Force 1.<br />The Friends & Family edition.</p><button type="button" className="text-link" onClick={event => open(hero.id,event.currentTarget,heroView)}>Explore the Tiffany <ArrowUpRight size={18}/></button></div>
         <div className="grail-display" onPointerMove={tilt} onPointerLeave={resetTilt}>
           <RotateStage className="tiffany-stage" count={photoCount(hero)} threshold={34} step={n => setHeroView(v => ((v + n) % photoCount(hero) + photoCount(hero)) % photoCount(hero))} label="Tiffany Friends and Family. Drag to rotate or use arrow keys.">
-            <span className="tiffany-halo" aria-hidden="true"/><img src={floatPhoto(hero,heroView)} alt={`Tiffany Friends & Family, view ${heroView + 1}`} draggable={false} loading="lazy"/>
+            <SeatedShoe pair={hero} angle={heroView} variant="spotlight"/>
+            <span className="spotlight-controls">
             <span className="viewer-drag">Drag to rotate</span>
             <button type="button" className="grail-step icon-button" aria-label="Next Tiffany angle" onClick={() => setHeroView(v => (v+1)%photoCount(hero))}><ChevronRight size={22}/></button>
-            <span className="grail-count">{heroView + 1} / {photoCount(hero)}</span>
+            <span className="grail-count">{heroView + 1} / {photoCount(hero)}</span></span>
           </RotateStage>
-          <span className="shelf grail-shelf" aria-hidden="true"/>
+
         </div>
       </section>}
       <section className="personal-section" aria-labelledby="personal-title"><div className="personal-heading"><p className="eyebrow">200+ pairs. One very personal obsession.</p><h2 id="personal-title">“I’ve got over 200 pairs, and I still forget what’s in my own closet.”</h2><p>— Joshua B. Lee</p><div className="personal-actions"><a href="#collection" className="text-link">Explore the Vault <ArrowDown size={16}/></a><button type="button" className="outline-button" disabled={!found.length} onClick={event => pick(event.currentTarget)}>Pick a pair for me <ArrowUpRight size={16}/></button></div></div><div className="closet-photos"><img src="/collection-media/closet-1.webp" alt="Joshua’s personal sneaker collection" loading="lazy"/><img src="/collection-media/closet-2.webp" alt="A closer look inside Joshua’s sneaker closet" loading="lazy"/></div></section>
@@ -164,11 +166,11 @@ export default function Collection() {
             <select aria-label="Family" value={family} onChange={event => setFamily(event.target.value)}><option value="">All styles</option>{families.map(value => <option key={value}>{value}</option>)}</select>
           </div>
           <div className="active-filters">{(query || brand || family) && <button type="button" onClick={() => { setQuery(''); setBrand(''); setFamily('') }}>Clear all</button>}{query && <button onClick={() => setQuery('')}>“{query}” ×</button>}{brand && <button onClick={() => setBrand('')}>{brand} ×</button>}{family && <button onClick={() => setFamily('')}>{family} ×</button>}</div>
-          </div><div className="light-rail" aria-hidden="true"><i/><i/><i/><i/></div>
+          </div><div className="light-rail" aria-hidden="true" data-filtered={!!(query || brand || family)}><i/><i/><i/><i/></div>
           <div className="collection-grid wall" onPointerMove={tilt} onPointerOut={resetTilt}>
             {found.map(pair => <button type="button" className="pair-card" key={pair.id} data-pair-id={pair.id} onClick={event => open(pair.id, event.currentTarget)}>
-              <span className="card-image"><span className="card-number">{String(pair.wall_order || pairs.indexOf(pair) + 1).padStart(3,'0')}</span>{pairPhoto(pair) ? <Showcase pair={pair}/> : <span className="missing-photo">Photograph unavailable</span>}<span className="card-open"><ArrowUpRight size={19} /></span></span>
-              <span className="shelf" aria-hidden="true"/><span className="card-info"><span className="eyebrow">{pair.brand}</span><span className="card-name">{pair.name}</span><span className="card-bottom"><span>{pair.family}</span><span>{photoCount(pair) > 1 ? `${photoCount(pair)} views` : 'View details'}</span></span></span>
+              <span className="card-image"><span className="card-number">{String(pair.wall_order || pairs.indexOf(pair) + 1).padStart(3,'0')}</span>{pairPhoto(pair) ? <SeatedShoe pair={pair}/> : <span className="missing-photo">Photograph unavailable</span>}<span className="card-open"><ArrowUpRight size={19} /></span></span>
+              <span className="card-info"><span className="eyebrow">{pair.brand}</span><span className="card-name">{pair.name}</span><span className="card-bottom"><span>{pair.family}</span><span>{photoCount(pair) > 1 ? `${photoCount(pair)} views` : 'View details'}</span></span></span>
             </button>)}
           </div>
           {!found.length && <p className="empty" role="status">No pairs match. Try another brand, style, or search.</p>}
