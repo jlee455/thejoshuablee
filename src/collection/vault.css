@@ -69,3 +69,27 @@
 }
 
 .pair-card .card-open{top:10px;bottom:auto;right:0;opacity:.55}
+
+/* Nov 14 depth pass: light has no hard boundary, soles meet a shared floor. */
+.wheel-item{top:41%;height:min(350px,56vw)}
+.shoe-aura{inset:24% 15% 4%;border:0;border-radius:0;background:radial-gradient(ellipse at 50% 65%,rgba(255,139,66,.17) 0%,rgba(255,139,66,.06) 35%,rgba(255,139,66,0) 70%);filter:blur(24px);transform:none;box-shadow:none}
+.wheel-stage:after{content:'';position:absolute;inset:0;z-index:150;pointer-events:none;background:linear-gradient(90deg,#070d18 0%,transparent 19%,transparent 81%,#070d18 100%)}
+.wheel-stage:before{background:radial-gradient(ellipse 50% 75% at 50% 35%,#c4dded0c,transparent 70%),radial-gradient(ellipse 36% 16% at 50% 79%,#ff7c1e18,transparent 75%)}
+.wheel-plinth{display:none}.orbit{opacity:.3}.spotlight{opacity:.65}
+.shoe-shadow{bottom:-5%;height:11%;left:2%;right:2%;background:radial-gradient(ellipse,#000e 0%,#000a 35%,transparent 73%);filter:blur(7px);opacity:calc(.45 + var(--near)*.5);transform:scaleX(1.08)}
+.shoe-reflection{inset:101% 4% -92%;opacity:calc(var(--reflection,.2)*.85);filter:blur(1.4px);mask-image:linear-gradient(transparent 58%,#000 100%);-webkit-mask-image:linear-gradient(transparent 58%,#000 100%);transform:scaleY(-1)}
+.wheel-item[data-ready=false] .wheel-photo,.wheel-item[data-ready=false] .shoe-reflection,.wheel-item[data-ready=false] .shoe-shadow{visibility:hidden}
+.wheel-loading,.viewer-loading{position:absolute;inset:10% 10% 20%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:22px;font-size:12px;color:#c2cedf;pointer-events:none;z-index:160;text-align:center}
+.shoe-skeleton{display:block;width:min(330px,75%);height:110px;background:linear-gradient(110deg,#31405755,#72859755,#31405755);clip-path:polygon(10% 15%,27% 20%,40% 55%,65% 62%,92% 75%,100% 89%,96% 100%,4% 100%,0 85%);animation:loading-breathe 1.5s ease-in-out infinite alternate}
+@keyframes loading-breathe{to{opacity:.35}}
+.viewer-loading.changing{inset:auto 0 70px;font-size:10px}
+.drag-affordance{bottom:12px;z-index:160;background:#0b1120ed}
+.wheel-console{padding-top:12px}
+.collection-toolbar{position:sticky;top:0;z-index:9;background:#080f1ff5;backdrop-filter:blur(16px);margin:30px -10px 0;padding:0 10px 10px}
+.collection-toolbar .collection-controls{position:static;margin:0;backdrop-filter:none;background:transparent;padding:12px 0}
+.collection-toolbar .active-filters{min-height:0;position:relative;margin:0}.active-filters button{margin-top:0;min-height:32px}
+.main-photo .viewer-shoe{inset:10% 4% auto;width:92%;height:65%}
+.viewer-platform{bottom:22%;height:7%;background:radial-gradient(ellipse,#000a,transparent 70%);border:0;box-shadow:none;transform:none}
+.viewer-light{inset:24% 22% 32%;background:radial-gradient(ellipse,#ffd09c0c,transparent 70%);border-radius:0;filter:blur(25px)}
+.main-photo .viewer-drag{bottom:64px}.tiffany-stage>img{height:calc(100% - 66px);padding:0}.tiffany-stage .viewer-drag{bottom:12px}
+@media(max-width:690px){.wheel-item{height:min(65.6vw,280px);top:40%}.wheel-stage{height:360px}.collection-toolbar{margin-top:24px}.collection-toolbar .collection-controls{min-height:90px;padding:8px 0}.main-photo .viewer-shoe{inset:12% 4% auto;height:60%}.main-photo .viewer-drag{bottom:66px}.tiffany-stage>img{height:calc(100% - 64px)}}

@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, ArrowUpRight, MoveHorizontal } from 'lucide-reac
 import type { Pair } from './data'
 import { floatPhoto } from './data'
 import { createFling, releaseVelocity } from './wheel-fling'
+import { readySilhouette, readyImage, silhouetteContains } from './image-ready'
 
 // Supplied wheel.html and Appendix E, with nine recycled DOM slots and settled React state.
 export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pair, origin: HTMLElement) => void }) {
@@ -11,6 +12,10 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
   const position = useRef(0)
   const navigationTarget = useRef<number | null>(null)
   const [pos, setPos] = useState(0)
+  const [imageRevision, setImageRevision] = useState(0)
+  const ready = useRef(new Set<string>())
+  const failed = useRef(new Set<string>())
+  const captionAnchor = useRef(0)
   const pool = useRef<(HTMLButtonElement | null)[]>([])
   const motion = useRef<ReturnType<typeof createFling> | null>(null)
   const reduced = useRef(false)
@@ -25,13 +30,22 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
     position.current = value
     if (!length) return
     const anchor = Math.round(value), sp = spacing()
+    if (anchor !== captionAnchor.current) { captionAnchor.current = anchor; setPos(anchor) }
     pool.current.forEach((el, slot) => {
       if (!el) return
       const index = anchor + slot - Math.min(4, Math.floor(length / 2)), shoe = pairs[mod(index)]
       const offset = index - value, a = Math.abs(offset), near = Math.max(0, 1 - a)
       if (el.dataset.pairId !== shoe.id) {
         el.dataset.pairId = shoe.id
-        el.setAttribute('aria-label', `View ${shoe.name}`)
+        el.dataset.ready = ready.current.has(shoe.id) ? 'true' : 'false'
+        const src = shoe.showcase?.src ?? floatPhoto(shoe) ?? ''
+        readySilhouette(src).then(() => {
+          ready.current.add(shoe.id)
+          if (el.dataset.pairId === shoe.id) el.dataset.ready = 'true'
+          setImageRevision(n => n + 1)
+        }).catch(() => { failed.current.add(shoe.id); setImageRevision(n => n + 1) })
+        void readyImage(floatPhoto(shoe) || src).catch(() => {})
+        el.setAttribute('aria-label', `Select ${shoe.name}`)
         const images = el.querySelectorAll('svg')
         images.forEach(svg => { const s = shoe.showcase; svg.setAttribute('viewBox', s?.viewBox.join(' ') ?? '0 0 1024 800'); svg.setAttribute('aria-label', shoe.name); const img = svg.querySelector('image')!; img.setAttribute('href', s?.src ?? floatPhoto(shoe) ?? ''); img.setAttribute('width', String(s?.width ?? 1024)); img.setAttribute('height', String(s?.height ?? 800)); })
       }
@@ -64,7 +78,7 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
     if (stage.current) resize.observe(stage.current)
     media.addEventListener('change', update)
     return () => { controller.cancel(); resize.disconnect(); media.removeEventListener('change', update) }
-    // Each frame writes only the nine shoe slots; React updates when the wheel settles.
+    // Recycle nine slots; update the caption only when the nearest shoe changes.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pairs])
   useEffect(() => {
@@ -76,9 +90,18 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
     if (!length || !event.isPrimary || event.button !== 0) return
     motion.current?.cancel()
     navigationTarget.current = null
-    const button = (event.target as HTMLElement).closest<HTMLElement>('[data-wheel-position]')
+    // Hit-test opaque artwork front-to-back, not overlapping rectangular buttons.
+    const hit = [...pool.current].filter((el): el is HTMLButtonElement => !!el && el.dataset.ready === 'true')
+      .sort((a,b) => Number(b.style.zIndex) - Number(a.style.zIndex)).find(el => {
+        const svg = el.querySelector('.wheel-photo svg') as SVGSVGElement
+        const matrix = svg.getScreenCTM()
+        if (!matrix) return false
+        const point = new DOMPoint(event.clientX, event.clientY).matrixTransform(matrix.inverse())
+        const image = svg.querySelector('image')!
+        return silhouetteContains(image.getAttribute('href')!, point.x / Number(image.getAttribute('width')), point.y / Number(image.getAttribute('height')))
+      })
     event.currentTarget.focus({ preventScroll: true })
-    drag.current = { centeredAtDown: Math.round(position.current), id: event.pointerId, x: event.clientX, start: position.current, moved: 0, samples: [[event.clientX, event.timeStamp]], index: button ? Number(button.dataset.wheelPosition) : null }
+    drag.current = { centeredAtDown: Math.round(position.current), id: event.pointerId, x: event.clientX, start: position.current, moved: 0, samples: [[event.clientX, event.timeStamp]], index: hit ? Number(hit.dataset.wheelPosition) : null }
     event.currentTarget.setPointerCapture(event.pointerId)
     setDragging(true)
   }
@@ -116,19 +139,20 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
         if (['ArrowLeft','ArrowRight','Home','End','Enter',' '].includes(event.key)) event.preventDefault()
         if (event.key === 'ArrowLeft') stepBy(-1)
         if (event.key === 'ArrowRight') stepBy(1)
-        if (event.key === 'Home') tweenTo(position.current - mod(position.current))
-        if (event.key === 'End') tweenTo(position.current - mod(position.current) + length - 1)
+        if (event.key === 'Home') { navigationTarget.current = null; motion.current?.cancel(); setPosition(0); setPos(0) }
+        if (event.key === 'End') { navigationTarget.current = null; motion.current?.cancel(); setPosition(length - 1); setPos(length - 1) }
         if (event.key === 'Enter' || event.key === ' ') { motion.current?.cancel(); const selected = Math.round(position.current); setPosition(selected); setPos(selected); open(pairs[mod(selected)], event.currentTarget) }
       }}>
       <div className="wheel-architecture" aria-hidden="true"><div className="spotlight left" /><div className="spotlight right" /><div className="orbit orbit-back" /><div className="orbit orbit-front" /><div className="wheel-plinth" /><span className="vault-watermark">THE VAULT</span></div>
-      <div className="wheel-track">
+      <div className="wheel-track" data-image-revision={imageRevision}>
         {slots.map(slot => <button key={slot} ref={el => { pool.current[slot] = el }} type="button" className="wheel-item" tabIndex={-1}>
           <span className="shoe-aura" /><span className="wheel-photo"><svg preserveAspectRatio="xMidYMax meet" role="img"><image/></svg></span><span className="shoe-shadow" /><span className="shoe-reflection" aria-hidden="true"><svg preserveAspectRatio="xMidYMax meet" role="img"><image/></svg></span>
         </button>)}
       </div>
+      {(!pair || !ready.current.has(pair.id)) && <div className="wheel-loading" role="status"><span className="shoe-skeleton" />{pair && failed.current.has(pair.id) ? 'This photograph is unavailable. Try the next pair.' : 'Bringing the collection into focus…'}</div>}
       <span className="drag-affordance"><MoveHorizontal size={19} /> Drag to spin</span>
     </div>
-    {pair && <div className="wheel-console"><button className="icon-button" type="button" aria-label="Previous shoe on wheel" onClick={() => stepBy(-1)}><ArrowLeft size={20}/></button><div className="wheel-info" aria-live={dragging ? 'off' : 'polite'}><p className="eyebrow">{pair.id === 'B13' ? 'Joshua’s favorite grail' : pair.brand} <span> / {String(center + 1).padStart(3,'0')}</span></p><h2>{pair.name}</h2><button type="button" className="wheel-open" onClick={event => open(pair,event.currentTarget)}>Pick it up <ArrowUpRight size={16}/></button></div><button className="icon-button" type="button" aria-label="Next shoe on wheel" onClick={() => stepBy(1)}><ArrowRight size={20}/></button></div>}
+    {pair && <div className="wheel-console"><button className="icon-button" type="button" aria-label="Previous shoe on wheel" onClick={() => stepBy(-1)}><ArrowLeft size={20}/></button><div className="wheel-info" aria-live={dragging ? 'off' : 'polite'}><p className="eyebrow">{pair.id === 'B13' ? 'Joshua’s favorite grail' : pair.brand} <span> / {String(pair.wall_order ?? center + 1).padStart(3,'0')}</span></p><h2>{pair.name}</h2><button type="button" className="wheel-open" onClick={event => open(pair,event.currentTarget)}>Pick it up <ArrowUpRight size={16}/></button></div><button className="icon-button" type="button" aria-label="Next shoe on wheel" onClick={() => stepBy(1)}><ArrowRight size={20}/></button></div>}
     <div className="wheel-bottom"><span>{length || '—'} catalogued pairs</span><span>Not a store. A personal obsession.</span><a href="#collection">Explore the wall ↓</a></div>
   </section>
 }

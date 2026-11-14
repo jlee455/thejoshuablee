@@ -6,13 +6,22 @@ import Wheel from './Wheel'
 import Showcase from './Showcase'
 import { RotateStage } from './Motion'
 import { tilt, resetTilt } from './tilt'
+import { readyImage } from './image-ready'
 
 function PairGallery({ pair, initialPhoto, close, navigate }: { pair: Pair; initialPhoto: number; close: () => void; navigate: (direction: number) => void }) {
   const dialog = useRef<HTMLDialogElement>(null)
   const [photo, setPhoto] = useState(initialPhoto)
+  const [resolved, setResolved] = useState<number | null>(null)
+  const [imageError, setImageError] = useState(false)
   const count = photoCount(pair)
   const url = floatPhoto(pair, photo)
-  const source = pair.photos?.[photo]
+  const shown = resolved ?? photo
+  const source = pair.photos?.[shown]
+  useEffect(() => {
+    let active = true
+    readyImage(url || '').then(() => { if (active) { setResolved(photo); setImageError(false) } }).catch(() => { if (active) setImageError(true) })
+    return () => { active = false }
+  }, [url, photo])
   useEffect(() => {
     const element = dialog.current
     element?.showModal()
@@ -39,19 +48,20 @@ function PairGallery({ pair, initialPhoto, close, navigate }: { pair: Pair; init
     <div className="gallery-layout">
       <div className="gallery-photos">
         <RotateStage className="main-photo" count={count} step={changePhoto} label={`${pair.name}. Drag to rotate. Arrow keys change view.`}>
-          <span className="gallery-photo-label">THE DETAILS / {String(photo + 1).padStart(2,'0')}</span>
+          <span className="gallery-photo-label">THE DETAILS / {String(shown + 1).padStart(2,'0')}</span>
           <div className="viewer-light" aria-hidden="true" />
-          {url ? <img className="viewer-shoe" src={url} alt={pair.name + (count > 1 ? `, view ${photo + 1}` : '')} draggable={false} /> : <p>Photograph unavailable</p>}
+          {resolved !== null && <img className="viewer-shoe" src={floatPhoto(pair,resolved)} alt={pair.name + (count > 1 ? `, view ${resolved + 1}` : '')} draggable={false} />}
+          {resolved !== photo && <div className={`viewer-loading${resolved !== null ? ' changing' : ''}`} role="status">{resolved === null && <span className="shoe-skeleton" />}{imageError ? 'Photograph unavailable. Choose another view.' : 'Loading the details…'}</div>}
           <span className="viewer-platform" aria-hidden="true" />
           <span className="viewer-drag">{count > 1 ? (pair.viewer === 'view_angles' || count <= 5 ? 'View angles · Drag to explore' : 'Drag to rotate') : 'Single photograph'}</span>
           {count > 1 && <div className="photo-navigation">
             <button type="button" className="icon-button" aria-label="Previous photograph" onClick={() => changePhoto(-1)}><ChevronLeft size={20} /></button>
-            <span aria-live="polite">{photo + 1} / {count}</span>
+            <span aria-live="polite">{shown + 1} / {count}</span>
             <button type="button" className="icon-button" aria-label="Next photograph" onClick={() => changePhoto(1)}><ChevronRight size={20} /></button>
           </div>}
         </RotateStage>
         {count > 1 && <div className="thumbnails" aria-label="Available photographs">
-          {Array.from({ length: count }, (_, index) => <button type="button" key={index} aria-label={`View photograph ${index + 1}`} aria-pressed={photo === index} onClick={() => setPhoto(index)}>
+          {Array.from({ length: count }, (_, index) => <button type="button" key={index} aria-label={`View photograph ${index + 1}`} aria-pressed={shown === index} onClick={() => setPhoto(index)}>
             <img src={floatPhoto(pair, index)} alt="" loading="lazy" />
           </button>)}
         </div>}
@@ -61,7 +71,7 @@ function PairGallery({ pair, initialPhoto, close, navigate }: { pair: Pair; init
         <h2 id="pair-title">{pair.name}</h2>
         {pair.style_code && <p className="style-code">Style {pair.style_code}</p>}
         <div className="swatches" aria-label="Color palette">{pair.colors.map((color, index) => <span key={index} style={{ background: color }} />)}</div>
-        <a className="original-photo-link" href={fullPhoto(pair, photo)} target="_blank" rel="noopener noreferrer">Open original photograph <ArrowUpRight size={14}/></a><p className="gallery-credit">{source ? <>Photography: {source.sourceUrl ? <a href={source.sourceUrl} target="_blank" rel="noopener noreferrer">{source.sourceName}</a> : source.sourceName}.</> : 'Supplied model photography.'} Open a photograph at full resolution.</p>
+        <a className="original-photo-link" href={fullPhoto(pair, shown)} target="_blank" rel="noopener noreferrer">Open original photograph <ArrowUpRight size={14}/></a><p className="gallery-credit">{source ? <>Photography: {source.sourceUrl ? <a href={source.sourceUrl} target="_blank" rel="noopener noreferrer">{source.sourceName}</a> : source.sourceName}.</> : 'Supplied model photography.'} Open a photograph at full resolution.</p>
         <div className="pair-navigation">
           <button type="button" onClick={() => navigate(-1)}><ArrowLeft size={16} /> Previous pair</button>
           <button type="button" onClick={() => navigate(1)}>Next pair <ArrowRight size={16} /></button>
@@ -97,7 +107,7 @@ export default function Collection() {
   const brands = [...new Set(pairs.map(pair => pair.brand))].sort()
   const families = [...new Set(pairs.map(pair => pair.family))].sort()
   const found = pairs.filter(pair => (!brand || pair.brand === brand) && (!family || pair.family === family)
-    && `${pair.name} ${pair.brand} ${pair.family} ${pair.style_code}`.toLowerCase().includes(query.trim().toLowerCase()))
+    && `${String(pair.wall_order).padStart(3,'0')} ${pair.id} ${pair.name} ${pair.brand} ${pair.family} ${pair.style_code}`.toLowerCase().includes(query.trim().toLowerCase()))
   const selected = pairs.find(pair => pair.id === selectedId)
   const hero = pairs.find(pair => pair.id === 'B22')
 
@@ -148,13 +158,13 @@ export default function Collection() {
         {error && <p role="alert">The collection couldn’t load. <button type="button" onClick={() => location.reload()}>Try again</button></p>}
         {!pairs.length && !error && <p role="status">Loading the collection…</p>}
         {!!pairs.length && <>
-          <div className="collection-controls"><span className="filter-count" aria-live="polite">{found.length} of {pairs.length} pairs</span>
+          <div className="collection-toolbar"><div className="collection-controls"><span className="filter-count" aria-live="polite">{found.length} of {pairs.length} pairs</span>
             <label className="search"><Search size={17} /><input aria-label="Search the collection" placeholder="Find your favorite pair" value={query} onChange={event => setQuery(event.target.value)} /></label>
             <select aria-label="Brand" value={brand} onChange={event => setBrand(event.target.value)}><option value="">All brands</option>{brands.map(value => <option key={value}>{value}</option>)}</select>
             <select aria-label="Family" value={family} onChange={event => setFamily(event.target.value)}><option value="">All styles</option>{families.map(value => <option key={value}>{value}</option>)}</select>
           </div>
           <div className="active-filters">{(query || brand || family) && <button type="button" onClick={() => { setQuery(''); setBrand(''); setFamily('') }}>Clear all</button>}{query && <button onClick={() => setQuery('')}>“{query}” ×</button>}{brand && <button onClick={() => setBrand('')}>{brand} ×</button>}{family && <button onClick={() => setFamily('')}>{family} ×</button>}</div>
-          <div className="light-rail" aria-hidden="true"><i/><i/><i/><i/></div>
+          </div><div className="light-rail" aria-hidden="true"><i/><i/><i/><i/></div>
           <div className="collection-grid wall" onPointerMove={tilt} onPointerOut={resetTilt}>
             {found.map(pair => <button type="button" className="pair-card" key={pair.id} data-pair-id={pair.id} onClick={event => open(pair.id, event.currentTarget)}>
               <span className="card-image"><span className="card-number">{String(pair.wall_order || pairs.indexOf(pair) + 1).padStart(3,'0')}</span>{pairPhoto(pair) ? <Showcase pair={pair}/> : <span className="missing-photo">Photograph unavailable</span>}<span className="card-open"><ArrowUpRight size={19} /></span></span>

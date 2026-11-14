@@ -1,0 +1,9 @@
+# Collection iteration — November 14
+
+Replaces the hard hero backdrop with feathered lighting, symmetrical edge falloff, stronger sole contact and a fading reflected shoe. Neighbor taps now hit the opaque silhouette using an inverse SVG screen transform and a cached alpha mask; transparent padding cannot open the centered pair. Home/End select directly and reset pending arrow navigation, and captions update at each nearest-shoe transition. Captions now use stable catalog numbers, matching the wall.
+
+Hero artwork and first viewer frames are decoded before display. Loading and failure states are explicit; subsequent viewer frames retain the previous decoded image and matching caption until ready. Active filter chips share the sticky toolbar, controls sit below the soles, and search includes stable catalog numbers and IDs. Social metadata now matches the 126-pair count.
+
+Catalog reconciliation: the supplied inventory has 124 entries in identified, plus a separate uncertain section. The site excludes seven identified entries and includes nine resolved entries from uncertain: 124 - 7 + 9 = 126. Catalog111–127 are the17 newer supplied Batch4 pairs;128/129 are resolved Panda Pigeon and Wizard of Oz. Catalog025/V36 was the erroneous Buttercup identification, explicitly corrected to the other What The Duck Away shoe in the revised inventory.025 stays absent alongside duplicate030/B12 and059/P12. No inventory data changed in this iteration. Full mapping is in the local reconciliation receipt.
+
+Validation: production build, scoped lint, three decode/cache/alpha-hit/failure tests, native browser neighbor-to-center and center-to-viewer checks, Home/End image-caption checks, 390px and880px layout review, actual desktop Chrome pointer-driven card/shelf tilt, native drag/release and five-second delayed hero loading. Physical iPhone thumb flick and cellular network testing remain NOT_VERIFIED. No production application/gate work performed.
