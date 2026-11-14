@@ -28,7 +28,7 @@
 
 /* From 7 to 10: shoes move through a fixed pool of light, above a reflective shelf. */
 .wheel-stage{perspective:1100px}
-.wheel-stage:focus-visible{outline:2px solid #ff7300;outline-offset:-4px;border-radius:18px}
+.wheel-stage:focus-visible{outline:none}.wheel-stage.keyboard-focus:focus .drag-affordance{outline:2px solid #ff9c50;outline-offset:5px}
 .wheel-item{--near:0;--brightness:1;--saturation:1;--reflection:.06}
 .wheel-photo{filter:brightness(var(--brightness)) saturate(var(--saturation));transform:translateZ(38px)}
 .wheel-photo img{filter:drop-shadow(0 22px 28px rgba(0,0,0,.50)) drop-shadow(0 0 32px rgba(255,115,0,.12))}
@@ -43,7 +43,7 @@
 @media(prefers-reduced-motion:reduce){.pair-card{transform:none}.wheel-photo{animation:none}}
 
 /* Sole-anchored display: intrinsic silhouette bounds, not inconsistent photo padding. */
-.wheel-photo{position:absolute;inset:9% 4% 0;transform:none!important;filter:brightness(var(--brightness,1)) saturate(var(--saturation,1));}
+.wheel-photo{position:absolute;inset:9% 4% 0;transform:none;filter:brightness(var(--brightness,1)) saturate(var(--saturation,1));}
 .wheel-photo svg,.shoe-reflection svg{display:block;width:100%;height:100%;overflow:visible;pointer-events:none}
 .wheel-photo svg{filter:drop-shadow(0 -1px 1px #e0f2ff88) drop-shadow(-6px -3px 12px #ff8a3030) drop-shadow(9px 16px 10px #0009)}
 .wheel-item.center .wheel-photo svg{filter:drop-shadow(0 -1px 1px #e0f2ffbb) drop-shadow(-8px -4px 14px #ff8a3040) drop-shadow(12px 19px 12px #000b)}
@@ -93,3 +93,15 @@
 .viewer-light{inset:24% 22% 32%;background:radial-gradient(ellipse,#ffd09c0c,transparent 70%);border-radius:0;filter:blur(25px)}
 .main-photo .viewer-drag{bottom:64px}.tiffany-stage>img{height:calc(100% - 66px);padding:0}.tiffany-stage .viewer-drag{bottom:12px}
 @media(max-width:690px){.wheel-item{height:min(65.6vw,280px);top:40%}.wheel-stage{height:360px}.collection-toolbar{margin-top:24px}.collection-toolbar .collection-controls{min-height:90px;padding:8px 0}.main-photo .viewer-shoe{inset:12% 4% auto;height:60%}.main-photo .viewer-drag{bottom:66px}.tiffany-stage>img{height:calc(100% - 64px)}}
+
+/* Road to 10: light follows the hand; the shoe pivots above a fixed contact plane. */
+.wheel-photo{transform-origin:50% 96%;transition:transform .16s ease-out;transform-style:preserve-3d}
+.wheel-item.center .wheel-photo{transform:perspective(900px) rotateX(var(--hero-rx,0deg)) rotateY(var(--hero-ry,0deg))}
+.shoe-glare{opacity:0;pointer-events:none;mix-blend-mode:screen;transition:opacity .18s}
+.wheel-item.center .shoe-glare{opacity:var(--hero-glare,0)}
+.wheel-stage.dragging .wheel-photo{transition:none}
+.pair-card .card-image:before{inset:22% 12% 0;background:radial-gradient(ellipse at 50% 70%,#efb27920 0%,#efb2790a 40%,transparent 70%);filter:blur(16px);border:0;border-radius:0}
+.pair-card .card-image:after{bottom:3px;left:6%;right:6%;height:13px;z-index:0;background:radial-gradient(ellipse,#000e,transparent 72%);filter:blur(3px)}
+.pair-card .card-image .showcase-shoe{z-index:1}
+.pair-card:nth-child(4n+2) .shelf:after{background:linear-gradient(90deg,#ff6a1a40,#ff6a1a 22%,#ffb272 50%,#ff6a1a 78%,#ff6a1a40);box-shadow:0 0 14px 3px #ff6a1a8c,0 20px 36px 8px #ff6a1a26}
+@media(prefers-reduced-motion:reduce){.wheel-item.center .wheel-photo{transform:none}.shoe-glare{display:none}}

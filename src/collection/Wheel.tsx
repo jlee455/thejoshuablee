@@ -21,6 +21,7 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
   const reduced = useRef(false)
   const drag = useRef<null | { id: number; x: number; start: number; moved: number; samples: [number, number][]; index: number | null; centeredAtDown: number }>(null)
   const [dragging, setDragging] = useState(false)
+  const [keyboardFocus, setKeyboardFocus] = useState(false)
   const length = pairs.length
   const mod = (n: number) => ((n % length) + length) % length
   const center = mod(Math.round(pos))
@@ -47,7 +48,7 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
         void readyImage(floatPhoto(shoe) || src).catch(() => {})
         el.setAttribute('aria-label', `Select ${shoe.name}`)
         const images = el.querySelectorAll('svg')
-        images.forEach(svg => { const s = shoe.showcase; svg.setAttribute('viewBox', s?.viewBox.join(' ') ?? '0 0 1024 800'); svg.setAttribute('aria-label', shoe.name); const img = svg.querySelector('image')!; img.setAttribute('href', s?.src ?? floatPhoto(shoe) ?? ''); img.setAttribute('width', String(s?.width ?? 1024)); img.setAttribute('height', String(s?.height ?? 800)); })
+        images.forEach(svg => { const s = shoe.showcase; svg.setAttribute('viewBox', s?.viewBox.join(' ') ?? '0 0 1024 800'); svg.setAttribute('aria-label', shoe.name); svg.querySelectorAll('image').forEach(img => { img.setAttribute('href', s?.src ?? floatPhoto(shoe) ?? ''); img.setAttribute('width', String(s?.width ?? 1024)); img.setAttribute('height', String(s?.height ?? 800)); }); const bounds = s?.viewBox ?? [0,0,1024,800]; svg.querySelectorAll('.shoe-glare, mask').forEach(el => ['x','y','width','height'].forEach((attr,i) => el.setAttribute(attr,String(bounds[i])))); })
       }
       el.dataset.wheelPosition = String(index)
       el.classList.toggle('center', index === anchor)
@@ -86,12 +87,31 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
     document.addEventListener('visibilitychange', stop)
     return () => document.removeEventListener('visibilitychange', stop)
   }, [])
+  function resetHeroTilt() {
+    stage.current?.style.setProperty('--hero-rx', '0deg')
+    stage.current?.style.setProperty('--hero-ry', '0deg')
+    stage.current?.style.setProperty('--hero-glare', '0')
+  }
+  function hoverHero(event: PointerEvent<HTMLDivElement>) {
+    setKeyboardFocus(false)
+    if (drag.current || event.pointerType !== 'mouse' || reduced.current || !matchMedia('(hover: hover) and (pointer: fine)').matches) return
+    const shoe = pool.current.find(el => el?.classList.contains('center'))
+    if (!shoe) return
+    const r = shoe.getBoundingClientRect()
+    const x = Math.max(0, Math.min(1,(event.clientX-r.left)/r.width)), y = Math.max(0,Math.min(1,(event.clientY-r.top)/r.height))
+    stage.current?.style.setProperty('--hero-ry', `${(x-.5)*24}deg`)
+    stage.current?.style.setProperty('--hero-rx', `${(.5-y)*16}deg`)
+    stage.current?.style.setProperty('--hero-glare', '.3')
+    const light = shoe.querySelector('radialGradient')
+    light?.setAttribute('cx', `${x*100}%`); light?.setAttribute('cy', `${y*100}%`)
+  }
   function start(event: PointerEvent<HTMLDivElement>) {
     if (!length || !event.isPrimary || event.button !== 0) return
+    setKeyboardFocus(false)
     motion.current?.cancel()
     navigationTarget.current = null
     // Hit-test opaque artwork front-to-back, not overlapping rectangular buttons.
-    const hit = [...pool.current].filter((el): el is HTMLButtonElement => !!el && el.dataset.ready === 'true')
+    let hit = [...pool.current].filter((el): el is HTMLButtonElement => !!el && el.dataset.ready === 'true')
       .sort((a,b) => Number(b.style.zIndex) - Number(a.style.zIndex)).find(el => {
         const svg = el.querySelector('.wheel-photo svg') as SVGSVGElement
         const matrix = svg.getScreenCTM()
@@ -100,6 +120,13 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
         const image = svg.querySelector('image')!
         return silhouetteContains(image.getAttribute('href')!, point.x / Number(image.getAttribute('width')), point.y / Number(image.getAttribute('height')))
       })
+    // An opaque neighbor always wins. Empty space inside the centered button is
+    // still its click target (the Air Mag's tall silhouette leaves its center empty).
+    hit ??= pool.current.find(el => {
+      if (!el?.classList.contains('center') || el.dataset.ready !== 'true') return false
+      const r = el.getBoundingClientRect()
+      return event.clientX >= r.left && event.clientX <= r.right && event.clientY >= r.top && event.clientY <= r.bottom
+    }) ?? undefined
     event.currentTarget.focus({ preventScroll: true })
     drag.current = { centeredAtDown: Math.round(position.current), id: event.pointerId, x: event.clientX, start: position.current, moved: 0, samples: [[event.clientX, event.timeStamp]], index: hit ? Number(hit.dataset.wheelPosition) : null }
     event.currentTarget.setPointerCapture(event.pointerId)
@@ -107,7 +134,8 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
   }
   function move(event: PointerEvent<HTMLDivElement>) {
     const d = drag.current
-    if (!d || d.id !== event.pointerId) return
+    if (!d || d.id !== event.pointerId) { hoverHero(event); return }
+    resetHeroTilt()
     d.moved += Math.abs(event.clientX - d.samples[d.samples.length - 1][0])
     const now = event.timeStamp
     d.samples.push([event.clientX, now])
@@ -132,9 +160,11 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
   const slots = Array.from({ length: Math.min(9, length) }, (_, i) => i)
   return <section className="wheel-hero" aria-labelledby="collection-title">
     <div className="wheel-heading"><p className="eyebrow"><span className="live-dot" /> Joshua B. Lee / The personal collection</p><h1 id="collection-title">SOME PEOPLE COLLECT.<br /><em>I CAN’T HELP IT.</em></h1><p className="wheel-intro">A few grails. A lot of stories. Take one for a spin.</p></div>
-    <div ref={stage} className={`wheel-stage${dragging ? ' dragging' : ''}`} tabIndex={0} role="slider" aria-valuemin={1} aria-valuemax={Math.max(1,length)} aria-valuenow={center + 1} aria-valuetext={pair ? `Shoe ${center + 1} of ${length}: ${pair.name}` : "Loading collection"} aria-label="Shoe wheel. Drag, or use arrow keys. Enter opens the centered pair. Home and End select the first and last pair."
-      onPointerDown={start} onPointerMove={move} onPointerUp={event => finish(event)} onPointerCancel={event => finish(event, true)} onLostPointerCapture={event => finish(event, true)}
+    <div ref={stage} className={`wheel-stage${dragging ? ' dragging' : ''}${keyboardFocus ? ' keyboard-focus' : ''}`} tabIndex={0} role="slider" aria-valuemin={1} aria-valuemax={Math.max(1,length)} aria-valuenow={center + 1} aria-valuetext={pair ? `Shoe ${center + 1} of ${length}: ${pair.name}` : "Loading collection"} aria-label="Shoe wheel. Drag, or use arrow keys. Enter opens the centered pair. Home and End select the first and last pair."
+      onPointerDown={start} onPointerMove={move} onPointerLeave={resetHeroTilt} onFocus={event => { if (event.currentTarget.matches(':focus-visible')) setKeyboardFocus(true) }} onBlur={() => setKeyboardFocus(false)} onPointerUp={event => finish(event)} onPointerCancel={event => finish(event, true)} onLostPointerCapture={event => finish(event, true)}
       onKeyDown={event => {
+        setKeyboardFocus(true)
+        resetHeroTilt()
         if (!length) return
         if (['ArrowLeft','ArrowRight','Home','End','Enter',' '].includes(event.key)) event.preventDefault()
         if (event.key === 'ArrowLeft') stepBy(-1)
@@ -146,7 +176,7 @@ export default function Wheel({ pairs, open }: { pairs: Pair[]; open: (pair: Pai
       <div className="wheel-architecture" aria-hidden="true"><div className="spotlight left" /><div className="spotlight right" /><div className="orbit orbit-back" /><div className="orbit orbit-front" /><div className="wheel-plinth" /><span className="vault-watermark">THE VAULT</span></div>
       <div className="wheel-track" data-image-revision={imageRevision}>
         {slots.map(slot => <button key={slot} ref={el => { pool.current[slot] = el }} type="button" className="wheel-item" tabIndex={-1}>
-          <span className="shoe-aura" /><span className="wheel-photo"><svg preserveAspectRatio="xMidYMax meet" role="img"><image/></svg></span><span className="shoe-shadow" /><span className="shoe-reflection" aria-hidden="true"><svg preserveAspectRatio="xMidYMax meet" role="img"><image/></svg></span>
+          <span className="shoe-aura" /><span className="wheel-photo"><svg preserveAspectRatio="xMidYMax meet" role="img"><image/><defs><mask id={`shoe-mask-${slot}`} maskUnits="userSpaceOnUse" style={{maskType:'alpha'}}><image/></mask><radialGradient id={`shoe-light-${slot}`}><stop offset="0" stopColor="#fff5dc" stopOpacity=".9"/><stop offset="1" stopColor="#e2f3ff" stopOpacity="0"/></radialGradient></defs><rect className="shoe-glare" mask={`url(#shoe-mask-${slot})`} fill={`url(#shoe-light-${slot})`} /></svg></span><span className="shoe-shadow" /><span className="shoe-reflection" aria-hidden="true"><svg preserveAspectRatio="xMidYMax meet" role="img"><image/></svg></span>
         </button>)}
       </div>
       {(!pair || !ready.current.has(pair.id)) && <div className="wheel-loading" role="status"><span className="shoe-skeleton" />{pair && failed.current.has(pair.id) ? 'This photograph is unavailable. Try the next pair.' : 'Bringing the collection into focus…'}</div>}
