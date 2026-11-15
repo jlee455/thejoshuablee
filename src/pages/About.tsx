@@ -60,10 +60,10 @@ export default function About() {
             </p>
           </div>
           {/* Success contrast — living the life, but hollow inside */}
-          <div className="mt-12 grid grid-cols-3 gap-4 max-w-2xl">
-            <img src="/images/joshua-yacht-selfie.webp" alt="Joshua at a yacht event" className="w-full h-48 rounded-xl object-cover object-center border border-white/10" />
-            <img src="/images/joshua-rtx-helmet.webp" alt="Joshua at RTX event" className="w-full h-48 rounded-xl object-cover object-center border border-white/10" />
-            <img src="/images/joshua-party-old.webp" alt="Joshua at a party" className="w-full h-48 rounded-xl object-cover object-center border border-white/10" />
+          <div className="ed-story-photos">
+            <div className="ed-story-photo"><img src="/images/joshua-yacht-selfie.webp" alt="Joshua at a yacht event" loading="lazy" /></div>
+            <div className="ed-story-photo"><img src="/images/joshua-rtx-helmet.webp" alt="Joshua at RTX event" loading="lazy" /></div>
+            <div className="ed-story-photo"><img src="/images/joshua-party-old.webp" alt="Joshua at a party" loading="lazy" /></div>
           </div>
         </div>
       </section>

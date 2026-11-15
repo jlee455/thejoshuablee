@@ -99,3 +99,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink)}
 .ed-faq{max-width:880px}.ed-faq details{border-top:1px solid var(--rule);padding:22px 0}.ed-faq details:last-child{border-bottom:1px solid var(--rule)}.ed-faq summary{cursor:pointer;font-size:20px;font-weight:500;line-height:1.5}.ed-faq p{color:var(--muted);font-size:16px;line-height:1.8;max-width:760px;margin-top:18px}.ed-form button:disabled{opacity:.6;cursor:wait}.ed-form-status{border:1px solid var(--rule);padding:20px;font-size:16px;line-height:1.6}
 
 .ed-legacy a[class*='bg-orange']{background:var(--ink);border-radius:2px;box-shadow:none}.ed-speaking>section:first-child a[class*='bg-orange']{background:var(--paper);color:var(--ink)}
+
+/* These three archive photos contain sideways pixels; rotate only their display. */
+.ed-story-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:672px;margin-top:48px}
+.ed-story-photo{position:relative;aspect-ratio:3/4;overflow:hidden;border:1px solid var(--rule);border-radius:2px}
+.ed-story-photo img{position:absolute;left:50%;top:50%;width:133.333333%;height:75%;max-width:none;object-fit:cover;transform:translate(-50%,-50%) rotate(90deg)}
+@media(max-width:640px){.ed-story-photos{grid-template-columns:1fr;max-width:320px;margin-inline:auto;gap:20px}}
