@@ -12,5 +12,12 @@
   "mobile_124_receipt": "COLLECTION-MOBILE-124-2026-11-15.json",
   "final_preview_smoke": "MAG opens and End selects 26/26, actual frame B13-2016-stockx-26.jpg",
   "production_changed": false,
-  "remaining_inputs": "COLLECTION-REMAINING-INPUTS-2026-11-15.md"
+  "remaining_inputs": "COLLECTION-REMAINING-INPUTS-2026-11-15.md",
+  "implementation_commit": "38f685a4b343c9c05d46cec8abcf6d676ef25b33",
+  "source_push": {
+    "status": "BLOCKED",
+    "reason": "GitHub HTTPS push denied to authenticated YOUmanize account for jlee455/thejoshuablee (403).",
+    "branch": "rafe/collection-showcase-complete",
+    "local_commit_preserved": true
+  }
 }
