@@ -1,3 +1,4 @@
+import { AudioNote } from '../components/Editorial'
 import { ArrowRight, ChevronRight } from 'lucide-react'
 import { career } from '../data/career'
 
@@ -7,23 +8,12 @@ export default function About() {
       {/* ============================================
           HERO — Not a bio. A truth.
           ============================================ */}
-      <section className="pt-32 pb-12 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-800/50 to-transparent" />
-        <div className="relative max-w-3xl mx-auto px-6 lg:px-8">
-          <p className="text-white/20 text-sm uppercase tracking-widest font-semibold mb-8">
-            About
-          </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.15] mb-8">
-            I didn't leave success.{' '}
-            <span className="text-white/40">I left everything that wasn't real.</span>
-          </h1>
-        </div>
-      </section>
+      <section className="ed-page-head"><div className="ed-wrap ed-split"><div><p className="ed-kicker">My story / The person behind the work</p><h1 className="ed-title">A life worth<br/><em>being present for.</em></h1><p className="ed-lead">Founder, husband, father, and someone who had to rethink what success was supposed to feel like. This is the story behind the work.</p><nav className="ed-story-nav" aria-label="Story chapters"><a href="#the-turn">The turning point ↓</a><a href="#integration">Integration ↓</a><a href="#the-work">The work today ↓</a></nav><AudioNote src="/audio/joshua-story-introduction.mp3" title="Listen to the introduction · 32 seconds" transcript={"For a long time, I measured success by what I built. The companies. The growth. The next thing on the horizon. But there was a question I couldn't get away from: would my kids actually know me, or would they just know what I built? That changed the work. It changed my life. I stopped trying to keep business, family, and health in separate boxes. Together with Rachel, I started building a life that felt more integrated. What you read here is the story behind that shift, and why being human comes first in everything I do now."}/></div><figure><img className="ed-split-image" src="/images/joshua-family-full.webp" alt="Joshua with his family"/><figcaption className="ed-caption">The people at the center of it all.</figcaption></figure></div></section>
 
       {/* ============================================
           THE OFFICE — Cinematic opening
           ============================================ */}
-      <section className="py-16">
+      <section id="the-turn" className="py-16">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <div className="space-y-8 text-lg leading-relaxed">
             <p className="text-white/60">
@@ -81,7 +71,7 @@ export default function About() {
       {/* ============================================
           THE LIE — Balance was never real
           ============================================ */}
-      <section className="py-24">
+      <section id="integration" className="py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <div className="space-y-8 text-lg leading-relaxed">
             <p className="text-white/50">
@@ -364,7 +354,7 @@ export default function About() {
       {/* ============================================
           CAREER TIMELINE
           ============================================ */}
-      <section className="py-24">
+      <section id="the-work" className="py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <p className="text-orange-500/60 text-sm uppercase tracking-widest font-semibold mb-6">
             The long version
@@ -397,26 +387,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Person Schema for AEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Person',
-            name: 'Joshua B. Lee',
-            alternateName: 'The YOUman Catalyst',
-            jobTitle: 'Authority Architect | Co-Founder & CVO, YOUmanize™',
-            description: 'Joshua B. Lee is the creator of Authority Architecture, helping leaders rebuild trust, identity, and authority in a world where AI is amplifying everything fake. Author of Balance is Bullsh*t. Co-Founder of YOUmanize™ and StandOut Authority.',
-            url: 'https://joshuablee.com/about',
-            sameAs: [
-              'https://www.linkedin.com/in/joshuablee',
-              'https://standoutauthority.com',
-              'https://youmanize.ai',
-            ],
-          }),
-        }}
-      />
+
     </>
   )
 }

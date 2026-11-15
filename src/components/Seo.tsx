@@ -1,3 +1,4 @@
+import { articleIndex } from '../data/articleIndex'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { seoByPath, FALLBACK_SEO, ORIGIN, normalizePath } from '../seo'
@@ -10,14 +11,21 @@ export default function Seo() {
 
   useEffect(() => {
     const path = normalizePath(pathname)
-    const seo = seoByPath[path] ?? FALLBACK_SEO
+    const article = path.startsWith('/insights/') ? articleIndex.find(a => '/insights/' + a.slug === path) : undefined
+    const seo = article ? { title: article.title + ' — Joshua B. Lee', description: article.excerpt } : seoByPath[path] ?? FALLBACK_SEO
     document.title = seo.title
+    for (const [selector, content] of [
+      ['meta[property="og:title"]', seo.title], ['meta[property="og:description"]', seo.description],
+      ['meta[name="twitter:title"]', seo.title], ['meta[name="twitter:description"]', seo.description],
+      ['meta[property="og:url"]', `${ORIGIN}${path === '/' ? '/' : path + '/'}`],
+      ['meta[property="og:type"]', article ? 'article' : 'website'],
+    ]) document.querySelector(selector)?.setAttribute('content', content)
     document
       .querySelector('meta[name="description"]')
       ?.setAttribute('content', seo.description)
     document
       .querySelector('link[rel="canonical"]')
-      ?.setAttribute('href', `${ORIGIN}${path === '/' ? '/' : path}`)
+      ?.setAttribute('href', `${ORIGIN}${path === '/' ? '/' : path + '/'}`)
   }, [pathname])
 
   return null

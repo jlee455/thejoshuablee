@@ -1,3 +1,5 @@
+import { speakingFaqs } from '../data/speakingFaqs'
+import SpeakerPlanner from '../components/SpeakerPlanner'
 import { useEffect, useRef } from 'react'
 import { ArrowRight, ChevronRight, Play, Mic, Star, Users, PenTool, ExternalLink, Quote } from 'lucide-react'
 import { publications } from '../data/publications'
@@ -106,24 +108,25 @@ export default function Speaking() {
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <p className="text-orange-500 text-sm uppercase tracking-widest font-semibold mb-4">
-            Keynote Speaker
+            Joshua B. Lee / Keynote Speaker
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6 max-w-3xl">
             Leading the New Trust Economy
           </h1>
           <p className="text-white/50 text-lg max-w-xl mb-8">
-            Authority isn't built on stages. It's revealed there. Joshua brings clarity to what most audiences are still confused about — why visibility isn't working, and what replaces it.
+            Joshua B. Lee helps founders, executives, and teams rethink leadership, LinkedIn authority, and trust in the age of AI. Based in Austin, Texas. Welcoming inquiries for conferences, corporate events, and virtual audiences worldwide.
           </p>
           <a
-            href="mailto:assistant@standoutauthority.com?subject=Speaking%20Inquiry%20for%20Joshua%20B.%20Lee"
+            href="#planner"
             className="inline-flex items-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all glow-orange no-underline text-sm"
           >
-            Book Joshua to Speak
+            Check speaking availability
             <ArrowRight size={18} />
           </a>
         </div>
       </section>
 
+      <section id="reel" className="ed-section"><div className="ed-wrap"><div className="ed-section-top"><div><p className="ed-kicker">See Joshua in the room</p><h2 className="ed-heading">Watch the <em>speaker reel.</em></h2></div><a className="ed-link" href="#planner">Discuss your event ↗</a></div><video className="ed-reel" controls playsInline preload="none" poster="/video/sizzle-poster.webp" aria-label="Joshua B. Lee speaker reel with sound"><source src="/video/sizzle-reel.mp4" type="video/mp4"/></video><p className="ed-small">Press play for sound. Captions are included in the original footage.</p></div></section>
       {/* ============================================
           STATS — Visual counter grid
           ============================================ */}
@@ -221,13 +224,13 @@ export default function Speaking() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-4">
             <div className="img-reveal rounded-2xl overflow-hidden">
-              <img src="/images/joshua-stage-blue-lights.webp" alt="Joshua B. Lee keynote on stage" className="w-full h-72 md:h-96 object-cover object-top" />
+              <img src="/images/joshua-stage-blue-lights.webp" alt="Joshua B. Lee keynote on stage" className="w-full h-72 md:h-96 object-cover object-top" loading="lazy" />
             </div>
             <div className="img-reveal rounded-2xl overflow-hidden">
-              <img src="/images/joshua-stage-digitalmarketer.webp" alt="Joshua speaking at DigitalMarketer" className="w-full h-72 md:h-96 object-cover object-top" />
+              <img src="/images/joshua-stage-digitalmarketer.webp" alt="Joshua speaking at DigitalMarketer" className="w-full h-72 md:h-96 object-cover object-top" loading="lazy" />
             </div>
             <div className="img-reveal rounded-2xl overflow-hidden">
-              <img src="/images/joshua-stage-pink-mic.webp" alt="Joshua speaking with mic" className="w-full h-72 md:h-96 object-cover object-top" />
+              <img src="/images/joshua-stage-pink-mic.webp" alt="Joshua speaking with mic" className="w-full h-72 md:h-96 object-cover object-top" loading="lazy" />
             </div>
           </div>
         </div>
@@ -276,12 +279,12 @@ export default function Speaking() {
           </div>
           <div className="text-center mt-8">
             <a
-              href="https://www.linkedin.com/in/joshuablee/"
+              href="/recommendations"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-medium text-sm no-underline"
             >
-              See all 72 recommendations on LinkedIn
+              Read all 73 named recommendations
               <ChevronRight size={14} />
             </a>
           </div>
@@ -368,10 +371,10 @@ export default function Speaking() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:assistant@standoutauthority.com?subject=Speaking%20Inquiry%20for%20Joshua%20B.%20Lee"
+              href="#planner"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all glow-pulse no-underline text-sm"
             >
-              Book Joshua to Speak
+              Check speaking availability
               <ArrowRight size={18} />
             </a>
             <Link
@@ -388,49 +391,19 @@ export default function Speaking() {
         </div>
       </section>
 
-      {/* Structured Data for AEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Person',
-            name: 'Joshua B. Lee',
-            alternateName: 'The YOUman Catalyst',
-            jobTitle: 'Authority Architect | Keynote Speaker',
-            description:
-              'Joshua B. Lee is a keynote speaker and authority architect who helps leaders build trust in the AI era. Creator of Authority Architecture and YOUmanize™.',
-            url: 'https://joshuablee.com/speaking',
-            sameAs: [
-              'https://www.linkedin.com/in/joshuablee',
-              'https://standoutauthority.com',
-              'https://youmanize.ai',
-            ],
-            performerIn: stages.map((name) => ({
-              '@type': 'Event',
-              name,
-            })),
-            author: entrepreneurArticles.map((a) => ({
-              '@type': 'Article',
-              name: a.title,
-              publisher: { '@type': 'Organization', name: 'Entrepreneur Media' },
-            })),
-          }),
-        }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'VideoObject',
-            '@id': 'https://joshuablee.com/speaking#reel',
+            '@id': 'https://joshuablee.com/speaking/#reel',
             name: 'Joshua B. Lee — Keynote Speaker Sizzle Reel',
             description:
               'Joshua B. Lee speaking on stage. The reel opens on "AI is already answering", moves through 25+ years in digital marketing, lands on "Humanity earns trust", and closes on "Be the answer." Joshua is the founder of StandOut Authority and co-creator of YOUmanize.',
             thumbnailUrl: 'https://joshuablee.com/video/sizzle-poster.webp',
             contentUrl: 'https://joshuablee.com/video/sizzle-reel.mp4',
-            uploadDate: '2026-08-02',
+            uploadDate: '2026-08-02T00:00:00-05:00',
             duration: 'PT17S',
             inLanguage: 'en-US',
             isFamilyFriendly: true,
@@ -439,6 +412,8 @@ export default function Speaking() {
           }),
         }}
       />
+      <section className="ed-section" id="planner-questions"><div className="ed-wrap"><p className="ed-kicker">Before you book</p><h2 className="ed-heading">Answers for <em>event organizers.</em></h2><div className="ed-faq">{speakingFaqs.map(f=><details key={f.question}><summary>{f.question}</summary><p>{f.answer}</p></details>)}</div></div></section>
+      <SpeakerPlanner/>
     </>
   )
 }

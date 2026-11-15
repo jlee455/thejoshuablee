@@ -1,62 +1,54 @@
 {
-  "checkedAt": "2026-11-15T13:28:10.539158+00:00",
-  "catalogSha256": "c98e4e27a6b98acdb60a2fe736de505df46a34b1bf0a429b8ee7d744bf11891a",
+  "checkedAt": "2026-11-15T19:09:30.197931+00:00",
+  "catalogSha256": "666398b3eaf59a9041724dab5f97ca3b7196dcc3d0310fd97ca060772bb81fbd",
   "checks": [
     {
-      "id": "brand_alignment",
+      "id": "catalog_asset_integrity",
       "status": "PASS",
-      "evidence": "COLLECTION-BRAND-INTEGRATION-2026-11-14.md; desktop and 390px browser reviewed"
+      "evidence": "npm run build passed; 228 entries, exact SKU reconciliation, bounded missing-media exception for two owned custom By You designs."
     },
     {
-      "id": "all_124_asset_integrity",
+      "id": "viewer_decode_and_race",
       "status": "PASS",
-      "evidence": "npm run build; every showcase and photographic-view file hash checked"
+      "evidence": "Six automated tests passed: homepage drag, keyboard, wraparound, autoplay pause, newest decoded frame, image failures, and detail-view decode order."
     },
     {
-      "id": "all_124_mobile_caption_geometry",
+      "id": "desktop_and_mobile_browser_smoke",
       "status": "PASS",
-      "evidence": "COLLECTION-MOBILE-124-2026-11-15.json: hosted deploy 6af9b2447add3b8a71ae9fee, 390x844, 124 unique detail views loaded, all 124 card captions fit, zero horizontal viewer overflow. Desktop browser emulation only."
+      "evidence": "Chrome desktop 1440x1000, tablet 768x1024, phone 390x844 and 360x800. Visually corrected MAG label/control overlap. Search, all 228 entries, Jordan filter, all 20 partial-media dialogs, MAG next/End/wrap/autoplay/pause, 36-frame detail End/wrap, expanded gallery End, carousel End=228, Escape and restored trigger focus passed. No horizontal page overflow. Final deployed page and gallery visually checked on desktop and emulated phone; physical touch/cellular untested."
     },
     {
-      "id": "all_124_identity_and_visual_acceptance",
+      "id": "nike_owner_inventory_reconciliation",
+      "status": "PASS",
+      "evidence": "All screenshot-transcribed shoe SKUs plus five resolved clipped entries map to catalog IDs. Preorder screenshot adds two styles and reconciles existing Patched Grass P04. Historic order status does not determine ownership."
+    },
+    {
+      "id": "all_pairs_physical_pair_photography",
       "status": "INCOMPLETE",
-      "evidence": null
+      "evidence": "Two Nike By You designs require owner photographs. Standard model photographs are explicitly authorized for the Levi Indigo / Gym Red; no custom Levi photo is requested."
+    },
+    {
+      "id": "all_pairs_full_turn_rotation",
+      "status": "INCOMPLETE",
+      "evidence": "208 of 228 entries have verified photographic full-turn coverage. 100 newly imported sets contain 36 unique original frames each and passed eight-angle visual review. Remaining 20 recorded in rotation-coverage intake; available galleries stay explicitly labeled."
     },
     {
       "id": "physical_mobile_cellular",
-      "status": "NOT_VERIFIED",
-      "evidence": null
+      "status": "OWNER_REPORTED_CRASH_RETEST_PENDING",
+      "evidence": "Owner screenshot shows iPhone embedded-browser page crash. Memory remediation published in 6afa029f9d1671ad844f6765. Mac Safari and responsive Chrome passed; original physical iPhone not available to agent."
     },
     {
       "id": "future_pair_remote_intake",
       "status": "LOCAL_ONLY",
-      "evidence": "Previous loopback integration test; no authenticated remote uploader deployed"
+      "evidence": "No authenticated remote uploader deployed."
     },
     {
-      "id": "mag_2016_hero_preview",
+      "id": "bounded_mobile_image_work",
       "status": "PASS",
-      "evidence": "MAG-2016-HERO-RECEIPT.json; local desktop 1440 and mobile 390 browser previews, power toggle and 2016 detail/photo route verified; not physical-device or production verification"
-    },
-    {
-      "id": "all_124_full_turn_rotation",
-      "status": "INCOMPLETE",
-      "evidence": "112 model-reference turntables integrated. New Flax and Nina 36-view sets and Converse 28-view set loaded in hosted mobile test; endpoint navigation verified. 12 mixed galleries remain, not full turntables."
+      "evidence": "Eight tests pass, including 80 rapid frame requests with peak two decodes, queue four, and repeated pair changes retaining at most eight image objects. Native Mac Safari load/detail/rotation/autoplay and Chrome 45 rapid angle changes passed. Offscreen archive images unloaded; 228-card wall retained only two loaded previews at end."
     }
   ],
-  "openIdentityIssues": [
-    {
-      "id": "V08",
-      "reason": "Washed Denim label vs Racer Blue reference and code"
-    },
-    {
-      "id": "V27",
-      "reason": "Tokyo code contradicts model; original 2011 vs 2025 edition requires reconciliation."
-    },
-    {
-      "id": "V06/V51/N01/V35/B24",
-      "reason": "Inherited edition/material or label ambiguities require reconciliation"
-    }
-  ],
+  "openIdentityIssues": [],
   "resolvedIdentityIssues": [
     {
       "id": "V12",
@@ -73,6 +65,47 @@
     {
       "id": "V34",
       "evidence": "Original black AMM description reconciled with current black model photography; incorrect white style code already removed."
+    },
+    {
+      "id": "V06",
+      "newCode": "IX5169-300",
+      "evidence": "Owner Nike screenshot; official Nike product page; current croc photography visually checked."
+    },
+    {
+      "id": "P18",
+      "newCode": "JV2916-001",
+      "evidence": "Owner Nike screenshot and official Stone/Burgundy Crush page; six official images replace wrong Oatmeal visuals."
+    }
+  ],
+  "openVisualIssues": [
+    {
+      "id": "NIKE-DJ7015-991",
+      "reason": "Owner custom design photograph required; explicit pending-photo card."
+    },
+    {
+      "id": "NIKE-FJ2253-901",
+      "reason": "Owner custom design photograph required; explicit pending-photo card."
+    }
+  ],
+  "withdrawnByOwner": [
+    "N01",
+    "V35"
+  ],
+  "releaseScope": "Inventory website update, not completion of every advanced full-turn or physical-device acceptance criterion.",
+  "productionDeployId": "6af9e3633ab1d98e17e175d8",
+  "productionReceipt": "COLLECTION-ROTATION-PRODUCTION-2026-11-15.json",
+  "mediaResearchNotes": [
+    {
+      "id": "V51",
+      "result": "Additional public image candidates explicitly describe speculative mock-ups, so no extra angles admitted. Existing owner-confirmed identity and single GOAT reference retained. Actual-model photographic coverage remains unverified.",
+      "sources": [
+        "https://houseofheat.co/jordan/air-jordan-1-high-og-patent-panda-dz5485-110",
+        "https://www.goat.com/sneakers/air-jordan-1-retro-high-og-white-black-dz5485-110"
+      ]
+    },
+    {
+      "id": "B25",
+      "result": "All seven Hypebeast gallery images reviewed. Existing four shoe/detail views retained; other three are event/celebrity scenes, not useful additional model views."
     }
   ]
 }

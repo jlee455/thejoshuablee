@@ -7,7 +7,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const distDir = path.join(root, 'dist')
 
 const template = fs.readFileSync(path.join(distDir, 'index.html'), 'utf-8')
-const { render, seoByPath, FALLBACK_SEO } = await import(
+const { render, seoByPath, FALLBACK_SEO, speakingFaqs } = await import(
   pathToFileURL(path.join(root, 'dist-ssr', 'entry-server.js')).href
 )
 
@@ -31,11 +31,13 @@ const SUPERSEDED = [
 ]
 
 function headFor(seo, url) {
+  const isArticle = new URL(url).pathname.startsWith("/insights/")
   return [
     `<title>${esc(seo.title)}</title>`,
     `<meta name="description" content="${esc(seo.description)}" />`,
     `<link rel="canonical" href="${url}" />`,
-    `<meta property="og:type" content="website" />`,
+    `<meta property="og:type" content="${isArticle ? "article" : "website"}" />`,
+    `<meta name="robots" content="${url.endsWith("/404") ? "noindex, follow" : "index, follow, max-image-preview:large"}" />`,
     `<meta property="og:title" content="${esc(seo.title)}" />`,
     `<meta property="og:description" content="${esc(seo.description)}" />`,
     `<meta property="og:url" content="${url}" />`,
@@ -47,12 +49,39 @@ function headFor(seo, url) {
   ].join('\n    ')
 }
 
+
+const jsonLd = (value) => '\n    <script type="application/ld+json">' + JSON.stringify(value).replace(/</g, '\\u003c') + '</script>'
+function pageSchema(route, seo, url) {
+  const isArticle = route.startsWith('/insights/')
+  const page = { '@type': 'WebPage', '@id': url + '#webpage', url, name: seo.title, description: seo.description,
+    isPartOf: { '@id': SITE_ORIGIN + '/#website' }, about: { '@id': SITE_ORIGIN + '/#person' }, inLanguage: 'en-US' }
+  if (route === '/' || route === '/about') page.mainEntity = { '@id': SITE_ORIGIN + '/#person' }
+  const graph = [page]
+  if (route !== '/' && route !== '/__not_found__') {
+    const items = [{ '@type': 'ListItem', position: 1, name: 'Home', item: SITE_ORIGIN + '/' }]
+    if (isArticle) items.push({ '@type': 'ListItem', position: 2, name: 'Insights', item: SITE_ORIGIN + '/insights' })
+    items.push({ '@type': 'ListItem', position: items.length + 1, name: seo.title.split(' | ')[0].split(' — ')[0], item: url })
+    graph.push({ '@type': 'BreadcrumbList', '@id': url + '#breadcrumb', itemListElement: items })
+    page.breadcrumb = { '@id': url + '#breadcrumb' }
+  }
+  if (route === '/speaking') {
+    page.mainEntity = { '@id': url + '#service' }
+    graph.push({ '@type': 'Service', '@id': url + '#service', name: 'Keynote speaking with Joshua B. Lee',
+      serviceType: 'Keynote speaking, team sessions, panels, interviews, and virtual events',
+      description: 'Joshua B. Lee speaks to founders, executives, and teams about LinkedIn authority, human-first leadership, and trust in the age of AI. International inquiries are welcome; dates, travel, and fees are confirmed per event.',
+      provider: { '@id': SITE_ORIGIN + '/#person' }, areaServed: 'Worldwide', url,
+      availableChannel: { '@type': 'ServiceChannel', serviceUrl: url + '#planner', availableLanguage: 'English' } })
+    graph.push({ '@type': 'FAQPage', '@id': url + '#planner-questions', mainEntity: speakingFaqs.map(f => ({ '@type': 'Question', name: f.question, acceptedAnswer: { '@type': 'Answer', text: f.answer } })) })
+  }
+  return jsonLd({ '@context': 'https://schema.org', '@graph': graph })
+}
+
 function buildPage(renderUrl, seo, canonicalUrl, extraHead = '', beforeBody = '') {
   let page = template
   for (const pattern of SUPERSEDED) page = page.replace(pattern, '')
   page = page.replace(
     '</head>',
-    `  ${headFor(seo, canonicalUrl)}${extraHead}\n  </head>`,
+    `  ${headFor(seo, canonicalUrl)}${pageSchema(renderUrl, seo, canonicalUrl)}${extraHead}\n  </head>`,
   )
   return page.replace(
     '<div id="root"></div>',
@@ -111,7 +140,7 @@ function articleSchema(a, url) {
 
 for (const route of routes) {
   const seo = seoByPath[route] ?? FALLBACK_SEO
-  const url = `${SITE_ORIGIN}${route === '/' ? '/' : route}`
+  const url = `${SITE_ORIGIN}${route === '/' ? '/' : route + '/'}`
   const outDir = route === '/' ? distDir : path.join(distDir, route)
   fs.mkdirSync(outDir, { recursive: true })
   fs.writeFileSync(path.join(outDir, 'index.html'), buildPage(route, seo, url))
@@ -122,7 +151,7 @@ for (const route of articleRoutes) {
   const slug = route.replace('/insights/', '')
   const a = articles[slug]
   if (!a) continue
-  const url = `${SITE_ORIGIN}${route}`
+  const url = `${SITE_ORIGIN}${route}/`
   const outDir = path.join(distDir, 'insights', slug)
   fs.mkdirSync(outDir, { recursive: true })
   // The single article this page needs, so the browser can hydrate without
@@ -156,7 +185,7 @@ ${[...routes, '/collection/', ...articleRoutes]
     const slug = route.startsWith('/insights/') ? route.replace('/insights/', '') : null
     const mod = slug && articles[slug] ? articles[slug].date : lastmod
     const prio = route === '/' ? '1.0' : slug ? '0.6' : '0.8'
-    return `  <url>\n    <loc>${SITE_ORIGIN}${route === '/' ? '/' : route}</loc>\n    <lastmod>${mod}</lastmod>\n    <priority>${prio}</priority>\n  </url>`
+    return `  <url>\n    <loc>${SITE_ORIGIN}${route.endsWith('/') ? route : route + '/'}</loc>\n    <lastmod>${mod}</lastmod>\n    <priority>${prio}</priority>\n  </url>`
   })
   .join('\n')}
 </urlset>

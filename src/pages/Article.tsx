@@ -175,6 +175,7 @@ export default function Article() {
           </nav>
         )}
 
+        <aside className="ed-audio"><p className="ed-kicker">Put the idea to work</p><h2 className="ed-heading">What does this mean <em>for you?</em></h2><p className="ed-lead">Explore support with positioning, content, and a more consistent public presence.</p><a className="ed-link" href="/work-with-me">Ways to work with Joshua ↗</a></aside>
         <div className="mt-12">
           <Link
             to="/insights"

@@ -13,9 +13,9 @@ export interface PageSeo {
 export const seoByPath: Record<string, PageSeo> = {
   '/': {
     title:
-      'Joshua B. Lee — Top LinkedIn & AEO Authority | Creator of YOUmanize™ | Trusted Answer in an AI-Shaped World',
+      'Joshua B. Lee | Keynote Speaker, LinkedIn & AI Authority',
     description:
-      'Joshua B. Lee is a LinkedIn and Answer Engine Optimization authority ranked #1 in the United States by Favikon. He is the creator of Authority Architecture and co-founder of YOUmanize™, helping founders become the trusted answer in an AI-shaped world.',
+      'Joshua B. Lee helps founders and leaders build human-first authority. Explore keynotes on LinkedIn, leadership, and trust in the AI era.',
   },
   '/about': {
     title: 'About Joshua B. Lee — From $1B in Digital Ad Spend to Human-First Authority',
@@ -25,7 +25,7 @@ export const seoByPath: Record<string, PageSeo> = {
   '/authority-architecture': {
     title: 'Authority Architecture — Joshua B. Lee’s Framework for Trust in AI Search',
     description:
-      'Authority Architecture is Joshua B. Lee’s framework for building verifiable trust signals that AI answer engines and search systems can read, cite, and recommend — rather than optimizing for attention or content volume.',
+      'Explore Joshua B. Lee’s approach to identity alignment, trust signals, and authority compounding. Make your expertise easier to recognize and evaluate.',
   },
   '/work-with-me': {
     title: 'Work With Joshua B. Lee — Authority Advisory and Done-For-You Authority',
@@ -33,9 +33,9 @@ export const seoByPath: Record<string, PageSeo> = {
       'Joshua B. Lee works with founders and executives on Authority Architecture, advisory engagements, and done-for-you authority building through StandOut Authority, the agency he founded.',
   },
   '/speaking': {
-    title: 'Book Joshua B. Lee to Speak — LinkedIn, AEO, and Human-First Authority',
+    title: 'Book Joshua B. Lee | Keynote Speaker on AI, Trust & LinkedIn',
     description:
-      'Joshua B. Lee speaks on LinkedIn strategy, Answer Engine Optimization, and human-first authority. He has appeared on 100+ podcasts and been featured in 200+ publications worldwide, and has spoken on stages including DigitalMarketer, Gartner, Genius Network, and Podcast Movement. 95 of those appearances are individually linked to their source at joshuablee.com/evidence.',
+      'Book Joshua B. Lee for a keynote on AI, trust, leadership, or LinkedIn authority. Watch his reel, explore topics, and inquire about worldwide events.',
   },
   '/insights': {
     title: 'Insights by Joshua B. Lee — LinkedIn, AEO, and Authority Architecture',

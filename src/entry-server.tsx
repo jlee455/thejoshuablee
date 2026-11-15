@@ -22,3 +22,5 @@ export function render(url: string) {
     </StrictMode>,
   )
 }
+
+export { speakingFaqs } from './data/speakingFaqs'

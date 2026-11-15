@@ -4,17 +4,6 @@ import { ArrowRight } from 'lucide-react'
 export default function Footer() {
   return (
     <footer className="border-t border-white/5 bg-navy-950">
-      {/* Media Trust Bar */}
-      <div className="border-b border-white/5 py-6">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
-            {['Forbes', 'Entrepreneur', 'USA Today', 'HuffPost', 'Inc.', 'Brainz Magazine'].map((pub) => (
-              <span key={pub} className="text-white/10 text-xs font-semibold uppercase tracking-wider">{pub}</span>
-            ))}
-          </div>
-        </div>
-      </div>
-
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
           {/* Brand */}
@@ -22,12 +11,12 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-white mb-2">Joshua B. Lee</h3>
             <p className="text-sm text-orange-500 font-medium mb-4">The YOUman Catalyst</p>
             <p className="text-sm text-white/50 leading-relaxed mb-6">
-              Top LinkedIn &amp; AEO Authority. Building human-first trust in an AI-shaped world.
+              Human first. In business. In life. A clearer presence, built on what makes you you.
             </p>
             {/* Newsletter */}
             <div className="p-4 rounded-xl border border-white/5 bg-white/[0.02]">
               <p className="text-white/60 text-sm font-medium mb-1">Get the weekly breakdown</p>
-              <p className="text-white/30 text-xs mb-3">Join 21,000+ leaders on LinkedIn</p>
+              <p className="text-white/30 text-xs mb-3">Notes on authority, trust, and being human.</p>
               <a
                 href="https://www.linkedin.com/newsletters/youmanize-your-brand-7024795582427004928/"
                 target="_blank"

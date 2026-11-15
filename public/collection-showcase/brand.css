@@ -108,3 +108,31 @@ dialog::backdrop { background:#040a15de }
  .mag-room .hero-caption>button:last-child { min-height:44px }
 }
 @media(prefers-reduced-motion:reduce) { .mag-room .hero-art,.mag-leds { transition:none } }
+
+/* Frame unaltered studio photographs consistently alongside the floating artwork. */
+.shoe-card:has(.model-photo-art) .card-art{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 4px 18px #0002}
+.shoe-card .model-photo-art{mix-blend-mode:normal;filter:none}
+.rotation-pair:has(.model-photo-art)>span{background:#fff;border-radius:14px;overflow:hidden}
+.rotation-pair .model-photo-art{mix-blend-mode:normal;filter:none}
+
+.photo-pending{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;text-align:center;gap:14px;color:inherit;padding:16px}.photo-pending small{font-size:9px;letter-spacing:2px;opacity:.6}.photo-pending>span{font-size:clamp(13px,2vw,22px);line-height:1.35;font-family:Georgia,serif}.rotation-pair .photo-pending{color:#1b2633}
+
+/* The entrance is a directly operable photographic turntable. */
+.mag-room .hero-shoe{cursor:grab;touch-action:pan-y;user-select:none;transform:translateX(-50%)}
+.mag-room .hero-shoe.dragging{cursor:grabbing}
+.mag-room .hero-art{background:#fff;border-radius:20px;filter:none;overflow:hidden;padding:12px;transition:none}
+.mag-room .hero-art svg{width:100%;height:100%;pointer-events:none}
+.mag-room .hero-caption{justify-content:center;gap:16px}
+.mag-room #hero-play{border:1px solid #8fb1c4;border-radius:100px;padding:11px 17px;min-height:44px}
+.mag-room #hero-prev,.mag-room #hero-next{width:44px;height:44px;border:1px solid #8fb1c4;border-radius:50%;font-size:20px}
+@media(max-width:600px){.mag-room{height:530px}.mag-room .hero-caption{flex-wrap:wrap;gap:8px;bottom:12px}.mag-room .hero-caption>span{flex-basis:100%;max-width:none;text-align:center;font-size:8px}.mag-room .hero-caption>button{font-size:10px}.mag-room .hero-art{border-radius:12px;padding:8px}.mag-room .hero-shoe{width:86%}}
+
+/* Reserve space for the entrance labels beside the MAG turntable. */
+@media(min-width:901px){.mag-room .hero-shoe{width:min(54%,780px)}}
+@media(min-width:601px) and (max-width:900px){.mag-room .hero-shoe{top:185px;height:320px;width:72%}.mag-room .room-side{top:60px}.mag-room .room-side.left{left:8%}.mag-room .room-side.right{right:8%}.mag-room .room-side.right .circle{display:none}}
+@media(max-width:600px){.mag-room .hero-shoe{top:165px;height:270px}.mag-room .room-side.left{top:56px}.mag-room .room-side.right{top:56px}}
+@media(max-width:600px){.mag-room .hero-caption>button:last-child span{margin-left:8px}}
+
+/* Keep offscreen cards out of the compositor and release their image surfaces. */
+.rotation-pair{transform:none;transition:none}.rotation-pair svg,.card-art svg{filter:none}
+@media(hover:none){.card-art{transform:none!important}dialog::backdrop{backdrop-filter:none;-webkit-backdrop-filter:none}}
