@@ -1,0 +1,15 @@
+{
+  "image_test": "REJECTED",
+  "image_path": "/Users/joshuablee/.codex/generated_images/01a0cf92-fd4b-72a3-b2ae-14f6ed58997d/exec-35790440-a3b7-4fa3-8021-fafd3d1b4e16.png",
+  "reason": "Cell 4 duplicates cell 2 angle; heel branding changes between views. Not integrated.",
+  "meshy": "Workspace is logged out; no connected API credentials observed; no generation attempted.",
+  "video_flow": "N0vYA564vla01UYx7Bln",
+  "status": "FAILED_PROVIDER_BLOCK",
+  "video_generation": "IO5VeQP227KN2tLRagOS",
+  "video_model": "veo-3.1-generate-001",
+  "video_error": "This generation may violate our Terms of Service and has been blocked.",
+  "video_integrated": false,
+  "reported_price_cents": 387.84,
+  "billing_settlement": "Not verified; status reports generation price, no refund or final-charge evidence.",
+  "checkedAt": "2026-11-15T13:24:08.312333+00:00"
+}

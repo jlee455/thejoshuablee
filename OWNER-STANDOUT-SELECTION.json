@@ -1,0 +1,38 @@
+{
+  "status": "HOSTED_DRAFT_VERIFIED_PRODUCTION_NOT_DEPLOYED",
+  "owner_selected_standouts": [
+    "B13",
+    "B22",
+    "V26",
+    "V03"
+  ],
+  "opening_selection": [
+    {
+      "id": "B13",
+      "name": "Nike MAG 'Back to the Future' (2016, self-lacing)"
+    },
+    {
+      "id": "B22",
+      "name": "Tiffany & Co. x Nike Air Force 1 Low '1837' Friends & Family"
+    },
+    {
+      "id": "V26",
+      "name": "Dior x Air Jordan 1 High"
+    },
+    {
+      "id": "V03",
+      "name": "Louis Vuitton x Nike Air Force 1 Low 'Damier' (black/brown)"
+    },
+    {
+      "id": "U04",
+      "name": "Chrome Hearts x Rick Owens Geobasket - Cream"
+    },
+    {
+      "id": "V47",
+      "name": "Air Jordan 1 High 'Chicago' (2015)"
+    }
+  ],
+  "hero": "B13",
+  "note": "Joshua identified Tiffany, Dior Jordan 1 and Louis Vuitton checkered Air Force 1 as standouts. Featured immediately after MAG in rotation and wall; original catalog wall numbers preserved.",
+  "previewUrl": "https://6af98e3f19858d0f74b076e5--superb-seahorse-8b48c8.netlify.app/collection/"
+}

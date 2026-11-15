@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-15T10:57:29.622331+00:00",
+  "status": "LOCAL_ONLY_NOT_DEPLOYED",
+  "changes": [
+    {
+      "id": "V12",
+      "oldCode": "CT8527-500",
+      "newCode": "CT8527-115",
+      "source": "https://www.goat.com/sneakers/air-jordan-4-retro-court-purple-ct8527-115"
+    },
+    {
+      "id": "V09",
+      "oldCode": "CT8527-600",
+      "newCode": "CT8527-112",
+      "source": "https://www.goat.com/sneakers/air-jordan-4-retro-ct8527-112"
+    }
+  ],
+  "remainingIdentityEntries": 8
+}

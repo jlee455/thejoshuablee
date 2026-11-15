@@ -1,0 +1,41 @@
+{
+  "previous": [
+    {
+      "id": "V08",
+      "name": "Air Jordan 3 'Washed Denim'",
+      "style_code": "CT8532-145",
+      "open_conflicts": [
+        "V08: CT8532-145 is 'Racer Blue', not 'Washed Denim'"
+      ],
+      "launch_gate": null
+    },
+    {
+      "id": "V27",
+      "name": "Air Jordan 5 'Tokyo' (T23, yellow)",
+      "style_code": "DD0587-110",
+      "open_conflicts": [
+        "V27: DD0587-110 is AJ5 'Reverse Metallic'; Tokyo T23 is 454783-701 (2011, collected) or IO3372-700 (2025 retro)"
+      ],
+      "launch_gate": null
+    },
+    {
+      "id": "V34",
+      "name": "A Ma Mani\u00e9re \u00d7 Air Jordan 3 \u2014 Black",
+      "style_code": "",
+      "open_conflicts": [
+        "V34: DH3434-110 is the WHITE AMM AJ3; black is FZ4811-001 \u2014 if Joshua's pair is black, re-collect"
+      ],
+      "launch_gate": "Code on file is the white A Ma Maniere AJ3; confirm black or white."
+    }
+  ],
+  "remaining": [
+    "V08",
+    "V27",
+    "V06",
+    "V51",
+    "N01",
+    "V35",
+    "B24"
+  ],
+  "V34_evidence": "Original inventory describes black AMM AJ3. V34-01.webp visually reviewed: black leather, grey suede, cream midsole."
+}

@@ -1,0 +1,1021 @@
+{
+  "checkedAt": "2026-11-15T13:15:33.477533+00:00",
+  "status": "INTEGRATED_MODEL_REFERENCE_TURNTABLES",
+  "sets": {
+    "U03": {
+      "source": "https://stockx.com/air-jordan-3-retro-sp-nina-chanel-abney-bicoastal-womens",
+      "frames": [
+        {
+          "position": "0",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img01.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "1",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img02.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "2",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img03.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "3",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img04.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "4",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img05.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "5",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img06.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "6",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img07.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "7",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img08.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "8",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img09.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "9",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img10.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "10",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img11.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "11",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img12.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "12",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img13.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "13",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img14.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "14",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img15.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "15",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img16.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "16",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img17.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "17",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img18.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "18",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img19.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "19",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img20.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "20",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img21.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "21",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img22.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "22",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img23.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "23",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img24.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "24",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img25.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "25",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img26.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "26",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img27.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "27",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img28.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "28",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img29.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "29",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img30.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "30",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img31.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "31",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img32.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "32",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img33.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "33",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img34.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "34",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img35.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        },
+        {
+          "position": "35",
+          "src": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img36.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384"
+        }
+      ],
+      "assets": [
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-01.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "f1c8de0e1e2e66916427e54235778ff64d0b8d4ba4fd3aab15c98c350bcee142",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img01.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img01.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-02.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "242efa4c03fe71fcc1f52ba940879a543e0eff4e243282142fb50823f028150e",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img02.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img02.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-03.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "907b254be6e8c2b261b713d01b97a1b4fde12129cbe9c06d6ec8631c78817975",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img03.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img03.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-04.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "b765bc6b4f85ee9a3aaa3750e20ed66d7a285578e8db7459cff47fa6447bf359",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img04.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img04.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-05.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "66c5eae71081bb11ebabae50ee2835609ebc3c9835ce6860131558a531894017",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img05.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img05.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-06.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "8c2a6bd52212cf89d7300b664662e3b91212a2a040c6aa82c7cfbc9d43c06864",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img06.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img06.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-07.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "ac056a9dc1ec4c4202db7454699606313faeacac11ccf2e4e1faa12929b0268f",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img07.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img07.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-08.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "1f844e741b901fc713d8e80f6bdd50e102f21f269cae51d6d241b21a9244dcd6",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img08.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img08.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-09.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "03bb811e21abc7255735f0b3da72767826f57451030087f8145d8273a25285c7",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img09.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img09.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-10.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "769c42363b809306d0d56731467c3f109b3ff2ac162003781da6b3aab1f2e5d4",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img10.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img10.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-11.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "80e8568395a91524bec0255f102751bca3c870543d7307efa206aeef0d55e270",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img11.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img11.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-12.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "6c590e37db38d06757430e21b056f5c40e5dca8143384bf732c36fa2c3fba4a0",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img12.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img12.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-13.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "0f2e067914dc2610529d93eced8518f199bf5ac5f826cba80c15f3ccb6d5340d",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img13.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img13.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-14.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "7bf1d437b7eed34804b3d982b735c6d1fde0a0d1de4ca6f3c3c48a19432327f3",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img14.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img14.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-15.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "7b0015fb1d8aeeb78a2993ce97e6e1f31bc0859d32f0d8475b07d1df686e5056",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img15.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img15.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-16.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "b24a578f01162433df18c3cf57959a843112663d3e0a860b4048b639f9d3e9cd",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img16.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img16.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-17.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "024f55d922e183f1150d71ab7951ee30e16b09a6bd766968f8ad6c5571b9ea3f",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img17.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img17.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-18.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "e80cefcc4611807f6dd9420580c68a4070152d34e32c801b820d1e265a23fe1c",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img18.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img18.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-19.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "8921f8a75b77139c4cc45399af29181c385191d6b7239b14def49d991157c4ce",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img19.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img19.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-20.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "20004ff065158cedbeadd8e3420762dac3f39b28e83e69b9e8ae486656b86659",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img20.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img20.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-21.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "5a4e38e714a834b861d499c5702fe69ac74f4cc9ee3d76ab620cb8684ac8fcae",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img21.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img21.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-22.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "1ff7a661776f6a3cc6b427385596c7ba0b4e7e1d4744abe6ac97acb178acbf7d",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img22.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img22.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-23.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "96c60eb4055acac6e2c4d604928a2bc59d603f5cbfe1e79e81d6c14ce3bcb07a",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img23.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img23.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-24.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "a15cf533d575f1cdac3225be2728583e7e473b799d7d66b06b60104f990511b4",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img24.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img24.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-25.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "e6f82491111d9c69a8e61ca9d4f7d3e551602ef543e9d44eea6dd229e9b46c72",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img25.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img25.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-26.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "d1623890ff84c9dc2ca9d13b0f979987f842ba3eb7bd675a7ba85806fe9daa05",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img26.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img26.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-27.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "745339c443f7541639367e9b38d1073244c961414edb25a628c2805c75f72874",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img27.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img27.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-28.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "af8229f763c087dd9de0a80bb0faa7cc8ab75d93d16e0ed16a82a7dd8991631f",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img28.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img28.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-29.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "ab0b7aafaba4761f38dc83becada4e9fcd3d1f62a97379de852cb220eb7fe178",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img29.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img29.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-30.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "c5e6e3db785ed6890a8dc762c7faa249763f817186ffd1498797534651478420",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img30.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img30.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-31.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "f7a9be3d41173effb6551a478060a224dca330c0afa76ead24f6ab2b1975727d",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img31.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img31.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-32.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "a575183f06f2d7f77102e9a6a0e135d1279d0bfec8c08510cabb51e09992551d",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img32.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img32.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-33.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "7b274df6b8c8d9fcaa5fb91a6970e0df20d91b3282de60e7194722caea2bec1c",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img33.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img33.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-34.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "0ef94c2800da1f22589b8150c4df682f01dcedd781253f33f54195522b402bba",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img34.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img34.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-35.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "8012c938cd0cc9ddf6e2b900e48aae1d2d6a22a6b1d7aa5e47557b65ba4e8c7a",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img35.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img35.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/U03-nina-stockx-36.jpg",
+          "width": 800,
+          "height": 600,
+          "bounds": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "soleY": 600,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "sha256": "45ffb2b5a841ab32cb3df64948de627b18886b860c93138f19310836558a50a2",
+          "transparent": false,
+          "source_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img36.jpg?w=576&q=60&dpr=1&updated_at=1784326662&h=384",
+          "download_url": "https://images.stockx.com/360/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Images/Air-Jordan-3-Retro-SP-Nina-Chanel-Abney-Bicoastal-Womens/Lv2/img36.jpg?w=1200&q=90&dpr=1&updated_at=1784326662&h=800",
+          "crop": [
+            6,
+            110,
+            786,
+            486
+          ]
+        }
+      ]
+    }
+  }
+}

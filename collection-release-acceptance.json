@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-11-15T13:28:10.539158+00:00",
+  "catalogSha256": "c98e4e27a6b98acdb60a2fe736de505df46a34b1bf0a429b8ee7d744bf11891a",
+  "checks": [
+    {
+      "id": "brand_alignment",
+      "status": "PASS",
+      "evidence": "COLLECTION-BRAND-INTEGRATION-2026-11-14.md; desktop and 390px browser reviewed"
+    },
+    {
+      "id": "all_124_asset_integrity",
+      "status": "PASS",
+      "evidence": "npm run build; every showcase and photographic-view file hash checked"
+    },
+    {
+      "id": "all_124_mobile_caption_geometry",
+      "status": "PASS",
+      "evidence": "COLLECTION-MOBILE-124-2026-11-15.json: hosted deploy 6af9b2447add3b8a71ae9fee, 390x844, 124 unique detail views loaded, all 124 card captions fit, zero horizontal viewer overflow. Desktop browser emulation only."
+    },
+    {
+      "id": "all_124_identity_and_visual_acceptance",
+      "status": "INCOMPLETE",
+      "evidence": null
+    },
+    {
+      "id": "physical_mobile_cellular",
+      "status": "NOT_VERIFIED",
+      "evidence": null
+    },
+    {
+      "id": "future_pair_remote_intake",
+      "status": "LOCAL_ONLY",
+      "evidence": "Previous loopback integration test; no authenticated remote uploader deployed"
+    },
+    {
+      "id": "mag_2016_hero_preview",
+      "status": "PASS",
+      "evidence": "MAG-2016-HERO-RECEIPT.json; local desktop 1440 and mobile 390 browser previews, power toggle and 2016 detail/photo route verified; not physical-device or production verification"
+    },
+    {
+      "id": "all_124_full_turn_rotation",
+      "status": "INCOMPLETE",
+      "evidence": "112 model-reference turntables integrated. New Flax and Nina 36-view sets and Converse 28-view set loaded in hosted mobile test; endpoint navigation verified. 12 mixed galleries remain, not full turntables."
+    }
+  ],
+  "openIdentityIssues": [
+    {
+      "id": "V08",
+      "reason": "Washed Denim label vs Racer Blue reference and code"
+    },
+    {
+      "id": "V27",
+      "reason": "Tokyo code contradicts model; original 2011 vs 2025 edition requires reconciliation."
+    },
+    {
+      "id": "V06/V51/N01/V35/B24",
+      "reason": "Inherited edition/material or label ambiguities require reconciliation"
+    }
+  ],
+  "resolvedIdentityIssues": [
+    {
+      "id": "V12",
+      "oldCode": "CT8527-500",
+      "newCode": "CT8527-115",
+      "source": "https://www.goat.com/sneakers/air-jordan-4-retro-court-purple-ct8527-115"
+    },
+    {
+      "id": "V09",
+      "oldCode": "CT8527-600",
+      "newCode": "CT8527-112",
+      "source": "https://www.goat.com/sneakers/air-jordan-4-retro-ct8527-112"
+    },
+    {
+      "id": "V34",
+      "evidence": "Original black AMM description reconciled with current black model photography; incorrect white style code already removed."
+    }
+  ]
+}

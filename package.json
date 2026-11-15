@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/verify-collection.mjs && tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs && node scripts/verify-recommendation-proof.mjs",
+    "build": "node scripts/verify-collection.mjs && node scripts/build-collection-catalog.mjs && tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs && node scripts/verify-recommendation-proof.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
-    "verify:recommendations": "node scripts/verify-recommendation-proof.mjs && node scripts/verify-recommendation-proof.mjs --demonstrate"
+    "verify:recommendations": "node scripts/verify-recommendation-proof.mjs && node scripts/verify-recommendation-proof.mjs --demonstrate",
+    "verify:collection:release": "node scripts/verify-collection-release.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.7.0",

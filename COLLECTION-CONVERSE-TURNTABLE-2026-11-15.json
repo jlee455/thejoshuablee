@@ -1,0 +1,797 @@
+{
+  "checkedAt": "2026-11-15T13:17:27.544086+00:00",
+  "status": "INTEGRATED_MODEL_REFERENCE_TURNTABLES",
+  "sets": {
+    "V54": {
+      "source": "https://www.jdsports.co.uk/product/white-converse-chuck-taylor-all-star-high-womens/1267714/",
+      "frames": [
+        {
+          "position": 0,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_01?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 1,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_02?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 2,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_03?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 3,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_04?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 4,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_05?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 5,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_06?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 6,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_07?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 7,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_08?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 8,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_09?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 9,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_10?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 10,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_11?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 11,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_12?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 12,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_13?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 13,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_14?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 14,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_15?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 15,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_16?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 16,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_17?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 17,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_18?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 18,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_19?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 19,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_20?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 20,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_21?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 21,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_22?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 22,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_23?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 23,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_24?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 24,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_25?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 25,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_26?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 26,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_27?qlt=default&fmt=auto&w=360&h=256"
+        },
+        {
+          "position": 27,
+          "src": "https://i8.amplience.net/i/jpl/jd_029961_spin_28?qlt=default&fmt=auto&w=360&h=256"
+        }
+      ],
+      "assets": [
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-01.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "ded4ec80a45a03e9da2accd32f4a9c3af95f7dd72b12be66bedf63ad1e0db40d",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_01?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_01?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-02.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "aa323c37bd309a27a045f85fac08d776e7f84b1c291a839e745f6ef6b39e4d53",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_02?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_02?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-03.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "12f92f48a4b8f0be361d9a53a2181bc1c63c8f4bb9713c91b063210b214a6cf6",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_03?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_03?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-04.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "8c23caa21aae3c91a0fabfb3c88131e2801d61a9ae9578a0e3da023c92366fd5",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_04?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_04?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-05.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "bcfa2135f17a18897b91b91b10d6948eb02c0aed8f93d711d5e5df95dee709c7",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_05?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_05?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-06.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "d95b02a717c36b33def60e01558f136e082374d5b170e88321b98535739e9d9a",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_06?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_06?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-07.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "ce94ce45720fc82566b2c577958661f3d8b39b218fe4385724282219e24de3d7",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_07?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_07?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-08.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "41081c9a7a26fc8eb67d1c2d45917c6037826a1ae478aa3c9d907867c163aa31",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_08?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_08?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-09.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "092e93a0bd9fca30e39ff18f4ee7de40fa596b53841cb1d2d0570fa58548bc39",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_09?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_09?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-10.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "96574a8e19c626a6c1b86b2cb9934cbade511c92518d342527ff226854de756a",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_10?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_10?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-11.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "c1645da402c1bacaf36676f7f4c9405bcaaaa83313c0e8c677c16996df035d38",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_11?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_11?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-12.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "7fe122cd5c855d5560c2518682c44c8ffba6bf6b8c9c9423da94d7ad6ee350d1",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_12?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_12?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-13.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "117a8442beb1825d2fa669a1e67d44acc0364930239d284dd92e59e8b0ecaa60",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_13?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_13?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-14.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "cfcff0c52deca522ab75b1b08ff6dcd6a63085e46d3e56de5cca045b696b80e4",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_14?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_14?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-15.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "47d9cac74fdcc4f6c33e9ffab844d5da130ffbeb26a6375938d247c4785bcb9e",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_15?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_15?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-16.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "616cc8cb3f5eb2fca391adba011f9f0e1edebf9c781c512639460a40ad9d6827",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_16?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_16?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-17.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "5d5a50da236ff6703075acf426ed458b0ba486bf9b1f93a595c5e652880ab9c5",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_17?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_17?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-18.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "359f3ebe5bd84c831838a161d7c15e4b564bae0e13c7b72777ac6a2a7fc2cfbd",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_18?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_18?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-19.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "59b72e9f269ef398b036e24933a1aab69dfe3dea0ae89fb3821ce22283ea23a4",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_19?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_19?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-20.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "db9b0b88ac0f8e57fe2c55389aa00351d779f4ddec8d3f81f2fe4d6bcb672538",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_20?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_20?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-21.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "778994855a428124695b0be464b1106acb9df44b0afd7173c93e184435f77543",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_21?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_21?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-22.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "7914d21a31b1357ef69860d78e0e9ee56a8e53fa670b622f850f7136600d553e",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_22?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_22?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-23.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "f9c89da3aadb6932f9b420a49b6e4506e3cd0f8ab4f4f5c2d9f7de35563d34b0",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_23?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_23?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-24.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "ea765e3e1792f206c6c042a4d86dccab4366478be971a4564b66792d31d372b0",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_24?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_24?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-25.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "17f1a544ce4617ade03cbeab2ccbf9e3cab409efb3edbfee758fd4e4ec26cee8",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_25?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_25?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-26.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "92fca9075fa403d6b3f3abdffc080db7bb7a141dbce3ec46749422aa28dfe702",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_26?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_26?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-27.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "2ca9406d5c3558a18ee2f466556ecd122c2433863f756ec9e727740a84a5a62e",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_27?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_27?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        },
+        {
+          "src": "/collection-media/rotation/V54-converse-jd-28.jpg",
+          "width": 1600,
+          "height": 1200,
+          "bounds": [
+            0,
+            0,
+            1600,
+            1200
+          ],
+          "soleY": 1200,
+          "alphaThreshold": 10,
+          "normalizedScale": 0.5125,
+          "sha256": "4f09df159652c556873ca29f6e87efc0ad41ecea1c3cbf2270db5e56434a322b",
+          "transparent": false,
+          "source_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_28?qlt=default&fmt=auto&w=360&h=256",
+          "download_url": "https://i8.amplience.net/i/jpl/jd_029961_spin_28?qlt=90&fmt=jpg&w=1600&h=1200",
+          "crop": [
+            0,
+            64,
+            1597,
+            1074
+          ]
+        }
+      ]
+    }
+  }
+}

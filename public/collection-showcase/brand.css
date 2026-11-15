@@ -1,0 +1,110 @@
+/* JoshuaBLee.com brand bridge. Shoes retain their original colors. */
+:root {
+  --brand-navy: #060d1f;
+  --brand-deep: #040a15;
+  --brand-orange: #ff7300;
+  --brand-ice: #cadcfc;
+  --paper: #f2f1ee;
+  --ink: #101c30;
+  --muted: #566071;
+  --line: #c7ccd3;
+  --room: #d4d8dd;
+}
+header, footer { background:var(--brand-navy);color:#fff;border-color:#263247 }
+.signature span { color:#ff8c33 }
+header nav button { border-color:#3b4658 }
+header nav a:hover, footer a:hover { color:#ff8c33 }
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-visible { outline-color:#d95c00 }
+header :focus-visible,footer :focus-visible,.gallery :focus-visible { outline-color:#ff8c33 }
+.enter { border-color:var(--brand-navy) }
+.enter span { color:#a74600 }
+.hero-title .eyebrow,.rotation-heading .eyebrow,.collector-copy>.eyebrow { color:#a74600 }
+.backwall { background:radial-gradient(ellipse at 51% 20%,#fafafa 0%,#d5d9df 42%,#a2acb8 100%);box-shadow:inset 0 35px 50px #23334b30 }
+.backwall:after { background:repeating-linear-gradient(90deg,transparent 0,transparent calc(33.33% - 1px),#20355218 33.33%) }
+.ceiling { background:linear-gradient(#283549,#939eac) }
+.leftwall,.rightwall { background:linear-gradient(90deg,#6b798d,#a4afbe) }
+.floor { background:linear-gradient(#8e9aaa,#bec6cf);box-shadow:inset 0 16px 25px #182d473d }
+.light-line { background:#fff;box-shadow:0 4px 22px 5px #ffffffa1 }
+.room-top { color:#fff }
+.plinth { background:linear-gradient(90deg,#65748a,#a0adbf 45%,#63728a);box-shadow:0 34px 25px -15px #0b192c80 }
+.plinth:before { background:linear-gradient(#c5ceda,#e1e6ed) }
+.plinth i { background:#e7f0ff;box-shadow:0 3px 9px #dceaff }
+.hero-shadow { background:#1222378c }
+.rotation { background:#e7ebef }
+.rotation-heading>p,.rotation-caption .tiny { color:#515e70 }
+.rotation-caption #wheel-open { border-color:#63758e }
+.gallery { background:var(--brand-navy);color:#f7f9fc }
+.gallery:before { background:radial-gradient(ellipse at 50% 10%,#2446744d,transparent 65%) }
+.gallery-heading>p,.card-num,.filters label span,.archive-more>span { color:#bdcce0 }
+.gallery .eyebrow { color:#ff8c33 }
+.filters { border-color:#cadcfc33 }
+.filters input,.filters select { color:#f7f9fc }
+.filters input::placeholder { color:#bdcce0 }
+.filters option { background:var(--brand-navy) }
+.shelf-room { background:radial-gradient(ellipse at 50% 5%,#758aa94d,transparent 80%),#17263b;border-color:#cadcfc33;box-shadow:inset 0 12px 32px #03071170 }
+.shoe-card { border-color:#cadcfc18 }
+.shoe-card:before { background:radial-gradient(ellipse at 50% 0,#e4efff35,transparent 66%) }
+.card-shelf { background:linear-gradient(#73849d,#33465e 25%,#14243a);box-shadow:0 17px 16px #02061180,0 -1px 0 #cadcfc77 }
+.card-copy small,.card-copy .render-label { color:#b9c9dd }
+.archive-more button { border-color:#bdcce0 }
+.portrait span { background:#f2f1eef2;color:var(--ink) }
+dialog { border-color:#98a6b8 }
+dialog::backdrop { background:#040a15de }
+.viewer-scene { background:radial-gradient(ellipse at 50% 10%,#f2f5f9,#bec8d6) }
+.view-modes button { border-color:#65758d }
+.view-modes button[aria-pressed=true] { background:var(--brand-navy);color:#fff }
+.detail-shadow { background:#16273b88 }
+.detail-plinth { background:linear-gradient(90deg,#8c9ab0,#b4bfd0,#8798b0);border-color:#e7effa;box-shadow:0 25px 22px -15px #152a4570 }
+.pair-copy .photo-note { color:#536173 }
+.angle-dots button:after { background:#73849a }
+.angle-dots button[aria-pressed=true]:after { background:#a74600 }
+.load-state { background:#f2f5f9ed;color:var(--ink) }
+.photo-wheel { border-color:#687b95;background:repeating-linear-gradient(90deg,#7587a0 0 1px,#bac7d9 1px 9px);background-position-x:var(--wheel-offset,0);box-shadow:inset 0 5px 10px #15294144 }
+.photo-wheel:after { background:var(--brand-navy) }
+.evening .room { --room:#0a1628 }
+.evening .backwall { background:radial-gradient(ellipse at 50% 40%,#647c9b,#243752 58%,#0a1628) }
+.evening .ceiling { background:linear-gradient(#040a15,#213550) }
+.evening .leftwall,.evening .rightwall { background:linear-gradient(90deg,#091526,#344d6e) }
+.evening .floor { background:linear-gradient(#1a2b42,#3e5573) }
+.evening .room-side,.evening .hero-caption { color:#eef4ff }
+.evening .plinth { background:linear-gradient(90deg,#3b506c,#7185a0,#334b69) }
+.evening .plinth:before { background:linear-gradient(#8398b5,#bdcce1) }
+@media(max-width:600px) { header .signature span { letter-spacing:1.2px } }
+
+/* Nike MAG entrance: light effects move with the measured shoe, never the viewport. */
+.mag-room { height:650px; background:#050d1d; color:#eef6ff }
+.mag-room .backwall,.evening .mag-room .backwall { background:radial-gradient(ellipse at 51% 50%,#283d57 0%,#0d1b2e 55%,#050c19 100%) }
+.mag-room .ceiling,.evening .mag-room .ceiling { background:linear-gradient(#030814,#142237) }
+.mag-room .leftwall,.mag-room .rightwall,.evening .mag-room .leftwall,.evening .mag-room .rightwall { background:linear-gradient(90deg,#061021,#1d3049) }
+.mag-room .floor,.evening .mag-room .floor { background:linear-gradient(#101e30,#263d52) }
+.mag-room .light-line { background:#b5dcf4;box-shadow:0 4px 24px #95cfff55 }
+.mag-room .room-side,.mag-room .hero-caption { color:#e6f2ff }
+.mag-room .room-side.left { left:7% }
+.mag-room .room-side.right { right:7% }
+.mag-room .hero-shoe { top:91px;height:455px;width:min(64%,900px) }
+.mag-room .hero-art { inset:0 0 42px;filter:brightness(.76);transition:filter 1.8s ease }
+.mag-room.mag-on .hero-art { filter:brightness(1) }
+.mag-room .plinth,.evening .mag-room .plinth { background:linear-gradient(90deg,#182d42,#3c5a70 45%,#162a3e);box-shadow:0 34px 25px -15px #000a }
+.mag-room .plinth:before,.evening .mag-room .plinth:before { background:linear-gradient(#486378,#7794a7) }
+.mag-room .plinth i { background:#a1deef;box-shadow:0 3px 15px #69dcf790 }
+.mag-leds { opacity:0;transition:opacity 1.6s ease }
+.mag-on .mag-leds { opacity:1 }
+.mag-indicators { fill:none;stroke-width:10;stroke-linecap:round;filter:drop-shadow(0 0 8px #d3ffda) }
+.mag-room .hero-caption { bottom:24px;gap:18px }
+#mag-power { border:1px solid #8fb1c4;border-radius:100px;padding:11px 17px;color:#e5f7ff;min-height:44px }
+#mag-power span { margin-left:8px;color:#75e5ff }
+#mag-power:hover { background:#9cecff18 }
+@media(max-width:900px) { .mag-room .room-side p{font-size:17px}.mag-room .room-side.right p{font-size:22px} }
+@media(max-width:600px) {
+ .mag-room { height:478px }
+ .mag-room .hero-shoe { top:105px;height:310px;width:100% }
+ .mag-room .hero-art { inset:0 0 28px }
+ .mag-room .room-side.left { top:51px;left:8% }
+ .mag-room .room-side.right { top:56px;right:8% }
+ .mag-room .room-side.left p { font-size:16px }
+ .mag-room .hero-caption { left:7%;right:7%;bottom:12px;gap:8px }
+ .mag-room .hero-caption>span { font-size:6px;max-width:70px;line-height:1.5 }
+ #mag-power { font-size:10px;padding:8px 12px }
+ .mag-room .hero-caption>button:last-child { min-height:44px }
+}
+@media(prefers-reduced-motion:reduce) { .mag-room .hero-art,.mag-leds { transition:none } }

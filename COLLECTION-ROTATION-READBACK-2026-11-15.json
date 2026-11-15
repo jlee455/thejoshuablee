@@ -1,0 +1,100 @@
+{
+  "site_id": "cd82e064-7656-40ae-837e-2605b7d55b8b",
+  "site_name": "superb-seahorse-8b48c8",
+  "deploy_id": "6af9946276a908d2ae3d15c4",
+  "deploy_url": "https://6af9946276a908d2ae3d15c4--superb-seahorse-8b48c8.netlify.app",
+  "logs": "https://app.netlify.com/projects/superb-seahorse-8b48c8/deploys/6af9946276a908d2ae3d15c4",
+  "function_logs": "https://app.netlify.com/projects/superb-seahorse-8b48c8/logs/functions?scope=deploy:6af9946276a908d2ae3d15c4",
+  "edge_function_logs": "https://app.netlify.com/projects/superb-seahorse-8b48c8/logs/edge-functions?scope=deployid:6af9946276a908d2ae3d15c4",
+  "checkedAt": "2026-11-15T11:16:20.875883+00:00",
+  "status": "HOSTED_PREVIEW_NOT_PRODUCTION",
+  "fullTurnSequenceCount": 109,
+  "total": 124,
+  "remaining": [
+    {
+      "id": "U06",
+      "name": "Nike Air Force 1 High \"Flax\"",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "B18",
+      "name": "Victor Victor x Nike Air Force 1 Low 'Court Purple'",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "U04",
+      "name": "Chrome Hearts x Rick Owens Geobasket - Cream",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "B24",
+      "name": "Lanvin Curb Sneaker 'Beige'",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "V54",
+      "name": "Converse Chuck Taylor All Star High (white)",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "U29",
+      "name": "KIZO Ectoplasms",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "P16",
+      "name": "Air Jordan 3 x J Balvin 'Rio'",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "U03",
+      "name": "Nina Chanel Abney x Air Jordan 3 \"Bicoastal\"",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "B25",
+      "name": "DJ Khaled x Air Jordan 3 'Grateful'",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "P13",
+      "name": "MSCHF \u00d7 Reebok Pump Omni Zone IX \u2018Sunbleached\u2019",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "P04",
+      "name": ".SWOOSH x Nike ReactX Rejuven8 Slide 'Touch Grass'",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "P03",
+      "name": "Sneaker Politics x Crocs Echo II 'Watch Your Step'",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "N01",
+      "name": "New Balance 1400 \u2014 Red / Blue",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "B37",
+      "name": "Brain Dead x adidas Samba Bowling \"Snakeskin\" (2026)",
+      "gate": "Complete exact-model turntable imagery not verified"
+    },
+    {
+      "id": "B49",
+      "name": "Travis Scott x Nike Zoom Field Jaxx 'Limelight' (2025)",
+      "gate": "Complete exact-model turntable imagery not verified"
+    }
+  ],
+  "checks": {
+    "build": "PASS",
+    "desktop_direct_drag": "PASS",
+    "phone_width_390_direct_drag_MAG_LV_white_Awake": "PASS on preceding deploy; final change only cancels momentum on deliberate selection",
+    "keyboard_interrupts_momentum": "PASS final deploy: Home then Right twice remained 03/26",
+    "keyboard_wrap": "PASS",
+    "physical_phone_touch": "NOT_VERIFIED",
+    "all124_identity": "INCOMPLETE"
+  },
+  "screenshot": "/Users/joshuablee/Codex-Local/rafe-collection-prototype-20261114/hosted-mag-rotation-20261115.png"
+}

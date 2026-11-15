@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-15T13:30:31.449501+00:00",
+  "status": "PREVIEW_ONLY_NOT_COMPLETE",
+  "deploy_id": "6af9b3c09ed3ec693ee1796d",
+  "url": "https://6af9b3c09ed3ec693ee1796d--superb-seahorse-8b48c8.netlify.app/collection/",
+  "catalog_entries": 124,
+  "model_reference_full_turntables": 112,
+  "mixed_galleries": 12,
+  "open_identity_entries": 7,
+  "build": "PASS",
+  "decode_race_test": "PASS",
+  "mobile_124_receipt": "COLLECTION-MOBILE-124-2026-11-15.json",
+  "final_preview_smoke": "MAG opens and End selects 26/26, actual frame B13-2016-stockx-26.jpg",
+  "production_changed": false,
+  "remaining_inputs": "COLLECTION-REMAINING-INPUTS-2026-11-15.md"
+}

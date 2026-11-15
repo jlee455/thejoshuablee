@@ -50,3 +50,18 @@
 # NOTE: deliberately no SPA catch-all redirect. Every route is prerendered to a
 # real file, and a `/* -> /index.html 200` rule would return HTTP 200 for typo
 # URLs — soft-404s that dilute crawl quality. Unmatched paths get 404.html.
+
+[[headers]]
+  for = "/collection/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/collection-showcase/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/collection-media/collection.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

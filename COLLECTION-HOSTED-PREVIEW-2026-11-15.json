@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-11-15T10:54:40.267251+00:00",
+  "status": "DRAFT_DEPLOYED_PRODUCTION_HELD",
+  "deployId": "6af98e3f19858d0f74b076e5",
+  "url": "https://6af98e3f19858d0f74b076e5--superb-seahorse-8b48c8.netlify.app/collection/",
+  "productionDeployUnchanged": "6af8c7c09401550169491b82",
+  "verified": {
+    "desktopHero": true,
+    "mobileViewport": {
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "cards": 124,
+      "captionElements": 124,
+      "shelfElements": 124,
+      "captionShelfOverlaps": 0
+    },
+    "magPowerToggle": true,
+    "mag2016ReferencePhotoLoaded": true,
+    "diorSearchOneResult": true,
+    "lanvinBrandFilter": true,
+    "consoleErrors": 0
+  },
+  "limits": [
+    "No physical iPhone or Android/cellular check",
+    "Ten catalog identity flags remain open",
+    "Full identity and visual acceptance incomplete",
+    "Remote custom uploader not deployed"
+  ],
+  "screenshots": [
+    "/Users/joshuablee/Codex-Local/rafe-collection-prototype-20261114/hosted-mag-desktop-20261115.png",
+    "/Users/joshuablee/Codex-Local/rafe-collection-prototype-20261114/hosted-mag-mobile-20261115.png"
+  ]
+}
