@@ -125,3 +125,32 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink)}
 
 .ed-speaker-kit-link{margin-top:18px}.ed-speaker-resources{border-block:1px solid var(--rule)}.ed-walk-up{border:1px solid #a7b0b2;padding:32px;background:var(--paper)}.ed-walk-up h3{font-size:32px;letter-spacing:-1px;margin-bottom:14px}.ed-walk-up audio{width:100%;margin-top:24px}.ed-track-footer{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:10px 0 20px}.ed-track-footer span{font-size:12px;color:var(--muted)}
 @media(max-width:640px){.ed-walk-up{padding:24px}.ed-speaker-resources .ed-kit .ed-button{width:100%}}
+
+/* A compact opening keeps the person, proposition and booking action together. */
+.ed-home-note{padding-top:6px}
+.ed-home-note .ed-audio{max-width:none;border-top:0;margin-top:0}
+@media(max-width:640px){
+  .site-shell main{padding-top:68px}
+  .ed-nav{margin-bottom:-68px}
+  .ed-nav-inner{min-height:68px;padding-block:12px;gap:16px}
+  .ed-wordmark{font-size:19px}
+  .ed-wordmark small{font-size:7px;letter-spacing:1.7px;margin-top:6px}
+  .ed-menu-toggle{min-height:44px;padding:8px 12px;font-size:13px}
+  .ed-nav-links.is-open{top:68px;max-height:calc(100dvh - 68px)}
+  .ed-hero{padding:24px 0 28px}
+  .ed-hero-grid{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);column-gap:16px;row-gap:20px}
+  .ed-hero-copy{display:contents}
+  .ed-hero .ed-kicker{grid-column:1/-1;grid-row:1;margin:0;font-size:8px;letter-spacing:1.6px;gap:10px}
+  .ed-hero .ed-title{grid-column:1;grid-row:2;font-size:clamp(31px,9.2vw,52px);line-height:1.06;letter-spacing:-.055em;margin:0;text-wrap:initial;align-self:center}
+  .ed-hero .ed-portrait{grid-column:2;grid-row:2;min-width:0;height:clamp(210px,61vw,350px);margin:0}
+  .ed-hero .ed-portrait img{object-position:50% 25%}
+  .ed-hero .ed-portrait figcaption,.ed-hero .ed-portrait:after{display:none}
+  .ed-hero .ed-lead{grid-column:1/-1;grid-row:3;font-size:16px;line-height:1.5;margin:0;max-width:440px}
+  .ed-hero .ed-actions{grid-column:1/-1;grid-row:4;display:grid;grid-template-columns:1.3fr 1fr;gap:16px;margin:0;align-items:center}
+  .ed-hero .ed-button{font-size:12px;padding:13px 12px;gap:8px;min-height:48px}
+  .ed-hero .ed-link{font-size:12px;gap:8px;justify-content:space-between;min-height:48px}
+  .ed-hero-foot{display:none}
+  .ed-home-note{padding-top:4px}
+}
+/* Long contact addresses must stay inside the tablet footer columns. */
+.site-shell footer p,.site-shell footer a{overflow-wrap:anywhere}
