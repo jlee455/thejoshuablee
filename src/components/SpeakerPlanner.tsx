@@ -17,10 +17,10 @@ export default function SpeakerPlanner() {
   }
   return <section className="ed-section" id="planner"><div className="ed-wrap ed-split"><div>
     <p className="ed-kicker">For event organizers</p><h2 className="ed-heading">Bring the right<br/><em>conversation to your room.</em></h2>
-    <p className="ed-lead">Tell us about your audience and event. Start a conversation about availability, fit, and what you want your audience to take away.</p>
-    <div className="ed-kit"><a className="ed-link" href="/speaker-kit.txt" download>Download bio & topics ↓</a><a className="ed-link" href="/images/joshua-hero.jpg" download>Download portrait ↓</a></div>
-    <p className="ed-small">Prefer email? <a href="mailto:assistant@standoutauthority.com">assistant@standoutauthority.com</a></p>
-  </div>{status === 'sent' ? <div className="ed-form-status" role="status"><h3>Thank you for the introduction.</h3><p>Your event inquiry has been submitted. The team will review your event details to discuss availability and fit. A date is only reserved once confirmed with the team.</p><p>For time-sensitive requests, email <a href="mailto:assistant@standoutauthority.com">assistant@standoutauthority.com</a>.</p></div> :
+    <p className="ed-lead">Jennifer coordinates all speaking bookings. Tell her about your audience and event to discuss availability, fit, and what you want your audience to take away.</p>
+    <div className="ed-kit"><a className="ed-link" href="/joshua-b-lee-speaker-kit.pdf" download>Download speaker kit (PDF) ↓</a><a className="ed-link" href="/speaker-kit.txt" download>Copyable bio & topics ↓</a><a className="ed-link" href="/images/joshua-hero.jpg" download>Download portrait ↓</a></div>
+    <p className="ed-small">Contact Jennifer directly: <a href="mailto:assistant@standoutauthority.com">assistant@standoutauthority.com</a></p>
+  </div>{status === 'sent' ? <div className="ed-form-status" role="status"><h3>Thank you for the introduction.</h3><p>Your event inquiry has been submitted. Jennifer will review your event details to discuss availability and fit. A date is only reserved once confirmed with Jennifer.</p><p>For time-sensitive requests, email <a href="mailto:assistant@standoutauthority.com">assistant@standoutauthority.com</a>.</p></div> :
   <form className="ed-form" name="speaking-inquiry" method="POST" action="/speaking/thanks/" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={submit}>
     <input type="hidden" name="form-name" value="speaking-inquiry"/><input type="hidden" name="subject" value="New speaking inquiry — Joshua B. Lee"/>
     <p hidden><label>Leave this blank<input name="bot-field" tabIndex={-1} autoComplete="off"/></label></p>

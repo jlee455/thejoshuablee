@@ -1,6 +1,5 @@
 import { speakingFaqs } from '../data/speakingFaqs'
 import SpeakerPlanner from '../components/SpeakerPlanner'
-import { useEffect, useRef } from 'react'
 import { ArrowRight, ChevronRight, Play, Mic, Star, Users, PenTool, ExternalLink, Quote } from 'lucide-react'
 import { publications } from '../data/publications'
 import { appearances } from '../data/appearances'
@@ -55,78 +54,43 @@ const recommendations = [
 ]
 
 export default function Speaking() {
-  const reelRef = useRef<HTMLVideoElement>(null)
-
-  // React sets `muted` as a DOM property but not as an attribute, and browsers
-  // check the attribute when deciding whether autoplay is allowed. The
-  // prerendered HTML carries muted="", but hydration drops it, so the loop
-  // silently stops once React takes over. Re-assert it on mount.
-  useEffect(() => {
-    const el = reelRef.current
-    if (!el) return
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      el.pause()
-      return
-    }
-    el.muted = true
-    el.setAttribute('muted', '')
-    void el.play().catch(() => {
-      /* Autoplay refused (low power mode, data saver). The poster stays up. */
-    })
-  }, [])
-
   return (
     <>
-      {/* ============================================
-          HERO — Full-bleed cinematic opening
-          ============================================ */}
-      <section className="relative min-h-[70vh] flex items-end pb-20 pt-32">
-        <div className="absolute inset-0">
-          {/* Sizzle reel runs as the hero background. Its captions are burned
-              into the footage, so muted playback loses nothing - the message
-              lands with the sound off. The poster shows before the video is
-              ready, and is also what a reduced-motion visitor gets instead. */}
-          <video
-            ref={reelRef}
-            className="w-full h-full object-cover object-top motion-reduce:hidden"
-            poster="/video/sizzle-poster.webp"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            aria-label="Joshua B. Lee speaking on stage — sizzle reel"
-          >
-            <source src="/video/sizzle-reel.mp4" type="video/mp4" />
-          </video>
-          <img
-            src="/video/sizzle-poster.webp"
-            alt="Joshua B. Lee speaking on stage"
-            className="hidden motion-reduce:block w-full h-full object-cover object-top"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/80 to-navy-900/30" />
+      <section className="ed-speaker-hero">
+        <div className="ed-wrap ed-speaker-opening">
+          <div className="ed-speaker-intro">
+            <p className="ed-kicker">Joshua B. Lee / Keynote speaker</p>
+            <h1 className="ed-title">Move the room.<br/><em>Make it human.</em></h1>
+            <p className="ed-lead">A real conversation about leadership, LinkedIn authority, and trust in the age of AI. For founders, executives, and teams ready to turn their expertise into meaningful connection.</p>
+            <div className="ed-actions"><a className="ed-button light" href="#planner">Bring Joshua to your event <span aria-hidden="true">↗</span></a><a className="ed-link" href="#reel">Watch Joshua speak <span aria-hidden="true">▷</span></a></div>
+            <a className="ed-link ed-speaker-kit-link" href="/joshua-b-lee-speaker-kit.pdf" download>Download the speaker kit (PDF) ↓</a>
+            <p className="ed-speaker-location">Based in Austin, Texas · In-person and virtual inquiries worldwide</p>
+          </div>
+          <figure className="ed-speaker-hero-photo"><img src="/images/joshua-hcl-raised-hand.jpg" alt="Joshua B. Lee speaking into a microphone with his hand raised at High Capacity Leaders" width="826" height="1234" fetchPriority="high"/><figcaption>In the room at High Capacity Leaders.</figcaption></figure>
         </div>
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
-          <p className="text-orange-500 text-sm uppercase tracking-widest font-semibold mb-4">
-            Joshua B. Lee / Keynote Speaker
-          </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6 max-w-3xl">
-            Leading the New Trust Economy
-          </h1>
-          <p className="text-white/50 text-lg max-w-xl mb-8">
-            Joshua B. Lee helps founders, executives, and teams rethink leadership, LinkedIn authority, and trust in the age of AI. Based in Austin, Texas. Welcoming inquiries for conferences, corporate events, and virtual audiences worldwide.
-          </p>
-          <a
-            href="#planner"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all glow-orange no-underline text-sm"
-          >
-            Check speaking availability
-            <ArrowRight size={18} />
-          </a>
+      </section>
+
+      <section className="ed-section ed-room-story">
+        <div className="ed-wrap">
+          <div className="ed-section-top"><div><p className="ed-kicker">The experience</p><h2 className="ed-heading">Ideas that land.<br/><em>A conversation that stays.</em></h2></div><p className="ed-copy ed-room-summary">Your audience brings real questions. Joshua brings an entrepreneur’s experience and a human perspective on how we lead, build trust, and show up for each other.</p></div>
+          <figure className="ed-room-wide"><img src="/images/joshua-hcl-onstage.jpg" alt="Joshua speaking at High Capacity Leaders with event attendees behind him" width="1854" height="1232" loading="lazy"/><figcaption className="ed-caption">Joshua B. Lee at High Capacity Leaders.</figcaption></figure>
+          <div className="ed-room-details">
+            <figure className="ed-room-portrait"><img src="/images/joshua-hcl-conversation.jpg" alt="Joshua holding a microphone and addressing the room at High Capacity Leaders" width="824" height="1234" loading="lazy"/></figure>
+            <div className="ed-room-takeaways"><p className="ed-kicker">What we can build your session around</p><h3 className="ed-heading">Something to think about.<br/><em>Something to do next.</em></h3>
+              <ul><li><strong>Make expertise easier to understand.</strong><span>Connect what your people know with how they communicate it.</span></li><li><strong>Keep people at the center of AI.</strong><span>Explore what trust, judgment, and human connection mean for your team.</span></li><li><strong>Turn visibility into relationships.</strong><span>Rethink how your leaders show up on LinkedIn and in the conversations that matter.</span></li></ul>
+              <a className="ed-link" href="#planner">Tell us what your audience needs ↗</a>
+            </div>
+          </div>
+          <figure className="ed-room-wide ed-room-audience"><img src="/images/joshua-hcl-audience.jpg" alt="An audience view of Joshua B. Lee speaking on the High Capacity Leaders stage" width="1852" height="1236" loading="lazy"/><figcaption className="ed-caption">A perspective from the audience. High Capacity Leaders.</figcaption></figure>
         </div>
       </section>
 
       <section id="reel" className="ed-section"><div className="ed-wrap"><div className="ed-section-top"><div><p className="ed-kicker">See Joshua in the room</p><h2 className="ed-heading">Watch the <em>speaker reel.</em></h2></div><a className="ed-link" href="#planner">Discuss your event ↗</a></div><video className="ed-reel" controls playsInline preload="none" poster="/video/sizzle-poster.webp" aria-label="Joshua B. Lee speaker reel with sound"><source src="/video/sizzle-reel.mp4" type="video/mp4"/></video><p className="ed-small">Press play for sound. Captions are included in the original footage.</p></div></section>
+      <section className="ed-section ed-speaker-resources" id="media-kit"><div className="ed-wrap ed-split">
+        <div><p className="ed-kicker">For your event team</p><h2 className="ed-heading">The story.<br/><em>The details. The entrance.</em></h2><p className="ed-copy">Everything to start the conversation: Joshua’s bio, keynote themes, event photography, session formats, and booking details in one speaker kit. All bookings are coordinated by Jennifer at assistant@standoutauthority.com.</p><div className="ed-kit"><a className="ed-button" href="/joshua-b-lee-speaker-kit.pdf" download>Download speaker kit · PDF ↓</a><a className="ed-link" href="/images/joshua-hero.jpg" download>Download portrait ↓</a><a className="ed-link" href="/speaker-kit.txt" download>Copyable bio & topics ↓</a></div></div>
+        <div className="ed-walk-up" id="walk-up"><p className="ed-kicker">The walk-up track</p><h3>Give It to Ya</h3><p className="ed-copy">Joshua’s choice for taking the stage. Press play for a preview of the entrance.</p><audio controls preload="none" aria-label="Give It to Ya, Joshua B. Lee’s walk-up track"><source src="/audio/joshua-walk-up-give-it-to-ya.mp3" type="audio/mpeg"/><a href="/audio/joshua-walk-up-give-it-to-ya.mp3">Download the walk-up track</a></audio><div className="ed-track-footer"><span>1:40 · MP3</span><a className="ed-link" href="/audio/joshua-walk-up-give-it-to-ya.mp3" download>Download track ↓</a></div><p className="ed-small">For event teams: coordinate the start cue and fade with Jennifer before the event.</p></div>
+      </div></section>
+
       {/* ============================================
           STATS — Visual counter grid
           ============================================ */}
@@ -212,25 +176,6 @@ export default function Speaking() {
               <p className="text-white/30 text-sm">
                 Best for: Digital marketing events, entrepreneur conferences, brand summits
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================
-          STAGE GALLERY — Cinematic image strip
-          ============================================ */}
-      <section className="py-24 bg-navy-800/40">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="img-reveal rounded-2xl overflow-hidden">
-              <img src="/images/joshua-stage-blue-lights.webp" alt="Joshua B. Lee keynote on stage" className="w-full h-72 md:h-96 object-cover object-top" loading="lazy" />
-            </div>
-            <div className="img-reveal rounded-2xl overflow-hidden">
-              <img src="/images/joshua-stage-digitalmarketer.webp" alt="Joshua speaking at DigitalMarketer" className="w-full h-72 md:h-96 object-cover object-top" loading="lazy" />
-            </div>
-            <div className="img-reveal rounded-2xl overflow-hidden">
-              <img src="/images/joshua-stage-pink-mic.webp" alt="Joshua speaking with mic" className="w-full h-72 md:h-96 object-cover object-top" loading="lazy" />
             </div>
           </div>
         </div>
