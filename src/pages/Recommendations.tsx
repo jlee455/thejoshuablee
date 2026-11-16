@@ -31,9 +31,9 @@ export default function Recommendations() {
             In their words
           </p>
           <h1 className="text-3xl sm:text-5xl font-bold text-white leading-tight mb-8">
-            {recommendations.length} people put their name on it.
+            Hear from the people who know the work.
           </h1>
-          <p className="ed-lead">Clients, colleagues, and founders. Real recommendations, in their own words, going back to 2007.</p>
+          <p className="ed-lead">Clients, colleagues, and people who've been in the room with me share their experience here. These are their words, with names, dates, and links to the full record.</p>
           <details className="ed-proof-method"><summary>How these recommendations are verified</summary>
           <p className="text-white/40 leading-relaxed mb-4">
             These are LinkedIn recommendations written for Joshua B. Lee by clients,
@@ -64,6 +64,7 @@ export default function Recommendations() {
                   {items.map((r, i) => (
                     <li
                       key={`${r.name}-${i}`}
+                      id={r.name.toLowerCase().replace(/[^a-z0-9]+/g,'-')}
                       className="rounded-xl p-6 border border-white/5 bg-white/[0.02]"
                     >
                       <blockquote

@@ -17,15 +17,16 @@ export const seoByPath: Record<string, PageSeo> = {
     description:
       'Joshua B. Lee helps founders and leaders build human-first authority. Explore keynotes on LinkedIn, leadership, and trust in the AI era.',
   },
+  '/my-world': {title: 'Inside My World | Joshua B. Lee', description: 'Step inside Joshua B. Lee’s office: sneakers, superheroes, books, art, family, and the personal details behind the work.'},
   '/about': {
     title: 'About Joshua B. Lee — From $1B in Digital Ad Spend to Human-First Authority',
     description:
-      'Joshua B. Lee managed nearly $1 billion in digital ad spend across 25+ years, including work at MySpace, before founding StandOut Authority. He is known as the Dopamine Dealer of LinkedIn and is based in Austin, Texas.',
+      'Meet Joshua B. Lee: husband, father, founder of StandOut Authority, and co-creator of YOUmanize. His career includes 17 companies and more than $1 billion in managed digital ad spend.',
   },
   '/authority-architecture': {
     title: 'Authority Architecture — Joshua B. Lee’s Framework for Trust in AI Search',
     description:
-      'Explore Joshua B. Lee’s approach to identity alignment, trust signals, and authority compounding. Make your expertise easier to recognize and evaluate.',
+      'Explore Joshua B. Lee’s approach to Humanity, Authority, and Answer. Make your expertise easier to recognize and evaluate.',
   },
   '/work-with-me': {
     title: 'Work With Joshua B. Lee — Authority Advisory and Done-For-You Authority',

@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url'
 export const routes = [
   '/',
   '/about',
+  '/my-world',
   '/authority-architecture',
   '/work-with-me',
   '/speaking',

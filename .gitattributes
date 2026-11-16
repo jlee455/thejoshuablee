@@ -1,0 +1,3 @@
+*.pdf binary
+# Preserve the supplied company SVG byte-for-byte.
+public/images/brands/standout-authority.svg -whitespace

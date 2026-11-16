@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
+import MyWorld from './pages/MyWorld'
 import About from './pages/About'
 import AuthorityArchitecture from './pages/AuthorityArchitecture'
 import WorkWithMe from './pages/WorkWithMe'
@@ -16,6 +17,7 @@ function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/my-world" element={<MyWorld />} />
         <Route path="/about" element={<About />} />
         <Route path="/authority-architecture" element={<AuthorityArchitecture />} />
         <Route path="/work-with-me" element={<WorkWithMe />} />

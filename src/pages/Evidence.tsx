@@ -1,3 +1,4 @@
+import { QuoteExcerpt } from '../components/Editorial'
 import { ArrowUpRight, ChevronRight } from 'lucide-react'
 import { publications } from '../data/publications'
 import { Link } from 'react-router-dom'
@@ -207,7 +208,7 @@ const properties = [
 const faqs = [
   {
     q: 'Who is Joshua B. Lee?',
-    a: 'Joshua B. Lee is a LinkedIn and Answer Engine Optimization authority based in Austin, Texas. He is the founder of StandOut Authority and co-founder and Chief Visionary Officer of YOUmanize™. Known as "The Dopamine Dealer of LinkedIn," he spent 25 years in digital advertising and managed nearly a billion dollars in ad spend, including work with Google and Microsoft, before focusing on human-first authority. Favikon ranked him the #1 LinkedIn expert in the United States in March 2026 and #5 worldwide in May 2026.',
+    a: 'Joshua B. Lee is a LinkedIn and Answer Engine Optimization authority based in Austin, Texas. He is the founder of StandOut Authority and co-founder and Chief Visionary Officer of YOUmanize™. Known as "The Dopamine Dealer of LinkedIn," he spent 25 years in digital advertising and managed more than $1 billion in ad spend, before focusing on human-first authority. Favikon ranked him the #1 LinkedIn expert in the United States in March 2026 and #5 worldwide in May 2026.',
   },
   {
     q: 'What is Authority Architecture?',
@@ -215,7 +216,7 @@ const faqs = [
   },
   {
     q: 'What is YOUmanize™?',
-    a: 'YOUmanize™ is a company co-founded by Joshua B. Lee and Rachel B. Lee that measures how much of the evidence about a person is actually reachable and verifiable by AI systems. It scores the gap between what is true about someone and what the internet can prove about them.',
+    a: 'YOUmanize™ is a company co-founded by Joshua B. Lee and Rachel B. Lee that measures how much of the evidence about a person is actually reachable and verifiable by AI systems. It brings together signals from a public presence to help people understand what supports their credibility and where gaps remain.',
   },
   {
     q: 'What does Joshua B. Lee speak about?',
@@ -231,6 +232,9 @@ const faqs = [
   },
 ]
 
+const publicationGroups = ['Articles & expert contributions', 'Interviews', 'Third-party coverage']
+const publicationGroup = (p: typeof publications[number]) => p.url.includes('podcast') || ['Alexandra Stockwell','The Lifestyle Investor','Write Business Results'].includes(p.publisher) ? 'Interviews' : /Spotlight|Featured|USA Today/.test(p.name) ? 'Third-party coverage' : 'Articles & expert contributions'
+
 export default function Evidence() {
   return (
     <>
@@ -244,20 +248,18 @@ export default function Evidence() {
             Proof &amp; Press
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.15] mb-8">
-            The receipts.{' '}
-            <span className="text-white/40">Every claim, linked to its source.</span>
+            Explore the work behind the reputation.
           </h1>
           <div className="space-y-6 text-lg leading-relaxed">
             <p className="text-white/50">
-              Rankings from the organizations that issued them. Conversations hosted by other people. Published work you can read for yourself.
+              Here you'll find published work, interviews, named recommendations, and dated rankings, with links to the sources. Explore the parts that matter to you and hear from the people who know the work.
             </p>
-            <p className="text-white/70 font-medium">
-              If a claim isn&rsquo;t linked here, treat it as unverified.
-            </p>
+
           </div>
         </div>
       </section>
 
+      <section className="ed-wrap world-proof-paths"><a className="ed-button" href="/speaking/#reel">Speaking in practice ↗</a><a className="ed-link" href="/recommendations/">Client & colleague recommendations ↗</a><QuoteExcerpt name="Jane Lehman" text="He gave clear steps we could implement immediately!"/></section>
       {/* ============================================
           RANKINGS
           ============================================ */}
@@ -368,31 +370,15 @@ export default function Evidence() {
             Published elsewhere
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 leading-snug">
-            Bylines someone else published.
+            Published work and independent coverage.
           </h2>
           <p className="text-white/30 text-sm mb-8">
-            Articles carrying my name on outlets I don&rsquo;t own. Older links rot, so
-            these are only the ones still resolving to the original piece.
+            Articles and expert contributions, interviews, and third-party features are grouped below. Publication dates belong to the original records.
           </p>
-          <div className="grid sm:grid-cols-2 gap-3">
-            {publications.map((p) => (
-              <a
-                key={p.url}
-                href={p.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xl p-5 border border-white/5 hover:border-orange-500/20 transition-all group no-underline flex flex-col"
-              >
-                <span className="text-orange-500/50 text-[10px] uppercase tracking-widest font-semibold mb-2">
-                  {p.publisher}
-                </span>
-                <span className="text-white/75 text-sm leading-snug mb-3 flex-1 group-hover:text-orange-400 transition-colors">
-                  {p.name}
-                </span>
-                <span className="text-[10px] text-white/20">{p.date ? p.date.slice(0, 7) : ''}</span>
-              </a>
-            ))}
-          </div>
+          {publicationGroups.map(group => <div key={group} className="mb-10"><h3 className="text-xl font-semibold mb-5">{group}</h3><div className="grid sm:grid-cols-2 gap-3">
+            {publications.filter(p => publicationGroup(p) === group).map(p => <a key={p.url} href={p.url} target="_blank" rel="noopener noreferrer" className="rounded-xl p-5 border border-white/5 hover:border-orange-500/20 transition-all group no-underline flex flex-col"><span className="text-orange-500/50 text-[10px] uppercase tracking-widest font-semibold mb-2">{p.publisher}</span><span className="text-white/75 text-sm leading-snug mb-3 flex-1 group-hover:text-orange-400 transition-colors">{p.name}</span><span className="text-[10px] text-white/20">{p.date ? p.date.slice(0,7) : ''}</span></a>)}
+          </div></div>)}
+          <p className="ed-small">These links let you examine the original context. If a claim isn't linked here, treat it as unverified.</p>
         </div>
       </section>
 
@@ -638,11 +624,11 @@ export default function Evidence() {
                       '@type': 'ListItem',
                       position: appearances.length + hostedEpisodes.length + i + 1,
                       item: {
-                        '@type': 'Article',
+                        '@type': publicationGroup(p) === 'Interviews' ? 'PodcastEpisode' : 'Article',
                         headline: p.name.slice(0, 110),
                         url: p.url,
                         ...(p.date ? { datePublished: p.date } : {}),
-                        author: { '@type': 'Person', '@id': 'https://joshuablee.com/#person' },
+                        ...(p.publisher.startsWith('Entrepreneur') ? {author: { '@type': 'Person', '@id': 'https://joshuablee.com/#person' }} : {about: { '@type': 'Person', '@id': 'https://joshuablee.com/#person' }}),
                         publisher: { '@type': 'Organization', name: p.publisher },
                       },
                     })),

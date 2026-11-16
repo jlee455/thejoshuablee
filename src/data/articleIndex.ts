@@ -15,10 +15,10 @@ export type ArticleMeta = {
 export const articleIndex: ArticleMeta[] = [
   {
     slug: 'why-doesnt-trust-scale',
-    title: 'Why Doesn\'t Trust Scale?',
+    title: 'Trust Starts Before the Introduction',
     date: '2026-07-29',
-    excerpt: 'Trust doesn\'t scale because people decide whether to believe you long before they ever meet you. Maybe it\'s because the new Spider-Man: Brand New Day trailer has been everywhere lately, or…',
-    words: 1491,
+    excerpt: 'People begin forming an opinion long before they reach out. Here\'s how your work, your presence, and what others say about you shape that first conversation.',
+    words: 1260,
     linkedinUrl: 'https://www.linkedin.com/pulse/why-doesnt-trust-scale-joshua-b-lee-k2wqf',
   },
   {
@@ -26,7 +26,7 @@ export const articleIndex: ArticleMeta[] = [
     title: 'Why Can\'t the Market Recommend You?',
     date: '2026-07-15',
     excerpt: 'The market can\'t recommend what it can\'t immediately understand. The market doesn\'t overlook experts; it overlooks experts it can\'t immediately understand. A founder asked me a question…',
-    words: 1182,
+    words: 1139,
     linkedinUrl: 'https://www.linkedin.com/pulse/why-cant-market-recommend-you-joshua-b-lee-6ss3c',
   },
   {
@@ -34,7 +34,7 @@ export const articleIndex: ArticleMeta[] = [
     title: 'Why Are So Many Experts Becoming Invisible?',
     date: '2026-06-24',
     excerpt: 'Expertise alone is no longer enough if nobody can clearly understand what you\'re known for. A founder paid me 5k last week to review his LinkedIn profile. This wasn\'t someone early in his…',
-    words: 1076,
+    words: 947,
     linkedinUrl: 'https://www.linkedin.com/pulse/why-so-many-experts-becoming-invisible-joshua-b-lee-dfeqc',
   },
   {
@@ -42,15 +42,15 @@ export const articleIndex: ArticleMeta[] = [
     title: 'Why Does Expertise Stop Translating Into Authority?',
     date: '2026-06-10',
     excerpt: 'The Human Layer AI Can\'t Replace Expertise stops translating into authority when people, platforms, and AI systems cannot clearly understand, trust, or repeat what you are known for. In a w',
-    words: 1146,
+    words: 1145,
     linkedinUrl: 'https://www.linkedin.com/pulse/why-does-expertise-stop-translating-authority-joshua-b-lee-oa78c',
   },
   {
     slug: 'why-doesnt-success-automatically-create-peace',
     title: 'Why Doesn’t Success Automatically Create Peace?',
     date: '2026-05-27',
-    excerpt: 'Success doesn’t automatically create peace because achievement and emotional capacity are not the same thing. Many high-performing men learn how to carry pressure long before they learn how',
-    words: 1651,
+    excerpt: 'Achievement and emotional capacity are not the same thing. A reflection on pressure, presence, and finding peace beyond the next milestone.',
+    words: 1637,
     linkedinUrl: 'https://www.linkedin.com/pulse/why-doesnt-success-automatically-create-peace-joshua-b-lee-agpgc',
   },
   {
@@ -58,7 +58,7 @@ export const articleIndex: ArticleMeta[] = [
     title: 'Why Doesn’t Expertise Automatically Create Authority?',
     date: '2026-05-13',
     excerpt: 'Expertise alone no longer creates authority because in an AI-driven world, credibility has to be structured clearly enough for people and systems to recognize, trust, and recommend you.…',
-    words: 1355,
+    words: 1311,
     linkedinUrl: 'https://www.linkedin.com/pulse/why-doesnt-expertise-automatically-create-authority-joshua-b-lee-yg6cc',
   },
   {
@@ -66,7 +66,7 @@ export const articleIndex: ArticleMeta[] = [
     title: 'How Do You Become the Answer?',
     date: '2026-04-29',
     excerpt: 'You become the answer by making your expertise clear, verifiable, and consistently reinforced across everything people (and AI) see about you. That sounds simple but it’s where most…',
-    words: 1261,
+    words: 1077,
     linkedinUrl: 'https://www.linkedin.com/pulse/how-do-you-become-answer-joshua-b-lee-x70bc',
   },
   {
@@ -74,7 +74,7 @@ export const articleIndex: ArticleMeta[] = [
     title: 'Why I’m Changing This Newsletter After 151 Editions',
     date: '2026-04-08',
     excerpt: 'I’m changing this newsletter because what used to build attention is no longer what builds trust, and my work has evolved to reflect that shift. I’ve published 151 editions of this…',
-    words: 1248,
+    words: 1215,
     linkedinUrl: 'https://www.linkedin.com/pulse/why-im-changing-newsletter-after-151-editions-joshua-b-lee-kmhzc',
   },
   {
@@ -82,7 +82,7 @@ export const articleIndex: ArticleMeta[] = [
     title: 'Why Isn’t Your LinkedIn Content Turning into Business Opportunities?',
     date: '2026-03-25',
     excerpt: 'Your LinkedIn content is not turning into business opportunities because it is not creating clear, consistent authority signals that make people trust you enough to take action. A lot of…',
-    words: 1410,
+    words: 1238,
     linkedinUrl: 'https://www.linkedin.com/pulse/why-isnt-your-linkedin-content-turning-business-joshua-b-lee-gfvac',
   },
   {
@@ -90,7 +90,7 @@ export const articleIndex: ArticleMeta[] = [
     title: 'Is It Just You, or Has LinkedIn Actually Changed?',
     date: '2026-03-11',
     excerpt: 'Yes, LinkedIn has fundamentally changed, and it\'s not just you experiencing lower reach. The platform’s AI has graduated to a new level and now prioritizes substance, clarity, and depth…',
-    words: 1318,
+    words: 1317,
     linkedinUrl: 'https://www.linkedin.com/pulse/just-you-has-linkedin-actually-changed-joshua-b-lee-izbgc',
   },
   {
@@ -98,7 +98,7 @@ export const articleIndex: ArticleMeta[] = [
     title: 'Can AI Replace a Leader’s Voice?',
     date: '2026-02-25',
     excerpt: 'AI can imitate a leader’s voice, but it cannot replace it because a leader’s voice is built through lived decisions, earned trust, and real accountability over time. That distinction has…',
-    words: 1684,
+    words: 1683,
     linkedinUrl: 'https://www.linkedin.com/pulse/can-ai-replace-leaders-voice-joshua-b-lee-st2oc',
   },
   {
@@ -170,7 +170,7 @@ export const articleIndex: ArticleMeta[] = [
     title: 'Why Great Leaders Will Outlast AI (and the Lazy Ones Won’t)',
     date: '2025-09-10',
     excerpt: 'AI Can’t Lead People. That’s Your Job. Someone who understands how to use AI can replace you. But AI itself? It can’t. In the AI era, effective leadership is still one thing: human. Let’s g',
-    words: 1028,
+    words: 994,
     linkedinUrl: 'https://www.linkedin.com/pulse/why-great-leaders-outlast-ai-lazy-ones-wont-joshua-b-lee-cogoc',
   },
   {
@@ -305,7 +305,7 @@ export const articleIndex: ArticleMeta[] = [
     slug: 'future-of-leadership-is-human-ai-are-you-ready',
     title: 'The Future of Leadership is Human + AI: Are You Ready?',
     date: '2024-12-17',
-    excerpt: 'Will You Lead or Be Left Behind? When you hear "2025," what do you see? Flying cars? Robots taking over? Maybe an AI dystopia? Let’s pump the brakes on the sci-fi. The truth is, AI isn’t he',
+    excerpt: 'How leaders can use AI while keeping human connection, judgment, and trust at the center of their work.',
     words: 1117,
     linkedinUrl: 'https://www.linkedin.com/pulse/future-leadership-human-ai-you-ready-joshua-b-lee-9qi2c',
   },
@@ -730,7 +730,7 @@ export const articleIndex: ArticleMeta[] = [
     title: '3 Powerful Ways to Use LinkedIn Outside of Job Hunting',
     date: '2022-10-25',
     excerpt: 'Yes, LinkedIn is a fantastic place when you’re searching for a new job– but it’s so much more. If you take the time to master LinkedIn by leveling up your profile and spending time on the…',
-    words: 856,
+    words: 742,
     linkedinUrl: 'https://www.linkedin.com/pulse/3-powerful-ways-use-linkedin-outside-job-hunting-joshua-b-lee',
   },
   {
@@ -770,7 +770,7 @@ export const articleIndex: ArticleMeta[] = [
     title: 'How to Develop Your Vision',
     date: '2022-08-16',
     excerpt: '“A skilled, blindfolded archer rarely hits the target. Even the most skilled archer in the world, with no target, finds it impossible to hit the bull’s eye.” Knowing what you hope to…',
-    words: 1121,
+    words: 855,
     linkedinUrl: 'https://www.linkedin.com/pulse/how-develop-your-vision-joshua-b-lee',
   },
   {
@@ -906,7 +906,7 @@ export const articleIndex: ArticleMeta[] = [
     title: 'Thought Leadership is here to stay - here are my 5 top tips to use it correctly.',
     date: '2022-01-25',
     excerpt: 'There\'s been a lot of talk about thought leadership recently and I want to take the time to give a little insight on what it actually is, why it\'s so important for you, your brand and your…',
-    words: 860,
+    words: 788,
     linkedinUrl: 'https://www.linkedin.com/pulse/thought-leadership-here-stay-my-5-top-tips-use-correctly-lee',
   },
   {
@@ -938,7 +938,7 @@ export const articleIndex: ArticleMeta[] = [
     title: 'Where is everyone going all the time? (You too?!)',
     date: '2021-12-28',
     excerpt: 'As we rush headlong into a brand new year and finally put 2021 to rest, there\'s something that\'s been on my mind. I have a great friend who I got the chance to catch up with recently and it',
-    words: 744,
+    words: 696,
     linkedinUrl: 'https://www.linkedin.com/pulse/where-everyone-going-all-time-you-too-joshua-b-lee',
   },
   {

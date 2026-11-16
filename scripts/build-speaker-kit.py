@@ -2,6 +2,8 @@
 Requires reportlab. Run from the repository root.
 """
 from pathlib import Path
+import json
+from xml.sax.saxutils import escape
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
@@ -11,6 +13,7 @@ from reportlab.platypus import Paragraph
 from reportlab.lib.utils import ImageReader
 
 ROOT = Path(__file__).resolve().parents[1]
+CONTENT = json.loads((ROOT/'src/data/speakerContent.json').read_text())
 OUT = ROOT / 'public/joshua-b-lee-speaker-kit.pdf'
 FONT = Path('/System/Library/Fonts/Supplemental')
 for name,file in [('Body','Arial.ttf'),('Bold','Arial Bold.ttf'),('Display','Georgia.ttf'),('Italic','Georgia Italic.ttf')]:
@@ -49,14 +52,15 @@ nextpage()
 base(2,'THE CONVERSATIONS')
 txt('A session built for',42,684,31,'Display');txt('your people.',42,645,31,'Italic',COPPER)
 para('Start with the audience and the question you want them to leave thinking about. These themes give us a place to begin.',42,616,510,11)
-topics=[('01','Becoming the Answer in an AI-Shaped World','How expertise is discovered, why clear positioning matters, and how verifiable public proof supports trust.','Leadership summits, marketing conferences, founder retreats.'),('02','Human-First Leadership in the Age of AI','Presence, relationships, and retaining a human voice as work becomes more automated.','Corporate leadership events, sales kickoffs, EO/YPO chapters.'),('03','Authority That Converts Without Ads','Positioning, content, and relationship-led business development: connecting what you know with how you show up.','Digital marketing events, entrepreneur conferences, brand summits.')]
-y=533
-for num,title,desc,audience in topics:
- c.setStrokeColor(HexColor('#CACCC5'));c.line(42,y+17,570,y+17);txt(num,42,y,11,'Bold',COPPER)
- bottom=para(title,82,y+5,480,18,INK,'Bold',23)
- bottom=para(desc,82,bottom-12,470,11)
- para('Best for: '+audience,82,bottom-10,470,9,MUTED)
- y-=146
+topics=CONTENT['keynotes']
+y=545
+for i,t in enumerate(topics):
+ c.setStrokeColor(HexColor('#CACCC5'));c.line(42,y+14,570,y+14);txt('0'+str(i+1),42,y,11,'Bold',COPPER)
+ bottom=para(escape(t['title']),82,y+5,480,15,INK,'Bold',19)
+ bottom=para(escape(t['text']),82,bottom-9,475,9,MUTED,leading=12)
+ bottom=para('<b>Audience takeaway:</b> '+escape(t['outcome']),82,bottom-8,475,9,INK,leading=12)
+ y=bottom-32
+assert y > 70, ('Topics exceed page',y)
 box(42,61,528,50,BLUE);txt('Keynotes · Team sessions · Panels · Virtual conversations',58,82,11,color=PAPER)
 nextpage()
 base(3,'IN THE ROOM')
@@ -64,8 +68,9 @@ txt('Experience you can see.',42,683,31,'Display')
 para('Joshua B. Lee at High Capacity Leaders',42,652,510,11)
 photo('joshua-hcl-raised-hand.jpg',42,283,254,338)
 photo('joshua-hcl-conversation.jpg',312,283,258,338)
-para('“In one 75-minute group coaching session he delivered more actionable insight on relationship building and lead generation than most people get in a full course.”',42,251,520,18,INK,'Display',26)
-txt('STU WEINTRAUB',42,125,10,'Bold',COPPER)
+para('“he shared the key aspects to follow in order to build relationships”',42,251,520,18,INK,'Display',26)
+txt('STU WEINTRAUB',42,155,10,'Bold',COPPER)
+txt('Excerpt · LinkedIn recommendation · 21 August 2025',42,133,10,color=MUTED)
 link('Read the named recommendations','https://joshuablee.com/recommendations/',42,90)
 link('Watch Joshua speak','https://joshuablee.com/speaking/#reel',359,90)
 nextpage()
@@ -73,7 +78,7 @@ base(4,'FOR EVENT ORGANIZERS')
 txt('Make the introduction.',42,686,31,'Display')
 photo('joshua-hero.jpg',42,438,132,222)
 para('SHORT BIO',197,657,370,9,COPPER,'Bold')
-para('Joshua B. Lee is co-founder of StandOut Authority and Co-Founder &amp; CVO of YOUmanize. He works with founders and executives on human-first authority, LinkedIn, and the way people discover and trust expertise in an AI-shaped world.',197,630,367,12,INK,leading=18)
+para(escape(CONTENT['brand']['bio']),197,630,367,10.5,INK,leading=15)
 link('Download portrait','https://joshuablee.com/images/joshua-hero.jpg',197,465)
 link('Copyable bio & topics','https://joshuablee.com/speaker-kit.txt',197,443)
 para('PLAN THE SESSION',42,405,528,10,COPPER,'Bold')
@@ -88,3 +93,7 @@ link('assistant@standoutauthority.com','mailto:assistant@standoutauthority.com',
 link('Start your event inquiry','https://joshuablee.com/speaking/#planner',58,107,PAPER,11)
 txt('Austin, Texas · In-person and virtual inquiries worldwide',58,82,9,color='#D0D8DC')
 c.save();print(OUT)
+
+# Keep the downloadable plain-text resource in sync with the PDF and website.
+copy = 'JOSHUA B. LEE | SPEAKER INFORMATION\n\nSHORT BIO\n'+CONTENT['brand']['bio']+'\n\nKEYNOTE TOPICS\n\n'+'\n\n'.join(t['title']+'\n'+t['text']+'\nAudience takeaway: '+t['outcome']+'\nBest for: '+t['audience'] for t in CONTENT['keynotes'])+'\n\n'+'BOOKING\nJennifer coordinates all speaking engagements.\nassistant@standoutauthority.com\nhttps://joshuablee.com/speaking/#planner\n\nREEL AND RESOURCES\nhttps://joshuablee.com/speaking/#reel\nhttps://joshuablee.com/evidence/\nhttps://joshuablee.com/recommendations/\nhttps://joshuablee.com/images/joshua-hero.jpg\n\nBased in Austin, Texas. In-person and virtual inquiries worldwide. Scope, fees, travel, dates, and audience outcomes are agreed with Jennifer for each event.\n'
+(ROOT/'public/speaker-kit.txt').write_text(copy)

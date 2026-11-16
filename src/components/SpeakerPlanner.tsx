@@ -24,7 +24,7 @@ export default function SpeakerPlanner() {
   }
   return <section className="ed-section ed-planner" id="planner" aria-labelledby="planner-title"><div className="ed-wrap ed-split"><div className="ed-planner-intro">
     <p className="ed-kicker">For event organizers</p><h2 className="ed-heading" id="planner-title">Let’s talk about<br/><em>your event.</em></h2>
-    <p className="ed-lead">Jennifer coordinates every speaking booking. Share a few details about your event, and she’ll help you explore the fit.</p>
+    <p className="ed-lead">Tell us about your audience and what you want them to leave with. Jennifer coordinates my speaking engagements and will help you work through fit, format, and availability.</p>
     <a className="ed-planner-contact" href="mailto:assistant@standoutauthority.com"><span>Prefer email? Contact Jennifer</span><strong>assistant@standoutauthority.com ↗</strong></a>
     <p className="ed-small">Still planning? Dates, format, audience size, and budget can be added when you know them.</p>
   </div>{status === 'sent' ? <div className="ed-form-status ed-form-success" role="status" ref={feedback} tabIndex={-1}><p className="ed-kicker">Inquiry submitted</p><h3>Thank you for the introduction.</h3><p>Jennifer will review your event details to discuss availability and fit. A date is only reserved once confirmed with Jennifer.</p><p>For time-sensitive requests, email <a href="mailto:assistant@standoutauthority.com">assistant@standoutauthority.com</a>.</p><a className="ed-link" href="/joshua-b-lee-speaker-kit.pdf" download>Download the speaker kit ↓</a></div> :
@@ -43,7 +43,7 @@ export default function SpeakerPlanner() {
       <label>Format<select name="format" defaultValue="Let’s discuss"><option>Let’s discuss</option><option>Keynote</option><option>Team session or workshop</option><option>Panel or interview</option><option>Virtual session</option></select></label>
       <label>Budget range & currency<input name="budget" maxLength={150}/></label>
     </div></details>
-    <button className="ed-button full" disabled={status === 'sending'} type="submit">{status === 'sending' ? 'Sending your inquiry…' : 'Send inquiry to Jennifer ↗'}</button>
+    <button className="ed-button full" disabled={status === 'sending'} type="submit">{status === 'sending' ? 'Sending your inquiry…' : 'Send my event details ↗'}</button>
     <p className="ed-small full">We use these details to respond to your event inquiry. Submitting an inquiry does not reserve a date.</p>
     {status === 'error' && <div className="ed-form-status full" role="alert" ref={feedback} tabIndex={-1}>We couldn’t submit your inquiry. Your details are still here; please try again or email Jennifer at <a href="mailto:assistant@standoutauthority.com">assistant@standoutauthority.com</a>.</div>}
   </form>}</div></section>

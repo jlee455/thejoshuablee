@@ -1,0 +1,43 @@
+{
+  "preview": "https://6afb11d0ffad740e9e91471e--superb-seahorse-8b48c8.netlify.app",
+  "manifest_matches_after_path_case_normalization": true,
+  "collection_files_preserved": 7927,
+  "production_unchanged": true,
+  "resources": [
+    {
+      "path": "joshua-b-lee-speaker-kit.pdf",
+      "status": 200,
+      "matches_build": true
+    },
+    {
+      "path": "speaker-kit.txt",
+      "status": 200,
+      "matches_build": true
+    },
+    {
+      "path": "images/office/room.webp",
+      "status": 200,
+      "matches_build": true
+    },
+    {
+      "path": "images/brands/standout-authority.svg",
+      "status": 200,
+      "matches_build": true
+    },
+    {
+      "path": "images/brands/youmanize.png",
+      "status": 200,
+      "matches_build": true
+    },
+    {
+      "path": "fonts/OFL-DM-Sans.txt",
+      "status": 200,
+      "matches_build": true
+    },
+    {
+      "path": "fonts/OFL-Playfair-Display.txt",
+      "status": 200,
+      "matches_build": true
+    }
+  ]
+}

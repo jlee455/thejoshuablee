@@ -41,7 +41,7 @@ export const publications: Publication[] = [
     name: '3 Ways to Get Your Voice Heard',
     publisher: 'Entrepreneur.com',
     date: '2017-10-30',
-    url: 'https://www.entrepreneur.com/article/298153',
+    url: 'https://www.entrepreneur.com/growing-a-business/3-ways-to-get-your-voice-heard/298153',
   },
   {
     name: '4 Simple Techniques to Hone your Message',
@@ -80,7 +80,7 @@ export const publications: Publication[] = [
     url: 'https://www.entrepreneur.com/article/279380',
   },
   {
-    name: 'How Not to Be eh Madman Talking to Himself on LinkedIn',
+    name: 'How Not to Be the Madman Talking to Himself on LinkedIn',
     publisher: 'Entrepreneur.com',
     date: '2016-05-03',
     url: 'https://www.entrepreneur.com/article/272307',

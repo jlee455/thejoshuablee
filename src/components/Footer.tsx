@@ -15,15 +15,15 @@ export default function Footer() {
             </p>
             {/* Newsletter */}
             <div className="p-4 rounded-xl border border-white/5 bg-white/[0.02]">
-              <p className="text-white/60 text-sm font-medium mb-1">Get the weekly breakdown</p>
-              <p className="text-white/30 text-xs mb-3">Notes on authority, trust, and being human.</p>
+              <p className="text-white/60 text-sm font-medium mb-1">Get The Authority Gap.</p>
+              <p className="text-white/30 text-xs mb-3">My perspective on earning trust, building authority, and staying human as business changes.</p>
               <a
-                href="https://www.linkedin.com/newsletters/youmanize-your-brand-7024795582427004928/"
+                href="https://www.linkedin.com/newsletters/the-authority-gap-6770825325585727488"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white text-xs font-semibold rounded-lg transition-all no-underline"
               >
-                Subscribe
+                Read on LinkedIn
                 <ArrowRight size={12} />
               </a>
             </div>
@@ -35,6 +35,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 { to: '/about', label: 'My Story' },
+                { to: '/my-world', label: 'Inside My World' },
                 { to: '/authority-architecture', label: 'Authority' },
                 { to: '/work-with-me', label: 'Work With Me' },
                 { to: '/speaking', label: 'Speaking' },

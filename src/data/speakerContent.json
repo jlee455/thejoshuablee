@@ -1,0 +1,29 @@
+{
+  "brand": {
+    "newsletter": "https://www.linkedin.com/newsletters/the-authority-gap-6770825325585727488",
+    "services": "https://standoutauthority.com/services/service-application/",
+    "launchpad": "https://standoutauthority.com/brand-launchpad/",
+    "snapshot": "https://forms.standoutauthority.com/snapshot/",
+    "bio": "Joshua B. Lee is a keynote speaker, founder of StandOut Authority, and co-creator of YOUmanize. He helps founders, executives, and teams build authority through human connection and earned trust. After building 17 companies and managing more than $1 billion in digital ad spend, Joshua brings both business experience and the personal lessons of rebuilding his life to the way he speaks about leadership in an increasingly automated world. He lives in Austin with his wife and business partner, Rachel, and their family."
+  },
+  "keynotes": [
+    {
+      "title": "Be the Answer.",
+      "text": "How do people decide who to trust before the first conversation? This keynote shows founders and leaders how to make their expertise easier to understand, support it with evidence, and communicate it consistently across LinkedIn, their website, and the places people discover them.",
+      "outcome": "Leave with a clearer way to explain your expertise and identify the proof your public presence needs.",
+      "audience": "Founder groups, leadership summits, and marketing events."
+    },
+    {
+      "title": "Stay Human as Everything Speeds Up.",
+      "text": "AI can change the pace of work. Leaders still shape how that work feels to the people doing it. This conversation explores presence, judgment, and the everyday choices that help a team feel seen and trust the person leading them.",
+      "outcome": "Leave with practical questions to improve how you listen, communicate, and lead through change.",
+      "audience": "Leadership teams, company events, and entrepreneur communities."
+    },
+    {
+      "title": "Turn LinkedIn Visibility Into Human Connection.",
+      "text": "A bigger audience means more when it leads to better conversations. I bring my experience in LinkedIn and personal branding to the way leaders communicate, contribute, and build relationships people want to continue.",
+      "outcome": "Leave with a clearer message and a more intentional approach to the conversations your presence creates.",
+      "audience": "Founder groups, marketing events, and professional communities."
+    }
+  ]
+}

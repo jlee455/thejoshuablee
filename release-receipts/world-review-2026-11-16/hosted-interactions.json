@@ -1,0 +1,35 @@
+{
+  "mobileMenuEscape": true,
+  "smallWidths": [
+    320,
+    768
+  ],
+  "form": {
+    "requiredValidation": true,
+    "errorRetainsFields": true,
+    "feedbackFocus": true,
+    "success": true,
+    "requestsIntercepted": 2,
+    "liveSubmissions": 0
+  },
+  "media": [
+    {
+      "tag": "VIDEO",
+      "autoplay": false,
+      "advanced": true,
+      "duration": 16.633008,
+      "error": null
+    },
+    {
+      "tag": "AUDIO",
+      "autoplay": false,
+      "advanced": true,
+      "duration": 100.048958,
+      "error": null
+    }
+  ],
+  "collectionAngle": "02 / 26",
+  "collectionDialog": true,
+  "article": true,
+  "errors": []
+}

@@ -6,7 +6,7 @@ import Seo from './Seo'
 
 export default function Layout() {
   const {pathname}=useLocation()
-  const editorial=['/','/work-with-me','/insights','/authority-architecture'].includes(pathname.replace(/\/$/,'')||'/')
+  const editorial=['/','/work-with-me','/insights','/authority-architecture','/my-world','/about','/speaking'].includes(pathname.replace(/\/$/,'')||'/')
   const page=pathname.split('/')[1]||'home'
   return (
     <div className="site-shell min-h-screen flex flex-col">
