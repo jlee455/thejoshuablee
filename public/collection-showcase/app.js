@@ -2,7 +2,8 @@
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-const opening=['B13','B22','V26','V03','U04','V47'];
+// Each section has its own opening: MAG hero, purple LV wheel, Tiffany wall.
+const opening=['B22','V26','V20','V47','U04','V03'];
 const sorted=[...CATALOG].sort((a,b)=>((opening.indexOf(a.id)+1)||999)-((opening.indexOf(b.id)+1)||999)||a.wall_order-b.wall_order);
 let all=false,filtered=sorted,selected=null,angle=0,origin=null,version=0,viewMode="showcase",momentum=null;
 function art(a,name,mode='wall',lazy=false,fixedScale=null){
@@ -207,8 +208,10 @@ bindAngleDrag($('#angle-stage'),true);bindAngleDrag(wheel,false);
 wheel.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();stopMomentum();if(e.key==='Home')angle=0;else if(e.key==='End')angle=views(selected).length-1;else angle=(angle+(e.key==='ArrowRight'?1:-1)+views(selected).length)%views(selected).length;paintAngle();}});
 
 // The collection wheel uses showcase art; the detail viewer retains reference photography.
+const wheelOpening=['B18','V30','B26','V20','V26','B22'];
+const wheelPairs=[...CATALOG].sort((a,b)=>((wheelOpening.indexOf(a.id)+1)||999)-((wheelOpening.indexOf(b.id)+1)||999)||a.wall_order-b.wall_order);
 const collectionWheel=$('#collection-wheel');let wheelIndex=0,collectionDrag=null,flingFrame=null,paintFrame=null,suppressWheelClick=false;
-collectionWheel.innerHTML=sorted.map(p=>`<button class="rotation-pair" data-wheel-id="${esc(p.id)}" aria-label="Center ${esc(p.name)}"><span class="collector-case"><span class="wheel-art">${art(p.seating,p.name,'hero',true)}</span>${caseDoor()}</span></button>`).join('');
+collectionWheel.innerHTML=wheelPairs.map(p=>`<button class="rotation-pair" data-wheel-id="${esc(p.id)}" aria-label="Center ${esc(p.name)}"><span class="collector-case"><span class="wheel-art">${art(p.seating,p.name,'hero',true)}</span>${caseDoor()}</span></button>`).join('');
 const wheelCards=[...collectionWheel.children];wheelCards.forEach(c=>c.tabIndex=-1);
 const wheelObserver=new IntersectionObserver(entries=>{for(const e of entries){const im=e.target.querySelector('image');if(!im?.dataset.src)continue;if(e.isIntersecting)im.setAttribute('href',im.dataset.src);else im.removeAttribute('href');}},{root:collectionWheel,rootMargin:'120px'});wheelCards.forEach(c=>wheelObserver.observe(c));
 const paintedWheelCards=new Set();
@@ -226,17 +229,17 @@ function paintCollectionWheel(){
  }
  for(const i of paintedWheelCards)if(!next.has(i)){wheelCards[i].style.transform='none';wheelCards[i].style.opacity='';}
  paintedWheelCards.clear();for(const i of next)paintedWheelCards.add(i);
- if(nearest!==wheelIndex){wheelCards[wheelIndex].tabIndex=-1;wheelCards[wheelIndex].setAttribute('aria-label','Center '+sorted[wheelIndex].name);}
- wheelIndex=nearest;const p=sorted[wheelIndex];$('#wheel-title').textContent=p.name;$('#wheel-count').textContent=`${String(wheelIndex+1).padStart(3,'0')} / ${sorted.length}`;
+ if(nearest!==wheelIndex){wheelCards[wheelIndex].tabIndex=-1;wheelCards[wheelIndex].setAttribute('aria-label','Center '+wheelPairs[wheelIndex].name);}
+ wheelIndex=nearest;const p=wheelPairs[wheelIndex];$('#wheel-title').textContent=p.name;$('#wheel-count').textContent=`${String(wheelIndex+1).padStart(3,'0')} / ${wheelPairs.length}`;
  wheelCards[wheelIndex].setAttribute('aria-label','Explore '+p.name);wheelCards[wheelIndex].tabIndex=0;
 }
 function queueWheelPaint(){if(paintFrame===null)paintFrame=requestAnimationFrame(paintCollectionWheel);}
 function cancelFling(){if(flingFrame!==null)cancelAnimationFrame(flingFrame);flingFrame=null;collectionWheel.classList.remove('dragging');}
-function centerWheel(i,behavior=reduced.matches?'instant':'smooth'){cancelFling();const n=Math.max(0,Math.min(sorted.length-1,i)),c=wheelCards[n];collectionWheel.scrollTo({left:c.offsetLeft-collectionWheel.offsetLeft+c.offsetWidth/2-collectionWheel.clientWidth/2,behavior});queueWheelPaint();}
+function centerWheel(i,behavior=reduced.matches?'instant':'smooth'){cancelFling();const n=Math.max(0,Math.min(wheelPairs.length-1,i)),c=wheelCards[n];collectionWheel.scrollTo({left:c.offsetLeft-collectionWheel.offsetLeft+c.offsetWidth/2-collectionWheel.clientWidth/2,behavior});queueWheelPaint();}
 collectionWheel.addEventListener('scroll',queueWheelPaint,{passive:true});new ResizeObserver(queueWheelPaint).observe(collectionWheel);queueWheelPaint();
-$('#wheel-prev').addEventListener('click',()=>centerWheel(wheelIndex-1));$('#wheel-next').addEventListener('click',()=>centerWheel(wheelIndex+1));$('#wheel-open').addEventListener('click',e=>openPair(sorted[wheelIndex].id,e.currentTarget));
-collectionWheel.addEventListener('click',e=>{if(suppressWheelClick){suppressWheelClick=false;return;}const c=e.target.closest('[data-wheel-id]');if(!c)return;const i=sorted.findIndex(p=>p.id===c.dataset.wheelId);if(i===wheelIndex)openPair(c.dataset.wheelId,c);else centerWheel(i);});
-collectionWheel.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();centerWheel(e.key==='Home'?0:e.key==='End'?sorted.length-1:wheelIndex+(e.key==='ArrowLeft'?-1:1));});
+$('#wheel-prev').addEventListener('click',()=>centerWheel(wheelIndex-1));$('#wheel-next').addEventListener('click',()=>centerWheel(wheelIndex+1));$('#wheel-open').addEventListener('click',e=>openPair(wheelPairs[wheelIndex].id,e.currentTarget));
+collectionWheel.addEventListener('click',e=>{if(suppressWheelClick){suppressWheelClick=false;return;}const c=e.target.closest('[data-wheel-id]');if(!c)return;const i=wheelPairs.findIndex(p=>p.id===c.dataset.wheelId);if(i===wheelIndex)openPair(c.dataset.wheelId,c);else centerWheel(i);});
+collectionWheel.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();centerWheel(e.key==='Home'?0:e.key==='End'?wheelPairs.length-1:wheelIndex+(e.key==='ArrowLeft'?-1:1));});
 collectionWheel.addEventListener('pointerdown',e=>{suppressWheelClick=false;cancelFling();if(e.pointerType!=='mouse'||e.button!==0)return;collectionDrag={x:e.clientX,t:e.timeStamp,v:0,total:0};});
 collectionWheel.addEventListener('pointermove',e=>{if(!collectionDrag)return;const dx=e.clientX-collectionDrag.x,dt=Math.max(1,e.timeStamp-collectionDrag.t);collectionDrag={x:e.clientX,t:e.timeStamp,v:Math.max(-2,Math.min(2,-dx/dt)),total:collectionDrag.total+Math.abs(dx)};if(collectionDrag.total>5){collectionWheel.setPointerCapture(e.pointerId);collectionWheel.classList.add('dragging');collectionWheel.scrollLeft-=dx;}});
 function releaseCollection(e){if(!collectionDrag)return;const d=collectionDrag;collectionDrag=null;suppressWheelClick=d.total>5;if(!suppressWheelClick)return;let v=e.timeStamp-d.t>100?0:d.v;if(reduced.matches||Math.abs(v)<.15){collectionWheel.classList.remove('dragging');centerWheel(wheelIndex);return;}let last=performance.now(),travel=0;function animate(t){const dt=Math.min(t-last,40);last=t;const dx=v*dt;collectionWheel.scrollLeft+=dx;travel+=Math.abs(dx);v*=Math.exp(-dt/190);if(Math.abs(v)>.03&&travel<collectionWheel.clientWidth*2)flingFrame=requestAnimationFrame(animate);else{flingFrame=null;collectionWheel.classList.remove('dragging');paintCollectionWheel();centerWheel(wheelIndex);}}flingFrame=requestAnimationFrame(animate);}
