@@ -1,0 +1,24 @@
+page,slot,file,description,kind,sha256,reuse
+/,1,/images/joshua-hero.jpg,Joshua B. Lee facing the camera in a purple jacket,image,72820ae108764513d5081f85b33b6adab8db43732a6dead5d4d3a19e7e124915,No other display slot in audited pages
+/,2,/images/brands/standout-authority.svg,StandOut Authority,image,7d58102bb2fcf7f94d6d89012390d2a747e210780deb1e8ae4712ed6084190a3,No other display slot in audited pages
+/,3,/images/brands/youmanize-white.png,YOUmanize,image,a09e13acfc84afa738a180621748347d0308ae7321c3836e6df4c5f160584737,No other display slot in audited pages
+/,4,/images/joshua-rachel-working.webp,Joshua and Rachel working together,image,870268f9bcac6e4c740b366938a21ce4b579edd17cb920ec3376204a24fd65a3,/work-with-me/ slot 1
+/,5,/images/office/room.webp,"Joshua’s office with colorful artwork, a Deadpool and Wolverine mask, and sneakers on floating shelves",image,b9c031739dd3a7a980068eb6ccd2b82b0ff1d2e54c004bdc31e9e42b7f4cbd09,/about/ slot 3; /my-world/ slot 3
+/,6,/images/office/dad.webp,A framed blue sneaker drawing above a To My Dad plaque,image,9ff9232c10e3e6598f1a3af85e26f14fc9557925ed050f1cd8bee9032c333700,/my-world/ slot 1
+/,7,/images/joshua-hcl-onstage.jpg,Joshua speaking with a microphone at High Capacity Leaders,image,8e1922019e1c5b87ef4881a3e320a77606b8a052a79fcce71decd98edcae8cef,/speaking/ slot 3
+/,8,/images/joshua-rachel-hallway.webp,Joshua and Rachel together,image,ccece8435add91df888ad7416386060235b627183176a03e88d0b92e24864a00,No other display slot in audited pages
+/about/,1,/images/joshua-family-full.webp,Joshua with Rachel and their family,image,e0478d7df111e4ea5d4c1d9dea2d1a1de3360d9a1a6375d9649e6e1e87c07d50,No other display slot in audited pages
+/about/,2,/images/joshua-rachel-hands.webp,Joshua and Rachel holding hands,image,caa3411bc10fdbebad125338a1288b278ee510a2822bffd5824c78ef093f3a1d,No other display slot in audited pages
+/about/,3,/images/office/room.webp,Joshua’s office chair surrounded by artwork and sneakers,image,b9c031739dd3a7a980068eb6ccd2b82b0ff1d2e54c004bdc31e9e42b7f4cbd09,/ slot 5; /my-world/ slot 3
+/about/,4,/images/balance-is-bullshit-cover.webp,Balance Is Bullsh*t by Joshua B. Lee,image,4e497d11bda668359599bd4e09c9062d1e5d4a7859b125fe4e741a1624d2f3c7,/my-world/ slot 5
+/speaking/,1,/images/joshua-hcl-raised-hand.jpg,Joshua B. Lee speaking into a microphone with his hand raised at High Capacity Leaders,image,56efe619cc19d6ba1fd965bce3a51a95f31a6215a8daf23092cc34d01f3bc2f1,No other display slot in audited pages
+/speaking/,2,/video/sizzle-poster.webp,Short speaking clip poster,poster,aebe27ae09c8660aa3373bbb4aebdb937ca169a56928a02844c23f18ec292648,No other display slot in audited pages
+/speaking/,3,/images/joshua-hcl-onstage.jpg,Joshua speaking at High Capacity Leaders with event attendees behind him,image,8e1922019e1c5b87ef4881a3e320a77606b8a052a79fcce71decd98edcae8cef,/ slot 7
+/speaking/,4,/images/joshua-hcl-conversation.jpg,Joshua holding a microphone and addressing the room at High Capacity Leaders,image,e50db52001e6ee83ef86bbba57afd26534f4f4431c92e9afae1028bb8ff60918,No other display slot in audited pages
+/speaking/,5,/images/joshua-stage-digitalmarketer.webp,Joshua speaking at a DigitalMarketer event,image,2dce3cbb16a664c69420d87f4afba14235f9e4786488d0b2bf3cf4512035bbe0,No other display slot in audited pages
+/work-with-me/,1,/images/joshua-rachel-working.webp,Joshua and Rachel working together,image,870268f9bcac6e4c740b366938a21ce4b579edd17cb920ec3376204a24fd65a3,/ slot 4
+/my-world/,1,/images/office/dad.webp,A framed sneaker drawing above the To My Dad plaque in Joshua’s office,image,9ff9232c10e3e6598f1a3af85e26f14fc9557925ed050f1cd8bee9032c333700,/ slot 6
+/my-world/,2,/images/office/sneakers.webp,Sneakers displayed on racks beneath the office window,image,4df9c5872a701e75c34490710035da54ebbb217de24f626b984f3a60f78db35b,No other display slot in audited pages
+/my-world/,3,/images/office/room.webp,A red and yellow mask hangs between two colorful paintings above Joshua’s office chair,image,b9c031739dd3a7a980068eb6ccd2b82b0ff1d2e54c004bdc31e9e42b7f4cbd09,/ slot 5; /about/ slot 3
+/my-world/,4,/images/office/shelves.webp,"Books, a hammer prop, Superman container, family photograph, and sneakers share an office bookshelf",image,e18c739ddda232449ffa589ee89555c15520aa7bbc438b4703984ceddb2cee08,No other display slot in audited pages
+/my-world/,5,/images/balance-is-bullshit-cover.webp,Balance Is Bullsh*t by Joshua B. Lee,image,4e497d11bda668359599bd4e09c9062d1e5d4a7859b125fe4e741a1624d2f3c7,/about/ slot 4

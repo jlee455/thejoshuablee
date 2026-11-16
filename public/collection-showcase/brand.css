@@ -138,3 +138,14 @@ dialog::backdrop { background:#040a15de }
 @media(hover:none){.card-art{transform:none!important}dialog::backdrop{backdrop-filter:none;-webkit-backdrop-filter:none}}
 
 #site-menu>a.start-here{color:#14242f}
+
+/* Reliable vector controls and reachable mobile dialog chrome. */
+.ui-icon{width:18px;height:18px;display:inline-block;vertical-align:middle;flex-shrink:0}
+button.circle{min-width:44px;min-height:44px}
+.hero-caption button{min-height:44px}
+.pair-nav button{min-height:44px}
+#viewer{max-height:calc(100dvh - 24px);overflow:auto;overscroll-behavior:contain}
+#viewer .viewer-top{position:sticky;top:0;z-index:20;background:#f4f1ea;padding-top:max(10px,env(safe-area-inset-top))}
+#viewer .pair-copy{padding-bottom:max(24px,env(safe-area-inset-bottom))}
+#viewer #close{flex-shrink:0}
+@media(max-width:600px){#viewer{width:calc(100vw - 16px);max-height:calc(100dvh - 16px)}.pair-copy h2{font-size:27px}.pair-copy>p{font-size:14px}.pair-copy .photo-note{font-size:12px}.angle-controls small{font-size:9px}}

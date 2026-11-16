@@ -18,7 +18,7 @@ export default function Speaking(){return <>
         </div>
       </section>
 
-      <section id="reel" className="ed-section"><div className="ed-wrap"><div className="ed-section-top"><div><p className="ed-kicker">See Joshua in the room</p><h2 className="ed-heading">Watch the <em>speaker reel.</em></h2></div><a className="ed-link" href="#planner">Discuss your event ↗</a></div><video className="ed-reel" controls playsInline preload="none" poster="/video/sizzle-poster.webp" aria-label="Joshua B. Lee speaker reel with sound"><source src="/video/sizzle-reel.mp4" type="video/mp4"/></video><p className="ed-small">Press play for sound. Captions are included in the original footage.</p></div></section>
+      <section id="reel" className="ed-section"><div className="ed-wrap"><div className="ed-section-top"><div><p className="ed-kicker">See Joshua in the room</p><h2 className="ed-heading">Watch a short clip.</h2></div><a className="ed-link" href="#planner">Discuss your event ↗</a></div><video className="ed-reel" controls playsInline preload="none" poster="/video/sizzle-poster.webp" aria-label="Joshua B. Lee speaking, short clip"><source src="/video/speaking-clip-give-it-to-ya.mp4" type="video/mp4"/></video><p className="ed-small">17 seconds of stage moments, set to my walk-up track, “Give It to Ya.” Press play for sound.</p><details className="ed-clip-description"><summary>Read a description of the clip</summary><p>A montage shows Joshua holding a microphone, addressing audiences on stage, and speaking in a seated conversation. The on-screen messages include “AI is already answering,” “Will it know to say your name?”, “Humanity earns trust,” and “Clear enough for AI to find. Credible enough for buyers to choose.” The closing card identifies Joshua as founder of StandOut Authority and co-creator of YOUmanize, with the invitation “Be the answer.”</p></details></div></section>
 
 <section className="ed-section world-speaking-proof"><div className="ed-wrap"><p className="ed-kicker">From people in the room</p><div className="world-quote-grid"><QuoteExcerpt name="Jane Lehman" text="He gave clear steps we could implement immediately!"/><QuoteExcerpt name="Stu Weintraub" text="he shared the key aspects to follow in order to build relationships"/></div><div className="world-event-list"><span>Selected stages & communities</span><span>High Capacity Leaders</span><span>DigitalMarketer</span><span>Social Media Week Austin</span><span>Maverick1000</span></div><p className="ed-small">Explore <a href="/evidence/">linked appearances and publications</a>, <a href="/recommendations/">named recommendations</a>, and <a href="/insights/">{uniqueArticles.length} articles in the writing archive</a>.</p></div></section>
 <section className="ed-section" id="topics"><div className="ed-wrap"><p className="ed-kicker">Keynote topics</p><h2 className="ed-heading">A conversation built<br/><em>for your people.</em></h2><div className="ed-offers">{keynotes.map((k,i)=><article className="ed-offer" key={k.title}><span className="ed-number">0{i+1} / KEYNOTE</span><h3>{k.title}</h3><p>{k.text}</p><p className="world-outcome"><strong>Your audience takeaway</strong><br/>{k.outcome}</p><p className="ed-small">Best for: {k.audience}</p><a className="ed-link" href="#planner">Discuss this session ↗</a></article>)}</div></div></section>
@@ -52,11 +52,11 @@ export default function Speaking(){return <>
             '@context': 'https://schema.org',
             '@type': 'VideoObject',
             '@id': 'https://joshuablee.com/speaking/#reel',
-            name: 'Joshua B. Lee — Keynote Speaker Sizzle Reel',
+            name: 'Joshua B. Lee — Short Speaking Clip',
             description:
               'Joshua B. Lee speaking on stage. The reel opens on "AI is already answering", moves through 25+ years in digital marketing, lands on "Humanity earns trust", and closes on "Be the answer." Joshua is the founder of StandOut Authority and co-creator of YOUmanize.',
             thumbnailUrl: 'https://joshuablee.com/video/sizzle-poster.webp',
-            contentUrl: 'https://joshuablee.com/video/sizzle-reel.mp4',
+            contentUrl: 'https://joshuablee.com/video/speaking-clip-give-it-to-ya.mp4',
             uploadDate: '2026-08-02T00:00:00-05:00',
             duration: 'PT17S',
             inLanguage: 'en-US',

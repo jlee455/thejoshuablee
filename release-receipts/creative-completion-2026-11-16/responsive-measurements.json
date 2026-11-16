@@ -1,0 +1,50 @@
+{
+  "conditions": "Chrome responsive emulation on local production build, no throttling, normal text. 664px usable height reserves 180px from an 844px phone screen for browser chrome. Not real iPhone verification.",
+  "measurements": [
+    {
+      "width": 375,
+      "height": 664,
+      "scrollWidth": 375,
+      "ctaBottom": 484.15625
+    },
+    {
+      "width": 390,
+      "height": 664,
+      "scrollWidth": 390,
+      "ctaBottom": 487.15625
+    },
+    {
+      "width": 430,
+      "height": 664,
+      "scrollWidth": 430,
+      "ctaBottom": 471.46875
+    },
+    {
+      "width": 320,
+      "height": 664,
+      "scrollWidth": 320,
+      "ctaBottom": 521.953125
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "scrollWidth": 768,
+      "ctaBottom": 538.625
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "ctaBottom": 641.125
+    },
+    {
+      "width": 667,
+      "height": 375,
+      "scrollWidth": 667,
+      "ctaBottom": 538.625,
+      "natural_scroll_required": true
+    }
+  ],
+  "local_first_contentful_paint_ms": 412,
+  "homepage_loaded_collection_or_video": false
+}

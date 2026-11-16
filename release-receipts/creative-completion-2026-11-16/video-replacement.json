@@ -1,0 +1,59 @@
+{
+  "video_frames_preserved": true,
+  "music": "public/audio/joshua-walk-up-give-it-to-ya.mp3",
+  "music_source_start_seconds": 0,
+  "fade_in_seconds": 0.18,
+  "fade_out_seconds": 0.85,
+  "normalization_target_lufs": -16,
+  "original_preserved": true,
+  "files": [
+    {
+      "file": "public/video/sizzle-reel.mp4",
+      "video_stream_hash": "SHA256=c4ec6640191b565679a6f01e755e8eed0b605275bd7859a27de88d9327f06658",
+      "file_sha256": "dfb6929327c11d8baad81280d8b68ed810b75ff65eb6c63ab3c471621b57a02b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "16.633008"
+        }
+      }
+    },
+    {
+      "file": "public/video/speaking-clip-give-it-to-ya.mp4",
+      "video_stream_hash": "SHA256=c4ec6640191b565679a6f01e755e8eed0b605275bd7859a27de88d9327f06658",
+      "file_sha256": "396646b4a82a8a13e11e0b55be3471779c9abdd23c99e6f3f439b37a65850f8f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "16.633008"
+        }
+      }
+    }
+  ]
+}

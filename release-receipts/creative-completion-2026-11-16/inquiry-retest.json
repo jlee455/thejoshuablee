@@ -1,0 +1,13 @@
+{
+  "submissions": [
+    {
+      "id": "6afb35dfb227924c7a035001",
+      "created_at": "2026-11-16T16:57:03.041Z",
+      "event": "Website delivery retest - confirmation complete - no booking requested"
+    }
+  ],
+  "delivery": "PASS",
+  "receipt_confirmed_by": "Jennifer, relayed by Joshua in this conversation",
+  "confirmation": "Jennifer received the fresh test",
+  "notification_hold_cleared": true
+}
