@@ -262,3 +262,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink)}
 .site-shell footer a[class*='bg-orange']{background:var(--paper);color:var(--ink);border:1px solid var(--paper);border-radius:2px;min-height:44px}
 .ed-legacy p a{text-decoration:underline}
 @media(max-width:640px){.ed-recommendations li{border-inline:0;border-bottom:0}}
+
+/* Portrait frames preserve faces and hats in the integration photo sequence. */
+.ed-familee-gallery .ed-familee-portrait{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border:1px solid var(--line)}
+@media(max-width:639px){.ed-familee-gallery{gap:24px}.ed-familee-gallery .ed-familee-portrait{max-width:440px;margin-inline:auto}}

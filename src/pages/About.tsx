@@ -222,11 +222,11 @@ export default function About() {
           </div>
 
           {/* FamiLEE crest + present day — who he is now */}
-          <div className="mt-16 grid sm:grid-cols-3 gap-6 items-center">
+          <div className="ed-familee-gallery mt-16 grid sm:grid-cols-3 gap-6 items-center">
             <img
               src="/images/joshua-present-day.webp"
               alt="Joshua B. Lee — present day"
-              className="w-full rounded-2xl object-cover h-72 border border-white/10"
+              className="ed-familee-portrait"
             />
             <div className="flex justify-center">
               <img
@@ -238,7 +238,7 @@ export default function About() {
             <img
               src="/images/joshua-rachel-familee-hats.webp"
               alt="Joshua and Rachel wearing famiLEE hats"
-              className="w-full rounded-2xl object-cover h-72 border border-white/10"
+              className="ed-familee-portrait"
             />
           </div>
           <p className="text-center text-white/20 text-xs mt-4 italic">
