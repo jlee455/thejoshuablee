@@ -1,5 +1,5 @@
 {
-  "imported_at": "2026-11-16T12:13:46.610464+00:00",
+  "imported_at": "2026-11-16T12:27:52.443363+00:00",
   "added": [
     {
       "id": "STOCKX-JA1135-100",
@@ -486,6 +486,60 @@
         "dc7918d712f11b349051cf4423f07742b63840837ec7a8cb4bf672afab6719f7",
         "e597875dfd7e73015549b40caac5a45f9166686c5e25692e2a853407f341aa14"
       ]
+    },
+    {
+      "id": "STOCKX-CZ8125-200",
+      "style_code": "CZ8125-200",
+      "source_url": "https://stockx.com/nike-dunk-high-bodega-fauna-brown",
+      "frame_count": 36,
+      "sampled_frames": [
+        1,
+        5,
+        10,
+        14,
+        19,
+        23,
+        28,
+        32
+      ],
+      "sha256": [
+        "5dfcd161ca32edbfb965f0e31d06b17085bb197f48172d2b6aee6e37fbc61442",
+        "b51d2a747c05e3eb069d84594d4d78481d81f6031fdbccb39267f1bed7bc5c89",
+        "1e59b100ab147f9a1a145b4901a6dcc25a5d74a00ca03d74c6442ecd93fb0899",
+        "fc5556f30da86a9cd5e96b34f81f78cd54da18caf32c1c5b47d81c8e4bd5be60",
+        "fbb889e969171f311746ba9dd7a06ce7f3b5b5298db874d8c530a3f2a98612cb",
+        "8451d072903ddb4bda54726262bbb83a04fbea5f9ec39d77f093c104f97fdeda",
+        "f5f03a29f4e9a8aecfb93bb7d752fd401c3bb051b576f1153959ed2f0244b276",
+        "8f81dec4fd26d2100924675ea12def97d9a333024173083b81697b418f3b8dac",
+        "e8e5a3ac57f093a43df3833ccf7c6991b78706dbd2e35de3750cfe88de80f409",
+        "9c4adb0572568548bfe867080e116b61c44bf763fa5c5e5c45204a62e97c4146",
+        "a4adc09c596adfd58a0283f199d74d9e50f50366a947ae31c73f559bc1adc39b",
+        "05cac6cacd43e231fe0be3b4597a3ad43d423c04a0565d2e393e19f8713f4823",
+        "dabb69bd0fa61bf9edd87f1e4768e661a045567f4032210f3e9cdfe6855dc716",
+        "919577e15d557054f8616bc5315dd64a1f5bf3c952bc742eb32f03e581e31e81",
+        "4eece71abeabd944c42ce6e959eadf878a14a2f3d599b4decdf9b6aacf383851",
+        "c5ff5077d68ef36de10fb648fd83cd412dbc0f1ca3da4a857b8e60a0dfbd16ba",
+        "27133e6fa95955253ed8b076c22916775b5bdcf38d7a91f1c1d3c262c00ad4fe",
+        "caa2da75fc25c9ef5d85174df4ca6dd65d7ecd8bfee879d433392e49c3199560",
+        "54a78aa3430299a28f93914603e6d498087195a99a3a86b886fb3414701cb0bd",
+        "99e588f857514a59d21391850454257549b42745444cbf6fdc18a58cae319939",
+        "698d3fe60e82c67372d6f67a7f9afc5e2ec71aa51ba7278b4c96bcb62d2ef100",
+        "a06f008f9de3ab0125b53f9a9342100d6dab1f469e72e917a2f179dace643ddd",
+        "ea6b68943e48098198f2e84f58f809aaaafdd69a45e0ac6eb8dba9737bbf6ef7",
+        "7f4fa6cb9128d864cbb2cc576d6a63936d6a9833ed5dd246767f5277f924df98",
+        "57f0ed9a49171f4c5de54bc640907879861802015ef4d7db280f7c724764e73f",
+        "c1597e8c2929d0b5fa7565d05264baeccdc676a06ad66da4fe4ebcf2badbb044",
+        "f6cc35df99e38fad48dc69044c0862c48eaeb5b498d61be7071c5bbac8094eeb",
+        "646ad39b7b80aa2261faeb8108360c562725e5dd48d4724da4ca967815bea5ad",
+        "89a0f1133e75ba2bae12538850886a79d2a0d280896ba38fbf35525eccd0efff",
+        "4d6b491ae1f4c37496cc12a1e59bf13bac4155446d653a538ba4f676363f9dc9",
+        "4fdc62dc4ed9b99973e7dfca000eb3cc409f2ad5dcb447361b6eb65b40e2bf6b",
+        "fdf567829e82273df49975c82678d6c2cb59b42d5e054163943776c63be71d5c",
+        "e2d2686ec7bb2070a15696b3991f20c72573cfb5dae244c402b8185e57349aaa",
+        "0b5ed1493612a8e3fa433c503b9d00af1f070714a8118d03a0efecb933afe42d",
+        "ba0da219dc0d640e3907b2a2e65563194eddb604a67268cf32ab066a2bf5afae",
+        "b6e8ccff44c2855ca590ec9d37966836811678e0b144c2f1265d7c218e63f195"
+      ]
     }
   ],
   "already_present": [
@@ -495,6 +549,6 @@
     "B30"
   ],
   "excluded_accessory": "Pop Mart Labubu phone charms",
-  "bodega_status": "held_pending_ownership_confirmation_order_canceled",
-  "total_pairs": 236
+  "bodega_status": "included_owner_confirmed",
+  "total_pairs": 237
 }

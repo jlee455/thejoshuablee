@@ -132664,6 +132664,942 @@
         "ai": false,
         "direction": "right"
       }
+    },
+    {
+      "id": "STOCKX-CZ8125-200",
+      "status": "on_page",
+      "wall_order": 246,
+      "name": "Bodega x Nike Dunk High 'Legend Fauna Brown'",
+      "style_code": "CZ8125-200",
+      "brand": "Nike",
+      "family": "Dunks & SB",
+      "moods": [
+        "everyday"
+      ],
+      "colors": [],
+      "note": "",
+      "photo_source": "StockX original product turntable photography",
+      "photo_rights": "accepted_by_owner",
+      "confidence": "Exact style matched to owner StockX history and source product page.",
+      "height_class": "high",
+      "ownership": "owner_confirmed",
+      "source_url": "https://stockx.com/nike-dunk-high-bodega-fauna-brown",
+      "float_photos": [
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-01.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-02.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-03.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-04.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-05.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-06.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-07.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-08.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-09.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-10.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-11.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-12.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-13.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-14.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-15.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-16.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-17.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-18.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-19.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-20.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-21.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-22.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-23.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-24.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-25.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-26.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-27.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-28.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-29.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-30.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-31.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-32.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-33.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-34.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-35.jpg",
+        "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-36.jpg"
+      ],
+      "angle_seating": [
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-01.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "5dfcd161ca32edbfb965f0e31d06b17085bb197f48172d2b6aee6e37fbc61442",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img01.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-02.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "b51d2a747c05e3eb069d84594d4d78481d81f6031fdbccb39267f1bed7bc5c89",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img02.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-03.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "1e59b100ab147f9a1a145b4901a6dcc25a5d74a00ca03d74c6442ecd93fb0899",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img03.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-04.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "fc5556f30da86a9cd5e96b34f81f78cd54da18caf32c1c5b47d81c8e4bd5be60",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img04.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-05.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "fbb889e969171f311746ba9dd7a06ce7f3b5b5298db874d8c530a3f2a98612cb",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img05.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-06.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "8451d072903ddb4bda54726262bbb83a04fbea5f9ec39d77f093c104f97fdeda",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img06.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-07.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "f5f03a29f4e9a8aecfb93bb7d752fd401c3bb051b576f1153959ed2f0244b276",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img07.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-08.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "8f81dec4fd26d2100924675ea12def97d9a333024173083b81697b418f3b8dac",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img08.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-09.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "e8e5a3ac57f093a43df3833ccf7c6991b78706dbd2e35de3750cfe88de80f409",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img09.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-10.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "9c4adb0572568548bfe867080e116b61c44bf763fa5c5e5c45204a62e97c4146",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img10.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-11.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "a4adc09c596adfd58a0283f199d74d9e50f50366a947ae31c73f559bc1adc39b",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img11.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-12.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "05cac6cacd43e231fe0be3b4597a3ad43d423c04a0565d2e393e19f8713f4823",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img12.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-13.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "dabb69bd0fa61bf9edd87f1e4768e661a045567f4032210f3e9cdfe6855dc716",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img13.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-14.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "919577e15d557054f8616bc5315dd64a1f5bf3c952bc742eb32f03e581e31e81",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img14.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-15.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "4eece71abeabd944c42ce6e959eadf878a14a2f3d599b4decdf9b6aacf383851",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img15.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-16.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "c5ff5077d68ef36de10fb648fd83cd412dbc0f1ca3da4a857b8e60a0dfbd16ba",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img16.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-17.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "27133e6fa95955253ed8b076c22916775b5bdcf38d7a91f1c1d3c262c00ad4fe",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img17.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-18.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "caa2da75fc25c9ef5d85174df4ca6dd65d7ecd8bfee879d433392e49c3199560",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img18.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-19.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "54a78aa3430299a28f93914603e6d498087195a99a3a86b886fb3414701cb0bd",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img19.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-20.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "99e588f857514a59d21391850454257549b42745444cbf6fdc18a58cae319939",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img20.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-21.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "698d3fe60e82c67372d6f67a7f9afc5e2ec71aa51ba7278b4c96bcb62d2ef100",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img21.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-22.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "a06f008f9de3ab0125b53f9a9342100d6dab1f469e72e917a2f179dace643ddd",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img22.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-23.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "ea6b68943e48098198f2e84f58f809aaaafdd69a45e0ac6eb8dba9737bbf6ef7",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img23.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-24.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "7f4fa6cb9128d864cbb2cc576d6a63936d6a9833ed5dd246767f5277f924df98",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img24.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-25.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "57f0ed9a49171f4c5de54bc640907879861802015ef4d7db280f7c724764e73f",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img25.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-26.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "c1597e8c2929d0b5fa7565d05264baeccdc676a06ad66da4fe4ebcf2badbb044",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img26.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-27.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "f6cc35df99e38fad48dc69044c0862c48eaeb5b498d61be7071c5bbac8094eeb",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img27.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-28.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "646ad39b7b80aa2261faeb8108360c562725e5dd48d4724da4ca967815bea5ad",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img28.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-29.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "89a0f1133e75ba2bae12538850886a79d2a0d280896ba38fbf35525eccd0efff",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img29.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-30.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "4d6b491ae1f4c37496cc12a1e59bf13bac4155446d653a538ba4f676363f9dc9",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img30.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-31.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "4fdc62dc4ed9b99973e7dfca000eb3cc409f2ad5dcb447361b6eb65b40e2bf6b",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img31.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-32.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "fdf567829e82273df49975c82678d6c2cb59b42d5e054163943776c63be71d5c",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img32.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-33.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "e2d2686ec7bb2070a15696b3991f20c72573cfb5dae244c402b8185e57349aaa",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img33.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-34.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "0b5ed1493612a8e3fa433c503b9d00af1f070714a8118d03a0efecb933afe42d",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img34.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-35.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "ba0da219dc0d640e3907b2a2e65563194eddb604a67268cf32ab066a2bf5afae",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img35.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        },
+        {
+          "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-36.jpg",
+          "width": 800,
+          "height": 533,
+          "bounds": [
+            0,
+            0,
+            800,
+            533
+          ],
+          "soleY": 533,
+          "alphaThreshold": 10,
+          "normalizedScale": 1.025,
+          "transparent": false,
+          "sha256": "b6e8ccff44c2855ca590ec9d37966836811678e0b144c2f1265d7c218e63f195",
+          "crop": [
+            14,
+            35,
+            771,
+            481
+          ],
+          "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img36.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+        }
+      ],
+      "seating": {
+        "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-01.jpg",
+        "width": 800,
+        "height": 533,
+        "bounds": [
+          35,
+          59,
+          725,
+          406
+        ],
+        "soleY": 465,
+        "alphaThreshold": 10,
+        "normalizedScale": 1.1310344827586207,
+        "transparent": false,
+        "sha256": "5dfcd161ca32edbfb965f0e31d06b17085bb197f48172d2b6aee6e37fbc61442",
+        "crop": [
+          14,
+          35,
+          771,
+          481
+        ],
+        "source_url": "https://images.stockx.com/360/Nike-Dunk-High-Bodega-AB-Pearl/Images/Nike-Dunk-High-Bodega-AB-Pearl/Lv2/img01.jpg?dpr=1&h=800&q=85&updated_at=1784730174&w=1200"
+      },
+      "angles": 36,
+      "viewer": "spin",
+      "static_photo": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-01.jpg",
+      "rotation": {
+        "kind": "photographic_turntable",
+        "coverage": "full_turn",
+        "verified_full_turn": true,
+        "frame_count": 36,
+        "source": "https://stockx.com/nike-dunk-high-bodega-fauna-brown",
+        "checkedAt": "2026-11-16T12:27:52.320616+00:00",
+        "verification": "36 unique sequential original photographs; eight distributed views reviewed for identity, front, heel and both sides."
+      },
+      "showcase": {
+        "src": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-01.jpg",
+        "width": 800,
+        "height": 533,
+        "viewBox": [
+          35,
+          59,
+          725,
+          406
+        ],
+        "ai": false,
+        "direction": "right"
+      }
     }
   ],
   "rights": {
