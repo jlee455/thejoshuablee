@@ -1,0 +1,35 @@
+{
+  "preview": "https://6afb191bda60a9c84edaaa7d--superb-seahorse-8b48c8.netlify.app",
+  "production": false,
+  "collection_files_compared_to_previous_preview": 7930,
+  "collection_files_changed": [
+    "/collection/index.html"
+  ],
+  "collection_media_and_viewer_unchanged": true,
+  "http_checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "collection_link": true
+    },
+    {
+      "path": "/my-world/",
+      "status": 200,
+      "collection_link": true
+    },
+    {
+      "path": "/collection/",
+      "status": 200,
+      "collection_link": true
+    }
+  ],
+  "browser_checks": [
+    "Desktop main Collection link opens original collection",
+    "237 pairs visible on Collection",
+    "390x844 Collection menu contains Collection",
+    "390x844 editorial mobile menu opens Collection",
+    "Inside My World no repeated opening collage",
+    "Device emulation reset and DevTools closed"
+  ],
+  "build": "PASS: collection validation, catalog, TypeScript, client/SSR build, 246 article routes, recommendation proof, world content"
+}

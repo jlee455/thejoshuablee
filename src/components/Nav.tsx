@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useLocation } from 'react-router-dom'
-const links = [['/about/','My Story'],['/speaking/','Speaking'],['/work-with-me/','Work With Me'],['/my-world/','Inside My World'],['/insights/','Insights'],['/evidence/','Proof']]
+const links = [['/about/','My Story'],['/speaking/','Speaking'],['/work-with-me/','Work With Me'],['/my-world/','Inside My World'],['/collection/','Collection'],['/insights/','Insights'],['/evidence/','Proof']]
 export default function Nav(){
  const [open,setOpen]=useState(false)
  const {pathname}=useLocation()

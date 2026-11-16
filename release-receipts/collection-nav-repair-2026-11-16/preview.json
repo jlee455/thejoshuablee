@@ -1,0 +1,16 @@
+{
+  "git_connected": true,
+  "collection_files_updated": [
+    "/collection-showcase/app.js",
+    "/collection-showcase/brand.css",
+    "/collection/index.html"
+  ],
+  "id": "6afb191bda60a9c84edaaa7d",
+  "state": "ready",
+  "baseline_deploy": "6afaf70b932515a16c9c717d",
+  "url": "https://6afb191bda60a9c84edaaa7d--superb-seahorse-8b48c8.netlify.app",
+  "production": false,
+  "files": 8289,
+  "uploaded": 258,
+  "collection_files_preserved": 7927
+}
