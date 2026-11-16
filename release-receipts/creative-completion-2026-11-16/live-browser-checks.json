@@ -1,0 +1,28 @@
+{
+  "source_commit": "d08165d193824827fd25cbcb7ac0416ab8805be1",
+  "homepage": {
+    "viewport": [
+      390,
+      664
+    ],
+    "scrollWidth": 390,
+    "first_contentful_paint_ms": 784,
+    "largest_contentful_paint_ms": 784,
+    "layout_shift_entries": [],
+    "collection_or_video_resources": [],
+    "conditions": "Chrome responsive emulation; no CPU/network throttle; existing profile/cache not cleared; reduced motion emulation enabled"
+  },
+  "video": {
+    "url": "https://joshuablee.com/video/speaking-clip-give-it-to-ya.mp4",
+    "duration": 16.633008,
+    "time_observed": 1.027373,
+    "paused": false,
+    "error": null
+  },
+  "collection": {
+    "footer_phone": 237,
+    "header_desktop": 237,
+    "preview_expanded_count": 237
+  },
+  "physical_iphone": "NOT TESTED"
+}

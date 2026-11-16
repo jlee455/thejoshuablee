@@ -1,0 +1,23 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "bytes": 24832
+  },
+  {
+    "path": "/speaking/",
+    "status": 200,
+    "bytes": 33893
+  },
+  {
+    "path": "/collection/",
+    "status": 200,
+    "bytes": 13456
+  },
+  {
+    "path": "/video/speaking-clip-give-it-to-ya.mp4",
+    "status": 200,
+    "bytes": 4325914,
+    "sha256": "396646b4a82a8a13e11e0b55be3471779c9abdd23c99e6f3f439b37a65850f8f"
+  }
+]

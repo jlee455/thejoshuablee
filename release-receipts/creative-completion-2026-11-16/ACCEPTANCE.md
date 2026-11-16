@@ -18,15 +18,25 @@
 
 ## Performance conditions and limits
 
-Local Chrome responsive emulation, unthrottled desktop host: initial homepage first contentful paint observed at 412ms. No full video or collection archive loaded on the first homepage view. This is a local lab observation, not production performance or a real-user score. JS remains about 523KB before gzip / 160KB gzip; build reports a bundle-size warning. Production LCP/CLS and slow-network measurements are not yet established.
+Local Chrome responsive emulation, unthrottled desktop host: initial homepage first contentful paint observed at 412ms. No full video or collection archive loaded on the first homepage view. This is a local lab observation, not production performance or a real-user score. JS remains about 523KB before gzip / 160KB gzip; build reports a bundle-size warning. Live homepage Chrome check at 390 × 664, no network or CPU throttle, existing browser profile/cache not cleared: FCP 784ms; buffered LCP 784ms; no buffered layout-shift entries at inspection; no collection-media or MP4 resources loaded. This single warm-profile lab check is not a Core Web Vitals certification. Slow-network and real-user measurements remain not tested.
 
 ## Not finished or not tested
 
 - NOT TESTED — Physical iPhone Safari/Chrome, iOS text scaling, full cross-browser matrix, assistive-technology audit, unfamiliar-person qualitative review.
-- NOT TESTED — Full speaker-kit PDF content acceptance in this completion pass. Existing downloads remain preserved; prior checks are not substituted for a fresh word-for-word review.
+- PASS — All four speaker-kit PDF pages and the copyable bio were text-extracted and read in this pass. Topics, Jennifer’s address, Give It to Ya and “more than $1 billion” match the site. Hosted PDF and text download returned HTTP 200. PDF visual/assistive-technology inspection remains not tested.
 - NOT FINISHED — Full 60–90-second spoken reel, verified audio transcript and synchronized captions. The current page provides a visual description of the short montage, not a transcript of speech or lyrics.
 - NOT FINISHED — Josh-selected favorite pairs and three firsthand object stories. Current copy remains the explicitly supplied interim copy; no new personal memory was invented.
 - NOT FINISHED — New office portrait, candid photographs, separate character detail, and additional real stage photography. See PHOTO-INVENTORY.md and RECORDING-AND-PHOTOGRAPHY.md.
 - NOT FINISHED — Two or three sourced case examples with contribution, observed result, dates and evidence. No fabricated outcomes substituted.
 
 Publication identifiers and hosted verification are recorded separately in preview.json, production.json and hosted-checks.json when those stages finish. Local acceptance is not itself deployment proof.
+
+## Hosted release
+
+- Reviewed source: `d08165d193824827fd25cbcb7ac0416ab8805be1`.
+- Preview: https://6afb380adda9b7d77d6bfab4--superb-seahorse-8b48c8.netlify.app/
+- Published deploy: `6afb38742f5699abd268ad99`; live https://joshuablee.com/.
+- All 8,262 hosted files matched the complete manifest. Live new video bytes match the reviewed local file.
+- Live player: new soundtrack URL, duration 16.633008 seconds, advancing playback and null media error.
+- Live Collection reached through footer at phone width and header at 1440px desktop width; both showed the 237-pair archive. Preview expansion showed 237 of 237 pairs.
+- Recipient confirmation and actual email receipt are both confirmed.

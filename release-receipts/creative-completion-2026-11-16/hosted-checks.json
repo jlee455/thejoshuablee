@@ -1,0 +1,80 @@
+{
+  "base": "https://6afb380adda9b7d77d6bfab4--superb-seahorse-8b48c8.netlify.app",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 24832,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "bytes": 22209,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/speaking/",
+      "status": 200,
+      "bytes": 33893,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/work-with-me/",
+      "status": 200,
+      "bytes": 21109,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/my-world/",
+      "status": 200,
+      "bytes": 18588,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/collection/",
+      "status": 200,
+      "bytes": 13456,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/evidence/",
+      "status": 200,
+      "bytes": 213325,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/insights/",
+      "status": 200,
+      "bytes": 72649,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/joshua-b-lee-speaker-kit.pdf",
+      "status": 200,
+      "bytes": 1871576,
+      "type": "application/pdf"
+    },
+    {
+      "path": "/speaker-kit.txt",
+      "status": 200,
+      "bytes": 2456,
+      "type": "text/plain; charset=UTF-8"
+    },
+    {
+      "path": "/video/speaking-clip-give-it-to-ya.mp4",
+      "status": 200,
+      "bytes": 4325914,
+      "type": "video/mp4",
+      "sha256": "396646b4a82a8a13e11e0b55be3471779c9abdd23c99e6f3f439b37a65850f8f",
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/collection.json",
+      "status": 200,
+      "bytes": 4566979,
+      "type": "application/json",
+      "pairs": 237
+    }
+  ]
+}

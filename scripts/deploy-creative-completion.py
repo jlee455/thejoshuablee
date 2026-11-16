@@ -50,10 +50,17 @@ remote={x['path'].lower():x['sha'] for x in api('deploys/'+d['id']+'/files')}
 assert all(remote.get(p.lower())==h for p,h in files.items()),'Hosted files differ from complete build'
 receipt={'id':d['id'],'state':state['state'],'baseline_deploy':baseline,'url':state.get('deploy_ssl_url') or state.get('deploy_url'),'production':production,'files':len(files),'uploaded':len(required),'manifest_verified':True,'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'catalog_pairs':len(json.loads((ROOT/'dist/collection-media/collection.json').read_text())['pairs'])}
 if production:
- current=api('sites/'+SITE)
- assert current['published_deploy']['id']==d['id'],'Ready but not published'
- # Save before lock: never retry production creation if lock request fails.
+ # Persist the verified upload before publication; never create a duplicate on retry.
+ receipt['published']=False
  (RECEIPTS/'production.json').write_text(json.dumps(receipt,indent=2))
+ current=api('sites/'+SITE)
+ if current['published_deploy']['id']!=d['id']:
+  assert current['published_deploy']['id']==baseline,'Production changed during upload'
+  # A locked site keeps the prior deployment live until this explicit publish.
+  api('sites/'+SITE+'/deploys/'+d['id']+'/restore','POST')
+  current=api('sites/'+SITE)
+ assert current['published_deploy']['id']==d['id'],'Ready but not published'
+ receipt['published']=True
  api('deploys/'+d['id']+'/lock','POST',{})
  locked=api('deploys/'+d['id'])
  assert locked.get('locked') is True,'Publish lock not verified'

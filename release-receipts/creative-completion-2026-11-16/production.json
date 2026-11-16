@@ -1,0 +1,14 @@
+{
+  "id": "6afb38742f5699abd268ad99",
+  "state": "ready",
+  "baseline_deploy": "6afb1c9b760fba3b29e270d0",
+  "url": "https://6afb38742f5699abd268ad99--superb-seahorse-8b48c8.netlify.app",
+  "production": true,
+  "files": 8262,
+  "manifest_verified": true,
+  "source_commit": "d08165d193824827fd25cbcb7ac0416ab8805be1",
+  "catalog_pairs": 237,
+  "published": true,
+  "locked": true,
+  "live_url": "https://joshuablee.com"
+}
