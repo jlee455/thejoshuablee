@@ -33,6 +33,8 @@ export default function Recommendations() {
           <h1 className="text-3xl sm:text-5xl font-bold text-white leading-tight mb-8">
             {recommendations.length} people put their name on it.
           </h1>
+          <p className="ed-lead">Clients, colleagues, and founders. Real recommendations, in their own words, going back to 2007.</p>
+          <details className="ed-proof-method"><summary>How these recommendations are verified</summary>
           <p className="text-white/40 leading-relaxed mb-4">
             These are LinkedIn recommendations written for Joshua B. Lee by clients,
             colleagues, and founders he has worked with, going back to 2007. Every
@@ -42,6 +44,7 @@ export default function Recommendations() {
             profile and left the name unlinked rather than point you at the wrong person. LinkedIn shows recommendations only to
             signed-in members, which is why they live here too.
           </p>
+          </details>
           <p className="text-white/70 font-medium">
             Nothing here is anonymous. Every quote carries a name, a title, and a company.
           </p>

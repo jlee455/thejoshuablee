@@ -61,8 +61,8 @@ export default function Speaking() {
           <div className="ed-speaker-intro">
             <p className="ed-kicker">Joshua B. Lee / Keynote speaker</p>
             <h1 className="ed-title">Move the room.<br/><em>Make it human.</em></h1>
-            <p className="ed-lead">A real conversation about leadership, LinkedIn authority, and trust in the age of AI. For founders, executives, and teams ready to turn their expertise into meaningful connection.</p>
-            <div className="ed-actions"><a className="ed-button light" href="#planner">Bring Joshua to your event <span aria-hidden="true">↗</span></a><a className="ed-link" href="#reel">Watch Joshua speak <span aria-hidden="true">▷</span></a></div>
+            <p className="ed-lead">Keynotes on human connection, LinkedIn authority, and leadership in the age of AI. Built around your audience.</p>
+            <div className="ed-actions"><a className="ed-button light" href="#planner">Book Joshua <span aria-hidden="true">↗</span></a><a className="ed-link" href="#reel">Watch Joshua speak <span aria-hidden="true">▷</span></a></div>
             <a className="ed-link ed-speaker-kit-link" href="/joshua-b-lee-speaker-kit.pdf" download>Download the speaker kit (PDF) ↓</a>
             <p className="ed-speaker-location">Based in Austin, Texas · In-person and virtual inquiries worldwide</p>
           </div>
@@ -70,7 +70,9 @@ export default function Speaking() {
         </div>
       </section>
 
-      <section className="ed-section ed-room-story">
+      <section id="reel" className="ed-section"><div className="ed-wrap"><div className="ed-section-top"><div><p className="ed-kicker">See Joshua in the room</p><h2 className="ed-heading">Watch the <em>speaker reel.</em></h2></div><a className="ed-link" href="#planner">Discuss your event ↗</a></div><video className="ed-reel" controls playsInline preload="none" poster="/video/sizzle-poster.webp" aria-label="Joshua B. Lee speaker reel with sound"><source src="/video/sizzle-reel.mp4" type="video/mp4"/></video><p className="ed-small">Press play for sound. Captions are included in the original footage.</p></div></section>
+      <nav className="ed-wrap ed-speaker-jumps" aria-label="Speaking page sections"><a href="#topics">Keynote topics ↓</a><a href="#room">In the room ↓</a><a href="#planner">Plan your event ↓</a><a href="#media-kit">Speaker kit ↓</a></nav>
+      <section className="ed-section ed-room-story" id="room">
         <div className="ed-wrap">
           <div className="ed-section-top"><div><p className="ed-kicker">The experience</p><h2 className="ed-heading">Ideas that land.<br/><em>A conversation that stays.</em></h2></div><p className="ed-copy ed-room-summary">Your audience brings real questions. Joshua brings an entrepreneur’s experience and a human perspective on how we lead, build trust, and show up for each other.</p></div>
           <figure className="ed-room-wide"><img src="/images/joshua-hcl-onstage.jpg" alt="Joshua speaking at High Capacity Leaders with event attendees behind him" width="1854" height="1232" loading="lazy"/><figcaption className="ed-caption">Joshua B. Lee at High Capacity Leaders.</figcaption></figure>
@@ -85,7 +87,8 @@ export default function Speaking() {
         </div>
       </section>
 
-      <section id="reel" className="ed-section"><div className="ed-wrap"><div className="ed-section-top"><div><p className="ed-kicker">See Joshua in the room</p><h2 className="ed-heading">Watch the <em>speaker reel.</em></h2></div><a className="ed-link" href="#planner">Discuss your event ↗</a></div><video className="ed-reel" controls playsInline preload="none" poster="/video/sizzle-poster.webp" aria-label="Joshua B. Lee speaker reel with sound"><source src="/video/sizzle-reel.mp4" type="video/mp4"/></video><p className="ed-small">Press play for sound. Captions are included in the original footage.</p></div></section>
+
+      <SpeakerPlanner/>
       <section className="ed-section ed-speaker-resources" id="media-kit"><div className="ed-wrap ed-split">
         <div><p className="ed-kicker">For your event team</p><h2 className="ed-heading">The story.<br/><em>The details. The entrance.</em></h2><p className="ed-copy">Everything to start the conversation: Joshua’s bio, keynote themes, event photography, session formats, and booking details in one speaker kit. All bookings are coordinated by Jennifer at assistant@standoutauthority.com.</p><div className="ed-kit"><a className="ed-button" href="/joshua-b-lee-speaker-kit.pdf" download>Download speaker kit · PDF ↓</a><a className="ed-link" href="/images/joshua-hero.jpg" download>Download portrait ↓</a><a className="ed-link" href="/speaker-kit.txt" download>Copyable bio & topics ↓</a></div></div>
         <div className="ed-walk-up" id="walk-up"><p className="ed-kicker">The walk-up track</p><h3>Give It to Ya</h3><p className="ed-copy">Joshua’s choice for taking the stage. Press play for a preview of the entrance.</p><audio controls preload="none" aria-label="Give It to Ya, Joshua B. Lee’s walk-up track"><source src="/audio/joshua-walk-up-give-it-to-ya.mp3" type="audio/mpeg"/><a href="/audio/joshua-walk-up-give-it-to-ya.mp3">Download the walk-up track</a></audio><div className="ed-track-footer"><span>1:40 · MP3</span><a className="ed-link" href="/audio/joshua-walk-up-give-it-to-ya.mp3" download>Download track ↓</a></div><p className="ed-small">For event teams: coordinate the start cue and fade with Jennifer before the event.</p></div>
@@ -130,7 +133,7 @@ export default function Speaking() {
       {/* ============================================
           TOPICS — Card-based with visual icons
           ============================================ */}
-      <section className="py-24">
+      <section className="py-24" id="topics">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <p className="text-white/20 text-sm uppercase tracking-widest font-semibold mb-4">
             Keynote Topics
@@ -358,7 +361,6 @@ export default function Speaking() {
         }}
       />
       <section className="ed-section" id="planner-questions"><div className="ed-wrap"><p className="ed-kicker">Before you book</p><h2 className="ed-heading">Answers for <em>event organizers.</em></h2><div className="ed-faq">{speakingFaqs.map(f=><details key={f.question}><summary>{f.question}</summary><p>{f.answer}</p></details>)}</div></div></section>
-      <SpeakerPlanner/>
     </>
   )
 }

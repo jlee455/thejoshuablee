@@ -249,9 +249,7 @@ export default function Evidence() {
           </h1>
           <div className="space-y-6 text-lg leading-relaxed">
             <p className="text-white/50">
-              Anyone can say they&rsquo;re an authority. This page is the part that can be
-              checked — rankings from the organization that issued them, conversations
-              hosted by other people, and every profile that belongs to me.
+              Rankings from the organizations that issued them. Conversations hosted by other people. Published work you can read for yourself.
             </p>
             <p className="text-white/70 font-medium">
               If a claim isn&rsquo;t linked here, treat it as unverified.
