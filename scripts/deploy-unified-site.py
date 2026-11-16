@@ -32,7 +32,7 @@ else:
 resume=next((x.split('=',1)[1] for x in sys.argv if x.startswith('--resume-preview=')),None)
 assert not (resume and production), 'Only draft verification can be resumed'
 d=api('deploys/'+resume) if resume else api('sites/'+SITE+'/deploys','POST',{'files':files,'draft':not production,'title':'Unified homepage and complete Collection - one source build'})
-if resume: assert d.get('draft') is True, 'Resume target must be a draft'
+if resume: assert d.get('context') == 'deploy-preview' and d.get('published_at') is None, 'Resume target must be an unpublished preview'
 print('Created',d['id'],'draft',not production,flush=True)
 required=d.get('required',[]);byhash={files[p]:paths[p] for p in paths}
 def upload(h):
