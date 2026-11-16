@@ -1,0 +1,1228 @@
+{
+  "base": "https://joshuablee.com",
+  "pairs": 237,
+  "asset_checks": 244,
+  "failed": [],
+  "results": [
+    {
+      "path": "/collection-media/reference/airmax1000-stone/P18-JV2916-001-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/lanvin-white/B24-lanvin-white-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/414571-167-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/554724-079-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/554724-413-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/A00321C-102-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/CJ1156-003-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/CT0978-100-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/CT8529-141-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/CT8532-080-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/CU7627-003-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DB2179-109-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DB2889-700-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DC5330-301-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DC8891-001-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DD1391-100-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DD8959-100-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DH6928-073-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DH6933-100-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DH7338-002-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DJ9158-200-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DM0829-403-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DM4640-036-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DM4657-001-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DM7926-300-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DM8171-200-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DN1696-062-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DN1803-300-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DN3707-202-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DN4590-100-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DO1830-200-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DO5853-100-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DO6716-700-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DO8727-200-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DO8912-101-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DQ4699-100-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DQ8397-500-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DQ8422-300-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DQ8475-001-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DR0500-300-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DV0834-100-04.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DV0982-006-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DV2130-400-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DV3337-003-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DV3464-002-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DV3464-400-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DV3949-401-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DV5255-400-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DX2306-400-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DZ5485-002-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DZ5485-020-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DZ5485-042-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DZ5485-051-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DZ5485-110-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DZ5485-400-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/DZ7293-100-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FD2565-100-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FJ3448-001-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FJ4249-003-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FJ9479-100-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FN5880-001-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FN7197-100-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FN7200-224-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FN8675-104-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FQ3381-501-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FQ6965-600-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FQ7928-001-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FQ8138-002-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FQ8138-103-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FV5029-006-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FV5029-010-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FV5029-500-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FZ1289-200-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FZ8117-102-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/FZ9033-101-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/HF3704-800-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/HF5030-030-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/HF5075-287-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/HF7630-001-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/HJ4135-600-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/HM9931-600-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/HQ1625-600-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/HQ2958-100-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/HQ3073-100-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/HQ6998-600-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/HV9923-700-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IB1482-100-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IB2051-400-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IB4481-500-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IB6716-600-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IB7455-012-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IF0302-600-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IH4962-100-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IH4965-254-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IH6766-001-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IH7423-700-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IH7959-400-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/II3925-400-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IO1752-100-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IO3372-700-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IO4468-100-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IO8439-100-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IQ5648-600-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IQ7277-001-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IQ7604-100-01.png",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IR0968-500-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/reference/nike-owner-intake/IW6276-001-03.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/rotation/V20-what-the-dunk-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/rotation/V30-fragment-high-stockx-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/rotation/owner-intake/NIKE-CQ3835-601-stockx-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/rotation/stockx-intake-2026-11-16/100206315/100206315-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/rotation/stockx-intake-2026-11-16/AV3922-126/AV3922-126-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/rotation/stockx-intake-2026-11-16/CZ8125-200/CZ8125-200-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/rotation/stockx-intake-2026-11-16/FQ6965-700/FQ6965-700-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/rotation/stockx-intake-2026-11-16/HQ1625-200/HQ1625-200-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/rotation/stockx-intake-2026-11-16/HV1668-001/HV1668-001-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/rotation/stockx-intake-2026-11-16/IM8062-368/IM8062-368-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/rotation/stockx-intake-2026-11-16/IO9987-100/IO9987-100-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/rotation/stockx-intake-2026-11-16/JA1135-100/JA1135-100-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/rotation/stockx-intake-2026-11-16/LA1501/LA1501-01.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B01-33b1389b4926.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B02-19f9dd06868e.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B03-685ee73432bd.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B04-6ea4fec20d07.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B05-dca1d39b6d6c.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B06-6971bf471c99.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B07-1ca2ea48a3fd.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B08-1d04d4933716.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B09-08d48da09ce1.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B10-2e74ccdd13a4.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B11-f72ef9709551.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B13-11889f794691.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B14-3c5275be674d.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B16-126a8b30ebbf.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B17-92fee2374717.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B18-purple-lv-friends-family-cutout.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B19-9093bd67d019.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B20-23d1d16eeeab.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B21-1a96e32369cf.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B22-d21d629b9b64.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B23-889e171a9c31.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B25-787db04105f6.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B26-f20731101578.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B27-1efa7a93ba4b.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B28-0388008d7c2a.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B29-901728692be3.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B30-f3c5d9c09724.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B31-df84d152cd30.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B32-17103547df80.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B33-f640153ccaef.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B34-0e8f3408f912.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B35-d490c6d01860.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B37-83044940d2d2.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B38-376f6f86852d.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B39-1811479f042f.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B40-fd298108de7f.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B41-4875f7152638.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B42-762ab94914e3.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B43-0c10341a2605.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B44-00ebd90e1255.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B45-81e13f2dc149.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B46-823d1ecd236b.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B47-19965697bf02.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B48-c55f630540fc.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/B49-607d2ed232ea.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/N02-7c9087c46bbc.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/N04-3333417a8c6c.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/P01-31d2b2bb8ea8.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/P02-5c450abe2775.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/P03-b1f2aa4df9e6.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/P04-09f4276b9fd0.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/P06-2e0d4239ab96.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/P07-ff20b44ad3e9.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/P08-21b4a5eb0c84.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/P11-a2d92f29f3f1.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/P13-ecf72377c209.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/P14-c05b12074edf.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/P15-3a3638ca0c1a.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/P16-2b6a59638878.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/P19-d960bea36c8c.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/U01-a0349635e2d0.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/U03-a126400593ed.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/U04-b87fb317fba2.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/U06-9d20bf59443c.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/U10-d60d0d09c2f4.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/U28-167d61d5f167.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/U29-ac39c5792e6f.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/U30-54e0eb07c31f.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/U31-544d8fe75350.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V01-ef2e2ef47b53.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V02-ce383efbeead.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V03-65b9efac3017.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V04-55d6b8b6cb83.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V06-1e37c8ff6ac2.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V07-ee74016f566f.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V09-0971437e96bb.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V10-03d448ca592e.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V11-6585111b2816.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V12-19883403c74a.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V13-6645621ac211.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V14-cd45050f9a56.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V15-dffb6330c351.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V16-276574a8b0c1.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V17-83a97e716f6d.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V18-5822174388e7.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V19-f31bf1116c7b.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V21-19c3ea87723c.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V22-9cd2670bd262.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V23-1e1dc1f06b57.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V24-bdabc574ec49.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V25-11fe457ff03d.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V26-c459cd98d790.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V27-1b3e76b658b7.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V28-4ebed69eb276.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V29-7cb308880e9a.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V31-e909de584e8c.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V32-6e2ce95c89da.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V34-aeceac644be6.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V37-bc04afba047f.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V38-2cdc77b7af5f.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V39-6e33624adf1d.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V40-eac31695df53.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V41-6d44206f6ecb.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V42-19d81cd6ea88.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V43-b2d83f0ed674.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V44-b4096b5e8c95.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V45-2b6979c25a69.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V46-a264ea170d80.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V47-3b97f3b72950.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V48-525ab21e11e2.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V49-6f632a188d11.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V50-80b1e632805d.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V52-d83e8c82545f.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V53-a8b1171d40da.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/collection-media/showcase/V55-02a8c1125050.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/images/balance-is-bullshit-cover.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/images/joshua-family-full.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/images/joshua-hcl-conversation.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/images/joshua-hcl-onstage.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/images/joshua-hcl-raised-hand.jpg",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/images/joshua-rachel-hands.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/images/joshua-stage-digitalmarketer.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/images/office/room.webp",
+      "status": 200,
+      "matches_local": true
+    },
+    {
+      "path": "/video/sizzle-poster.webp",
+      "status": 200,
+      "matches_local": true
+    }
+  ]
+}

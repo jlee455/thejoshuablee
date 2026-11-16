@@ -1,0 +1,19 @@
+{
+  "production_url": "https://joshuablee.com",
+  "deploy_id": "6afb1c9b760fba3b29e270d0",
+  "desktop_header_click": "PASS /collection/",
+  "desktop_footer_explore_click": "PASS /collection/",
+  "desktop_catalog_expand": "PASS 237 of 237",
+  "desktop_mag_rotation": "PASS angle 2 of 26",
+  "desktop_wheel": "PASS 002 / 237",
+  "mobile_environment": "Chrome responsive device emulation, 390x844; not physical iPhone Safari",
+  "mobile_header_menu_click": "PASS /collection/",
+  "mobile_catalog_expand": "PASS 237 of 237",
+  "mobile_wheel": "PASS 002 / 237",
+  "mobile_search": "PASS Bodega yields 1 of 237",
+  "mobile_pair_detail": "PASS Bodega image and details visible",
+  "mobile_rotation": "PASS photograph 2 of 36",
+  "physical_iphone": "NOT TESTED",
+  "visual_presentation": "Current collector boxes retained; original walnut-shelf design not restored",
+  "all_physical_photography": "NOT COMPLETE; two custom pairs explicitly photo-pending; other model illustrations/reference photos labeled"
+}

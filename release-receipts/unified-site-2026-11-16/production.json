@@ -1,0 +1,15 @@
+{
+  "id": "6afb1c9b760fba3b29e270d0",
+  "state": "ready",
+  "baseline_deploy": "6afaf70b932515a16c9c717d",
+  "url": "https://6afb1c9b760fba3b29e270d0--superb-seahorse-8b48c8.netlify.app",
+  "production": true,
+  "files": 8260,
+  "uploaded": 0,
+  "manifest_verified": true,
+  "source_commit": "3ecd8923ec5b7202f28f2fe88a798c079168fb89",
+  "catalog_pairs": 237,
+  "locked": true,
+  "live_url": "https://joshuablee.com",
+  "remote_source_push": "BLOCKED_READ_ONLY_GITHUB"
+}

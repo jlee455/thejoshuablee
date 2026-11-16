@@ -1,0 +1,12 @@
+{
+  "id": "6afb1c1491f826ece0a6e286",
+  "state": "ready",
+  "baseline_deploy": "6afaf70b932515a16c9c717d",
+  "url": "https://6afb1c1491f826ece0a6e286--superb-seahorse-8b48c8.netlify.app",
+  "production": false,
+  "files": 8260,
+  "uploaded": 0,
+  "manifest_verified": true,
+  "source_commit": "3ecd8923ec5b7202f28f2fe88a798c079168fb89",
+  "catalog_pairs": 237
+}
