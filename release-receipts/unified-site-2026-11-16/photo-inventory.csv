@@ -1,0 +1,30 @@
+version,page,slot,file,description,type,reuse,identical_file_aliases
+Before publication,/about/,1,/images/joshua-family-full.webp,Joshua with his family,image,/about/ slot 9,None
+Before publication,/about/,2,/images/joshua-reflective-hat.webp,Joshua — reflective,image,No other display slot in audited pages,None
+Before publication,/about/,3,/images/joshua-yacht-selfie.webp,Joshua at a yacht event,image,No other display slot in audited pages,None
+Before publication,/about/,4,/images/joshua-rtx-helmet.webp,Joshua at RTX event,image,No other display slot in audited pages,None
+Before publication,/about/,5,/images/joshua-party-old.webp,Joshua at a party,image,No other display slot in audited pages,None
+Before publication,/about/,6,/images/joshua-rachel-hands.webp,Joshua and Rachel — holding hands,image,No other display slot in audited pages,None
+Before publication,/about/,7,/images/joshua-rachel-working.webp,Joshua and Rachel working together,image,No other display slot in audited pages,None
+Before publication,/about/,8,/images/joshua-rachel-wedding.webp,Joshua and Rachel — wedding day,image,No other display slot in audited pages,None
+Before publication,/about/,9,/images/joshua-family-full.webp,The Lee family — integration in action,image,/about/ slot 1,None
+Before publication,/about/,10,/images/joshua-present-day.webp,Joshua B. Lee — present day,image,No other display slot in audited pages,None
+Before publication,/about/,11,/images/familee-crest.webp,"The Lee FamiLEE Crest — From Fire We Rise, In Love We Lead",image,No other display slot in audited pages,None
+Before publication,/about/,12,/images/joshua-rachel-familee-hats.webp,Joshua and Rachel wearing famiLEE hats,image,No other display slot in audited pages,None
+Before publication,/about/,13,/images/balance-is-bullshit-cover.webp,Balance is Bullsh*t by Joshua B. Lee,image,No other display slot in audited pages,None
+Before publication,/about/,14,/images/favikon-badge.webp,Favikon badge issued March 2026: #1 LinkedIn Growth Expert in the United States,image,/speaking/ slot 6,None
+Before publication,/speaking/,1,/images/joshua-hcl-raised-hand.jpg,Joshua B. Lee speaking into a microphone with his hand raised at High Capacity Leaders,image,No other display slot in audited pages,None
+Before publication,/speaking/,2,/video/sizzle-poster.webp,Speaker reel poster,video poster,No other display slot in audited pages,None
+Before publication,/speaking/,3,/images/joshua-hcl-onstage.jpg,Joshua speaking at High Capacity Leaders with event attendees behind him,image,No other display slot in audited pages,None
+Before publication,/speaking/,4,/images/joshua-hcl-conversation.jpg,Joshua holding a microphone and addressing the room at High Capacity Leaders,image,No other display slot in audited pages,None
+Before publication,/speaking/,5,/images/joshua-hcl-audience.jpg,An audience view of Joshua B. Lee speaking on the High Capacity Leaders stage,image,No other display slot in audited pages,None
+Before publication,/speaking/,6,/images/favikon-badge.webp,Favikon badge issued March 2026: #1 LinkedIn Growth Expert in the United States,image,/about/ slot 14,None
+Unified release,/about/,1,/images/joshua-family-full.webp,Joshua with Rachel and their family,image,/my-world/ slot 1,None
+Unified release,/about/,2,/images/joshua-rachel-hands.webp,Joshua and Rachel holding hands,image,No other display slot in audited pages,None
+Unified release,/about/,3,/images/office/room.webp,Joshua’s office chair surrounded by artwork and sneakers,image,/ slot 5; /my-world/ slot 3,None
+Unified release,/about/,4,/images/balance-is-bullshit-cover.webp,Balance Is Bullsh*t by Joshua B. Lee,image,/my-world/ slot 5,None
+Unified release,/speaking/,1,/images/joshua-hcl-raised-hand.jpg,Joshua B. Lee speaking into a microphone with his hand raised at High Capacity Leaders,image,No other display slot in audited pages,None
+Unified release,/speaking/,2,/video/sizzle-poster.webp,Speaker reel poster,video poster,No other display slot in audited pages,None
+Unified release,/speaking/,3,/images/joshua-hcl-onstage.jpg,Joshua speaking at High Capacity Leaders with event attendees behind him,image,/ slot 8,None
+Unified release,/speaking/,4,/images/joshua-hcl-conversation.jpg,Joshua holding a microphone and addressing the room at High Capacity Leaders,image,No other display slot in audited pages,None
+Unified release,/speaking/,5,/images/joshua-stage-digitalmarketer.webp,Joshua speaking at a DigitalMarketer event,image,No other display slot in audited pages,None
