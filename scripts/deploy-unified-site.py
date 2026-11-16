@@ -29,7 +29,10 @@ if production:
  assert files==json.loads((RECEIPTS/'manifest.json').read_text()),'Build changed since preview'
 else:
  (RECEIPTS/'manifest.json').write_text(json.dumps(files,indent=2))
-d=api('sites/'+SITE+'/deploys','POST',{'files':files,'draft':not production,'title':'Unified homepage and complete Collection - one source build'})
+resume=next((x.split('=',1)[1] for x in sys.argv if x.startswith('--resume-preview=')),None)
+assert not (resume and production), 'Only draft verification can be resumed'
+d=api('deploys/'+resume) if resume else api('sites/'+SITE+'/deploys','POST',{'files':files,'draft':not production,'title':'Unified homepage and complete Collection - one source build'})
+if resume: assert d.get('draft') is True, 'Resume target must be a draft'
 print('Created',d['id'],'draft',not production,flush=True)
 required=d.get('required',[]);byhash={files[p]:paths[p] for p in paths}
 def upload(h):
@@ -41,8 +44,10 @@ for _ in range(30):
  if state['state'] in ('ready','error'):break
  time.sleep(2)
 assert state['state']=='ready',state.get('error_message',state['state'])
-remote={x['path']:x['sha'] for x in api('deploys/'+d['id']+'/files')}
-assert all(remote.get(p)==h for p,h in files.items()),'Hosted files differ from complete build'
+# Netlify file metadata normalizes path casing; validate collision safety first.
+assert len({p.lower() for p in files})==len(files), 'Case-colliding source paths'
+remote={x['path'].lower():x['sha'] for x in api('deploys/'+d['id']+'/files')}
+assert all(remote.get(p.lower())==h for p,h in files.items()),'Hosted files differ from complete build'
 receipt={'id':d['id'],'state':state['state'],'baseline_deploy':baseline,'url':state.get('deploy_ssl_url') or state.get('deploy_url'),'production':production,'files':len(files),'uploaded':len(required),'manifest_verified':True,'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'catalog_pairs':len(json.loads((ROOT/'dist/collection-media/collection.json').read_text())['pairs'])}
 if production:
  current=api('sites/'+SITE)
