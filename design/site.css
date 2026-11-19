@@ -74,3 +74,25 @@
 @media (max-width: 360px) {
   .hero h1 { width: 52%; font-size: 30px; }
 }
+
+/* Mobile hero: a floating portrait and a compact, content-led composition. */
+@media (max-width: 650px) {
+  .j-nav ~ main > .hero { height: auto; min-height: 0; max-height: none; padding: 22px 6% 24px; }
+  .hero-copy { width: 100%; }
+  .hero-copy .eyebrow { margin: 0 0 20px; }
+  .hero h1 { width: 59%; font-size: clamp(35px, 10vw, 46px); line-height: 1.05; margin: 0 0 17px; }
+  .hero .lead { width: 58%; font-size: clamp(16px, 4.3vw, 19px); line-height: 1.4; margin: 0; }
+  .hero .description { margin: 160px 0 0; max-width: 36ch; font-size: 16px; line-height: 1.55; }
+  .hero .description br { display: none; }
+  .hero .actions { margin-top: 18px; gap: 12px; }
+  .portrait-scene { top: 42px; right: -6%; width: 66%; height: 310px; overflow: visible; border-radius: 0; background: none; transform: none; }
+  .portrait { height: 100%; bottom: 0; -webkit-mask-image: linear-gradient(to bottom, #000 76%, transparent 100%); mask-image: linear-gradient(to bottom, #000 76%, transparent 100%); }
+  .jbl-backdrop { top: 23%; left: -10%; width: 110%; }
+  .hero-bottom { position: relative; left: auto; right: auto; bottom: auto; margin-top: 24px; align-items: center; }
+}
+@media (max-width: 360px) {
+  .hero h1 { width: 59%; font-size: 34px; }
+  .hero .lead { font-size: 16px; }
+  .portrait-scene { right: -9%; width: 68%; height: 275px; }
+  .hero .description { margin-top: 130px; }
+}
