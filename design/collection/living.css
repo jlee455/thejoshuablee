@@ -24,3 +24,10 @@
   .entrance .collection-subnav button, .journey-choices button,
   .living-tools button, #save-pair, .hero-caption button { font-size: 13px; }
 }
+
+@media (max-width: 760px) {
+  .j-nav #site-menu { top: 100%; max-height: calc(100dvh - 64px); }
+}
+@media (max-width: 420px) {
+  .entrance .collection-subnav { flex-wrap: wrap; row-gap: 4px; }
+}

@@ -96,3 +96,46 @@
   .portrait-scene { right: -9%; width: 68%; height: 275px; }
   .hero .description { margin-top: 130px; }
 }
+
+/* Keep the navigation available throughout a page and leave room for anchor targets. */
+.j-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+@media (max-width: 900px) {
+  .j-nav { height: 64px; }
+  .j-nav nav, .j-nav #site-menu {
+    top: 100%;
+    max-height: calc(100dvh - 64px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  html { scroll-padding-top: 76px; }
+}
+@media (max-width: 760px) {
+  .j-page .j-human-hero {
+    gap: 16px;
+    padding: 16px 6% 28px;
+  }
+  .j-human-hero .j-hero-photo {
+    height: clamp(155px, 31svh, 310px);
+    border-radius: 3px;
+  }
+  .j-human-hero h1 { margin: 10px 0; }
+  .j-human-hero .j-lead { margin: 10px 0; }
+  .j-page .article-intro {
+    min-height: 0;
+    padding: 32px 6% 24px;
+  }
+  .j-page .article-intro h1 { font-size: clamp(32px, 9vw, 54px); }
+  .j-page .j-stage-hero {
+    height: auto;
+    min-height: min(660px, calc(100svh - 64px));
+    padding: 40px 6%;
+  }
+}
+.j-nav nav a.j-menu-extra { display: none; }
+@media (max-width: 760px) {
+  .j-nav nav a.j-menu-extra { display: flex; }
+}

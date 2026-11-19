@@ -352,3 +352,5 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink)}
 .ed-clip-description{max-width:760px;margin-top:20px;border-block:1px solid var(--rule);padding:18px 0}
 .ed-clip-description summary{cursor:pointer;min-height:28px;font-weight:600}
 .ed-clip-description p{font-size:17px;line-height:1.7;margin-top:16px}
+
+.ed-nav { position: sticky; top: 0; }
