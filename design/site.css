@@ -41,3 +41,20 @@
 @media (max-width: 760px) {
   .insight-card p, .j-article, .j-article p, .j-article a { overflow-wrap: anywhere; }
 }
+
+/* Keep Joshua and the message together in the first mobile screen. */
+@media (max-width: 650px) {
+  .j-nav ~ main > .hero { min-height: 700px; padding: 22px 6% 50px; }
+  .hero-copy .eyebrow { margin: 0 0 16px; }
+  .hero h1 { width: 57%; font-size: clamp(33px, 9.2vw, 39px); line-height: 1.05; letter-spacing: -.065em; margin: 0 0 16px; }
+  .hero h1 .line { display: block; }
+  .hero .lead { width: 55%; font-size: 17px; line-height: 1.4; margin: 0; }
+  .hero .description { margin: 155px 0 0; max-width: 100%; font-size: 16px; line-height: 1.5; }
+  .hero .actions { margin-top: 16px; gap: 12px; }
+  .portrait-scene { top: 35px; right: -9%; bottom: auto; width: 65%; height: 300px; transform: none; }
+  .portrait { height: 100%; width: 100%; bottom: 0; object-position: bottom; }
+  .portrait-scene .floating-note, .portrait-scene .coordinate { display: none; }
+  .jbl-backdrop { top: 20%; left: 0; width: 100%; }
+}
+
+@media (max-width: 650px) { .hero h1 em { margin-left: .06em; } }
