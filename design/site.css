@@ -58,3 +58,19 @@
 }
 
 @media (max-width: 650px) { .hero h1 em { margin-left: .06em; } }
+@media (max-width: 650px) {
+  .j-nav ~ main > .hero { min-height: 650px; }
+  .hero h1 { width: 59%; font-size: clamp(35px, 10vw, 43px); }
+  .hero .description { margin-top: 105px; }
+  .portrait-scene { top: 35px; right: -3%; width: 58%; height: 250px; }
+  .portrait { -webkit-mask-image: linear-gradient(to bottom, #000 76%, transparent 100%); mask-image: linear-gradient(to bottom, #000 76%, transparent 100%); }
+  .jbl-backdrop { left: -14%; width: 112%; }
+}
+@media (max-width: 650px) {
+  .portrait-scene { top: 42px; right: 6%; width: 43%; height: 235px; overflow: hidden; border-radius: 100px 100px 12px 12px; background: #dce1d5; }
+  .portrait { -webkit-mask-image: none; mask-image: none; height: 105%; bottom: -5%; }
+  .jbl-backdrop { top: 20%; left: 3%; width: 94%; transform: rotate(-9deg); }
+}
+@media (max-width: 360px) {
+  .hero h1 { width: 52%; font-size: 30px; }
+}
