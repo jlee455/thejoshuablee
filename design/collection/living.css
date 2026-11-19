@@ -17,3 +17,10 @@
 /* Let phones scroll naturally; keep viewer dismissal available while reading. */
 .collection-wheel{touch-action:pan-x pan-y pinch-zoom;-webkit-overflow-scrolling:touch}.rotation-pair{touch-action:pan-x pan-y pinch-zoom}.viewer-top{position:sticky;top:0;z-index:5;background:var(--paper)}#close,#wheel-prev,#wheel-next,#prev,#next{min-width:44px;min-height:44px}#wheel-open{min-height:44px}#viewer{overflow-y:auto;max-height:calc(100dvh - 24px)}
 @media(max-width:650px){.subnav{overflow-x:auto;justify-content:flex-start;overscroll-behavior-x:contain}.subnav>*{flex-shrink:0;min-height:44px;display:inline-flex;align-items:center}.rotation-meta{padding-bottom:16px}.viewer-top{padding-top:max(10px,env(safe-area-inset-top))}.angle-stage.can-rotate{touch-action:pan-y pinch-zoom}}
+@media (max-width: 760px) {
+  .room-side p, .hero-invite p, .entrance .rotation-heading p,
+  .living-pair-extra p, #saved-pairs p { font-size: 15px !important; line-height: 1.55; }
+  .entrance .collection-actions a, .entrance .collection-subnav a,
+  .entrance .collection-subnav button, .journey-choices button,
+  .living-tools button, #save-pair, .hero-caption button { font-size: 13px; }
+}

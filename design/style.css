@@ -33,3 +33,21 @@
 @media(max-width:650px),(max-height:500px){.star-story{left:12px!important;right:12px;top:auto!important;bottom:max(12px,env(safe-area-inset-bottom));width:auto!important;max-height:calc(100dvh - 32px);padding:28px 24px 22px;border-radius:18px;overscroll-behavior:contain}.star-story p{font-size:16px;line-height:1.6}.star-story h3{font-size:25px;padding-right:12px}.star-story>a{font-size:14px}.star-story .eyebrow{font-size:10px}#star-directory-list button{font-size:12px;line-height:1.4}.signal-caption p{font-size:13px}.signal-controls button{min-height:48px}.concept button{min-height:44px}.concept{bottom:max(8px,env(safe-area-inset-bottom))}.watch{min-height:44px}.dialog-top button{min-width:44px;min-height:44px}}
 /* Keep Joshua's face in the first screen on shorter phones too. */
 @media(max-width:650px) and (max-height:740px){.j-nav~main>.hero{min-height:740px;padding-top:22px}.hero h1{font-size:48px;margin:18px 0 16px}.hero .lead{font-size:18px;line-height:1.35;margin:12px 0}.hero .description{font-size:12px;line-height:1.5;margin:10px 0;max-width:310px}.hero .actions{margin-top:14px;gap:12px}.portrait-scene{height:400px;bottom:25px}.note-one{font-size:10px;padding:12px;right:6%;top:34%}.note-two{font-size:10px;padding:12px}}
+
+@media (max-width: 650px) {
+  .hero .description { font-size: 16px; line-height: 1.6; color: #505149; max-width: 34ch; }
+  .eyebrow, .tiny, .collection-caption { font-size: 11px; letter-spacing: 1.2px; }
+  .note-one, .note-two { font-size: 13px; line-height: 1.45; }
+  .signature-heading > p, .collection-copy p, .star-story p { font-size: 16px; line-height: 1.6; }
+  .concept { position: static; transform: none; width: fit-content; margin: 16px auto 24px; }
+  .concept button { font-size: 13px; }
+}
+@media (max-width: 650px) {
+  .j-nav ~ main > .hero { min-height: 1010px; }
+}
+@media (max-width: 650px) {
+  .hero .pill, .hero .watch, .signal-controls button, #star-directory-list button,
+  .text-link, .stage-book { font-size: 14px; }
+  .signal-caption p, .story-copy p, .world-detail p { font-size: 16px; line-height: 1.6; }
+  .floating-note span, .world-card span { font-size: 10px; letter-spacing: 1px; }
+}

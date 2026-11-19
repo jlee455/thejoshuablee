@@ -15,3 +15,29 @@
 @media(max-width:360px){.j-page h1{font-size:42px;letter-spacing:-2px}.j-human-hero h1{font-size:38px}.j-brand{gap:10px}.j-brand>span{padding-left:10px}.j-nav .j-menu{padding:10px 13px}.j-stage-hero h1{font-size:42px}.j-human-hero .j-hero-photo{height:260px}}
 @media(max-width:650px){.j-nav~main>.hero{min-height:850px;padding-top:35px}}
 @media(max-width:650px) and (max-height:740px){.j-nav~main>.hero{min-height:740px;padding-top:22px}}
+
+@media (max-width: 760px) {
+  .j-page { font-size: 16px; line-height: 1.65; }
+  .j-page p, .j-page li { font-size: max(1em, 16px); line-height: 1.65; }
+  .j-page .kicker { font-size: 11px; letter-spacing: 1.2px; }
+  .j-page .j-preview { position: static; transform: none; width: fit-content; margin: 16px auto 24px; white-space: normal; }
+  .j-page .j-preview button { font-size: 13px; }
+}
+@media (max-width: 650px) {
+  .j-nav ~ main > .hero { min-height: 1010px; }
+}
+@media (max-width: 760px) {
+  .j-page .j-human-hero .j-lead, .j-page .j-hero-copy > p { font-size: 16px; line-height: 1.6; color: #505149; }
+}
+@media (max-width: 760px) {
+  .j-page .j-small, .j-page .quote-card p { font-size: 15px !important; line-height: 1.6; }
+  .j-page .j-button, .j-page .j-link, .j-page .j-room-tabs button,
+  .j-page .j-choice-tabs button, .j-page .j-form label, .j-page .j-search,
+  .j-page .filter-status, .j-page .insight-card b { font-size: 14px; }
+}
+@media (max-width: 760px) {
+  .j-orbit { display: none; }
+}
+@media (max-width: 760px) {
+  .insight-card p, .j-article, .j-article p, .j-article a { overflow-wrap: anywhere; }
+}
